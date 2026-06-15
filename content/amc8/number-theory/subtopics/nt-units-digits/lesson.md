@@ -1,15 +1,16 @@
 # Units Digits & Cycles
 
-The units digit of a number is just its remainder mod $10$ — and the units digits of
-powers repeat in short, predictable cycles.
+A units digit is just a value mod $10$, and the last two digits a value mod $100$.
+The problems use power cycles, exponent reduction, cyclic sums, and — for the last
+two digits — orders and CRT.
 
 <!--band:easy-->
 ## Foundations · AMC 8 level
 
-To get the units digit of a product, multiply only the units digits:
-$7 \times 7 = 49 \to 9$.
+The units digit of a product is the product of the units digits, taken mod $10$:
+$13\times 27\times 35 \to 3\cdot 7\cdot 5 = 105 \to 5$.
 
-Units digits of powers **cycle**:
+**Power cycles** repeat in a short pattern:
 
 | base | cycle | length |
 |------|-------|--------|
@@ -18,25 +19,32 @@ Units digits of powers **cycle**:
 | $7$  | $7,9,3,1$ | $4$ |
 | $9$  | $9,1$     | $2$ |
 
-So $2^4 = 16 \to 6$, and $3^4 = 81 \to 1$.
+So $7^4$ lands on the $4$th entry, $1$; and $9^{2024}$ (even exponent) gives $1$.
 
 <!--band:medium-->
 ## Core · AMC 10 level
 
-For a large exponent, **reduce the exponent modulo the cycle length.**
+Two habits handle almost everything:
 
-$7^{100}$: the cycle $7,9,3,1$ has length $4$, and $100 \equiv 0 \pmod 4$, so we land
-on the last entry — units digit $1$.
+1. **Only the base's units digit matters:** $17^{83}$ behaves like $7^{83}$.
+2. **Reduce the exponent modulo the cycle length** (usually $4$): for $7^{2024}$,
+   $2024\equiv 0\pmod 4$, so the units digit is the last cycle entry, $1$.
 
-Only the base's units digit matters: $13^{2024}$ has the same units digit as
-$3^{2024}$. Since $2024 \equiv 0 \pmod 4$, that's $1$.
+**Cyclic sums.** When you add consecutive powers, each full cycle of units digits
+contributes a fixed total: $3+9+7+1 = 20$, which ends in $0$. So
+$3^1+3^2+\cdots+3^{20}$ (five full cycles) has units digit $0$.
 
 <!--band:hard-->
 ## Advanced · AIME level
 
-- **Sums of powers.** Reduce each term's units digit, then add. For
-  $2^2 + 4^4 + 6^6 + 8^8$ the units digits are $4, 6, 6, 6$ (note $8$ cycles
-  $8,4,2,6$ and $8 \equiv 0 \pmod 4$ lands on $6$); the sum $22$ ends in $2$.
-- **Last two / three digits** generalize this to mod $100$ and mod $1000$, where the
-  cycles are longer and the Chinese Remainder Theorem (splitting the modulus) does the
-  heavy lifting — see the Modular Arithmetic lesson.
+**Last two digits $=$ mod $100$.** Use the multiplicative order or CRT:
+
+- Order of $3$ mod $100$ is $20$, and $2024\equiv 4\pmod{20}$, so $3^{2024}\equiv 3^4 = 81$.
+- For $2^{100}$, split via CRT: $\equiv 0\pmod 4$ and $\equiv 1\pmod{25}$ give $76$.
+
+**Power towers $a^{(b^c)}$.** Reduce the *exponent* $b^c$ modulo the cycle length
+(or order) of $a$. For $7^{(7^7)}$ mod $100$: the cycle length is $4$ and
+$7^7\equiv 3\pmod 4$, so the answer is $7^3\equiv 43$.
+
+**Cyclic sums still apply** to the last digit of long sums: in
+$2^1+2^2+\cdots+2^{100}$ each block $2,4,8,6$ sums to units $0$.

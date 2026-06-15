@@ -1,52 +1,62 @@
 # Divisibility & Primes
 
-How integers divide each other, and the prime building blocks they're made of.
-The depth below is tuned to your rating — switch levels with the selector above.
+The methods below are exactly the ones the problems in this set use — divisibility
+tests, primality checks, counting multiples, inclusion–exclusion, and Euler's
+totient. Switch levels with the selector above.
 
 <!--band:easy-->
 ## Foundations · AMC 8 level
 
-We say $d$ **divides** $n$ when $n$ is a whole number of $d$'s. Quick tests:
+**Divisibility tests.** Check a divisor without dividing:
 
-- **2:** the last digit is even.
-- **3:** the digit sum is a multiple of $3$ (e.g. $51 \to 5+1=6$, so $3 \mid 51$).
-- **5:** the last digit is $0$ or $5$.
-- **9:** the digit sum is a multiple of $9$.
+- **2:** last digit even. **5:** last digit $0$ or $5$.
+- **3 / 9:** the *digit sum* is divisible by $3$ / $9$.
+- **4:** last two digits form a multiple of $4$.
+- **6:** divisible by **both** $2$ and $3$.
 
-A **prime** is a whole number greater than $1$ whose only divisors are $1$ and
-itself: $2, 3, 5, 7, 11, \dots$. Note that $2$ is the only even prime, and $1$ is
-**not** prime.
+**Primality.** A number $>1$ is prime if no smaller prime divides it; for a
+two-digit number you only need to test $2, 3, 5, 7$.
 
-**Worked example.** Is $51$ prime? Its digit sum $6$ is divisible by $3$, so
-$51 = 3 \cdot 17$ — composite.
+**Counting multiples.** The number of multiples of $d$ from $1$ to $N$ is
+$\left\lfloor N/d \right\rfloor$.
+
+**Worked example (palindrome ÷ 6).** A multiple of $6$ must be even *and* have a
+digit sum divisible by $3$. The largest three-digit palindrome $\overline{aba}$
+that is even needs $a$ even; testing downward, $888$ works ($8{+}8{+}8 = 24$).
 
 <!--band:medium-->
 ## Core · AMC 10 level
 
-Beyond the basics, learn the longer tests and how to **count**:
+**Counting multiples, then combining sets.** With $\lfloor N/d\rfloor$ as the
+count of multiples of $d$:
 
-- **4:** last two digits form a multiple of $4$. **8:** last three digits.
-- **11:** the alternating digit sum is a multiple of $11$.
-- A number divisible by both $2$ and $3$ is divisible by $6$.
+$$ |A \cup B| = \left\lfloor \tfrac{N}{a}\right\rfloor + \left\lfloor \tfrac{N}{b}\right\rfloor - \left\lfloor \tfrac{N}{\operatorname{lcm}(a,b)}\right\rfloor. $$
 
-**Counting multiples.** The number of multiples of $d$ in $\{1,\dots,N\}$ is
-$\left\lfloor N/d \right\rfloor$. So two-digit multiples of $7$ number
-$\lfloor 99/7\rfloor - \lfloor 9/7\rfloor = 14 - 1 = 13$.
+- **"Divisible by $a$ or $b$":** use the formula above.
+- **"Divisible by neither":** $N - |A\cup B|$.
+- **"By $a$ or $b$ but not $c$":** subtract the multiples of the relevant lcm.
 
-**Inclusion–exclusion.** Count of $1\le n\le 100$ divisible by $3$ **or** $5$:
-$$ \lfloor100/3\rfloor + \lfloor100/5\rfloor - \lfloor100/15\rfloor = 33 + 20 - 6 = 47. $$
+> **Worked example.** Integers below $1000$ divisible by neither $5$ nor $7$:
+> $999 - (199 + 142 - 28) = 686$.
+
+**Primes in a range.** Test each candidate; watch for patterns like a prime
+*triplet* $p,\,p+2,\,p+6$.
 
 <!--band:hard-->
 ## Advanced · AIME level
 
-At competition level, divisibility becomes a tool inside larger arguments.
+**Exactly one of two sets.** Subtract the overlap (multiples of
+$\operatorname{lcm}(a,b)$) from *each* set:
+$$ \big(|A|-|A\cap B|\big) + \big(|B|-|A\cap B|\big). $$
 
-- **Optimization with primes.** If two primes sum to $36$, both must be odd (using
-  $2$ forces $34$, not prime), and the product is largest when they're closest:
-  $17 \cdot 19 = 323$.
-- **Careful inclusion–exclusion** over several moduli, watching floor terms, counts
-  integers satisfying combined divisibility constraints.
-- **Structural facts:** there are infinitely many primes; among any $d$ consecutive
-  integers exactly one is divisible by $d$; a prime $p>3$ satisfies $p \equiv \pm1 \pmod 6$.
+**Euler's totient $\varphi(n)$** counts integers in $[1,n]$ with no common factor
+$>1$ with $n$:
+$$ \varphi(n) = n\prod_{p \mid n}\left(1 - \tfrac1p\right),\qquad \varphi(2024)=2024\cdot\tfrac12\cdot\tfrac{10}{11}\cdot\tfrac{22}{23}=880. $$
 
-These ideas pair with modular arithmetic and factorization on hard problems.
+**Constructive digit problems.** Because divisibility by $9$ depends only on the
+digit sum, the smallest number built from a limited digit set (e.g. only $0$s and
+$8$s) divisible by $18$ needs just enough $8$s to make the digit sum a multiple of
+$9$ — nine of them, giving $888888888$.
+
+**Tie it together.** A "refactorable" number is divisible by its own divisor count
+$d(n)$ — combine the divisor-count idea with a divisibility check.

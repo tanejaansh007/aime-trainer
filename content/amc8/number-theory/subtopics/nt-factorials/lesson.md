@@ -1,36 +1,45 @@
 # Factorials & Trailing Zeros
 
-The factorial $n! = 1\cdot 2\cdot 3\cdots n$ grows explosively, and counting the
-primes hidden inside it answers a whole family of problems.
+The whole topic is "count the primes inside $n!$." That single idea — Legendre's
+formula — drives trailing zeros, base-$b$ zeros, and (with Wilson's theorem)
+factorials modulo a prime.
 
 <!--band:easy-->
 ## Foundations · AMC 8 level
 
-$$ 5! = 1\cdot2\cdot3\cdot4\cdot5 = 120. $$
+$n! = 1\cdot 2\cdots n$ grows fast, and $\dfrac{n!}{(n-1)!} = n$.
 
-Because every factorial from $5!$ on contains both a $2$ and a $5$, it ends in $0$.
-So in a sum like $1! + 2! + 3! + 4! + 5!$, only the first few terms affect the units
-digit: $1+2+6+24+120 = 153 \to 3$.
+**Trailing zeros = number of factors of $5$** (there are always more $2$s than
+$5$s). For $n < 25$ that is just $\lfloor n/5\rfloor$: so $15!$ ends in $3$ zeros.
+
+Because every factorial from $5!$ on already ends in $0$, a sum like $5!+6!+7!$
+ends in $0$.
 
 <!--band:medium-->
 ## Core · AMC 10 level
 
-A trailing zero comes from a factor of $10 = 2\cdot 5$, and there are always more
-$2$s than $5$s — so **count the $5$s.** The number of trailing zeros of $n!$ is
-$$ \left\lfloor \tfrac{n}{5}\right\rfloor + \left\lfloor \tfrac{n}{25}\right\rfloor + \left\lfloor \tfrac{n}{125}\right\rfloor + \cdots $$
-For $100!$: $20 + 4 = 24$ zeros.
+**Trailing-zero formula.** Keep dividing by powers of $5$:
+$$ Z(n) = \left\lfloor\tfrac n5\right\rfloor + \left\lfloor\tfrac n{25}\right\rfloor + \left\lfloor\tfrac n{125}\right\rfloor + \cdots,\qquad Z(200)=40+8+1=49. $$
 
-**Worked example.** Smallest $n$ with $1000 = 2^3\cdot 5^3 \mid n!$? You need three
-$5$s, and $\lfloor n/5\rfloor \ge 3$ first happens at $n = 15$.
+**Legendre's formula** generalizes this to any prime $p$ — the exponent of $p$ in
+$n!$ is $\sum_k \lfloor n/p^k\rfloor$. (Power of $3$ in $20!$: $6+2 = 8$.)
+
+**Smallest $n$ for $k$ zeros:** solve $Z(n)=k$; the first $n$ that reaches three
+factors of $5$ is $15$.
 
 <!--band:hard-->
 ## Advanced · AIME level
 
-**Legendre's formula** gives the exact exponent of a prime $p$ in $n!$:
-$$ v_p(n!) = \sum_{k\ge 1} \left\lfloor \frac{n}{p^k} \right\rfloor. $$
-The largest power of $2$ dividing $20!$ is
-$\lfloor20/2\rfloor+\lfloor20/4\rfloor+\lfloor20/8\rfloor+\lfloor20/16\rfloor
-= 10+5+2+1 = 18$.
+**Legendre everywhere.** The exponent of $2$ in $50!$ is
+$25+12+6+3+1 = 47$.
 
-This controls divisibility of factorials and binomial coefficients, and pairs with
-**Wilson's Theorem** ($(p-1)!\equiv-1\pmod p$) for factorials taken modulo a prime.
+**Trailing zeros in base $b$.** Write $b=\prod p^{e}$; the number of trailing zeros
+of $n!$ in base $b$ is
+$$ \min_{p\mid b}\left\lfloor \frac{v_p(n!)}{e}\right\rfloor. $$
+For $100!$ in base $6 = 2\cdot 3$, that is $\min(v_2, v_3) = \min(97, 48) = 48$.
+
+**Wilson's theorem** for factorials mod a prime: $(p-1)! \equiv -1 \pmod p$, so
+$12! \equiv -1 \equiv 12 \pmod{13}$.
+
+**Threshold counting.** $n!$ becomes divisible by $1000$ once it holds three
+factors of $5$, i.e. for $n \ge 15$.

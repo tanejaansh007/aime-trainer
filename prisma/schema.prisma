@@ -1,0 +1,180 @@
+// AIME Trainer — Prisma schema (SQLite for local MVP).
+// SQLite has no native enums; "enum-like" columns are Strings validated in app code.
+// JSON-shaped columns (choices, topicIds, problemIds) are stored as JSON strings.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+// ---------------------------------------------------------------------------
+// Curriculum tree: Level -> Topic (self-referencing) -> Lesson / Problem
+// ---------------------------------------------------------------------------
+
+/// Competition level. levelKey is one of: AMC8 | AMC10 | AIME.
+model Level {
+  id     String  @id @default(cuid())
+  key    String  @unique // "AMC8"
+  name   String // "AMC 8"
+  order  Int     @default(0)
+  topics Topic[]
+}
+
+/// Self-referencing curriculum node: Category -> Topic -> Subtopic.
+/// Lessons/problems hang off leaf topics, but any node may carry them.
+model Topic {
+  id       String  @id @default(cuid())
+  level    Level   @relation(fields: [levelId], references: [id], onDelete: Cascade)
+  levelId  String
+  parent   Topic?  @relation("TopicChildren", fields: [parentId], references: [id], onDelete: Cascade)
+  parentId String?
+  children Topic[] @relation("TopicChildren")
+
+  name  String
+  slug  String @unique
+  order Int    @default(0)
+
+  lessons  Lesson[]
+  problems Problem[]
+  ratings  UserSubjectRating[]
+
+  @@index([levelId])
+  @@index([parentId])
+}
+
+/// Lessons per topic, one row per difficulty band so content can adapt to the
+/// student's selected ELO. band is "all" (overview) | "easy" | "medium" | "hard".
+model Lesson {
+  id           String @id @default(cuid())
+  topic        Topic  @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  topicId      String
+  band         String @default("all")
+  bodyMarkdown String
+
+  @@unique([topicId, band])
+}
+
+/// A single answer-checkable problem with a seeded, fixed ELO rating.
+/// type: "MULTIPLE_CHOICE" | "SHORT_ANSWER".
+/// choices: JSON string of ["A) ...", "B) ...", ...] for MULTIPLE_CHOICE, else null.
+/// answer: normalized canonical answer (choice letter for MC, normalized value for SA).
+model Problem {
+  id               String    @id @default(cuid())
+  topic            Topic     @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  topicId          String
+  type             String
+  statementMarkdown String
+  choices          String? // JSON-encoded array, null for SHORT_ANSWER
+  answer           String
+  solutionMarkdown String
+  rating           Int // seeded ELO, fixed in MVP
+  source           String?
+  attempts         Attempt[]
+
+  @@index([topicId])
+  @@index([rating])
+}
+
+// ---------------------------------------------------------------------------
+// Users, ratings, attempts, review tests
+// ---------------------------------------------------------------------------
+
+model User {
+  id           String  @id @default(cuid())
+  email        String  @unique
+  name         String?
+  passwordHash String
+
+  ratings     UserSubjectRating[]
+  attempts    Attempt[]
+  reviewTests ReviewTest[]
+  accounts    Account[]
+  sessions    Session[]
+
+  createdAt DateTime @default(now())
+}
+
+/// Per-subject ELO. One row per (user, topic).
+model UserSubjectRating {
+  id                String @id @default(cuid())
+  user              User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId            String
+  topic             Topic  @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  topicId           String
+  rating            Int
+  problemsAttempted Int    @default(0)
+
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, topicId])
+  @@index([userId])
+}
+
+/// One graded attempt. Drives history + "don't repeat recently seen".
+model Attempt {
+  id           String   @id @default(cuid())
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId       String
+  problem      Problem  @relation(fields: [problemId], references: [id], onDelete: Cascade)
+  problemId    String
+  answerGiven  String
+  isCorrect    Boolean
+  ratingBefore Int
+  ratingAfter  Int
+  reviewTestId String?
+  reviewTest   ReviewTest? @relation(fields: [reviewTestId], references: [id], onDelete: SetNull)
+  createdAt    DateTime @default(now())
+
+  @@index([userId])
+  @@index([problemId])
+  @@index([reviewTestId])
+}
+
+/// A fixed-length test generated from the bank.
+/// topicIds / problemIds are JSON-encoded string arrays.
+model ReviewTest {
+  id         String    @id @default(cuid())
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId     String
+  topicIds   String // JSON array
+  difficulty String
+  problemIds String // JSON array
+  createdAt  DateTime  @default(now())
+  attempts   Attempt[]
+
+  @@index([userId])
+}
+
+// ---------------------------------------------------------------------------
+// NextAuth (Auth.js) tables — kept for future OAuth; credentials uses User only.
+// ---------------------------------------------------------------------------
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}

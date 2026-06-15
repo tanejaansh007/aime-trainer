@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AIME Trainer — Adaptive Math Practice (MVP)
 
-## Getting Started
+Train for math competitions (AMC 8 / AMC 10 / AIME). Pick a topic, read a short
+lesson, then solve problems whose difficulty auto-adjusts to a per-subject **ELO
+rating**. Logged-in users get saved ratings, attempt history, and custom review
+tests; guests get the same loop with no persistence.
 
-First, run the development server:
+This MVP ships one topic end-to-end: **AMC 8 → Number Theory** (64 problems, rating
+700–1700).
+
+## Stack
+
+- **Next.js 16** (App Router, TypeScript, React 19) + Turbopack
+- **Prisma 7** ORM over **SQLite** (local dev; uses the `better-sqlite3` driver adapter)
+- **NextAuth (Auth.js) v5** — email/password credentials + a no-session guest path
+- **Tailwind CSS 4**, **KaTeX** (via `react-markdown` + `remark-math` + `rehype-katex`)
+- **Zod** for API validation, **Vitest** for unit tests
+
+> The plan targets Postgres for production. SQLite was chosen for a zero-dependency
+> local MVP; swapping the Prisma datasource provider to `postgresql` (plus a Postgres
+> driver adapter) is the main change needed to deploy.
+
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npx prisma migrate dev      # create the SQLite DB + schema
+npm run seed                # load AMC 8 Number Theory lesson + 64 problems
+npm run dev                 # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Required env (`.env`, already created locally):
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+DATABASE_URL="file:./dev.db"
+AUTH_SECRET="…"             # generated; required by NextAuth
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Scripts
 
-## Learn More
+- `npm run dev` — dev server
+- `npm run build` / `npm start` — production build / serve
+- `npm test` — Vitest unit tests (ELO, answer checking, matchmaking)
+- `npm run seed` — (re)seed the curriculum, lesson, and problem bank
 
-To learn more about Next.js, take a look at the following resources:
+## How it works
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **ELO engine** (`src/lib/elo.ts`): only the student's rating moves; problem ratings
+  are seeded and fixed. `newRating = rating + K·(actual − expected)` with a decaying K.
+- **Matchmaking** (`src/lib/selectProblem.ts`): serves the unseen problem whose rating
+  is closest to the student's, with small jitter.
+- **Answer checking** (`src/lib/checkAnswer.ts`): server-side only — numeric
+  equivalence for short answers, letter match for multiple choice. **Correct answers
+  and solutions never appear in `/api/practice/next` responses**, only in
+  `/api/practice/answer` after submission.
+- **Guests** run the identical engine, with rating + "seen" set held in the browser;
+  nothing is written to the DB. **Logged-in** users have the server treat the stored
+  rating as authoritative and persist every attempt.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Key paths
 
-## Deploy on Vercel
+```
+content/amc8/number-theory/   lesson.md + problems.json (the pre-built bank)
+prisma/schema.prisma          data model
+prisma/seed.ts                offline content loader
+src/lib/                      elo.ts, selectProblem.ts, checkAnswer.ts (+ tests)
+src/app/api/                  practice/next, practice/answer, review, review/grade, register
+src/app/                      / (browser), learn/[slug], practice/[slug], review, profile, login
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Out of scope (MVP)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Full AMC 8/10/AIME curriculum, live AI generation, OAuth, spaced repetition,
+leaderboards, and deploy automation — deferred until the single-topic loop is proven.

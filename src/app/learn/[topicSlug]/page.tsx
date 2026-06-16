@@ -3,13 +3,9 @@ import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { auth } from "@/auth";
 import Markdown from "@/components/Markdown";
-import { bandForRating, type Difficulty } from "@/lib/elo";
+import { LESSON_BANDS, lessonBandForRating, type LessonBand } from "@/lib/elo";
 
-const BANDS: { key: Difficulty; label: string }[] = [
-  { key: "easy", label: "Easy · AMC 8" },
-  { key: "medium", label: "Medium · AMC 10" },
-  { key: "hard", label: "Hard · AIME" },
-];
+const BAND_KEYS = LESSON_BANDS.map((b) => b.key) as readonly string[];
 
 export default async function LearnPage({
   params,
@@ -33,18 +29,18 @@ export default async function LearnPage({
   const leveled = topic.lessons.filter((l) => l.band !== "all");
   const hasBands = leveled.length > 0;
 
-  // Choose the band: explicit ?level= wins, else the logged-in user's rating
-  // for this topic, else medium.
-  let band: Difficulty = "medium";
-  if (level === "easy" || level === "medium" || level === "hard") {
-    band = level;
+  // Choose the tier: explicit ?level= wins, else the logged-in user's rating for
+  // this topic, else the middle tier.
+  let band: LessonBand = "t3";
+  if (level && BAND_KEYS.includes(level)) {
+    band = level as LessonBand;
   } else {
     const session = await auth();
     if (session?.user?.id) {
       const r = await prisma.userSubjectRating.findUnique({
         where: { userId_topicId: { userId: session.user.id, topicId: topic.id } },
       });
-      if (r) band = bandForRating(r.rating);
+      if (r) band = lessonBandForRating(r.rating);
     }
   }
 
@@ -71,10 +67,10 @@ export default async function LearnPage({
       {hasBands && (
         <div>
           <div className="text-xs uppercase tracking-wide text-slate-400 mb-2">
-            Lesson difficulty
+            Lesson difficulty (by rating)
           </div>
           <div className="flex flex-wrap gap-2">
-            {BANDS.map((b) => (
+            {LESSON_BANDS.map((b) => (
               <Link
                 key={b.key}
                 href={`/learn/${topic.slug}?level=${b.key}`}

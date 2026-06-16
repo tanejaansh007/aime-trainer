@@ -80,12 +80,30 @@ export function startingRating(difficulty: Difficulty): number {
 }
 
 /**
- * Bucket a rating into a lesson band. Boundaries sit between the presets
- * (easy 800 / medium 1200 / hard 1600): < 1000 → easy, < 1400 → medium,
- * otherwise hard.
+ * Bucket a rating into a coarse practice band (kept for any 3-way uses).
  */
 export function bandForRating(rating: number): Difficulty {
   if (rating < 1000) return "easy";
   if (rating < 1400) return "medium";
   return "hard";
+}
+
+/**
+ * Five graduated lesson tiers so lesson content tracks ELO more finely than the
+ * coarse easy/medium/hard split. Each subtopic lesson is authored in these five
+ * sections; the student sees the one matching their rating.
+ */
+export const LESSON_BANDS = [
+  { key: "t1", label: "Tier 1 · AMC 8 basics", max: 850 },
+  { key: "t2", label: "Tier 2 · AMC 8", max: 1100 },
+  { key: "t3", label: "Tier 3 · AMC 10", max: 1350 },
+  { key: "t4", label: "Tier 4 · AMC 10 / early AIME", max: 1600 },
+  { key: "t5", label: "Tier 5 · AIME", max: Infinity },
+] as const;
+
+export type LessonBand = (typeof LESSON_BANDS)[number]["key"];
+
+/** Map a rating to one of the five lesson tiers. */
+export function lessonBandForRating(rating: number): LessonBand {
+  return (LESSON_BANDS.find((b) => rating < b.max) ?? LESSON_BANDS[LESSON_BANDS.length - 1]).key;
 }

@@ -1,53 +1,58 @@
 # Modular Arithmetic & Remainders
 
-These problems are solved with four moves: reduce-before-computing, find a small
-power that is $\equiv 1$, the Chinese Remainder Theorem, and counting solutions by
-periodicity. Each is below.
+Remainders, built up across five tiers: from clock arithmetic to the
+exponent-reduction trick, the Chinese Remainder Theorem, and counting solutions by
+periodicity.
 
-<!--band:easy-->
-## Foundations · AMC 8 level
+<!--band:t1-->
+## Tier 1 · AMC 8 basics
 
-The **remainder** of $a$ divided by $m$ is written $a \bmod m$. Remainders **add and
-multiply**:
-$$ (a\cdot b)\bmod m = \big[(a\bmod m)(b\bmod m)\big]\bmod m. $$
-So if a number leaves remainder $3$ mod $7$, twice it leaves $2\cdot3=6$.
+The **remainder** of $a$ divided by $m$ is $a \bmod m$. Remainders **add and
+multiply**, so you can reduce *before* computing: $2^6 = 64 \equiv 1 \pmod 7$.
 
-**Reduce before computing** to keep numbers small: $2^6 = 64 \equiv 1 \pmod 7$.
+**Clock / cyclic arithmetic.** Days repeat mod $7$, a clock mod $12$. Since
+$100 \equiv 2 \pmod 7$, $100$ days past Wednesday is Friday.
 
-**Clock / cyclic arithmetic.** Days of the week repeat mod $7$; a $12$-hour clock
-works mod $12$. ($100 \equiv 2 \pmod 7$, so $100$ days past Wednesday is Friday.)
+<!--band:t2-->
+## Tier 2 · AMC 8 → AMC 10 bridge
 
-<!--band:medium-->
-## Core · AMC 10 level
+Write $a \equiv r \pmod m$ when $a$ and $r$ leave the same remainder. The crucial
+observation: **powers cycle.** Computing $2^1, 2^2, 2^3, \dots \pmod m$ you eventually
+hit $1$, and from there the pattern repeats. Spotting that repeat is the key that
+unlocks every large-power remainder in the higher tiers.
+
+<!--band:t3-->
+## Tier 3 · AMC 10
 
 **The big-power method:** find the smallest $k$ with $a^{k}\equiv 1\pmod m$, then
-$a^{e}\equiv a^{\,e \bmod k}$.
-
-$$ 3^4\equiv 1\!\pmod 5 \Rightarrow 3^{100}\equiv 1; \qquad 2^6\equiv 1\!\pmod 9 \Rightarrow 2^{2024}\equiv 2^{2}=4. $$
-
-**Fermat's Little Theorem** hands you such a $k$: $a^{p-1}\equiv1\pmod p$ for prime
-$p\nmid a$.
+$a^{e}\equiv a^{\,e \bmod k}$. Since $2^6\equiv 1\pmod 9$ and $2024\equiv 2\pmod 6$,
+$2^{2024}\equiv 2^2 = 4$. **Fermat's Little Theorem** supplies such a $k$:
+$a^{p-1}\equiv 1\pmod p$ for prime $p\nmid a$.
 
 **Simultaneous congruences (CRT).** To find the smallest $n$ with $n\equiv r_1
-\pmod{m_1}$ and $n\equiv r_2\pmod{m_2}$, step through one progression
-($r_1, r_1+m_1, \dots$) until the other condition holds.
+\pmod{m_1}$ and $n\equiv r_2\pmod{m_2}$, step through one progression until the other
+holds. (In a sum like $1!+\cdots+50! \pmod{15}$, every $k!$ with $k\ge5$ vanishes.)
 
-**Vanishing factorials.** In a sum like $1!+\cdots+50! \pmod{15}$, every $k!$ with
-$k\ge 5$ is divisible by $15$, so only the first few terms matter.
+<!--band:t4-->
+## Tier 4 · AMC 10 / early AIME
 
-<!--band:hard-->
-## Advanced · AIME level
+**Look for $\equiv -1$** to collapse the work: $5^2\equiv -1 \pmod{13}$, so
+$5^{30} = (5^2)^{15}\equiv (-1)^{15}\equiv 12$.
 
-**Split the modulus with CRT.** Last three digits $=$ mod $1000 = $ mod $8$ **and**
-mod $125$, solved separately and recombined:
-$$ 2^{2024}\equiv 0 \!\pmod 8,\quad 2^{2024}\equiv 91 \!\pmod{125} \;\Rightarrow\; 2^{2024}\equiv 216 \!\pmod{1000}. $$
+**Splitting a modulus begins here.** To get a remainder mod $1000$, handle mod $8$
+and mod $125$ separately and recombine — the first step of the full CRT machinery in
+the next tier.
 
-**Multiplicative order** is the smallest $k$ with $a^k\equiv1$; it divides
-$\lambda(m)$ and tells you how far to reduce a huge exponent.
+<!--band:t5-->
+## Tier 5 · AIME
 
-**Look for $\equiv -1$.** Shortcuts collapse the work: $5^2\equiv -1\pmod{13}$, so
-$5^{30}=(5^2)^{15}\equiv(-1)^{15}\equiv 12$.
+**Full CRT split.** Last three digits $=$ mod $1000 = $ mod $8$ **and** mod $125$:
+$$ 2^{2024}\equiv 0 \!\pmod 8,\quad 2^{2024}\equiv 91 \!\pmod{125} \;\Rightarrow\; 216 \!\pmod{1000}. $$
+Stack a third congruence the same way ($2\pmod3,\,3\pmod5,\,2\pmod7 \Rightarrow 23$).
 
-**Counting solutions over a range.** A congruence condition (e.g. $n^2\equiv1
-\pmod{24}$) is **periodic** with period $m$: count the solutions in one block of
-$m$, multiply by the number of full blocks, then handle the leftover.
+**Multiplicative order** — the smallest $k$ with $a^k\equiv1$ — divides $\lambda(m)$
+and tells you exactly how far to reduce a giant exponent.
+
+**Counting solutions over a range.** A congruence like $n^2\equiv1\pmod{24}$ is
+**periodic** with period $24$: count the solutions in one block, multiply by the
+number of full blocks, then handle the leftover.

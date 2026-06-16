@@ -37,12 +37,12 @@ const SUBTOPICS = [
  * Split a band-sectioned lesson into per-band bodies. Text before the first
  * `<!--band:...-->` marker is a shared intro prepended to every band.
  */
-function parseBands(md: string): Record<"easy" | "medium" | "hard", string> {
-  const parts = md.split(/<!--band:(easy|medium|hard)-->/);
+function parseBands(md: string): Record<string, string> {
+  const parts = md.split(/<!--band:([\w-]+)-->/);
   const intro = parts[0].trim();
-  const out = {} as Record<"easy" | "medium" | "hard", string>;
+  const out: Record<string, string> = {};
   for (let i = 1; i < parts.length; i += 2) {
-    const band = parts[i] as "easy" | "medium" | "hard";
+    const band = parts[i];
     const body = (parts[i + 1] ?? "").trim();
     out[band] = intro ? `${intro}\n\n${body}` : body;
   }
@@ -94,11 +94,12 @@ async function main() {
       create: { name: st.name, slug: st.slug, levelId: level.id, parentId: nt.id, order: i },
     });
 
-    // Band-leveled lesson for the subtopic.
+    // Band-leveled lesson for the subtopic (clear stale bands first).
+    await prisma.lesson.deleteMany({ where: { topicId: topic.id } });
     const lessonMd = readFileSync(join(SUB_DIR, st.slug, "lesson.md"), "utf8");
     const bands = parseBands(lessonMd);
-    for (const band of ["easy", "medium", "hard"] as const) {
-      if (bands[band]) await upsertLesson(topic.id, band, bands[band]);
+    for (const [band, body] of Object.entries(bands)) {
+      if (body) await upsertLesson(topic.id, band, body);
     }
 
     // Problem bank for the subtopic.

@@ -1,17 +1,1 @@
-[
-  { "type": "SHORT_ANSWER", "statement": "What is the value of $6! \\div 5!$?", "answer": "6", "solution": "$6!/5! = 6 = 6$.", "rating": 700, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "In how many zeros does the product $1 \\times 2 \\times 3 \\times \\cdots \\times 10$ end?", "answer": "2", "solution": "$10!$ has $\\lfloor 10/5 \\rfloor = 2$ factors of $5$, hence $2$ trailing zeros.", "rating": 720, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "What is the units digit of $5! + 6! + 7!$?", "answer": "0", "solution": "Every factorial from $5!$ on ends in $0$, so the sum ends in $0$.", "rating": 760, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "What is the value of $5! + 4!$?", "answer": "144", "solution": "$120 + 24 = 144$.", "rating": 780, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "How many trailing zeros does $15!$ have?", "answer": "3", "solution": "$\\lfloor 15/5 \\rfloor = 3$.", "rating": 820, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "How many trailing zeros does $50!$ have?", "answer": "12", "solution": "$\\lfloor 50/5 \\rfloor + \\lfloor 50/25 \\rfloor = 10 + 2 = 12$.", "rating": 1150, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "How many trailing zeros does $100!$ have?", "answer": "24", "solution": "$20 + 4 = 24$.", "rating": 1200, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "What is the smallest positive integer $n$ such that $n!$ ends in exactly $3$ zeros?", "answer": "15", "solution": "$15!$ first reaches $3$ factors of $5$.", "rating": 1250, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "What is the exponent of the largest power of $3$ that divides $20!$?", "answer": "8", "solution": "$\\lfloor 20/3 \\rfloor + \\lfloor 20/9 \\rfloor = 6 + 2 = 8$.", "rating": 1300, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "How many trailing zeros does $200!$ have?", "answer": "49", "solution": "$\\lfloor 200/5\\rfloor + \\lfloor 200/25\\rfloor + \\lfloor 200/125\\rfloor = 40 + 8 + 1 = 49$.", "rating": 1350, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "What is the remainder when $12!$ is divided by $13$?", "answer": "12", "solution": "By Wilson's Theorem, $12! \\equiv -1 \\equiv 12 \\pmod{13}$.", "rating": 1500, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "What is the exponent of the largest power of $2$ that divides $50!$?", "answer": "47", "solution": "$25 + 12 + 6 + 3 + 1 = 47$.", "rating": 1550, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "How many trailing zeros does $100!$ have when written in base $6$?", "answer": "48", "solution": "Base $6 = 2\\cdot 3$; the limiting exponent is $\\min(v_2, v_3) = \\min(97, 48) = 48$.", "rating": 1600, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "How many trailing zeros does $1000!$ have?", "answer": "249", "solution": "$200 + 40 + 8 + 1 = 249$.", "rating": 1680, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "How many of the numbers $1!, 2!, 3!, \\ldots, 100!$ are divisible by $1000$?", "answer": "86", "solution": "$n!$ is divisible by $1000$ once it has three factors of $5$, i.e. for $n \\ge 15$: that's $86$ values.", "rating": 1700, "source": "curated" }
-]
+[]

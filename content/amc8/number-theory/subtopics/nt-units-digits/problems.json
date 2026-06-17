@@ -1,17 +1,1 @@
-[
-  { "type": "SHORT_ANSWER", "statement": "A whole number ends in the digit $6$. What is the units digit of its square?", "answer": "6", "solution": "$6^2 = 36$, so the square ends in $6$.", "rating": 700, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "What is the units digit of $7^4$?", "answer": "1", "solution": "Powers of $7$ cycle $7,9,3,1$; the $4$th is $1$.", "rating": 720, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "What is the units digit of $13 \\times 27 \\times 35$?", "answer": "5", "solution": "Multiply the units digits: $3\\cdot 7\\cdot 5 = 105$, ending in $5$.", "rating": 760, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "What is the units digit of $9^{2024}$?", "answer": "1", "solution": "Powers of $9$ alternate $9, 1$; an even exponent gives $1$.", "rating": 780, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "What is the units digit of $3^3 + 4^2$?", "answer": "3", "solution": "$27 + 16 = 43$, ending in $3$.", "rating": 820, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "What is the units digit of $7^{2024}$?", "answer": "1", "solution": "The cycle $7,9,3,1$ has length $4$ and $2024 \\equiv 0 \\pmod 4$, so the units digit is $1$.", "rating": 1100, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "What is the units digit of $17^{83}$?", "answer": "3", "solution": "Only the base's units digit $7$ matters; its cycle $7,9,3,1$ with $83 \\equiv 3 \\pmod 4$ gives $3$.", "rating": 1150, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "What is the units digit of $123^{456}$?", "answer": "1", "solution": "Only $3$ matters; its cycle has length $4$ and $456 \\equiv 0 \\pmod 4$, giving $1$.", "rating": 1200, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "What is the units digit of $2^{2024} + 3^{2024}$?", "answer": "7", "solution": "$2^{2024}$ ends in $6$ and $3^{2024}$ ends in $1$; $6 + 1 = 7$, so $7$.", "rating": 1250, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "What is the units digit of $3^1 + 3^2 + 3^3 + \\cdots + 3^{20}$?", "answer": "0", "solution": "Each block of four exponents contributes $3+9+7+1 = 20$ to the units digit; over $20$ terms the total ends in $0$.", "rating": 1300, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "What are the last two digits of $3^{2024}$?", "answer": "81", "solution": "The order of $3$ mod $100$ is $20$, and $2024 \\equiv 4 \\pmod{20}$, so $3^{2024} \\equiv 3^4 = 81$.", "rating": 1450, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "What is the units digit of $2^1 + 2^2 + 2^3 + \\cdots + 2^{100}$?", "answer": "0", "solution": "Each block $2,4,8,6$ sums to $20$ (units $0$); over $100$ terms the total ends in $0$.", "rating": 1550, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "What are the last two digits of $2^{100}$?", "answer": "76", "solution": "By CRT, $2^{100} \\equiv 0 \\pmod 4$ and $\\equiv 1 \\pmod{25}$, giving $76 \\pmod{100}$.", "rating": 1600, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "What is the units digit of $7^{2024} + 8^{2024} + 9^{2024}$?", "answer": "8", "solution": "The units digits are $1, 6, 1$; their sum $8$ ends in $8$.", "rating": 1650, "source": "curated" },
-  { "type": "SHORT_ANSWER", "statement": "What are the last two digits of $7^{(7^7)}$?", "answer": "43", "solution": "Mod $100$, powers of $7$ cycle with length $4$. Since $7^7 \\equiv 3 \\pmod 4$, the answer is $7^3 \\equiv 43$.", "rating": 1760, "source": "curated" }
-]
+[]

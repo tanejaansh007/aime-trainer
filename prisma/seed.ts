@@ -57,8 +57,17 @@ async function upsertLesson(topicId: string, band: string, bodyMarkdown: string)
   });
 }
 
+// Major subjects, shown as tabs. Only Number Theory has content so far; the
+// others are created as empty top-level topics ready to receive problems.
+const SUBJECTS = [
+  { name: "Combinatorics", slug: "combinatorics" },
+  { name: "Geometry", slug: "geometry" },
+  { name: "Algebra", slug: "algebra" },
+  { name: "Number Theory", slug: "number-theory" },
+];
+
 async function main() {
-  console.log("Seeding AIME Trainer (AMC 8 — Number Theory, subtopic tree)…");
+  console.log("Seeding AIME Trainer (subjects + AMC 8 Number Theory)…");
 
   const level = await prisma.level.upsert({
     where: { key: "AMC8" },
@@ -66,16 +75,36 @@ async function main() {
     create: { key: "AMC8", name: "AMC 8", order: 0 },
   });
 
-  // Parent Number Theory topic (overview only; problems live on subtopics).
-  const nt = await prisma.topic.upsert({
-    where: { slug: "number-theory" },
-    update: { name: "Number Theory", levelId: level.id, order: 0 },
-    create: { name: "Number Theory", slug: "number-theory", levelId: level.id, order: 0 },
-  });
+  for (let i = 0; i < SUBJECTS.length; i++) {
+    const subj = SUBJECTS[i];
+    const topic = await prisma.topic.upsert({
+      where: { slug: subj.slug },
+      update: { name: subj.name, levelId: level.id, parentId: null, order: i },
+      create: { name: subj.name, slug: subj.slug, levelId: level.id, order: i },
+    });
+    if (subj.slug === "number-theory") {
+      await seedNumberTheory(level.id, topic.id);
+    } else {
+      // Placeholder overview until problems/subtopics arrive.
+      await prisma.lesson.deleteMany({ where: { topicId: topic.id } });
+      await upsertLesson(
+        topic.id,
+        "all",
+        `# ${subj.name}\n\nProblems and lessons for **${subj.name}** are coming soon.`,
+      );
+    }
+  }
 
+  console.log("Seeded subjects: " + SUBJECTS.map((s) => s.name).join(", "));
+}
+
+async function seedNumberTheory(levelId: string, ntId: string) {
   // Parent overview lesson (band "all").
   const overview = readFileSync(join(NT_DIR, "overview.md"), "utf8");
-  await upsertLesson(nt.id, "all", overview);
+  await upsertLesson(ntId, "all", overview);
+
+  const nt = { id: ntId };
+  const level = { id: levelId };
 
   // Clean slate for this topic subtree's problems.
   const existingSubs = await prisma.topic.findMany({ where: { parentId: nt.id }, select: { id: true } });
@@ -122,7 +151,8 @@ async function main() {
     }
     totalProblems += raw.length;
     const ratings = raw.map((p) => p.rating).sort((a, b) => a - b);
-    perSub.push(`${st.name}: ${raw.length} (${ratings[0]}–${ratings[ratings.length - 1]})`);
+    const range = raw.length ? ` (${ratings[0]}–${ratings[ratings.length - 1]})` : " (empty)";
+    perSub.push(`${st.name}: ${raw.length}${range}`);
   }
 
   console.log(`Seeded ${SUBTOPICS.length} subtopics, ${totalProblems} problems:`);

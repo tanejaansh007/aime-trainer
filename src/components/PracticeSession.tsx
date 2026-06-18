@@ -3,11 +3,14 @@
 import { useCallback, useEffect, useState } from "react";
 import Markdown from "@/components/Markdown";
 import type { PublicProblem } from "@/lib/problemDTO";
+import { RATING_MIN, RATING_MAX, clampRating } from "@/lib/elo";
 
 const PRESETS = [
-  { key: "easy", label: "Easy", rating: 800 },
+  { key: "beginner", label: "Beginner", rating: 600 },
+  { key: "easy", label: "Easy", rating: 900 },
   { key: "medium", label: "Medium", rating: 1200 },
   { key: "hard", label: "Hard", rating: 1600 },
+  { key: "expert", label: "Expert", rating: 2000 },
 ] as const;
 
 interface AnswerResult {
@@ -48,6 +51,7 @@ export default function PracticeSession({
   const [result, setResult] = useState<AnswerResult | null>(null);
   const [stats, setStats] = useState({ correct: 0, total: 0 });
   const [error, setError] = useState<string | null>(null);
+  const [custom, setCustom] = useState("");
 
   const fetchNext = useCallback(
     async (currentRating: number, seen: string[]) => {
@@ -135,18 +139,49 @@ export default function PracticeSession({
         <p className="text-slate-600">
           How hard should we start? Your rating will adapt from here.
         </p>
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
           {PRESETS.map((p) => (
             <button
               key={p.key}
               onClick={() => startWithRating(p.rating)}
-              className="rounded-md border border-slate-300 px-4 py-3 hover:border-indigo-500 hover:bg-indigo-50"
+              className="rounded-md border border-slate-300 px-3 py-3 hover:border-indigo-500 hover:bg-indigo-50"
             >
-              <div className="font-semibold">{p.label}</div>
+              <div className="font-semibold text-sm">{p.label}</div>
               <div className="text-xs text-slate-500">start ~{p.rating}</div>
             </button>
           ))}
         </div>
+
+        {/* Custom starting rating — any value in the full range. */}
+        <div className="flex items-end gap-2 pt-1">
+          <label className="flex-1">
+            <span className="block text-xs text-slate-500 mb-1">
+              Or enter a starting rating ({RATING_MIN}–{RATING_MAX})
+            </span>
+            <input
+              type="number"
+              min={RATING_MIN}
+              max={RATING_MAX}
+              value={custom}
+              onChange={(e) => setCustom(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && custom.trim()) {
+                  startWithRating(clampRating(Math.round(Number(custom))));
+                }
+              }}
+              placeholder="e.g. 1450"
+              className="w-full rounded-md border border-slate-300 px-3 py-2 focus:border-indigo-500 focus:outline-none"
+            />
+          </label>
+          <button
+            disabled={!custom.trim() || Number.isNaN(Number(custom))}
+            onClick={() => startWithRating(clampRating(Math.round(Number(custom))))}
+            className="rounded-md bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700 disabled:opacity-50"
+          >
+            Start
+          </button>
+        </div>
+
         {!isAuthed && (
           <p className="text-xs text-amber-600">
             You&apos;re practicing as a guest — your rating won&apos;t be saved.

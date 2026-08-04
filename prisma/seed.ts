@@ -31,6 +31,8 @@ const SUBTOPICS = [
   { name: "Modular Arithmetic & Remainders", slug: "nt-modular" },
   { name: "Units Digits & Cycles", slug: "nt-units-digits" },
   { name: "Factorials & Trailing Zeros", slug: "nt-factorials" },
+  { name: "Digits & Number Bases", slug: "nt-digits-bases" },
+  { name: "Terminating & Repeating Decimals", slug: "nt-decimals" },
 ];
 
 /**

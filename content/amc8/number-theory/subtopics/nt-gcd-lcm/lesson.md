@@ -1,62 +1,71 @@
 # GCD & LCM
 
-The tiers move from reading gcd/lcm off factorizations to the coprime decomposition
-$a=gx,\,b=gy$ and counting pairs by prime exponents.
+The tiers move from reading GCD/LCM off factorizations, to the product identity,
+to multi-step problems that chain these ideas together.
 
 <!--band:t1-->
 ## Tier 1 · AMC 8 Intro
 
-From the factorizations, take the **lower** prime powers for the gcd and the
-**higher** ones for the lcm.
+From the factorizations, take the **lower** prime powers for the GCD and the
+**higher** ones for the LCM.
 
-- **gcd** = "largest equal pieces" (cutting $48$ and $60$ ribbons → $12$ cm).
-- **lcm** = "events coinciding" (lights every $8$ and $12$ s → together every $24$ s).
+- **GCD** = "largest equal pieces" (cutting ribbons of $48$ and $60$ cm → $12$ cm pieces).
+- **LCM** = "events coinciding" (lights every $8$ s and $12$ s → together every $24$ s).
 
-The **least common multiple of several numbers** takes the highest power of each
-prime across all of them: $\operatorname{lcm}(6,9,15) = 90$.
+The LCM of several numbers takes the highest power of each prime across all of them:
+$\operatorname{lcm}(6, 9, 15) = 2\cdot 3^2\cdot 5 = 90$.
 
 <!--band:t2-->
 ## Tier 2 · AMC 8 Developing
 
 **The key identity:**
-$$ \gcd(a,b)\cdot\operatorname{lcm}(a,b) = a\cdot b \;\Rightarrow\; \operatorname{lcm} = \frac{a\,b}{\gcd}. $$
-A product of $96$ with $\gcd 4$ gives $\operatorname{lcm} = 24$.
+$$ \gcd(a,b)\cdot\operatorname{lcm}(a,b) = a\cdot b. $$
+If the product is $96$ and $\gcd = 4$, then $\operatorname{lcm} = 96/4 = 24$.
 
-The largest $k$-digit multiple of $m$ is $\left\lfloor \frac{10^k-1}{m}\right\rfloor\cdot m$
-— e.g. the largest three-digit multiple of $\operatorname{lcm}(3,4,5)=60$ is $960$.
+**Largest multiple in range.** The largest $k$-digit multiple of $m$ is
+$\left\lfloor\frac{10^k-1}{m}\right\rfloor\cdot m$.
+
+**Finding a missing number.** Given $\gcd = g$, $\operatorname{lcm} = L$, and one
+number $a$, the other is $\dfrac{gL}{a}$.
 
 <!--band:t3-->
 ## Tier 3 · AMC 8 Proficient
 
-**Find a missing number** with the identity: if $\gcd=g$, $\operatorname{lcm}=L$,
-and one number is $a$, the other is $\dfrac{gL}{a}$.
+**GCD of large numbers.** Use the Euclidean algorithm: repeatedly replace the larger
+number with its remainder mod the smaller.
+$\gcd(720, 1008)$: $1008 = 1\cdot 720 + 288$, $720 = 2\cdot 288 + 144$,
+$288 = 2\cdot 144$, so $\gcd = 144$.
 
-**Coprime counting** uses Euler's totient: integers in $[1,100]$ relatively prime to
-$100$ number $\varphi(100) = 40$.
+**Sum of an arithmetic sequence.** When you need the sum of all multiples of $d$
+from $1$ to $N$, they form an arithmetic sequence with $\lfloor N/d\rfloor$ terms;
+use the average-times-count formula.
 
-**Conditioned gcd.** To count $n$ with $\gcd(n,m)=d$, write $n = d\,k$ where $k$
-ranges over values with $\gcd(k,\,m/d)=1$.
+**Checking GCF with a condition.** "The GCF of $a$ and $b$ that is a perfect
+square" — compute the GCF, then find its largest square factor.
 
 <!--band:t4-->
 ## Tier 4 · AMC 8 Advanced
 
-**Coprime decomposition.** Write $a = g\,x$, $b = g\,y$ with $g=\gcd(a,b)$ and
-$\gcd(x,y)=1$; then $\operatorname{lcm}=g\,x\,y$ and the problem becomes one about the
-coprime pair $(x,y)$.
+**LCM from three or more numbers.** For each prime, take the highest exponent
+appearing in any of the numbers. Then verify divisibility separately.
 
-- **Coprime ordered pairs with product $m$:** each prime power goes wholly to one
-  side, so there are $2^{\omega(m)}$ of them. For $ab=2025 = 3^4 5^2$: $2^2 = 4$.
-- **Sum of coprime residues:** integers $\le n$ coprime to $n$ pair as
-  $k\leftrightarrow n-k$, summing to $\tfrac n2\,\varphi(n)$.
+**Chain the product identity.** In multi-step problems, set up equations using
+$\gcd\cdot\operatorname{lcm} = $ product and solve for the unknown. If two
+conditions are given (e.g. GCD and LCM both fixed), list divisors of the LCM that
+also divide the GCD correctly.
+
+**Periodic problems.** If two events repeat every $a$ and $b$ steps, they coincide
+every $\operatorname{lcm}(a,b)$ steps. To count coincidences in a range, divide the
+range length by the LCM.
 
 <!--band:t5-->
 ## Tier 5 · AMC 8 Expert
 
-**Counting pairs by prime exponents.**
+**Building from GCD structure.** Write $a = g\cdot x$ and $b = g\cdot y$ where
+$g = \gcd(a,b)$. Then $\gcd(x,y) = 1$, and $\operatorname{lcm}(a,b) = g\cdot x\cdot y$.
+This lets you translate a GCD/LCM condition into a product condition on coprime
+numbers — useful for finding all valid pairs by listing factor pairs of $L/g$.
 
-- **Ordered pairs with $\operatorname{lcm}=L=\prod p^{a}$:** each prime chooses
-  independently, giving $\prod(2a+1)$. For $360$: $7\cdot 5\cdot 3 = 105$.
-- **gcd $=g$, lcm $=L$:** apply the coprime idea to $L/g$, giving $2^{\omega(L/g)}$.
-  With $L=1260$, $g=6$: $L/g = 210 = 2\cdot3\cdot5\cdot7$, so $2^4 = 16$ ordered pairs.
-
-These all reduce to the same move — decide, prime by prime, where each factor goes.
+**Combining with divisibility.** The hardest AMC 8 GCD/LCM problems layer a
+GCD/LCM condition with a divisibility or size constraint. Factorize everything first,
+then apply the constraints one at a time.

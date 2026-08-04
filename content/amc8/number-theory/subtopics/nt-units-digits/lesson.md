@@ -1,57 +1,76 @@
 # Units Digits & Cycles
 
-A units digit is a value mod $10$; the last two digits, mod $100$. The tiers grow
-from reading cycles to exponent reduction and, at the top, orders, CRT, and power
-towers.
+A units digit is a remainder mod $10$. The tiers grow from reading basic cycles to
+applying them to large exponents, sums, products, and differences.
 
 <!--band:t1-->
 ## Tier 1 · AMC 8 Intro
 
 The units digit of a product is the product of the units digits, mod $10$:
-$13\times 27\times 35 \to 3\cdot 7\cdot 5 = 105 \to 5$.
+$13 \times 27 \to 3\times 7 = 21 \to 1$.
 
-**Power cycles** repeat in short patterns — $2{:}\,2,4,8,6$; $3{:}\,3,9,7,1$;
-$7{:}\,7,9,3,1$; $9{:}\,9,1$. So $7^4$ ends in $1$, and $9^{2024}$ (even exponent)
-ends in $1$.
+**Power cycles** repeat in short patterns:
+
+| base units digit | cycle | length |
+|---|---|---|
+| $2$ | $2, 4, 8, 6$ | $4$ |
+| $3$ | $3, 9, 7, 1$ | $4$ |
+| $7$ | $7, 9, 3, 1$ | $4$ |
+| $9$ | $9, 1$ | $2$ |
+| $4$ | $4, 6$ | $2$ |
+| $5, 6$ | $5, 6$ | $1$ |
+
+So $7^4$ ends in $1$, and $9^{2024}$ (even exponent) ends in $1$.
 
 <!--band:t2-->
 ## Tier 2 · AMC 8 Developing
 
-To read any power's units digit, find the cycle of its **base's** units digit, then
-locate the exponent's position within that cycle. Every cycle here has length $1$,
-$2$, or $4$, so you only ever need the exponent modulo $4$. Internalize the four
-cycles above — the next tiers are just this idea applied to huge exponents.
+To find the units digit of $a^e$:
+1. Only the **units digit of the base** matters: $17^{83}$ behaves like $7^{83}$.
+2. Find the cycle length $c$ for that digit.
+3. Compute $e \bmod c$; that remainder tells you the position in the cycle.
+   If the remainder is $0$, use the *last* entry in the cycle.
+
+*Example:* $7^{2024}$. Cycle $7,9,3,1$ has length $4$; $2024 \bmod 4 = 0$, so the
+units digit is the $4$th entry: $\mathbf{1}$.
 
 <!--band:t3-->
 ## Tier 3 · AMC 8 Proficient
 
-Two habits handle large exponents:
+**Sums of powers.** Find each term's units digit separately, then add and take mod $10$.
 
-1. **Only the base's units digit matters:** $17^{83}$ behaves like $7^{83}$.
-2. **Reduce the exponent modulo the cycle length** (usually $4$): for $7^{2024}$,
-   $2024\equiv 0\pmod 4$, so the units digit is the last entry, $1$.
+*Example:* $2^{10} + 3^{10}$. $2^{10}$: $10 \bmod 4 = 2$, cycle entry $2$ is $4$.
+$3^{10}$: $10 \bmod 4 = 2$, cycle entry $2$ is $9$. Sum: $4+9 = 13 \to$ units digit $\mathbf{3}$.
 
-**Cyclic sums.** Adding consecutive powers, each full cycle of units digits
-contributes a fixed total: $3+9+7+1 = 20$, ending in $0$.
+**Products of powers.** Same — reduce each factor to its units digit, then multiply.
+
+**Tower exponents.** $(2^5)^3 = 2^{15}$. Simplify first, then apply the cycle.
 
 <!--band:t4-->
 ## Tier 4 · AMC 8 Advanced
 
-**The last two digits** mean working mod $100$, where cycles are longer. The order of
-$3$ mod $100$ is $20$, and $2024\equiv 4\pmod{20}$, so $3^{2024}\equiv 3^4 = 81$.
+**Differences of powers.** Find each units digit, subtract, and adjust for negatives:
+if the result is negative add $10$. *$8^8 - 7^7$: $8^8$ ends in $6$, $7^7$ ends in
+$3$; $6 - 3 = \mathbf{3}$.*
 
-**Long cyclic sums** still collapse: in $2^1 + 2^2 + \cdots + 2^{100}$ each block
-$2,4,8,6$ sums to units $0$, so the whole sum ends in $0$.
+**Cyclic sums of consecutive powers.** When adding $a^1 + a^2 + \cdots + a^n$, each
+full cycle contributes the same digit-sum total. Divide $n$ by the cycle length to
+count full cycles (units digit contribution $\equiv 0$ if the cycle sum ends in $0$),
+then handle the remaining terms.
+
+**Multi-base expressions.** Track each base separately through its own cycle, combine
+at the end.
 
 <!--band:t5-->
 ## Tier 5 · AMC 8 Expert
 
-**Last two digits via CRT.** Split mod $100$ into mod $4$ and mod $25$: for $2^{100}$,
-$\equiv 0\pmod 4$ and $\equiv 1\pmod{25}$ give $76$.
+**Large exponents in products and sums.** The same reduce-each-base approach works
+even when the exponents are in the thousands — the cycle lengths are always $1$, $2$,
+or $4$, so the exponent mod $4$ (or mod $2$ for bases $4$ and $9$) is all you ever need.
 
-**Power towers $a^{(b^c)}$.** Reduce the *exponent* $b^c$ modulo the cycle length (or
-order) of $a$. For $7^{(7^7)}$ mod $100$: the cycle length is $4$ and $7^7\equiv 3
-\pmod 4$, so the answer is $7^3\equiv 43$.
+**Choosing the right cycle entry.** The most common mistake is treating a remainder
+of $0$ as the "$0$th" entry instead of the last. If $e \equiv 0 \pmod{c}$, the
+units digit is the **last** entry in the cycle.
 
-**Sums of several powers** combine these: reduce each term, then add the units
-digits.
+**Check your answer.** Plug in a small exponent with the same remainder to verify —
+e.g. if $e \equiv 2 \pmod 4$, check that your answer matches $a^2$.

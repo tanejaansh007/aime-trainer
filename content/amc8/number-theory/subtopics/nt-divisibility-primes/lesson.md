@@ -1,8 +1,8 @@
 # Divisibility & Primes
 
-Five tiers, each tuned to your rating. Lower tiers cover the tests and counting you
-need first; higher tiers add inclusion–exclusion, Euler's totient, and constructive
-arguments. Switch tiers with the selector above.
+Five tiers across AMC 8 difficulty. Lower tiers cover divisibility tests and basic
+primality; higher tiers build to multi-condition counting and harder prime arguments.
+Switch tiers with the selector above.
 
 <!--band:t1-->
 ## Tier 1 · AMC 8 Intro
@@ -11,64 +11,66 @@ arguments. Switch tiers with the selector above.
 
 - **2:** last digit even. **5:** last digit $0$ or $5$.
 - **3 / 9:** the *digit sum* is divisible by $3$ / $9$.
+- **6:** divisible by **both** $2$ and $3$.
 
-**Primality.** A number $>1$ is prime if no smaller prime divides it; for a
-two-digit number you only need to test $2, 3, 5, 7$.
+**Primality.** A number $>1$ is prime if no smaller prime divides it. For a
+two-digit number you only need to test $2, 3, 5, 7$. Remember: $1$ is not prime.
 
-**Worked example.** The largest three-digit palindrome divisible by $6$ must be even
-*and* have a digit sum divisible by $3$. Testing downward, $888$ works
-($8{+}8{+}8 = 24$).
+**Worked example.** Is $91$ prime? Test $2$ (odd), $3$ (digit sum $10$, no), $5$
+(ends in $1$, no), $7$: $91 = 7\times 13$. Composite.
 
 <!--band:t2-->
 ## Tier 2 · AMC 8 Developing
 
-Add two more tests and start **counting**:
+Add two more tests and start **counting multiples**:
 
-- **4:** the last two digits form a multiple of $4$. **6:** divisible by both $2$
-  and $3$.
-- **Counting multiples:** the number of multiples of $d$ from $1$ to $N$ is
+- **4:** the last two digits form a multiple of $4$.
+- **Counting multiples:** the number of multiples of $d$ in $\{1,\dots,N\}$ is
   $\left\lfloor N/d\right\rfloor$.
 
-To count numbers with one property **but not** another, count the first and subtract
-the overlap. *Divisible by $4$ but not $6$ in $1$–$100$:* $25 - 8 = 17$ (the $8$ are
-multiples of $12$).
+**"But not" problems.** To count integers divisible by $a$ but **not** $b$, count
+multiples of $a$ then subtract those also divisible by $b$ (i.e. multiples of
+$\text{lcm}(a,b)$).
+
+*Example:* Multiples of $4$ but not $6$ in $\{1,\dots,100\}$: $25 - 8 = 17$.
 
 <!--band:t3-->
 ## Tier 3 · AMC 8 Proficient
 
-**Inclusion–exclusion** combines two divisibility conditions:
+**Inclusion–exclusion** — counting divisible by $a$ **or** $b$:
 $$ |A \cup B| = \left\lfloor \tfrac{N}{a}\right\rfloor + \left\lfloor \tfrac{N}{b}\right\rfloor - \left\lfloor \tfrac{N}{\operatorname{lcm}(a,b)}\right\rfloor. $$
 
-- **"Divisible by $a$ or $b$":** the formula above.
-- **"Neither":** $N - |A\cup B|$. *Below $1000$, neither $5$ nor $7$:*
-  $999 - (199 + 142 - 28) = 686$.
+- Divisible by $3$ or $5$ in $1$–$100$: $33 + 20 - 6 = 47$.
+- Divisible by **neither**: $N - |A\cup B|$.
 
-**Primes in a range.** Test each candidate; watch for patterns like the triplet
-$p,\,p+2,\,p+6$.
+**Primes in a range.** List and test; the primes between $10$ and $30$ are
+$11, 13, 17, 19, 23, 29$ — six of them.
 
 <!--band:t4-->
 ## Tier 4 · AMC 8 Advanced
 
-**Exactly one of two sets.** Remove the overlap (multiples of
-$\operatorname{lcm}(a,b)$) from *each* set:
-$$ \big(|A|-|A\cap B|\big) + \big(|B|-|A\cap B|\big). $$
-*Below $1000$, divisible by exactly one of $6$ and $10$:* with $33$ multiples of
-$30$, that's $(166-33)+(99-33) = 199$.
+**Exactly one of two sets.** Remove the overlap from each set separately:
+$$ \big(|A| - |A\cap B|\big) + \big(|B| - |A\cap B|\big). $$
 
-This same "count, then carefully remove overlaps" discipline scales to three or more
-conditions — just track every pairwise and triple lcm.
+**Three conditions.** Extend inclusion–exclusion to three sets:
+$$ |A\cup B\cup C| = |A|+|B|+|C| - |A\cap B| - |A\cap C| - |B\cap C| + |A\cap B\cap C|. $$
+Each pairwise and triple overlap is a floor-of-$N$ over the relevant lcm.
+
+**Sum of primes** in a range: after listing them, add. Watch for the special case
+$2$ — it is the only even prime and may satisfy an extra condition others don't.
 
 <!--band:t5-->
 ## Tier 5 · AMC 8 Expert
 
-**Euler's totient $\varphi(n)$** counts integers in $[1,n]$ sharing no factor $>1$
-with $n$:
-$$ \varphi(n) = n\prod_{p \mid n}\left(1 - \tfrac1p\right),\qquad \varphi(2024)=2024\cdot\tfrac12\cdot\tfrac{10}{11}\cdot\tfrac{22}{23}=880. $$
+**Digit-sum divisibility extended.** A number is divisible by $9$ iff its digit sum
+is; for divisibility by $11$ the *alternating* digit sum must be divisible by $11$.
+Use these to build or identify numbers with prescribed divisibility from digit
+constraints alone.
 
-**Constructive digit arguments.** Since divisibility by $9$ depends only on the
-digit sum, the smallest number built from a limited digit set (only $0$s and $8$s)
-divisible by $18$ needs just enough $8$s for the digit sum to reach a multiple of
-$9$ — nine of them, giving $888888888$.
+**Prime gaps and twin primes.** Among larger primes, the only even prime is $2$, so
+any prime pair summing to an even number must include $2$ (if the sum is odd, one of
+them is $2$). This forces the other to equal the sum minus $2$.
 
-**Refactorable numbers** are divisible by their own divisor count $d(n)$ — combine
-the divisor-count formula with a divisibility check.
+**Combining conditions.** Hard AMC 8 divisibility problems layer a divisibility
+condition with a size bound or a digit property — work each constraint separately,
+then intersect. Listing systematically beats guessing.

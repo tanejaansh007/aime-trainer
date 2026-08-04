@@ -17,6 +17,14 @@
   },
   {
     "type": "SHORT_ANSWER",
+    "statement": "Alan and Becca start at the same point on a circular track and run in the same direction. Alan completes a lap every $4$ minutes and Becca every $6$ minutes. After how many minutes will they first both be back at the starting point at the same time?",
+    "answer": "12",
+    "solution": "They are both at the start whenever the elapsed time is a multiple of both $4$ and $6$. The least such time is $\\text{lcm}(4, 6) = 12$ minutes. (At that point Alan has completed $3$ laps and Becca $2$ laps.)",
+    "rating": 720,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
     "statement": "What is the least common multiple of $12$ and $18$?",
     "answer": "36",
     "solution": "$12 = 2^2 \\cdot 3$ and $18 = 2 \\cdot 3^2$. The least common multiple takes the larger exponent for each prime: $2^2 \\cdot 3^2 = 36$.",
@@ -27,8 +35,24 @@
     "type": "SHORT_ANSWER",
     "statement": "Two bells ring together at noon. One rings every $8$ minutes and the other every $12$ minutes. After how many minutes will they next ring together?",
     "answer": "24",
-    "solution": "They ring together again at the least common multiple of their intervals. $8 = 2^3$ and $12 = 2^2 \\cdot 3$, so the least common multiple is $2^3 \\cdot 3 = 24$ minutes.",
+    "solution": "$8 = 2^3$ and $12 = 2^2 \\cdot 3$. The least common multiple is $2^3 \\cdot 3 = 24$, so the bells next ring together after $24$ minutes.",
     "rating": 760,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Three buses depart from a station at the same time. Bus A returns to the station every $15$ minutes, Bus B every $20$ minutes, and Bus C every $30$ minutes. After how many minutes will all three buses first be at the station at the same time?",
+    "answer": "60",
+    "solution": "$15 = 3 \\cdot 5$, $20 = 2^2 \\cdot 5$, $30 = 2 \\cdot 3 \\cdot 5$. The least common multiple is $2^2 \\cdot 3 \\cdot 5 = 60$ minutes.",
+    "rating": 770,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The greatest common factor of two positive integers is $8$ and their product is $384$. What is their least common multiple?",
+    "answer": "48",
+    "solution": "For any two positive integers, the product of their greatest common factor and their least common multiple equals their product: $\\gcd \\times \\text{lcm} = a \\times b$. So $8 \\times \\text{lcm} = 384$, giving $\\text{lcm} = 48$.",
+    "rating": 790,
     "source": "AMC 8 · GCD & LCM"
   },
   {
@@ -41,10 +65,34 @@
   },
   {
     "type": "SHORT_ANSWER",
+    "statement": "A red light flashes every $9$ seconds and a blue light flashes every $12$ seconds. Starting from a moment when both flash together, how many seconds until they next flash simultaneously?",
+    "answer": "36",
+    "solution": "$9 = 3^2$ and $12 = 2^2 \\cdot 3$. The least common multiple is $2^2 \\cdot 3^2 = 36$ seconds.",
+    "rating": 810,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The least common multiple of two positive integers is $120$ and their product is $720$. What is their greatest common factor?",
+    "answer": "6",
+    "solution": "For any two positive integers, $\\gcd \\times \\text{lcm} = a \\times b$. So $\\gcd \\times 120 = 720$, giving $\\gcd = 6$.",
+    "rating": 840,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
     "statement": "The greatest common factor of two positive integers is $12$ and their least common multiple is $180$. If one of the integers is $36$, what is the other?",
     "answer": "60",
     "solution": "For any two positive integers, their product equals the product of their greatest common factor and least common multiple: $36 \\times b = 12 \\times 180 = 2160$, so $b = 60$.",
     "rating": 850,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Alan runs one lap around a track every $5$ minutes and Becca runs one lap every $8$ minutes. They start together at the starting line. After how many minutes will they first both be at the starting line at the same time?",
+    "answer": "40",
+    "solution": "They return to the start together at multiples of both $5$ and $8$. Since $\\gcd(5,8) = 1$, the least common multiple is $5 \\times 8 = 40$ minutes. At that point Alan has completed $8$ laps and Becca $5$ laps.",
+    "rating": 860,
     "source": "AMC 8 · GCD & LCM"
   },
   {
@@ -57,6 +105,14 @@
   },
   {
     "type": "SHORT_ANSWER",
+    "statement": "Two positive integers have greatest common factor $6$ and least common multiple $180$. What is their product?",
+    "answer": "1080",
+    "solution": "For any two positive integers, $\\gcd \\times \\text{lcm} = a \\times b$. So the product is $6 \\times 180 = 1080$.",
+    "rating": 895,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
     "statement": "What is the greatest common factor of $720$ and $1008$?",
     "answer": "144",
     "solution": "$720 = 2^4 \\cdot 3^2 \\cdot 5$ and $1008 = 2^4 \\cdot 3^2 \\cdot 7$. The greatest common factor takes the smaller exponent for each shared prime: $2^4 \\cdot 3^2 = 144$.",
@@ -65,10 +121,26 @@
   },
   {
     "type": "SHORT_ANSWER",
+    "statement": "Clocks A, B, and C chime every $6$, $10$, and $15$ minutes, respectively. If all three chime together right now, after how many minutes will they all chime together again?",
+    "answer": "30",
+    "solution": "$6 = 2 \\cdot 3$, $10 = 2 \\cdot 5$, $15 = 3 \\cdot 5$. The least common multiple is $2 \\cdot 3 \\cdot 5 = 30$ minutes.",
+    "rating": 920,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
     "statement": "What is the least common multiple of $2^3 \\times 3 \\times 5$ and $2 \\times 3^2 \\times 7$?",
     "answer": "2520",
     "solution": "The least common multiple takes the larger exponent for each prime across both numbers: $2^3 \\cdot 3^2 \\cdot 5 \\cdot 7 = 8 \\cdot 9 \\cdot 5 \\cdot 7 = 2520$.",
     "rating": 940,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The product of two positive integers is $2016$ and their greatest common factor is $12$. What is their least common multiple?",
+    "answer": "168",
+    "solution": "For any two positive integers, $\\gcd \\times \\text{lcm} = a \\times b$. So $12 \\times \\text{lcm} = 2016$, giving $\\text{lcm} = 168$.",
+    "rating": 945,
     "source": "AMC 8 · GCD & LCM"
   },
   {
@@ -89,10 +161,34 @@
   },
   {
     "type": "SHORT_ANSWER",
+    "statement": "Two positive integers have least common multiple $252$ and greatest common factor $6$. If one of the integers is $42$, what is the other?",
+    "answer": "36",
+    "solution": "Using $\\gcd \\times \\text{lcm} = a \\times b$: $6 \\times 252 = 42 \\times b$, so $b = 1512 / 42 = 36$. (Check: $\\gcd(42, 36) = 6$ and $\\text{lcm}(42, 36) = 252$.)",
+    "rating": 1010,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
     "statement": "Let $x$ be the least positive integer with exactly $8$ positive divisors, and let $y$ be the least perfect square divisible by $6$. What is the greatest common divisor of $x$ and $y$?",
     "answer": "12",
     "solution": "For $x$: a number with $8$ divisors has form $p^7$, $p^3 \\cdot q$, or $p \\cdot q \\cdot r$. The smallest is $p^3 \\cdot q = 2^3 \\cdot 3 = 24$. For $y$: a perfect square divisible by $6 = 2 \\cdot 3$ needs each prime with an even exponent of at least $1$, giving $2^2 \\cdot 3^2 = 36$. Then $\\gcd(24, 36) = 2^2 \\cdot 3 = 12$.",
     "rating": 1050,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The product of two positive integers is $504$ and their least common multiple is $252$. How many ordered pairs $(m, n)$ of positive integers satisfy this?",
+    "answer": "8",
+    "solution": "Using $\\gcd \\times \\text{lcm} = m \\times n$: $\\gcd = 504 / 252 = 2$. Then $252 / 2 = 126 = 2 \\cdot 3^2 \\cdot 7$, which has $3$ distinct prime factors. Each prime's full power must go entirely to $m$ or to $n$ (two independent choices), giving $2^3 = 8$ ordered pairs.",
+    "rating": 1075,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The sum of two positive integers is $33$ and their greatest common factor is $3$. What is the least possible value of their least common multiple?",
+    "answer": "30",
+    "solution": "Write the integers as $3a$ and $3b$ with $\\gcd(a, b) = 1$ and $3a + 3b = 33$, so $a + b = 11$. Then $\\text{lcm}(3a, 3b) = 3ab$ (since $\\gcd(a,b)=1$). To minimize $3ab$, minimize $ab$ subject to $a + b = 11$ and $\\gcd(a, b) = 1$. The pair $(a, b) = (1, 10)$ gives $ab = 10$, the smallest possible. So the minimum least common multiple is $3 \\times 10 = 30$, achieved by the integers $3$ and $30$.",
+    "rating": 1110,
     "source": "AMC 8 · GCD & LCM"
   },
   {

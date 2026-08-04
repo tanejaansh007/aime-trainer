@@ -1,1 +1,114 @@
-[]
+[
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the greatest common factor of $24$ and $36$?",
+    "answer": "12",
+    "solution": "$24 = 2^3 \\cdot 3$ and $36 = 2^2 \\cdot 3^2$. The greatest common factor takes the smaller exponent for each shared prime: $2^2 \\cdot 3 = 12$.",
+    "rating": 650,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the least common multiple of $4$ and $6$?",
+    "answer": "12",
+    "solution": "$4 = 2^2$ and $6 = 2 \\cdot 3$. The least common multiple takes the larger exponent for each prime: $2^2 \\cdot 3 = 12$.",
+    "rating": 680,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the least common multiple of $12$ and $18$?",
+    "answer": "36",
+    "solution": "$12 = 2^2 \\cdot 3$ and $18 = 2 \\cdot 3^2$. The least common multiple takes the larger exponent for each prime: $2^2 \\cdot 3^2 = 36$.",
+    "rating": 730,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Two bells ring together at noon. One rings every $8$ minutes and the other every $12$ minutes. After how many minutes will they next ring together?",
+    "answer": "24",
+    "solution": "They ring together again at the least common multiple of their intervals. $8 = 2^3$ and $12 = 2^2 \\cdot 3$, so the least common multiple is $2^3 \\cdot 3 = 24$ minutes.",
+    "rating": 760,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the least common multiple of $8$, $12$, and $18$?",
+    "answer": "72",
+    "solution": "$8 = 2^3$, $12 = 2^2 \\cdot 3$, $18 = 2 \\cdot 3^2$. The least common multiple takes the largest exponent for each prime: $2^3 \\cdot 3^2 = 8 \\cdot 9 = 72$.",
+    "rating": 800,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The greatest common factor of two positive integers is $12$ and their least common multiple is $180$. If one of the integers is $36$, what is the other?",
+    "answer": "60",
+    "solution": "For any two positive integers, their product equals the product of their greatest common factor and least common multiple: $36 \\times b = 12 \\times 180 = 2160$, so $b = 60$.",
+    "rating": 850,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the greatest common divisor of $2^3 \\times 3^2 \\times 5$ and $2^2 \\times 3 \\times 5^2 \\times 7$?",
+    "answer": "60",
+    "solution": "The greatest common divisor takes the smaller exponent for each shared prime: $2^{\\min(3,2)} \\cdot 3^{\\min(2,1)} \\cdot 5^{\\min(1,2)} = 2^2 \\cdot 3 \\cdot 5 = 60$. The prime $7$ appears in only one number, so it contributes nothing.",
+    "rating": 880,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the greatest common factor of $720$ and $1008$?",
+    "answer": "144",
+    "solution": "$720 = 2^4 \\cdot 3^2 \\cdot 5$ and $1008 = 2^4 \\cdot 3^2 \\cdot 7$. The greatest common factor takes the smaller exponent for each shared prime: $2^4 \\cdot 3^2 = 144$.",
+    "rating": 900,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the least common multiple of $2^3 \\times 3 \\times 5$ and $2 \\times 3^2 \\times 7$?",
+    "answer": "2520",
+    "solution": "The least common multiple takes the larger exponent for each prime across both numbers: $2^3 \\cdot 3^2 \\cdot 5 \\cdot 7 = 8 \\cdot 9 \\cdot 5 \\cdot 7 = 2520$.",
+    "rating": 940,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The least common multiple of two positive integers is $60$ and their greatest common factor is $4$. How many ordered pairs of positive integers $(x, y)$ satisfy this?",
+    "answer": "4",
+    "solution": "Dividing: $60 / 4 = 15 = 3 \\cdot 5$. For each prime factor of this quotient, its full power belongs to exactly one of $x$ or $y$ — two independent binary choices. With $2$ such primes, there are $2^2 = 4$ ordered pairs: $(4, 60),\\ (12, 20),\\ (20, 12),\\ (60, 4)$.",
+    "rating": 975,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The prime factorization of $x$ is $2^3 \\times 3^2$ and the prime factorization of $y$ is $2^2 \\times 3^4 \\times 5$. How many positive integer factors do $x$ and $y$ share?",
+    "answer": "9",
+    "solution": "A factor is shared by both $x$ and $y$ exactly when it divides their greatest common divisor. $\\gcd(x, y) = 2^{\\min(3,2)} \\cdot 3^{\\min(2,4)} = 2^2 \\cdot 3^2 = 36$, which has $(2+1)(2+1) = 9$ positive divisors.",
+    "rating": 1000,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Let $x$ be the least positive integer with exactly $8$ positive divisors, and let $y$ be the least perfect square divisible by $6$. What is the greatest common divisor of $x$ and $y$?",
+    "answer": "12",
+    "solution": "For $x$: a number with $8$ divisors has form $p^7$, $p^3 \\cdot q$, or $p \\cdot q \\cdot r$. The smallest is $p^3 \\cdot q = 2^3 \\cdot 3 = 24$. For $y$: a perfect square divisible by $6 = 2 \\cdot 3$ needs each prime with an even exponent of at least $1$, giving $2^2 \\cdot 3^2 = 36$. Then $\\gcd(24, 36) = 2^2 \\cdot 3 = 12$.",
+    "rating": 1050,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the greatest common factor of $900$ and $1008$ that is itself a perfect square?",
+    "answer": "36",
+    "solution": "$900 = 2^2 \\cdot 3^2 \\cdot 5^2$ and $1008 = 2^4 \\cdot 3^2 \\cdot 7$. Their greatest common factor is $\\gcd(900, 1008) = 2^2 \\cdot 3^2 = 36 = 6^2$, which is already a perfect square.",
+    "rating": 1150,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many ordered pairs of positive integers $(x, y)$ have greatest common divisor $15$ and least common multiple $10800$?",
+    "answer": "8",
+    "solution": "Dividing the least common multiple by the greatest common divisor: $10800 / 15 = 720 = 2^4 \\cdot 3^2 \\cdot 5$. For each of the $3$ prime factors in this quotient, its full power goes entirely to $x$ or entirely to $y$ (two independent choices), giving $2^3 = 8$ ordered pairs.",
+    "rating": 1200,
+    "source": "AMC 8 · GCD & LCM"
+  }
+]

@@ -9,7 +9,7 @@ export default async function Header() {
     <header className="border-b border-slate-200 bg-white">
       <div className="max-w-3xl mx-auto px-4 h-14 flex items-center justify-between">
         <Link href="/" className="font-bold text-slate-900">
-          AIME<span className="text-indigo-600">Trainer</span>
+          AMC<span className="text-indigo-600">Trainer</span>
         </Link>
         <nav className="flex items-center gap-4 text-sm">
           <Link href="/review" className="text-slate-600 hover:text-slate-900">

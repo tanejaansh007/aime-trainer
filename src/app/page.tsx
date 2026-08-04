@@ -41,11 +41,11 @@ export default async function Home({
     <div className="space-y-8">
       <section className="text-center space-y-4">
         <h1 className="text-3xl font-bold tracking-tight">
-          Train for AMC &amp; AIME with adaptive practice
+          AMC 8 prep that adapts to you
         </h1>
         <p className="text-slate-600 max-w-xl mx-auto">
-          Pick a subject and topic, read a lesson at your level, then solve problems
-          whose difficulty auto-adjusts to a per-subject ELO rating.
+          Pick a topic, read a lesson pitched at your level, then solve problems
+          whose difficulty auto-adjusts to your rating as you go.
         </p>
         {!session?.user && (
           <div className="flex items-center justify-center gap-3">

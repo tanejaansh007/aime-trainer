@@ -1,9 +1,9 @@
-# AIME Trainer — Adaptive Math Practice (MVP)
+# AMC 8 Trainer — Adaptive Math Practice (MVP)
 
-Train for math competitions (AMC 8 / AMC 10 / AIME). Pick a topic, read a short
-lesson, then solve problems whose difficulty auto-adjusts to a per-subject **ELO
-rating**. Logged-in users get saved ratings, attempt history, and custom review
-tests; guests get the same loop with no persistence.
+Train for AMC 8. Pick a topic, read a short lesson, then solve problems whose
+difficulty auto-adjusts to a per-subject **ELO rating**. Logged-in users get saved
+ratings, attempt history, and custom review tests; guests get the same loop with no
+persistence.
 
 This MVP ships one topic end-to-end: **AMC 8 → Number Theory** (64 problems, rating
 700–1700).
@@ -70,5 +70,6 @@ src/app/                      / (browser), learn/[slug], practice/[slug], review
 
 ## Out of scope (MVP)
 
-Full AMC 8/10/AIME curriculum, live AI generation, OAuth, spaced repetition,
-leaderboards, and deploy automation — deferred until the single-topic loop is proven.
+Full AMC 8 curriculum beyond Number Theory, live AI generation, OAuth, spaced
+repetition, leaderboards, and deploy automation — deferred until the single-topic loop
+is proven.

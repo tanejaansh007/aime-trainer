@@ -8,7 +8,7 @@ factor counting.
 ## Tier 1 · AMC 8 Intro
 
 **Factor first.** Write $n$ as a product of primes:
-$60 = 2^2\cdot 3\cdot 5$, $\ 588 = 2^2\cdot 3\cdot 7^2$.
+$60 = 2^2\cdot 3\cdot 5$, $588 = 2^2\cdot 3\cdot 7^2$.
 
 **Divisors come in pairs** that multiply to $n$. List them for small numbers:
 $36$ has divisors $1, 2, 3, 4, 6, 9, 12, 18, 36$ — nine divisors.

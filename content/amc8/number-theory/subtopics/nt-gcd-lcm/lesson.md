@@ -4,7 +4,7 @@ The tiers move from reading gcd/lcm off factorizations to the coprime decomposit
 $a=gx,\,b=gy$ and counting pairs by prime exponents.
 
 <!--band:t1-->
-## Tier 1 · AMC 8 basics
+## Tier 1 · AMC 8 Intro
 
 From the factorizations, take the **lower** prime powers for the gcd and the
 **higher** ones for the lcm.
@@ -16,7 +16,7 @@ The **least common multiple of several numbers** takes the highest power of each
 prime across all of them: $\operatorname{lcm}(6,9,15) = 90$.
 
 <!--band:t2-->
-## Tier 2 · AMC 8
+## Tier 2 · AMC 8 Developing
 
 **The key identity:**
 $$ \gcd(a,b)\cdot\operatorname{lcm}(a,b) = a\cdot b \;\Rightarrow\; \operatorname{lcm} = \frac{a\,b}{\gcd}. $$
@@ -26,7 +26,7 @@ The largest $k$-digit multiple of $m$ is $\left\lfloor \frac{10^k-1}{m}\right\rf
 — e.g. the largest three-digit multiple of $\operatorname{lcm}(3,4,5)=60$ is $960$.
 
 <!--band:t3-->
-## Tier 3 · AMC 10
+## Tier 3 · AMC 8 Proficient
 
 **Find a missing number** with the identity: if $\gcd=g$, $\operatorname{lcm}=L$,
 and one number is $a$, the other is $\dfrac{gL}{a}$.
@@ -38,7 +38,7 @@ $100$ number $\varphi(100) = 40$.
 ranges over values with $\gcd(k,\,m/d)=1$.
 
 <!--band:t4-->
-## Tier 4 · AMC 10 / early AIME
+## Tier 4 · AMC 8 Advanced
 
 **Coprime decomposition.** Write $a = g\,x$, $b = g\,y$ with $g=\gcd(a,b)$ and
 $\gcd(x,y)=1$; then $\operatorname{lcm}=g\,x\,y$ and the problem becomes one about the
@@ -50,7 +50,7 @@ coprime pair $(x,y)$.
   $k\leftrightarrow n-k$, summing to $\tfrac n2\,\varphi(n)$.
 
 <!--band:t5-->
-## Tier 5 · AIME
+## Tier 5 · AMC 8 Expert
 
 **Counting pairs by prime exponents.**
 

@@ -5,7 +5,7 @@ from reading cycles to exponent reduction and, at the top, orders, CRT, and powe
 towers.
 
 <!--band:t1-->
-## Tier 1 · AMC 8 basics
+## Tier 1 · AMC 8 Intro
 
 The units digit of a product is the product of the units digits, mod $10$:
 $13\times 27\times 35 \to 3\cdot 7\cdot 5 = 105 \to 5$.
@@ -15,7 +15,7 @@ $7{:}\,7,9,3,1$; $9{:}\,9,1$. So $7^4$ ends in $1$, and $9^{2024}$ (even exponen
 ends in $1$.
 
 <!--band:t2-->
-## Tier 2 · AMC 8 → AMC 10 bridge
+## Tier 2 · AMC 8 Developing
 
 To read any power's units digit, find the cycle of its **base's** units digit, then
 locate the exponent's position within that cycle. Every cycle here has length $1$,
@@ -23,7 +23,7 @@ $2$, or $4$, so you only ever need the exponent modulo $4$. Internalize the four
 cycles above — the next tiers are just this idea applied to huge exponents.
 
 <!--band:t3-->
-## Tier 3 · AMC 10
+## Tier 3 · AMC 8 Proficient
 
 Two habits handle large exponents:
 
@@ -35,7 +35,7 @@ Two habits handle large exponents:
 contributes a fixed total: $3+9+7+1 = 20$, ending in $0$.
 
 <!--band:t4-->
-## Tier 4 · AMC 10 / early AIME
+## Tier 4 · AMC 8 Advanced
 
 **The last two digits** mean working mod $100$, where cycles are longer. The order of
 $3$ mod $100$ is $20$, and $2024\equiv 4\pmod{20}$, so $3^{2024}\equiv 3^4 = 81$.
@@ -44,7 +44,7 @@ $3$ mod $100$ is $20$, and $2024\equiv 4\pmod{20}$, so $3^{2024}\equiv 3^4 = 81$
 $2,4,8,6$ sums to units $0$, so the whole sum ends in $0$.
 
 <!--band:t5-->
-## Tier 5 · AIME
+## Tier 5 · AMC 8 Expert
 
 **Last two digits via CRT.** Split mod $100$ into mod $4$ and mod $25$: for $2^{100}$,
 $\equiv 0\pmod 4$ and $\equiv 1\pmod{25}$ give $76$.

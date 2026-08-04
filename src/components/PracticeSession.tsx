@@ -5,12 +5,13 @@ import Markdown from "@/components/Markdown";
 import type { PublicProblem } from "@/lib/problemDTO";
 import { RATING_MIN, RATING_MAX, clampRating } from "@/lib/elo";
 
+// Starting-rating presets aligned to AMC 8 difficulty bands.
 const PRESETS = [
-  { key: "beginner", label: "Beginner", rating: 600 },
-  { key: "easy", label: "Easy", rating: 900 },
-  { key: "medium", label: "Medium", rating: 1200 },
-  { key: "hard", label: "Hard", rating: 1600 },
-  { key: "expert", label: "Expert", rating: 2000 },
+  { key: "intro",     label: "Intro",     rating: 620,  sub: "AMC 8 #1–5"   },
+  { key: "easy",      label: "Easy",      rating: 780,  sub: "AMC 8 #6–12"  },
+  { key: "medium",    label: "Medium",    rating: 960,  sub: "AMC 8 #13–18" },
+  { key: "hard",      label: "Hard",      rating: 1100, sub: "AMC 8 #19–22" },
+  { key: "challenge", label: "Challenge", rating: 1220, sub: "AMC 8 #23–25" },
 ] as const;
 
 interface AnswerResult {
@@ -23,12 +24,13 @@ interface AnswerResult {
   persisted: boolean;
 }
 
-/** Label a problem rating as an approximate difficulty for display. */
+/** Label a problem rating within the AMC 8 difficulty range. */
 function difficultyLabel(rating: number): string {
-  if (rating < 1000) return "Easy";
-  if (rating < 1350) return "Medium";
-  if (rating < 1550) return "Hard";
-  return "Very hard";
+  if (rating < 700)  return "Intro";
+  if (rating < 850)  return "Easy";
+  if (rating < 1000) return "Medium";
+  if (rating < 1150) return "Hard";
+  return "Challenge";
 }
 
 export default function PracticeSession({
@@ -147,7 +149,7 @@ export default function PracticeSession({
               className="rounded-md border border-slate-300 px-3 py-3 hover:border-indigo-500 hover:bg-indigo-50"
             >
               <div className="font-semibold text-sm">{p.label}</div>
-              <div className="text-xs text-slate-500">start ~{p.rating}</div>
+              <div className="text-xs text-slate-500">{p.sub}</div>
             </button>
           ))}
         </div>

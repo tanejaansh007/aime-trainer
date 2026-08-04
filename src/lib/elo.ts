@@ -5,11 +5,12 @@
 
 export const DEFAULT_K = 32;
 
-/** Difficulty presets used to seed a starting rating. */
+// AMC 8 ELO scale: easiest problems ~600, hardest ~1300.
+// All difficulty anchors are relative to AMC 8 only.
 export const DIFFICULTY_PRESETS = {
-  easy: 800,
-  medium: 1200,
-  hard: 1600,
+  easy: 700,
+  medium: 950,
+  hard: 1150,
 } as const;
 
 export type Difficulty = keyof typeof DIFFICULTY_PRESETS;
@@ -83,22 +84,21 @@ export function startingRating(difficulty: Difficulty): number {
  * Bucket a rating into a coarse practice band (kept for any 3-way uses).
  */
 export function bandForRating(rating: number): Difficulty {
-  if (rating < 1000) return "easy";
-  if (rating < 1400) return "medium";
+  if (rating < 825) return "easy";
+  if (rating < 1050) return "medium";
   return "hard";
 }
 
 /**
- * Five graduated lesson tiers so lesson content tracks ELO more finely than the
- * coarse easy/medium/hard split. Each subtopic lesson is authored in these five
- * sections; the student sees the one matching their rating.
+ * Five graduated lesson tiers across the AMC 8 difficulty range (~600–1300).
+ * t1 = AMC 8 intro (#1–5), t5 = AMC 8 hardest (#21–25).
  */
 export const LESSON_BANDS = [
-  { key: "t1", label: "Tier 1 · AMC 8 basics", max: 850 },
-  { key: "t2", label: "Tier 2 · AMC 8", max: 1100 },
-  { key: "t3", label: "Tier 3 · AMC 10", max: 1350 },
-  { key: "t4", label: "Tier 4 · AMC 10 / early AIME", max: 1600 },
-  { key: "t5", label: "Tier 5 · AIME", max: Infinity },
+  { key: "t1", label: "Tier 1 · AMC 8 Intro", max: 700 },
+  { key: "t2", label: "Tier 2 · AMC 8 Developing", max: 850 },
+  { key: "t3", label: "Tier 3 · AMC 8 Proficient", max: 1000 },
+  { key: "t4", label: "Tier 4 · AMC 8 Advanced", max: 1150 },
+  { key: "t5", label: "Tier 5 · AMC 8 Expert", max: Infinity },
 ] as const;
 
 export type LessonBand = (typeof LESSON_BANDS)[number]["key"];

@@ -5,7 +5,7 @@ need first; higher tiers add inclusion–exclusion, Euler's totient, and constru
 arguments. Switch tiers with the selector above.
 
 <!--band:t1-->
-## Tier 1 · AMC 8 basics
+## Tier 1 · AMC 8 Intro
 
 **Divisibility tests** let you check a divisor without dividing:
 
@@ -20,7 +20,7 @@ two-digit number you only need to test $2, 3, 5, 7$.
 ($8{+}8{+}8 = 24$).
 
 <!--band:t2-->
-## Tier 2 · AMC 8
+## Tier 2 · AMC 8 Developing
 
 Add two more tests and start **counting**:
 
@@ -34,7 +34,7 @@ the overlap. *Divisible by $4$ but not $6$ in $1$–$100$:* $25 - 8 = 17$ (the $
 multiples of $12$).
 
 <!--band:t3-->
-## Tier 3 · AMC 10
+## Tier 3 · AMC 8 Proficient
 
 **Inclusion–exclusion** combines two divisibility conditions:
 $$ |A \cup B| = \left\lfloor \tfrac{N}{a}\right\rfloor + \left\lfloor \tfrac{N}{b}\right\rfloor - \left\lfloor \tfrac{N}{\operatorname{lcm}(a,b)}\right\rfloor. $$
@@ -47,7 +47,7 @@ $$ |A \cup B| = \left\lfloor \tfrac{N}{a}\right\rfloor + \left\lfloor \tfrac{N}{
 $p,\,p+2,\,p+6$.
 
 <!--band:t4-->
-## Tier 4 · AMC 10 / early AIME
+## Tier 4 · AMC 8 Advanced
 
 **Exactly one of two sets.** Remove the overlap (multiples of
 $\operatorname{lcm}(a,b)$) from *each* set:
@@ -59,7 +59,7 @@ This same "count, then carefully remove overlaps" discipline scales to three or 
 conditions — just track every pairwise and triple lcm.
 
 <!--band:t5-->
-## Tier 5 · AIME
+## Tier 5 · AMC 8 Expert
 
 **Euler's totient $\varphi(n)$** counts integers in $[1,n]$ sharing no factor $>1$
 with $n$:

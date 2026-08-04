@@ -5,7 +5,7 @@ listing divisors up to the divisor-count and sum-of-divisors formulas and the
 $N^2$-pairing trick.
 
 <!--band:t1-->
-## Tier 1 · AMC 8 basics
+## Tier 1 · AMC 8 Intro
 
 **Factor first:** $n = p_1^{a_1}p_2^{a_2}\cdots$, e.g. $60 = 2^2\cdot 3\cdot 5$.
 
@@ -15,7 +15,7 @@ the rectangles of area $n$ — is $\lceil d(n)/2\rceil$, where $d(n)$ counts div
 **Count by listing** for small $n$: $36$ has divisors $1,2,3,4,6,9,12,18,36$.
 
 <!--band:t2-->
-## Tier 2 · AMC 8
+## Tier 2 · AMC 8 Developing
 
 **Sum of divisors and perfect numbers.** Add up all divisors; a *perfect* number
 equals the sum of its proper divisors, like $6 = 1+2+3$ and $28 = 1+2+4+7+14$.
@@ -24,7 +24,7 @@ equals the sum of its proper divisors, like $6 = 1+2+3$ and $28 = 1+2+4+7+14$.
 *Of $100$'s $9$ divisors, the odd ones are $1,5,25$, so $9-3 = 6$ are even.*
 
 <!--band:t3-->
-## Tier 3 · AMC 10
+## Tier 3 · AMC 8 Proficient
 
 **Divisor-count formula.** For $n = \prod p_i^{a_i}$, $\;d(n) = \prod (a_i+1)$. Run
 it **backwards** to build a number with a target divisor count, giving the largest
@@ -38,7 +38,7 @@ for $7! = 2^4 3^2 5\cdot 7$ that is $3\cdot 2 = 6$. (Perfect squares are exactly
 numbers with an *odd* divisor count.)
 
 <!--band:t4-->
-## Tier 4 · AMC 10 / early AIME
+## Tier 4 · AMC 8 Advanced
 
 **Numbers with a fixed divisor count.** Exactly $3$ divisors $\Rightarrow n = p^2$;
 exactly $4 \Rightarrow p^3$ or $pq$. So the integers below $1000$ with exactly $3$
@@ -48,7 +48,7 @@ divisors are the squares of primes $p < 32$.
 **not** divide $9!$ number $d(10!) - d(9!) = 270 - 160 = 110$.
 
 <!--band:t5-->
-## Tier 5 · AIME
+## Tier 5 · AMC 8 Expert
 
 **Constrained minimization.** "Smallest with $D$ divisors using only primes $\le 5$"
 is the divisor-count formula in reverse with a prime restriction — assign exponents

@@ -129,7 +129,7 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "A three-digit number has its three digits forming an arithmetic sequence with common difference $2$. What is the largest such three-digit number?",
+    "statement": "A three-digit number has its three digits forming an arithmetic sequence with common difference $2$. (An arithmetic sequence is a list of numbers in which each term after the first is obtained by adding the same constant to the previous term.) What is the largest such three-digit number?",
     "answer": "975",
     "solution": "Decreasing sequences $A, A-2, A-4$ with $A \\le 9$ and $A - 4 \\ge 0$ give $A \\in \\{4,5,6,7,8,9\\}$, producing $420, 531, 642, 753, 864, 975$. The largest is $975$.",
     "rating": 1150,
@@ -145,7 +145,7 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "A three-digit number $\\overline{ABC}$ satisfies $\\overline{ABC} = A! + B! + C!$. What is $A + B + C$?",
+    "statement": "A three-digit number $\\overline{ABC}$ satisfies $\\overline{ABC} = A! + B! + C!$, where $n!$ (read \"$n$ factorial\") denotes the product $1 \\times 2 \\times \\cdots \\times n$ (for example, $4! = 1 \\times 2 \\times 3 \\times 4 = 24$). What is $A + B + C$?",
     "answer": "10",
     "solution": "Since $7! = 5040 > 999$, each digit is at most $6$. The only three-digit solution is $145 = 1! + 4! + 5! = 1 + 24 + 120 = 145$. So $A + B + C = 1 + 4 + 5 = 10$.",
     "rating": 1250,
@@ -155,7 +155,7 @@
     "type": "SHORT_ANSWER",
     "statement": "For how many integers $n$ with $1 \\le n \\le 100$ is the units digit of $n$ in base $10$ the same as the units digit of $n$ in base $5$?",
     "answer": "50",
-    "solution": "The units digit of $n$ in base $5$ is $n \\bmod 5$, and in base $10$ it is $n \\bmod 10$. Since $10 \\equiv 0 \\pmod{5}$, we have $n \\bmod 5 = (n \\bmod 10) \\bmod 5$. The two units digits are equal exactly when $n \\bmod 10 < 5$ (i.e., the base-$10$ units digit is already in $\\{0,1,2,3,4\\}$ and equals $n \\bmod 5$). From $1$ to $100$, these are the integers ending in $0, 1, 2, 3,$ or $4$: exactly $50$ integers.",
+    "solution": "The units digit of $n$ in base $5$ is the remainder when $n$ is divided by $5$; in base $10$ it is the remainder when $n$ is divided by $10$. If the base-$10$ units digit is $0, 1, 2, 3,$ or $4$, then it is already less than $5$, so it equals the remainder when $n$ is divided by $5$ as well — the two match. If the base-$10$ units digit is $5, 6, 7, 8,$ or $9$, the remainder when divided by $5$ is $0, 1, 2, 3,$ or $4$ respectively — different. So the two units digits agree exactly when the base-$10$ units digit is in $\\{0, 1, 2, 3, 4\\}$. From $1$ to $100$, these are the integers ending in $0, 1, 2, 3,$ or $4$: exactly $50$ integers.",
     "rating": 1300,
     "source": "AMC 8 · Digits & Bases"
   }

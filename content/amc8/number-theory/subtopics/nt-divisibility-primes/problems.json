@@ -158,5 +158,125 @@
     "solution": "Checking each two-digit prime: $11, 13, 17, 31, 37, 71, 73, 79, 97$ all reverse to a prime ($11\\to11$, $13\\leftrightarrow31$, $17\\leftrightarrow71$, $37\\leftrightarrow73$, $79\\leftrightarrow97$). That is $9$ primes.",
     "rating": 1240,
     "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "Which of the following is a prime number?",
+    "choices": [
+      "A) $51$",
+      "B) $57$",
+      "C) $63$",
+      "D) $67$",
+      "E) $69$"
+    ],
+    "answer": "D",
+    "solution": "Use the digit-sum test for $3$: $51\\,(5{+}1{=}6)$, $57\\,(12)$, $63\\,(9)$, and $69\\,(15)$ all have digit sums divisible by $3$, so all four are composite. That eliminates every choice but $67$, which is prime.",
+    "rating": 690,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "If you add two odd numbers, the result is always which of the following?",
+    "choices": [
+      "A) odd",
+      "B) even",
+      "C) prime",
+      "D) divisible by $3$",
+      "E) a multiple of the smaller number"
+    ],
+    "answer": "B",
+    "solution": "Test with $3+5=8$. That single example eliminates almost everything: $8$ is not odd (kills A), not prime (C), not divisible by $3$ (D), and not a multiple of $3$ (E). Only 'even' survives — and indeed odd $+$ odd is always even.",
+    "rating": 660,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "A whole number $n$ is even and divisible by $3$. Which of the following could equal $n$?",
+    "choices": [
+      "A) $34$",
+      "B) $42$",
+      "C) $51$",
+      "D) $56$",
+      "E) $68$"
+    ],
+    "answer": "B",
+    "solution": "Even *and* divisible by $3$ means divisible by $6$. First drop the odd choice $51$. Among the evens, apply the digit-sum test for $3$: $34\\,(7)$, $56\\,(11)$, and $68\\,(14)$ fail, leaving only $42\\,(6)$.",
+    "rating": 780,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "A Gregorian year is a leap year only if its number is divisible by $4$. Which of the following years is divisible by $4$?",
+    "choices": [
+      "A) $2018$",
+      "B) $2019$",
+      "C) $2022$",
+      "D) $2024$",
+      "E) $2026$"
+    ],
+    "answer": "D",
+    "solution": "Divisibility by $4$ depends only on the last two digits. Immediately drop the odd year $2019$. Then $18, 22$, and $26$ are not multiples of $4$, but $24$ is — so $2024$ is the leap year.",
+    "rating": 920,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "What is the value of $1 \\times 3 \\times 5 \\times 7 \\times 9 \\times 11$?",
+    "choices": [
+      "A) $10380$",
+      "B) $10395$",
+      "C) $11025$",
+      "D) $10500$",
+      "E) $9450$"
+    ],
+    "answer": "B",
+    "solution": "Every factor is odd, so the product must be **odd** — that eliminates the even choices $10380$, $10500$, and $9450$. The two odd choices left are $10395$ and $11025$; since $11$ is a factor, the answer must be divisible by $11$. The alternating digit sum of $11025$ is $5-2+0-1+1=3$ (not divisible by $11$), while $10395$ gives $5-9+3-0+1=0$. So the answer is $10395$.",
+    "rating": 900,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "The sum of five consecutive whole numbers is always divisible by which of the following?",
+    "choices": [
+      "A) $2$",
+      "B) $3$",
+      "C) $4$",
+      "D) $5$",
+      "E) $10$"
+    ],
+    "answer": "D",
+    "solution": "Try $1+2+3+4+5=15$: not divisible by $2$, $4$, or $10$, so drop A, C, and E. Try $2+3+4+5+6=20$: not divisible by $3$, so drop B. Only $5$ remains — and indeed five consecutive numbers sum to $5$ times the middle one.",
+    "rating": 950,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "A class can be split into teams of exactly $6$ with nobody left over, and the class has between $40$ and $80$ students. Which of the following could be the number of students?",
+    "choices": [
+      "A) $63$",
+      "B) $68$",
+      "C) $72$",
+      "D) $76$",
+      "E) $82$"
+    ],
+    "answer": "C",
+    "solution": "The count must be a multiple of $6$ (even and divisible by $3$) and lie between $40$ and $80$. Drop the odd choice $63$ and the out-of-range $82$. Of the rest, $68$ and $76$ fail the digit-sum test for $3$, leaving only $72$.",
+    "rating": 1080,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "Two prime numbers have a sum of $2019$. What is their product?",
+    "choices": [
+      "A) $4034$",
+      "B) $4038$",
+      "C) $6051$",
+      "D) $2017$",
+      "E) $1009$"
+    ],
+    "answer": "A",
+    "solution": "A sum of two primes equal to the **odd** number $2019$ forces one prime to be even, and the only even prime is $2$. So the primes are $2$ and $2017$ (which is prime), and their product $2\\times 2017 = 4034$ is even — eliminating the odd choices $6051$, $2017$, and $1009$. Of the even choices, $4038 = 2\\times 2019$ would require $2019$ to be prime (it is $3\\times 673$), so the answer is $4034$.",
+    "rating": 1160,
+    "source": "AMC 8 · Divisibility & Primes"
   }
 ]

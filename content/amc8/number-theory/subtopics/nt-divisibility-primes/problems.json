@@ -1,1 +1,162 @@
-[]
+[
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many prime numbers are there between $1$ and $20$?",
+    "answer": "8",
+    "solution": "The primes up to $20$ are $2, 3, 5, 7, 11, 13, 17, 19$ — that is $8$ primes.",
+    "rating": 630,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest digit $d$ that makes the three-digit number $\\overline{52d}$ divisible by $3$?",
+    "answer": "2",
+    "solution": "A number is divisible by $3$ when its digit sum is. The digit sum is $5+2+d = 7+d$, and $7+d$ is a multiple of $3$ first at $d=2$ (giving $9$).",
+    "rating": 650,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Cards are numbered $1$ through $30$. How many of them show a number divisible by both $2$ and $3$?",
+    "answer": "5",
+    "solution": "Divisible by both $2$ and $3$ means divisible by $6$. The multiples of $6$ up to $30$ are $6, 12, 18, 24, 30$ — that is $5$ cards.",
+    "rating": 670,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The number $143$ is not prime. What is its smallest prime factor?",
+    "answer": "11",
+    "solution": "Test small primes: $143$ is odd, its digit sum is $8$ (not divisible by $3$), and it does not end in $0$ or $5$. Trying $7$ fails, but $143 = 11\\times 13$, so the smallest prime factor is $11$.",
+    "rating": 690,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many multiples of $6$ are there from $1$ to $100$?",
+    "answer": "16",
+    "solution": "The count of multiples of $6$ up to $100$ is $\\left\\lfloor 100/6\\right\\rfloor = 16$.",
+    "rating": 730,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A parking lot has spaces numbered $1$ to $200$. How many space numbers are divisible by $8$?",
+    "answer": "25",
+    "solution": "The number of multiples of $8$ up to $200$ is $\\left\\lfloor 200/8\\right\\rfloor = 25$.",
+    "rating": 760,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $120$ are divisible by $6$ but not by $4$?",
+    "answer": "10",
+    "solution": "Multiples of $6$: $\\left\\lfloor 120/6\\right\\rfloor = 20$. Those also divisible by $4$ are the multiples of $\\operatorname{lcm}(6,4)=12$: $\\left\\lfloor 120/12\\right\\rfloor = 10$. So $20 - 10 = 10$.",
+    "rating": 790,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many two-digit numbers are divisible by $4$?",
+    "answer": "22",
+    "solution": "The two-digit multiples of $4$ run from $12$ to $96$: $\\frac{96-12}{4}+1 = 22$.",
+    "rating": 820,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $99$ are divisible by $3$ or $5$?",
+    "answer": "46",
+    "solution": "Count each, then subtract the overlap (multiples of $15$): $\\left\\lfloor 99/3\\right\\rfloor + \\left\\lfloor 99/5\\right\\rfloor - \\left\\lfloor 99/15\\right\\rfloor = 33 + 19 - 6 = 46$.",
+    "rating": 890,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $100$ are divisible by neither $2$ nor $3$?",
+    "answer": "33",
+    "solution": "Divisible by $2$ or $3$: $50 + 33 - \\left\\lfloor 100/6\\right\\rfloor = 50 + 33 - 16 = 67$. Divisible by neither: $100 - 67 = 33$.",
+    "rating": 920,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many prime numbers lie between $40$ and $60$?",
+    "answer": "5",
+    "solution": "Testing each: $41, 43, 47, 53, 59$ are prime — that is $5$ primes.",
+    "rating": 950,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A number is drawn from $1$ to $200$. How many of these numbers are divisible by $7$ or $11$?",
+    "answer": "44",
+    "solution": "$\\left\\lfloor 200/7\\right\\rfloor + \\left\\lfloor 200/11\\right\\rfloor - \\left\\lfloor 200/77\\right\\rfloor = 28 + 18 - 2 = 44$.",
+    "rating": 980,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $100$ are divisible by exactly one of $4$ and $6$?",
+    "answer": "25",
+    "solution": "Multiples of $4$: $25$; of $6$: $16$; of both (i.e. $12$): $8$. Exactly one is $(25-8)+(16-8) = 17 + 8 = 25$.",
+    "rating": 1050,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $120$ are divisible by at least one of $2$, $3$, or $5$?",
+    "answer": "88",
+    "solution": "Add the three counts, subtract each pairwise overlap, add back the triple: $60+40+24 - 20 - 12 - 8 + 4 = 88$ (overlaps are multiples of $6, 10, 15$, and $30$).",
+    "rating": 1080,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of all prime numbers between $20$ and $40$?",
+    "answer": "120",
+    "solution": "The primes are $23, 29, 31, 37$, and $23+29+31+37 = 120$.",
+    "rating": 1110,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A bag holds chips numbered $1$ to $100$. How many chips show a number divisible by $3$ or $4$ but not both?",
+    "answer": "42",
+    "solution": "Multiples of $3$: $33$; of $4$: $25$; of both (i.e. $12$): $8$. Exactly one is $(33-8)+(25-8) = 25 + 17 = 42$.",
+    "rating": 1130,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For what digit $d$ is the four-digit number $\\overline{7d54}$ divisible by $11$?",
+    "answer": "8",
+    "solution": "For divisibility by $11$, the alternating digit sum must be a multiple of $11$. From the right: $(4 + d) - (5 + 7) = d - 8$. Setting $d - 8 = 0$ gives $d = 8$ (and $7854 = 11 \\times 714$).",
+    "rating": 1170,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Two prime numbers add up to $39$. What is the product of these two primes?",
+    "answer": "74",
+    "solution": "A sum of $39$ is odd, so one prime must be even — the only even prime is $2$. The other is $39 - 2 = 37$, which is prime, so the product is $2 \\times 37 = 74$.",
+    "rating": 1200,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $100$ to $200$ are divisible by $3$ and have a digit sum divisible by $9$?",
+    "answer": "11",
+    "solution": "A digit sum divisible by $9$ already forces divisibility by $9$ (which covers the divisible-by-$3$ condition). Multiples of $9$ from $100$ to $200$: $\\left\\lfloor 200/9\\right\\rfloor - \\left\\lfloor 99/9\\right\\rfloor = 22 - 11 = 11$.",
+    "rating": 1220,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many two-digit primes remain prime when their two digits are reversed?",
+    "answer": "9",
+    "solution": "Checking each two-digit prime: $11, 13, 17, 31, 37, 71, 73, 79, 97$ all reverse to a prime ($11\\to11$, $13\\leftrightarrow31$, $17\\leftrightarrow71$, $37\\leftrightarrow73$, $79\\leftrightarrow97$). That is $9$ primes.",
+    "rating": 1240,
+    "source": "AMC 8 · Divisibility & Primes"
+  }
+]

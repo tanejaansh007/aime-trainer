@@ -1,1 +1,162 @@
-[]
+[
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\frac{1}{4}$ as a decimal.",
+    "answer": "0.25",
+    "solution": "$\\frac{1}{4} = \\frac{25}{100} = 0.25$.",
+    "rating": 630,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\frac{1}{8}$ as a decimal.",
+    "answer": "0.125",
+    "solution": "$\\frac{1}{8} = \\frac{125}{1000} = 0.125$.",
+    "rating": 650,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write the decimal $0.6$ as a fraction in lowest terms.",
+    "answer": "3/5",
+    "solution": "$0.6 = \\frac{6}{10} = \\frac{3}{5}$.",
+    "rating": 670,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal for $\\frac{1}{7}$ is $0.142857142857\\ldots$. What is the $4$th digit after the decimal point?",
+    "answer": "8",
+    "solution": "The digits are $1, 4, 2, 8, 5, 7$ (then repeat). The $4$th digit is $8$.",
+    "rating": 690,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\frac{7}{20}$ as a decimal.",
+    "answer": "0.35",
+    "solution": "$20 = 2^2\\cdot 5$ (only $2$s and $5$s), so it terminates: $\\frac{7}{20} = \\frac{35}{100} = 0.35$.",
+    "rating": 730,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Does $\\frac{5}{12}$ give a terminating or a repeating decimal? Answer 'terminating' or 'repeating'.",
+    "answer": "repeating",
+    "solution": "$12 = 2^2\\cdot 3$. The factor of $3$ (not $2$ or $5$) means $\\frac{5}{12}$ repeats.",
+    "rating": 760,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\frac{7}{25}$ as a decimal.",
+    "answer": "0.28",
+    "solution": "$25 = 5^2$, so it terminates. Scale to a power of ten: $\\frac{7}{25} = \\frac{28}{100} = 0.28$.",
+    "rating": 790,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of these five fractions terminate: $\\frac{1}{6},\\ \\frac{3}{8},\\ \\frac{5}{12},\\ \\frac{7}{40},\\ \\frac{9}{50}$?",
+    "answer": "3",
+    "solution": "A fraction in lowest terms terminates exactly when its denominator has only $2$s and $5$s. $\\frac{3}{8}\\,(2^3)$, $\\frac{7}{40}\\,(2^3\\cdot5)$, and $\\frac{9}{50}\\,(2\\cdot5^2)$ terminate; $\\frac{1}{6}$ and $\\frac{5}{12}$ have a factor of $3$ and repeat. That is $3$.",
+    "rating": 830,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $0.\\overline{36}$ as a fraction in lowest terms.",
+    "answer": "4/11",
+    "solution": "Let $x = 0.\\overline{36}$. Then $100x = 36.\\overline{36}$, so $99x = 36$ and $x = \\frac{36}{99} = \\frac{4}{11}$.",
+    "rating": 920,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $0.\\overline{7}$ as a fraction in lowest terms.",
+    "answer": "7/9",
+    "solution": "Let $x = 0.\\overline{7}$. Then $10x = 7.\\overline{7}$, so $9x = 7$ and $x = \\frac{7}{9}$.",
+    "rating": 890,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Convert the mixed repeating decimal $0.1\\overline{6}$ to a fraction in lowest terms.",
+    "answer": "1/6",
+    "solution": "Let $x = 0.1\\overline{6}$. Then $10x = 1.\\overline{6}$ and $100x = 16.\\overline{6}$. Subtracting, $90x = 15$, so $x = \\frac{15}{90} = \\frac{1}{6}$.",
+    "rating": 950,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the length of the repeating block in the decimal expansion of $\\frac{1}{7}$?",
+    "answer": "6",
+    "solution": "$\\frac{1}{7} = 0.\\overline{142857}$. The block $142857$ has length $6$ (the smallest $k$ with $10^k \\equiv 1 \\pmod 7$).",
+    "rating": 980,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $0.\\overline{142857}$ as a fraction in lowest terms.",
+    "answer": "1/7",
+    "solution": "A pure repeat is the block over that many $9$s: $0.\\overline{142857} = \\frac{142857}{999999}$, which reduces to $\\frac{1}{7}$.",
+    "rating": 1050,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Among the fractions $\\frac{1}{12}, \\frac{2}{12}, \\ldots, \\frac{11}{12}$, how many are terminating decimals?",
+    "answer": "3",
+    "solution": "$\\frac{n}{12}$ terminates only when reducing removes the factor of $3$, i.e. when $3 \\mid n$: $\\frac{3}{12}=\\frac14$, $\\frac{6}{12}=\\frac12$, $\\frac{9}{12}=\\frac34$. That is $3$ fractions.",
+    "rating": 1080,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A repeating decimal whose repeating block has three digits, $0.\\overline{abc}$, always equals a fraction whose denominator divides what whole number?",
+    "answer": "999",
+    "solution": "$0.\\overline{abc} = \\frac{\\overline{abc}}{999}$ (the block over three $9$s), so the reduced denominator always divides $999$.",
+    "rating": 1110,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $0.\\overline{123}$ as a fraction in lowest terms.",
+    "answer": "41/333",
+    "solution": "$0.\\overline{123} = \\frac{123}{999}$. Both share a factor of $3$: $\\frac{123}{999} = \\frac{41}{333}$, and $41$ is prime with no common factor with $333 = 3^2\\cdot 37$.",
+    "rating": 1130,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What integer equals $0.\\overline{4} + 0.\\overline{5}$?",
+    "answer": "1",
+    "solution": "$0.\\overline{4} = \\frac{4}{9}$ and $0.\\overline{5} = \\frac{5}{9}$, so the sum is $\\frac{9}{9} = 1$.",
+    "rating": 1170,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest base $b > 2$ in which $\\frac{1}{3}$ has a terminating expansion?",
+    "answer": "3",
+    "solution": "$\\frac{1}{3}$ terminates in base $b$ exactly when every prime factor of the denominator divides $b$ — here, when $3 \\mid b$. The smallest such $b > 2$ is $3$ (where $\\frac{1}{3} = 0.1_3$).",
+    "rating": 1200,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $0.\\overline{1} + 0.\\overline{2} + 0.\\overline{3}$ as a fraction in lowest terms.",
+    "answer": "2/3",
+    "solution": "Each term is a single digit over $9$: $\\frac{1}{9} + \\frac{2}{9} + \\frac{3}{9} = \\frac{6}{9} = \\frac{2}{3}$.",
+    "rating": 1220,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For how many integer bases $b$ with $2 \\le b \\le 10$ does $\\frac{1}{6}$ have a terminating expansion?",
+    "answer": "1",
+    "solution": "$\\frac{1}{6}$ terminates in base $b$ exactly when every prime factor of $6$ (namely $2$ and $3$) divides $b$ — that is, when $6 \\mid b$. In $2 \\le b \\le 10$, only $b = 6$ qualifies, so the count is $1$.",
+    "rating": 1250,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  }
+]

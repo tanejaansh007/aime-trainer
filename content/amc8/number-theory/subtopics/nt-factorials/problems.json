@@ -1,1 +1,162 @@
-[]
+[
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the value of $\\dfrac{7!}{5!}$?",
+    "answer": "42",
+    "solution": "Most of the factorial cancels: $\\dfrac{7!}{5!} = \\dfrac{7 \\times 6 \\times 5!}{5!} = 7 \\times 6 = 42$.",
+    "rating": 700,
+    "source": "AMC 8 · Factorials & Trailing Zeros"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $2! + 4! + 6! + 8! + 10!$?",
+    "answer": "6",
+    "solution": "$2! = 2$ and $4! = 24$. Every factorial $k!$ with $k \\ge 5$ is divisible by $10$ and ends in $0$. So the units digit of the sum equals the units digit of $2 + 24 = 26$, which is $6$.",
+    "rating": 720,
+    "source": "AMC 8 · Factorials & Trailing Zeros"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many trailing zeros does $20!$ have?",
+    "answer": "4",
+    "solution": "A trailing zero requires one factor of $2$ and one factor of $5$. There are always more factors of $2$ than $5$ in a factorial, so count the factors of $5$: $\\lfloor 20/5 \\rfloor = 4$. (No multiple of $25$ appears among $1$ through $20$, so there are no extra $5$s.)",
+    "rating": 740,
+    "source": "AMC 8 · Factorials & Trailing Zeros"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $1! + 2! + 3! + 4! + \\cdots + 20!$?",
+    "answer": "3",
+    "solution": "Every factorial $k!$ with $k \\ge 5$ ends in $0$ and does not affect the units digit. The units digit equals the units digit of $1! + 2! + 3! + 4! = 1 + 2 + 6 + 24 = 33$, which is $3$.",
+    "rating": 760,
+    "source": "AMC 8 · Factorials & Trailing Zeros"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many trailing zeros does $30!$ have?",
+    "answer": "7",
+    "solution": "Count factors of $5$ in $30!$: $\\lfloor 30/5 \\rfloor + \\lfloor 30/25 \\rfloor = 6 + 1 = 7$. ($25 = 5^2$ contributes an extra factor of $5$ beyond what the first term counts.)",
+    "rating": 790,
+    "source": "AMC 8 · Factorials & Trailing Zeros"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many trailing zeros does $25!$ have?",
+    "answer": "6",
+    "solution": "Count factors of $5$: $\\lfloor 25/5 \\rfloor + \\lfloor 25/25 \\rfloor = 5 + 1 = 6$. Note that $25 = 5^2$ contributes two factors of $5$ total, not one — this is why the answer is $6$, not $5$.",
+    "rating": 820,
+    "source": "AMC 8 · Factorials & Trailing Zeros"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many trailing zeros does $50!$ have?",
+    "answer": "12",
+    "solution": "$\\lfloor 50/5 \\rfloor + \\lfloor 50/25 \\rfloor = 10 + 2 = 12$.",
+    "rating": 840,
+    "source": "AMC 8 · Factorials & Trailing Zeros"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many trailing zeros does $100!$ have?",
+    "answer": "24",
+    "solution": "$\\lfloor 100/5 \\rfloor + \\lfloor 100/25 \\rfloor = 20 + 4 = 24$.",
+    "rating": 860,
+    "source": "AMC 8 · Factorials & Trailing Zeros"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest integer $k$ such that $2^k$ divides $10!$?",
+    "answer": "8",
+    "solution": "Legendre's formula gives the exponent of a prime $p$ in $n!$ as $\\lfloor n/p \\rfloor + \\lfloor n/p^2 \\rfloor + \\lfloor n/p^3 \\rfloor + \\cdots$. For $p = 2$, $n = 10$: $\\lfloor 10/2 \\rfloor + \\lfloor 10/4 \\rfloor + \\lfloor 10/8 \\rfloor = 5 + 2 + 1 = 8$.",
+    "rating": 880,
+    "source": "AMC 8 · Factorials & Trailing Zeros"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest integer $k$ such that $3^k$ divides $15!$?",
+    "answer": "6",
+    "solution": "By Legendre's formula with $p = 3$, $n = 15$: $\\lfloor 15/3 \\rfloor + \\lfloor 15/9 \\rfloor + \\lfloor 15/27 \\rfloor = 5 + 1 + 0 = 6$.",
+    "rating": 900,
+    "source": "AMC 8 · Factorials & Trailing Zeros"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest integer $k$ such that $7^k$ divides $50!$?",
+    "answer": "8",
+    "solution": "By Legendre's formula with $p = 7$, $n = 50$: $\\lfloor 50/7 \\rfloor + \\lfloor 50/49 \\rfloor + \\lfloor 50/343 \\rfloor = 7 + 1 + 0 = 8$.",
+    "rating": 920,
+    "source": "AMC 8 · Factorials & Trailing Zeros"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many trailing zeros does $200!$ have?",
+    "answer": "49",
+    "solution": "$\\lfloor 200/5 \\rfloor + \\lfloor 200/25 \\rfloor + \\lfloor 200/125 \\rfloor = 40 + 8 + 1 = 49$.",
+    "rating": 950,
+    "source": "AMC 8 · Factorials & Trailing Zeros"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer $n$ such that $n!$ has at least $10$ trailing zeros?",
+    "answer": "45",
+    "solution": "Testing candidate values: $\\lfloor 40/5 \\rfloor + \\lfloor 40/25 \\rfloor = 8 + 1 = 9$ (not enough). $\\lfloor 45/5 \\rfloor + \\lfloor 45/25 \\rfloor = 9 + 1 = 10$ (exactly $10$). So the smallest $n$ is $45$.",
+    "rating": 975,
+    "source": "AMC 8 · Factorials & Trailing Zeros"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For how many integers $n$ with $1 \\le n \\le 30$ does $n!$ have exactly $4$ trailing zeros?",
+    "answer": "5",
+    "solution": "The trailing zero count first reaches $4$ at $n = 20$ (since $\\lfloor 20/5 \\rfloor = 4$) and stays at $4$ through $n = 24$. At $n = 25$, the count jumps to $6$ because $25 = 5^2$ contributes two factors of $5$, skipping $5$ entirely. So exactly $5$ values — $n = 20, 21, 22, 23, 24$ — give exactly $4$ trailing zeros.",
+    "rating": 995,
+    "source": "AMC 8 · Factorials & Trailing Zeros"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest integer $k$ such that $2^k$ divides $16!$?",
+    "answer": "15",
+    "solution": "By Legendre's formula with $p = 2$, $n = 16$: $\\lfloor 16/2 \\rfloor + \\lfloor 16/4 \\rfloor + \\lfloor 16/8 \\rfloor + \\lfloor 16/16 \\rfloor = 8 + 4 + 2 + 1 = 15$.",
+    "rating": 1020,
+    "source": "AMC 8 · Factorials & Trailing Zeros"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of the factorials $1!, 2!, 3!, \\ldots, 30!$ have at least $3$ trailing zeros?",
+    "answer": "16",
+    "solution": "We need $n!$ to contain at least $3$ factors of $5$. The smallest such $n$ is $15$, since $\\lfloor 15/5 \\rfloor = 3$. Every $n \\ge 15$ also qualifies. From $n = 15$ to $n = 30$: $30 - 15 + 1 = 16$ factorials.",
+    "rating": 1060,
+    "source": "AMC 8 · Factorials & Trailing Zeros"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many trailing zeros does $10! \\times 15!$ have?",
+    "answer": "5",
+    "solution": "Count factors of $5$: $\\nu_5(10!) = \\lfloor 10/5 \\rfloor = 2$ and $\\nu_5(15!) = \\lfloor 15/5 \\rfloor = 3$, giving $2 + 3 = 5$ total. Count factors of $2$ (by Legendre's formula): $\\nu_2(10!) = 5+2+1 = 8$ and $\\nu_2(15!) = 7+3+1 = 11$, giving $19$ total. The number of trailing zeros is $\\min(5,\\ 19) = 5$.",
+    "rating": 1100,
+    "source": "AMC 8 · Factorials & Trailing Zeros"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest integer $k$ such that $2^k$ divides $50!$?",
+    "answer": "47",
+    "solution": "By Legendre's formula with $p = 2$, $n = 50$: $\\lfloor 50/2 \\rfloor + \\lfloor 50/4 \\rfloor + \\lfloor 50/8 \\rfloor + \\lfloor 50/16 \\rfloor + \\lfloor 50/32 \\rfloor = 25 + 12 + 6 + 3 + 1 = 47$.",
+    "rating": 1150,
+    "source": "AMC 8 · Factorials & Trailing Zeros"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Let $Z(n)$ denote the number of trailing zeros of $n!$. How many positive integers $k$ with $1 \\le k \\le 30$ satisfy: there is no positive integer $n$ with $Z(n) = k$?",
+    "answer": "6",
+    "solution": "$Z(n)$ jumps by $2$ (skipping one value) at each multiple of $25$ that is not a multiple of $125$: the multiples $25, 50, 75, 100$ skip the values $5, 11, 17, 23$ respectively. The jump at $125$ goes from $Z(124) = 28$ to $Z(125) = 31$, skipping both $29$ and $30$. That gives $6$ unreachable values in $[1, 30]$: $\\{5, 11, 17, 23, 29, 30\\}$.",
+    "rating": 1190,
+    "source": "AMC 8 · Factorials & Trailing Zeros"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the exponent of $5$ in the prime factorization of $\\dfrac{100!}{(50!)^2}$?",
+    "answer": "0",
+    "solution": "By Legendre's formula: $\\nu_5(100!) = \\lfloor 100/5 \\rfloor + \\lfloor 100/25 \\rfloor = 20 + 4 = 24$ and $\\nu_5(50!) = \\lfloor 50/5 \\rfloor + \\lfloor 50/25 \\rfloor = 10 + 2 = 12$. The exponent of $5$ in $\\frac{100!}{(50!)^2}$ is $24 - 2 \\times 12 = 0$. So $\\frac{100!}{(50!)^2}$ — equal to $\\binom{100}{50}$ — is not divisible by $5$ at all.",
+    "rating": 1250,
+    "source": "AMC 8 · Factorials & Trailing Zeros"
+  }
+]

@@ -6,8 +6,7 @@ all within AMC 8 territory.
 <!--band:t1-->
 ## Tier 1 · AMC 8 Intro
 
-The **remainder** of $a$ divided by $m$ is $a \bmod m$. Remainders **add and
-multiply**, so reduce *before* computing: $7^2 = 49 \equiv 4 \pmod 5$.
+The **remainder** when $a$ is divided by $m$ is written $a \bmod m$ (read: "$a$ mod $m$"). Remainders **add and multiply** — so reduce *before* computing. For example, $7^2 = 49$, and the remainder when $49$ is divided by $5$ is $4$, written $49 \equiv 4 \pmod 5$.
 
 **Clock / calendar arithmetic.** Days repeat mod $7$, hours mod $12$. Since
 $100 \equiv 2 \pmod 7$, one hundred days past Wednesday is Friday.

@@ -19,9 +19,9 @@ $6 = 1+2+3$,\ $28 = 1+2+4+7+14$.
 <!--band:t2-->
 ## Tier 2 · AMC 8 Developing
 
-**Even vs. odd divisors.** A divisor is odd iff it shares no factor of $2$ with $n$
-— i.e. it divides the odd part of $n$. For $360 = 2^3\cdot 3^2\cdot 5$, the odd
-part is $3^2\cdot 5$, giving $(2+1)(1+1) = 6$ odd divisors.
+**Even vs. odd divisors.** A divisor is odd exactly when it has no factor of $2$
+— it only divides into the non-$2$ part of $n$. For $360 = 2^3\cdot 3^2\cdot 5$, strip
+the $2$s to get $3^2\cdot 5$, giving $(2+1)(1+1) = 6$ odd divisors.
 
 **Largest perfect square factor.** Keep each prime but cut each exponent down to the
 largest even number $\le$ the exponent. For $180 = 2^2\cdot 3^2\cdot 5$, the
@@ -30,17 +30,17 @@ largest square factor is $2^2\cdot 3^2 = 36$, with square root $6$.
 <!--band:t3-->
 ## Tier 3 · AMC 8 Proficient
 
-**Divisor-count formula.** For $n = \prod p_i^{a_i}$,
-$$ d(n) = \prod (a_i + 1). $$
-$2000 = 2^4\cdot 5^3 \Rightarrow d = 5\cdot 4 = 20$.
+**Divisor-count formula.** Add $1$ to each exponent in the prime factorization and multiply:
+$$ d(n) = (a_1+1)(a_2+1)\cdots $$
+$2000 = 2^4\cdot 5^3 \Rightarrow d = (4+1)(3+1) = 5\cdot 4 = 20$.
 
 Run it **backwards** to build a target: the smallest integer with $6$ divisors has
 $d = (2+1)(1+1) = 6$, so use exponents $2$ and $1$ on the two smallest primes:
 $2^2\cdot 3 = 12$.
 
-**Sum of divisors.**
-$\sigma(n) = \prod_i \dfrac{p_i^{a_i+1}-1}{p_i-1}$; e.g.
-$\sigma(288) = \sigma(2^5\cdot 3^2) = 63\cdot 13 = 819$.
+**Sum of divisors.** For each prime power $p^a$ in the factorization, the sum of its contributions is $1 + p + p^2 + \cdots + p^a = \dfrac{p^{a+1}-1}{p-1}$. Multiply these together for all prime powers.
+
+$288 = 2^5\cdot 3^2$: the $2^5$ piece gives $1+2+4+8+16+32 = 63$; the $3^2$ piece gives $1+3+9 = 13$; sum of divisors $= 63\cdot 13 = 819$.
 
 <!--band:t4-->
 ## Tier 4 · AMC 8 Advanced

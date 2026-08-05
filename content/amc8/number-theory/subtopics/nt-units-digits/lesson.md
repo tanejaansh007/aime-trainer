@@ -6,8 +6,8 @@ applying them to large exponents, sums, products, and differences.
 <!--band:t1-->
 ## Tier 1 · AMC 8 Intro
 
-The units digit of a product is the product of the units digits, mod $10$:
-$13 \times 27 \to 3\times 7 = 21 \to 1$.
+The units digit of a product depends only on the units digits of the factors:
+$13 \times 27$: just multiply the units digits, $3\times 7 = 21$, so the units digit is $1$.
 
 **Power cycles** repeat in short patterns:
 

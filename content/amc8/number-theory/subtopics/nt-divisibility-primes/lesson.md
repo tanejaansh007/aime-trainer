@@ -37,11 +37,11 @@ $\text{lcm}(a,b)$).
 <!--band:t3-->
 ## Tier 3 · AMC 8 Proficient
 
-**Inclusion–exclusion** — counting divisible by $a$ **or** $b$:
-$$ |A \cup B| = \left\lfloor \tfrac{N}{a}\right\rfloor + \left\lfloor \tfrac{N}{b}\right\rfloor - \left\lfloor \tfrac{N}{\operatorname{lcm}(a,b)}\right\rfloor. $$
+**Counting divisible by $a$ or $b$:** count each separately, then subtract the overlap (numbers divisible by both, which means divisible by $\operatorname{lcm}(a,b)$):
+$$ \text{count} = \left\lfloor \tfrac{N}{a}\right\rfloor + \left\lfloor \tfrac{N}{b}\right\rfloor - \left\lfloor \tfrac{N}{\operatorname{lcm}(a,b)}\right\rfloor. $$
 
 - Divisible by $3$ or $5$ in $1$–$100$: $33 + 20 - 6 = 47$.
-- Divisible by **neither**: $N - |A\cup B|$.
+- Divisible by **neither**: $N$ minus that count.
 
 **Primes in a range.** List and test; the primes between $10$ and $30$ are
 $11, 13, 17, 19, 23, 29$ — six of them.
@@ -49,12 +49,12 @@ $11, 13, 17, 19, 23, 29$ — six of them.
 <!--band:t4-->
 ## Tier 4 · AMC 8 Advanced
 
-**Exactly one of two sets.** Remove the overlap from each set separately:
-$$ \big(|A| - |A\cap B|\big) + \big(|B| - |A\cap B|\big). $$
+**Exactly one of two conditions.** Take each count separately, remove the overlap from both:
+$$ (\text{count}_a - \text{overlap}) + (\text{count}_b - \text{overlap}). $$
 
-**Three conditions.** Extend inclusion–exclusion to three sets:
-$$ |A\cup B\cup C| = |A|+|B|+|C| - |A\cap B| - |A\cap C| - |B\cap C| + |A\cap B\cap C|. $$
-Each pairwise and triple overlap is a floor-of-$N$ over the relevant lcm.
+**Three conditions.** To count integers satisfying at least one of three divisibility conditions, add the three individual counts, subtract each pairwise overlap, then add back the triple overlap:
+$$ \text{count}_a + \text{count}_b + \text{count}_c - \text{overlap}_{ab} - \text{overlap}_{ac} - \text{overlap}_{bc} + \text{overlap}_{abc}. $$
+Each overlap count is $\lfloor N / \operatorname{lcm}(\cdots) \rfloor$.
 
 **Sum of primes** in a range: after listing them, add. Watch for the special case
 $2$ — it is the only even prime and may satisfy an extra condition others don't.

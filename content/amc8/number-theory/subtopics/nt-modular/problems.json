@@ -1,1 +1,197 @@
-[]
+[
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $100$ is divided by $7$?",
+    "answer": "2",
+    "solution": "$100 = 14\\times 7 + 2$, so the remainder is $2$.",
+    "rating": 630,
+    "source": "AMC 8 · Modular Arithmetic"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A clock reads $3$ o'clock. What hour will it show $100$ hours later? (Give the hour on a $12$-hour clock.)",
+    "answer": "7",
+    "solution": "Hours repeat every $12$, so reduce: $100 \\equiv 4 \\pmod{12}$. Then $3 + 4 = 7$, so the clock shows $7$ o'clock.",
+    "rating": 650,
+    "source": "AMC 8 · Modular Arithmetic"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "If today is Monday, what day of the week will it be $45$ days from now?",
+    "answer": "Thursday",
+    "solution": "Days repeat every $7$, and $45 \\equiv 3 \\pmod 7$. Three days after Monday is Thursday.",
+    "rating": 670,
+    "source": "AMC 8 · Modular Arithmetic"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "Which of the following numbers leaves a remainder of $2$ when divided by $5$?",
+    "choices": [
+      "A) $24$",
+      "B) $30$",
+      "C) $37$",
+      "D) $45$",
+      "E) $58$"
+    ],
+    "answer": "C",
+    "solution": "A number's remainder mod $5$ comes straight from its last digit. The remainders are $24\\to4$, $30\\to0$, $37\\to2$, $45\\to0$, $58\\to3$. Only $37$ leaves remainder $2$.",
+    "rating": 690,
+    "source": "AMC 8 · Modular Arithmetic"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $3^4$ is divided by $5$?",
+    "answer": "1",
+    "solution": "$3^4 = 81 = 16\\times 5 + 1$, so the remainder is $1$.",
+    "rating": 730,
+    "source": "AMC 8 · Modular Arithmetic"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The powers $2, 2^2, 2^3, \\dots$ taken mod $7$ repeat in a cycle. What is the length of that cycle?",
+    "answer": "3",
+    "solution": "Mod $7$: $2^1\\equiv2$, $2^2\\equiv4$, $2^3\\equiv1$, then it repeats. The cycle $2, 4, 1$ has length $3$.",
+    "rating": 760,
+    "source": "AMC 8 · Modular Arithmetic"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^{100}$ is divided by $7$?",
+    "answer": "2",
+    "solution": "Powers of $2$ mod $7$ cycle as $2, 4, 1$ with length $3$. Since $100 \\equiv 1 \\pmod 3$, $2^{100}$ matches $2^1 \\equiv 2 \\pmod 7$.",
+    "rating": 800,
+    "source": "AMC 8 · Modular Arithmetic"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "What is the remainder when $7^{2024}$ is divided by $4$?",
+    "choices": [
+      "A) $0$",
+      "B) $1$",
+      "C) $2$",
+      "D) $3$",
+      "E) Cannot be determined"
+    ],
+    "answer": "B",
+    "solution": "$7$ is odd, so every power $7^n$ is odd — its remainder mod $4$ must be odd, eliminating $0$ and $2$. Since $7 \\equiv -1 \\pmod 4$ and the exponent $2024$ is even, $7^{2024} \\equiv (-1)^{2024} = 1 \\pmod 4$.",
+    "rating": 830,
+    "source": "AMC 8 · Modular Arithmetic"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Using Fermat's Little Theorem, what is the remainder when $5^{12}$ is divided by $13$?",
+    "answer": "1",
+    "solution": "Since $13$ is prime and does not divide $5$, Fermat's Little Theorem gives $5^{12} \\equiv 1 \\pmod{13}$.",
+    "rating": 890,
+    "source": "AMC 8 · Modular Arithmetic"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $1! + 2! + 3! + \\cdots + 10!$ is divided by $5$?",
+    "answer": "3",
+    "solution": "For every $k \\ge 5$, $k!$ contains a factor of $5$, so $k! \\equiv 0 \\pmod 5$. Only $1!+2!+3!+4! = 1+2+6+24 = 33$ matters, and $33 \\equiv 3 \\pmod 5$.",
+    "rating": 920,
+    "source": "AMC 8 · Modular Arithmetic"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer $k$ such that $2^k \\equiv 1 \\pmod 7$?",
+    "answer": "3",
+    "solution": "Compute powers of $2$ mod $7$: $2, 4, 1$. The first time we reach $1$ is at $2^3$, so $k = 3$.",
+    "rating": 950,
+    "source": "AMC 8 · Modular Arithmetic"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "What is the value of $10! = 1\\times 2\\times 3\\times\\cdots\\times 10$?",
+    "choices": [
+      "A) $3628800$",
+      "B) $3627800$",
+      "C) $3628080$",
+      "D) $3618800$",
+      "E) $3620800$"
+    ],
+    "answer": "A",
+    "solution": "$10!$ has factors $2, 4, 6, 8, 10$ supplying plenty of $2$s and the factors $5, 10$ supplying two $5$s, so it ends in exactly two zeros — that kills $3628080$ (ends in $80$). It is also divisible by $9$, so its digit sum must be a multiple of $9$: $3627800\\,(26)$, $3618800\\,(26)$, and $3620800\\,(19)$ all fail. Only $3628800$ (digit sum $27$) survives.",
+    "rating": 980,
+    "source": "AMC 8 · Modular Arithmetic"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer that leaves remainder $2$ when divided by $3$ and remainder $3$ when divided by $5$?",
+    "answer": "8",
+    "solution": "List numbers that are $3$ more than a multiple of $5$: $3, 8, 13, \\dots$ The first that also leaves remainder $2$ mod $3$ is $8$ ($8 = 2\\times3 + 2$).",
+    "rating": 1050,
+    "source": "AMC 8 · Modular Arithmetic"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $100$ leave a remainder of $4$ when divided by $7$?",
+    "answer": "14",
+    "solution": "These are $4, 11, 18, \\dots, 95$, an arithmetic list. The count is $\\left\\lfloor\\frac{100-4}{7}\\right\\rfloor + 1 = 13 + 1 = 14$.",
+    "rating": 1080,
+    "source": "AMC 8 · Modular Arithmetic"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest integer greater than $1$ that leaves remainder $1$ when divided by each of $4$, $5$, and $6$?",
+    "answer": "61",
+    "solution": "Such a number is $1$ more than a common multiple of $4, 5, 6$. Their least common multiple is $60$, so the next candidate after $1$ is $60 + 1 = 61$.",
+    "rating": 1110,
+    "source": "AMC 8 · Modular Arithmetic"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "Which of the following leaves a remainder of $1$ when divided by both $2$ and $3$?",
+    "choices": [
+      "A) $25$",
+      "B) $28$",
+      "C) $33$",
+      "D) $40$",
+      "E) $51$"
+    ],
+    "answer": "A",
+    "solution": "Remainder $1$ mod $2$ means the number is odd, eliminating $28$ and $40$. Among the odd choices, the remainder mod $3$ must be $1$: $25 \\to 1$, $33 \\to 0$, $51 \\to 0$. Only $25$ works.",
+    "rating": 1130,
+    "source": "AMC 8 · Modular Arithmetic"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer that leaves remainder $1$ when divided by $2$, remainder $2$ when divided by $3$, and remainder $3$ when divided by $4$?",
+    "answer": "11",
+    "solution": "Each condition says the number is one short of a multiple of its divisor, so $n + 1$ is a multiple of $2$, $3$, and $4$ at once. The least common multiple is $12$, giving $n = 12 - 1 = 11$.",
+    "rating": 1170,
+    "source": "AMC 8 · Modular Arithmetic"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $7^{100}$ is divided by $100$?",
+    "answer": "1",
+    "solution": "$7^4 = 2401 \\equiv 1 \\pmod{100}$. Since $100$ is a multiple of $4$, $7^{100} = (7^4)^{25} \\equiv 1^{25} = 1 \\pmod{100}$.",
+    "rating": 1200,
+    "source": "AMC 8 · Modular Arithmetic"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^{2024}$ is divided by $10$?",
+    "answer": "6",
+    "solution": "The remainder mod $10$ is the units digit. Powers of $2$ cycle $2, 4, 8, 6$ with length $4$; since $2024 \\equiv 0 \\pmod 4$, we take the last entry, $6$.",
+    "rating": 1220,
+    "source": "AMC 8 · Modular Arithmetic"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "Without multiplying it out fully, determine which of the following equals $111 \\times 111$.",
+    "choices": [
+      "A) $12331$",
+      "B) $12321$",
+      "C) $12341$",
+      "D) $11221$",
+      "E) $12300$"
+    ],
+    "answer": "B",
+    "solution": "The product ends in $1\\times 1 = 1$, so eliminate $12300$. Also $111$ is divisible by $3$, so the product is divisible by $9$ — its digit sum must be a multiple of $9$. Digit sums: $12331\\to10$, $12341\\to11$, $11221\\to7$ all fail; $12321\\to9$ passes. So $111\\times111 = 12321$.",
+    "rating": 1250,
+    "source": "AMC 8 · Modular Arithmetic"
+  }
+]

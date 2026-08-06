@@ -11,7 +11,7 @@ const prisma = new PrismaClient({ adapter });
 
 const ROOT = process.cwd();
 const NT_DIR = join(ROOT, "content", "amc8", "number-theory");
-const SUB_DIR = join(NT_DIR, "subtopics");
+const GEO_DIR = join(ROOT, "content", "amc8", "geometry");
 
 interface RawProblem {
   type: "MULTIPLE_CHOICE" | "SHORT_ANSWER";
@@ -24,7 +24,7 @@ interface RawProblem {
 }
 
 // Number Theory subtopics (leaf topics that carry the lesson + problem bank).
-const SUBTOPICS = [
+const NT_SUBTOPICS = [
   { name: "Divisibility & Primes", slug: "nt-divisibility-primes" },
   { name: "Prime Factorization & Divisors", slug: "nt-factorization-divisors" },
   { name: "GCD & LCM", slug: "nt-gcd-lcm" },
@@ -34,6 +34,27 @@ const SUBTOPICS = [
   { name: "Digits & Number Bases", slug: "nt-digits-bases" },
   { name: "Terminating & Repeating Decimals", slug: "nt-decimals" },
 ];
+
+// Geometry subtopics. Lessons are written; problem banks fill in over time.
+const GEO_SUBTOPICS = [
+  { name: "Angles & Parallel Lines", slug: "geo-angles" },
+  { name: "Triangle Sides & Pythagorean Theorem", slug: "geo-triangle-sides" },
+  { name: "Triangle Area", slug: "geo-triangle-area" },
+  { name: "Similarity & Congruence", slug: "geo-similarity-congruence" },
+  { name: "Polygons & Quadrilaterals", slug: "geo-polygons-quads" },
+  { name: "Circles", slug: "geo-circles" },
+  { name: "Solid Geometry", slug: "geo-solids" },
+  { name: "Coordinate Geometry", slug: "geo-coordinates" },
+];
+
+// Subjects that carry real content: overview + tiered subtopics under a directory.
+const CONTENT_SUBJECTS: Record<
+  string,
+  { dir: string; subtopics: { name: string; slug: string }[] }
+> = {
+  "number-theory": { dir: NT_DIR, subtopics: NT_SUBTOPICS },
+  geometry: { dir: GEO_DIR, subtopics: GEO_SUBTOPICS },
+};
 
 /**
  * Split a band-sectioned lesson into per-band bodies. Text before the first
@@ -69,7 +90,7 @@ const SUBJECTS = [
 ];
 
 async function main() {
-  console.log("Seeding AIME Trainer (subjects + AMC 8 Number Theory)…");
+  console.log("Seeding AIME Trainer (subjects + AMC 8 content)…");
 
   const level = await prisma.level.upsert({
     where: { key: "AMC8" },
@@ -84,8 +105,9 @@ async function main() {
       update: { name: subj.name, levelId: level.id, parentId: null, order: i },
       create: { name: subj.name, slug: subj.slug, levelId: level.id, order: i },
     });
-    if (subj.slug === "number-theory") {
-      await seedNumberTheory(level.id, topic.id);
+    const content = CONTENT_SUBJECTS[subj.slug];
+    if (content) {
+      await seedSubjectContent(level.id, topic.id, content.dir, content.subtopics);
     } else {
       // Placeholder overview until problems/subtopics arrive.
       await prisma.lesson.deleteMany({ where: { topicId: topic.id } });
@@ -100,34 +122,38 @@ async function main() {
   console.log("Seeded subjects: " + SUBJECTS.map((s) => s.name).join(", "));
 }
 
-async function seedNumberTheory(levelId: string, ntId: string) {
+async function seedSubjectContent(
+  levelId: string,
+  subjectId: string,
+  contentDir: string,
+  subtopics: { name: string; slug: string }[],
+) {
+  const subDir = join(contentDir, "subtopics");
+
   // Parent overview lesson (band "all").
-  const overview = readFileSync(join(NT_DIR, "overview.md"), "utf8");
-  await upsertLesson(ntId, "all", overview);
+  const overview = readFileSync(join(contentDir, "overview.md"), "utf8");
+  await upsertLesson(subjectId, "all", overview);
 
-  const nt = { id: ntId };
-  const level = { id: levelId };
-
-  // Clean slate for this topic subtree's problems.
-  const existingSubs = await prisma.topic.findMany({ where: { parentId: nt.id }, select: { id: true } });
-  const subtreeIds = [nt.id, ...existingSubs.map((t) => t.id)];
+  // Clean slate for this subject subtree's problems.
+  const existingSubs = await prisma.topic.findMany({ where: { parentId: subjectId }, select: { id: true } });
+  const subtreeIds = [subjectId, ...existingSubs.map((t) => t.id)];
   await prisma.attempt.deleteMany({ where: { problem: { topicId: { in: subtreeIds } } } });
   await prisma.problem.deleteMany({ where: { topicId: { in: subtreeIds } } });
 
   let totalProblems = 0;
   const perSub: string[] = [];
 
-  for (let i = 0; i < SUBTOPICS.length; i++) {
-    const st = SUBTOPICS[i];
+  for (let i = 0; i < subtopics.length; i++) {
+    const st = subtopics[i];
     const topic = await prisma.topic.upsert({
       where: { slug: st.slug },
-      update: { name: st.name, levelId: level.id, parentId: nt.id, order: i },
-      create: { name: st.name, slug: st.slug, levelId: level.id, parentId: nt.id, order: i },
+      update: { name: st.name, levelId, parentId: subjectId, order: i },
+      create: { name: st.name, slug: st.slug, levelId, parentId: subjectId, order: i },
     });
 
     // Band-leveled lesson for the subtopic (clear stale bands first).
     await prisma.lesson.deleteMany({ where: { topicId: topic.id } });
-    const lessonMd = readFileSync(join(SUB_DIR, st.slug, "lesson.md"), "utf8");
+    const lessonMd = readFileSync(join(subDir, st.slug, "lesson.md"), "utf8");
     const bands = parseBands(lessonMd);
     for (const [band, body] of Object.entries(bands)) {
       if (body) await upsertLesson(topic.id, band, body);
@@ -135,7 +161,7 @@ async function seedNumberTheory(levelId: string, ntId: string) {
 
     // Problem bank for the subtopic.
     const raw: RawProblem[] = JSON.parse(
-      readFileSync(join(SUB_DIR, st.slug, "problems.json"), "utf8"),
+      readFileSync(join(subDir, st.slug, "problems.json"), "utf8"),
     );
     for (const p of raw) {
       await prisma.problem.create({
@@ -157,7 +183,7 @@ async function seedNumberTheory(levelId: string, ntId: string) {
     perSub.push(`${st.name}: ${raw.length}${range}`);
   }
 
-  console.log(`Seeded ${SUBTOPICS.length} subtopics, ${totalProblems} problems:`);
+  console.log(`Seeded ${subtopics.length} subtopics, ${totalProblems} problems:`);
   perSub.forEach((s) => console.log("  • " + s));
 }
 

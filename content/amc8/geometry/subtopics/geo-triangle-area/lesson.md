@@ -29,15 +29,15 @@ $$ \text{Area} = \sqrt{s(s-a)(s-b)(s-c)}. $$
 <!--band:t4-->
 ## Tier 4 · AMC 8 Advanced
 
-Two more formulas connect a triangle's area to its circle radii, with
-$s$ the semiperimeter:
-
-- **Inradius:** $\text{Area} = r s$, where $r$ is the radius of the inscribed circle.
-- **Circumradius:** $\text{Area} = \dfrac{abc}{4R}$, where $R$ is the radius of the circumscribed circle.
+**Triangles sharing a base or height.** Two triangles with the same height have areas
+in the ratio of their bases (and likewise with the roles swapped). A **median** splits
+a triangle into two smaller triangles of equal area. These ratio facts crack many
+problems without computing any single area.
 
 <!--band:t5-->
 ## Tier 5 · AMC 8 Expert
 
-**Choosing and combining.** The hardest problems make you pick the right formula (or
-chain two of them — e.g. use Heron's to get the area, then $\text{Area}=rs$ to solve
-for the inradius) and often finish with an area **ratio** between related triangles.
+**Choosing and combining.** The hardest problems make you pick the formula that matches
+what you are given — base–height when you have an altitude, Heron's when you know all
+three sides — then split a composite region into triangles and finish with an area
+**ratio** between related pieces.

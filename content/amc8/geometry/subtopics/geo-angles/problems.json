@@ -1,1 +1,162 @@
-[]
+[
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Two angles are complementary, and one of them measures $35^\\circ$. How many degrees is the other?",
+    "answer": "55",
+    "solution": "Complementary angles sum to $90^\\circ$, so the other is $90^\\circ - 35^\\circ = 55^\\circ$.",
+    "rating": 630,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Two angles are supplementary, and one of them measures $110^\\circ$. How many degrees is the other?",
+    "answer": "70",
+    "solution": "Supplementary angles sum to $180^\\circ$, so the other is $180^\\circ - 110^\\circ = 70^\\circ$.",
+    "rating": 650,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Four rays drawn from a single point split the full turn into angles of $100^\\circ$, $80^\\circ$, $90^\\circ$, and $x^\\circ$. Find $x$.",
+    "answer": "90",
+    "solution": "Angles around a point sum to $360^\\circ$: $x = 360 - (100+80+90) = 90$.",
+    "rating": 670,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Two straight lines cross, forming an angle of $130^\\circ$. What is the measure of one of the two smaller angles formed?",
+    "answer": "50",
+    "solution": "An angle and its neighbor on a straight line are supplementary, so the smaller angle is $180^\\circ - 130^\\circ = 50^\\circ$.",
+    "rating": 690,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Two parallel lines are cut by a transversal. One angle measures $72^\\circ$. What is the measure of the angle corresponding to it at the other intersection?",
+    "answer": "72",
+    "solution": "Corresponding angles at parallel lines are equal, so the angle is $72^\\circ$.",
+    "rating": 730,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A transversal crosses two parallel lines. Two same-side interior (co-interior) angles are formed, and one measures $115^\\circ$. Find the other.",
+    "answer": "65",
+    "solution": "Co-interior angles between parallel lines are supplementary: $180^\\circ - 115^\\circ = 65^\\circ$.",
+    "rating": 760,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Two parallel lines are cut by a transversal. A pair of alternate interior angles measure $(2x)^\\circ$ and $50^\\circ$. Find $x$.",
+    "answer": "25",
+    "solution": "Alternate interior angles are equal, so $2x = 50$, giving $x = 25$.",
+    "rating": 800,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A straight road crosses two parallel streets. Two corresponding angles measure $(3x)^\\circ$ and $(x + 80)^\\circ$. Find $x$.",
+    "answer": "40",
+    "solution": "Corresponding angles are equal: $3x = x + 80$, so $2x = 80$ and $x = 40$.",
+    "rating": 830,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Two angles of a triangle measure $40^\\circ$ and $75^\\circ$. What is the third angle?",
+    "answer": "65",
+    "solution": "The angles of a triangle sum to $180^\\circ$: $180 - (40+75) = 65^\\circ$.",
+    "rating": 890,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "In a right triangle, one of the acute angles measures $32^\\circ$. Find the other acute angle.",
+    "answer": "58",
+    "solution": "The two acute angles of a right triangle sum to $90^\\circ$, so the other is $90 - 32 = 58^\\circ$.",
+    "rating": 920,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "An isosceles triangle has a vertex angle of $40^\\circ$. What is the measure of each base angle?",
+    "answer": "70",
+    "solution": "The two base angles are equal and share the remaining $180 - 40 = 140^\\circ$, so each is $70^\\circ$.",
+    "rating": 950,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "One angle of an isosceles triangle measures $100^\\circ$. What is the measure of each of the other two angles?",
+    "answer": "40",
+    "solution": "A triangle can have only one obtuse angle, so $100^\\circ$ must be the vertex angle. The two equal base angles share $180 - 100 = 80^\\circ$, giving $40^\\circ$ each.",
+    "rating": 980,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "An exterior angle of a triangle measures $140^\\circ$, and its two remote interior angles are equal. Find the measure of each remote interior angle.",
+    "answer": "70",
+    "solution": "The exterior angle equals the sum of the two remote interior angles. If they are equal, each is $140 \\div 2 = 70^\\circ$.",
+    "rating": 1050,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "An exterior angle of a triangle measures $145^\\circ$. One of its remote interior angles is $60^\\circ$. Find the other remote interior angle.",
+    "answer": "85",
+    "solution": "By the Exterior Angle Theorem, $145 = 60 + (\\text{other})$, so the other remote interior angle is $85^\\circ$.",
+    "rating": 1080,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "In triangle $ABC$, the exterior angle at $C$ measures $130^\\circ$ and angle $A = 70^\\circ$. Find angle $B$.",
+    "answer": "60",
+    "solution": "The exterior angle at $C$ equals $A + B$, so $130 = 70 + B$ and $B = 60^\\circ$.",
+    "rating": 1110,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Two angles of a triangle measure $50^\\circ$ and $60^\\circ$. What is the measure of the exterior angle at the third vertex?",
+    "answer": "110",
+    "solution": "The exterior angle at the third vertex equals the sum of the two remote interior angles: $50 + 60 = 110^\\circ$.",
+    "rating": 1130,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Triangle $ABC$ is isosceles with $AB = AC$ and vertex angle $A = 50^\\circ$. Side $CB$ is extended past $B$. Find the exterior angle at $B$.",
+    "answer": "115",
+    "solution": "The base angles are $(180 - 50)\\div 2 = 65^\\circ$ each. The exterior angle at $B$ is $180 - 65 = 115^\\circ$ (equivalently, the sum of the remote angles $A + C = 50 + 65$).",
+    "rating": 1160,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "In triangle $ABC$, angle $B$ is three times angle $A$, and angle $C$ is $20^\\circ$ more than angle $A$. Find angle $A$.",
+    "answer": "32",
+    "solution": "Let angle $A = a$. Then $a + 3a + (a + 20) = 180$, so $5a = 160$ and $a = 32^\\circ$.",
+    "rating": 1200,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The angles of a triangle are in the ratio $2 : 3 : 4$. Find the measure of the largest angle.",
+    "answer": "80",
+    "solution": "The parts total $2+3+4 = 9$, so one part is $180 \\div 9 = 20^\\circ$. The largest angle is $4 \\times 20 = 80^\\circ$.",
+    "rating": 1220,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Triangle $ABC$ is isosceles with $AB = AC$ and angle $A = 36^\\circ$. Point $D$ lies on $AC$ so that $BD = BC$. Find the measure of angle $DBC$.",
+    "answer": "36",
+    "solution": "The base angles are $(180-36)\\div2 = 72^\\circ$, so angle $BCA = 72^\\circ$. In triangle $BDC$, $BD = BC$ makes it isosceles with equal angles at $D$ and $C$; since angle $BCD = 72^\\circ$, angle $BDC = 72^\\circ$ too. Then angle $DBC = 180 - 72 - 72 = 36^\\circ$.",
+    "rating": 1250,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  }
+]

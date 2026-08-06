@@ -16,8 +16,8 @@ $30\text{-}60\text{-}90$ and $45\text{-}45\text{-}90$ special right triangles, a
 the Pythagorean Inequality that classifies a triangle as acute/right/obtuse.
 
 ## 3. Triangle Area
-The workhorse $\tfrac12 bh$, plus Heron's formula and the $\tfrac{abc}{4R}$ and
-$rs$ formulas for harder problems.
+The workhorse $\tfrac12 bh$, plus Heron's formula for when you know all three sides,
+and area **ratios** between triangles that share a base or height.
 
 ## 4. Similarity & Congruence
 Congruence (SSS, SAS, ASA, AAS, HL) and similarity (equal angles, proportional

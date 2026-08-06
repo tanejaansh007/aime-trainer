@@ -49,7 +49,7 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Two parallel lines are cut by a transversal. A pair of alternate interior angles measure $(2x)^\\circ$ and $50^\\circ$. Find $x$.",
+    "statement": "Two parallel lines are cut by a transversal. A pair of alternate interior angles measure $(2x)^\\circ$ and $50^\\circ$. Find $x$.\n\n<svg width='230' viewBox='0 0 240 140' xmlns='http://www.w3.org/2000/svg' font-family='ui-sans-serif,system-ui,sans-serif' font-size='11' fill='#111' style='display:block;margin:10px 0;max-width:100%;height:auto'><line x1='20' y1='45' x2='220' y2='45' stroke='#111'/><line x1='20' y1='100' x2='220' y2='100' stroke='#111'/><line x1='60' y1='18' x2='180' y2='128' stroke='#1d4ed8' stroke-width='1.5'/><text x='210' y='40'>m</text><text x='210' y='115'>n</text><text x='92' y='62'>(2x)°</text><text x='120' y='94'>50°</text></svg>",
     "answer": "25",
     "solution": "Alternate interior angles are equal, so $2x = 50$, giving $x = 25$.",
     "rating": 800,
@@ -81,7 +81,7 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "An isosceles triangle has a vertex angle of $40^\\circ$. What is the measure of each base angle?",
+    "statement": "An isosceles triangle has a vertex angle of $40^\\circ$. What is the measure of each base angle?\n\n<svg width='180' viewBox='0 0 180 150' xmlns='http://www.w3.org/2000/svg' font-family='ui-sans-serif,system-ui,sans-serif' font-size='11' fill='#111' style='display:block;margin:10px 0;max-width:100%;height:auto'><polygon points='90,20 30,128 150,128' fill='none' stroke='#111'/><line x1='56' y1='70' x2='63' y2='75' stroke='#111'/><line x1='117' y1='75' x2='124' y2='70' stroke='#111'/><text x='84' y='16'>A</text><text x='80' y='44'>40°</text><text x='34' y='120'>?</text><text x='140' y='120'>?</text></svg>",
     "answer": "70",
     "solution": "The two base angles are equal and share the remaining $180 - 40 = 140^\\circ$, so each is $70^\\circ$.",
     "rating": 950,
@@ -113,7 +113,7 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "In triangle $ABC$, the exterior angle at $C$ measures $130^\\circ$ and angle $A = 70^\\circ$. Find angle $B$.",
+    "statement": "In triangle $ABC$, the exterior angle at $C$ measures $130^\\circ$ and angle $A = 70^\\circ$. Find angle $B$.\n\n<svg width='220' viewBox='0 0 230 150' xmlns='http://www.w3.org/2000/svg' font-family='ui-sans-serif,system-ui,sans-serif' font-size='11' fill='#111' style='display:block;margin:10px 0;max-width:100%;height:auto'><polygon points='40,120 150,120 70,30' fill='none' stroke='#111'/><line x1='150' y1='120' x2='212' y2='120' stroke='#111'/><text x='30' y='134'>B</text><text x='148' y='134'>C</text><text x='64' y='26'>A</text><text x='60' y='50'>70°</text><text x='158' y='112'>130°</text></svg>",
     "answer": "60",
     "solution": "The exterior angle at $C$ equals $A + B$, so $130 = 70 + B$ and $B = 60^\\circ$.",
     "rating": 1110,
@@ -157,6 +157,70 @@
     "answer": "36",
     "solution": "The base angles are $(180-36)\\div2 = 72^\\circ$, so angle $BCA = 72^\\circ$. In triangle $BDC$, $BD = BC$ makes it isosceles with equal angles at $D$ and $C$; since angle $BCD = 72^\\circ$, angle $BDC = 72^\\circ$ too. Then angle $DBC = 180 - 72 - 72 = 36^\\circ$.",
     "rating": 1250,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "In the figure, $AB \\parallel CD$ and point $E$ lies between the two lines. If $\\angle BAE = 40^\\circ$ and $\\angle DCE = 30^\\circ$, find $\\angle AEC$.\n\n<svg width='260' viewBox='0 0 280 150' xmlns='http://www.w3.org/2000/svg' font-family='ui-sans-serif,system-ui,sans-serif' font-size='11' fill='#111' style='display:block;margin:10px 0;max-width:100%;height:auto'><line x1='20' y1='25' x2='260' y2='25' stroke='#111'/><line x1='20' y1='125' x2='260' y2='125' stroke='#111'/><line x1='45' y1='25' x2='150' y2='75' stroke='#1d4ed8' stroke-width='1.5'/><line x1='45' y1='125' x2='150' y2='75' stroke='#1d4ed8' stroke-width='1.5'/><circle cx='150' cy='75' r='2.5' fill='#111'/><text x='22' y='18'>A</text><text x='250' y='18'>B</text><text x='22' y='140'>C</text><text x='250' y='140'>D</text><text x='156' y='72'>E</text><text x='60' y='44'>40°</text><text x='60' y='112'>30°</text></svg>",
+    "answer": "70",
+    "solution": "Draw a line through $E$ parallel to both $AB$ and $CD$. It splits $\\angle AEC$ into two parts equal (by alternate interior angles) to $\\angle BAE = 40^\\circ$ and $\\angle DCE = 30^\\circ$. So $\\angle AEC = 40 + 30 = 70^\\circ$.",
+    "rating": 1150,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the measure, in degrees, of the smaller angle between the hour and minute hands of a clock at $3{:}30$?\n\n<svg width='150' viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg' font-family='ui-sans-serif,system-ui,sans-serif' font-size='11' fill='#111' style='display:block;margin:10px 0;max-width:100%;height:auto'><circle cx='80' cy='80' r='62' fill='#fff' stroke='#111'/><text x='73' y='26'>12</text><text x='138' y='84'>3</text><text x='77' y='148'>6</text><text x='16' y='84'>9</text><line x1='80' y1='80' x2='80' y2='134' stroke='#1d4ed8' stroke-width='2'/><line x1='80' y1='80' x2='123' y2='92' stroke='#dc2626' stroke-width='3'/><circle cx='80' cy='80' r='3' fill='#111'/></svg>",
+    "answer": "75",
+    "solution": "At $3{:}30$ the minute hand points at $6$ ($180^\\circ$ from $12$). The hour hand is halfway between $3$ and $4$: $3\\cdot30 + 30\\cdot0.5 = 105^\\circ$. The gap is $180 - 105 = 75^\\circ$.",
+    "rating": 1180,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The three angles of the triangle shown are $(x+10)^\\circ$, $(2x)^\\circ$, and $(3x-10)^\\circ$. Find $x$.\n\n<svg width='210' viewBox='0 0 210 150' xmlns='http://www.w3.org/2000/svg' font-family='ui-sans-serif,system-ui,sans-serif' font-size='11' fill='#111' style='display:block;margin:10px 0;max-width:100%;height:auto'><polygon points='20,125 185,125 80,25' fill='none' stroke='#111'/><text x='28' y='118'>(x+10)°</text><text x='140' y='118'>(2x)°</text><text x='58' y='46'>(3x−10)°</text><text x='10' y='140'>A</text><text x='185' y='140'>B</text><text x='76' y='20'>C</text></svg>",
+    "answer": "30",
+    "solution": "The angles sum to $180^\\circ$: $(x+10)+(2x)+(3x-10) = 6x = 180$, so $x = 30$.",
+    "rating": 1210,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "In triangle $ABC$, $\\angle A = 50^\\circ$. The bisectors of $\\angle B$ and $\\angle C$ meet at $I$. Find $\\angle BIC$.\n\n<svg width='200' viewBox='0 0 200 150' xmlns='http://www.w3.org/2000/svg' font-family='ui-sans-serif,system-ui,sans-serif' font-size='11' fill='#111' style='display:block;margin:10px 0;max-width:100%;height:auto'><polygon points='95,20 25,125 165,125' fill='none' stroke='#111'/><line x1='25' y1='125' x2='95' y2='90' stroke='#1d4ed8' stroke-width='1.5'/><line x1='165' y1='125' x2='95' y2='90' stroke='#1d4ed8' stroke-width='1.5'/><circle cx='95' cy='90' r='2.5' fill='#111'/><text x='89' y='16'>A</text><text x='12' y='134'>B</text><text x='168' y='134'>C</text><text x='99' y='103'>I</text><text x='84' y='42'>50°</text></svg>",
+    "answer": "115",
+    "solution": "In triangle $BIC$, the angles at $B$ and $C$ are $\\tfrac{B}{2}$ and $\\tfrac{C}{2}$, so $\\angle BIC = 180 - \\tfrac{B+C}{2}$. Since $B + C = 180 - 50 = 130$, $\\angle BIC = 180 - 65 = 115^\\circ$.",
+    "rating": 1240,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Find the sum of the five angles at the points $A, B, C, D, E$ of the five-pointed star shown.\n\n<svg width='170' viewBox='0 0 160 152' xmlns='http://www.w3.org/2000/svg' font-family='ui-sans-serif,system-ui,sans-serif' font-size='11' fill='#111' style='display:block;margin:10px 0;max-width:100%;height:auto'><polygon points='80,15 118,133 18,60 142,60 42,133' fill='none' stroke='#111'/><text x='75' y='12'>A</text><text x='146' y='60'>B</text><text x='120' y='146'>C</text><text x='30' y='146'>D</text><text x='6' y='60'>E</text></svg>",
+    "answer": "180",
+    "solution": "Each point angle is an inscribed-style angle, and by repeatedly applying the Exterior Angle Theorem around the star the five tip angles total $180^\\circ$ — the same as one triangle.",
+    "rating": 1270,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Triangle $ABC$ is isosceles with $AB = AC$ and $\\angle A = 36^\\circ$. The bisector of $\\angle B$ meets $AC$ at $D$. Find $\\angle BDC$.\n\n<svg width='200' viewBox='0 0 200 150' xmlns='http://www.w3.org/2000/svg' font-family='ui-sans-serif,system-ui,sans-serif' font-size='11' fill='#111' style='display:block;margin:10px 0;max-width:100%;height:auto'><polygon points='90,20 25,128 155,128' fill='none' stroke='#111'/><line x1='25' y1='128' x2='126' y2='78' stroke='#1d4ed8' stroke-width='1.5'/><line x1='53.6' y1='71.9' x2='60.4' y2='76.1' stroke='#111'/><line x1='119.1' y1='71.9' x2='125.9' y2='76.1' stroke='#111'/><text x='84' y='16'>A</text><text x='12' y='138'>B</text><text x='158' y='138'>C</text><text x='130' y='78'>D</text><text x='80' y='42'>36°</text></svg>",
+    "answer": "72",
+    "solution": "The base angles are $(180-36)/2 = 72^\\circ$, so $\\angle C = 72^\\circ$. The bisector makes $\\angle DBC = 72/2 = 36^\\circ$. In triangle $BDC$, $\\angle BDC = 180 - 36 - 72 = 72^\\circ$.",
+    "rating": 1300,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "In the figure, $AB \\parallel DE$ (figure not to scale). If $\\angle ABC = 130^\\circ$ and $\\angle CDE = 140^\\circ$, find $\\angle BCD$.\n\n<svg width='210' viewBox='0 0 220 150' xmlns='http://www.w3.org/2000/svg' font-family='ui-sans-serif,system-ui,sans-serif' font-size='11' fill='#111' style='display:block;margin:10px 0;max-width:100%;height:auto'><line x1='30' y1='30' x2='150' y2='30' stroke='#111'/><line x1='70' y1='125' x2='195' y2='125' stroke='#111'/><line x1='150' y1='30' x2='95' y2='78' stroke='#1d4ed8' stroke-width='1.5'/><line x1='95' y1='78' x2='70' y2='125' stroke='#1d4ed8' stroke-width='1.5'/><text x='22' y='24'>A</text><text x='152' y='24'>B</text><text x='54' y='138'>D</text><text x='196' y='138'>E</text><text x='98' y='75'>C</text><text x='118' y='48'>130°</text><text x='46' y='112'>140°</text></svg>",
+    "answer": "90",
+    "solution": "Draw a line through $C$ parallel to $AB$ and $DE$. It splits $\\angle BCD$ into a part co-interior with $\\angle ABC$ ($180-130 = 50^\\circ$) and a part co-interior with $\\angle CDE$ ($180-140 = 40^\\circ$). So $\\angle BCD = 50 + 40 = 90^\\circ$.",
+    "rating": 1330,
+    "source": "AMC 8 · Angles & Parallel Lines"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Two lines cross at $E$, and ray $EF$ bisects $\\angle AEC$. If $\\angle AEC = (4x)^\\circ$ and its vertical angle $\\angle BED = (2x+30)^\\circ$, find $\\angle AEC$.\n\n<svg width='200' viewBox='0 0 210 150' xmlns='http://www.w3.org/2000/svg' font-family='ui-sans-serif,system-ui,sans-serif' font-size='11' fill='#111' style='display:block;margin:10px 0;max-width:100%;height:auto'><line x1='20' y1='120' x2='190' y2='30' stroke='#111'/><line x1='30' y1='30' x2='180' y2='120' stroke='#111'/><line x1='105' y1='75' x2='34' y2='75' stroke='#1d4ed8' stroke-width='1.5'/><circle cx='105' cy='75' r='2.5' fill='#111'/><text x='8' y='128'>A</text><text x='190' y='30'>B</text><text x='20' y='26'>C</text><text x='180' y='134'>D</text><text x='108' y='70'>E</text><text x='22' y='90'>F</text></svg>",
+    "answer": "60",
+    "solution": "Vertical angles are equal: $4x = 2x + 30$, so $x = 15$ and $\\angle AEC = 4x = 60^\\circ$. (The bisector $EF$ is extra information — it just splits the $60^\\circ$ into two $30^\\circ$ halves.)",
+    "rating": 1350,
     "source": "AMC 8 · Angles & Parallel Lines"
   }
 ]

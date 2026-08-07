@@ -1,162 +1,722 @@
 [
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the sum of the digits of $2026$?",
+    "statement": "In the number $472$, what is the place value of the digit $7$?",
+    "answer": "70",
+    "solution": "The $7$ is in the tens place, so its value is $7\\times10=70$.",
+    "rating": 450,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $101_2$ in base $10$?",
+    "answer": "5",
+    "solution": "$101_2 = 1\\cdot4+0\\cdot2+1 = 5$.",
+    "rating": 450,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of the digits of $253$?",
     "answer": "10",
-    "solution": "$2 + 0 + 2 + 6 = 10$.",
-    "rating": 700,
-    "source": "AMC 8 · Digits & Bases"
+    "solution": "$2+5+3=10$.",
+    "rating": 450,
+    "source": "AMC 8 · Digits & Number Bases"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "A two-digit number equals $5$ times the sum of its digits. What is the number?",
-    "answer": "45",
-    "solution": "Let the number be $10A + B$. Then $10A + B = 5(A + B)$, so $5A = 4B$. The only single-digit solution is $A = 4, B = 5$, giving $45$.",
-    "rating": 720,
-    "source": "AMC 8 · Digits & Bases"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "The product of the two digits of a two-digit number is $18$ and their sum is $9$. What is the larger of the two possible values of the number?",
-    "answer": "63",
-    "solution": "The digits satisfy $ab = 18$ and $a + b = 9$, so they are roots of $t^2 - 9t + 18 = 0$: $t = 3$ or $t = 6$. The two numbers are $36$ and $63$; the larger is $63$.",
-    "rating": 760,
-    "source": "AMC 8 · Digits & Bases"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "A two-digit number equals $4$ times its units digit plus $3$ times its tens digit. What is the number?",
-    "answer": "37",
-    "solution": "Let the number be $10A + B$. Then $10A + B = 4B + 3A$, so $7A = 3B$. With single digits, $A = 3$ and $B = 7$ is the unique solution, giving $37$. (Check: $4 \\times 7 + 3 \\times 3 = 37$.)",
-    "rating": 800,
-    "source": "AMC 8 · Digits & Bases"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the value of $\\overline{1101}_2$ in base $10$?",
-    "answer": "13",
-    "solution": "$\\overline{1101}_2 = 1 \\cdot 8 + 1 \\cdot 4 + 0 \\cdot 2 + 1 = 8 + 4 + 1 = 13$.",
-    "rating": 810,
-    "source": "AMC 8 · Digits & Bases"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "A two-digit number and the number formed by reversing its digits differ by $36$. What is the absolute difference of the two digits?",
+    "statement": "How many digits does the number $1000$ have?",
     "answer": "4",
-    "solution": "If the digits are $A$ and $B$, the two numbers are $10A + B$ and $10B + A$. Their difference is $9|A - B| = 36$, so $|A - B| = 4$.",
-    "rating": 840,
-    "source": "AMC 8 · Digits & Bases"
+    "solution": "$1000$ has $4$ digits.",
+    "rating": 450,
+    "source": "AMC 8 · Digits & Number Bases"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the value of $\\overline{213}_5$ in base $10$?",
-    "answer": "58",
-    "solution": "$\\overline{213}_5 = 2 \\cdot 25 + 1 \\cdot 5 + 3 = 50 + 5 + 3 = 58$.",
-    "rating": 870,
-    "source": "AMC 8 · Digits & Bases"
+    "statement": "In the number $3456$, which digit is in the hundreds place?",
+    "answer": "4",
+    "solution": "Reading $3456$, the hundreds digit is $4$.",
+    "rating": 450,
+    "source": "AMC 8 · Digits & Number Bases"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "A two-digit number and the number formed by reversing its digits sum to $110$ and differ by $18$. What is the original number if its tens digit is larger than its units digit?",
-    "answer": "64",
-    "solution": "Let the digits be $A > B$. Sum: $11(A + B) = 110 \\Rightarrow A + B = 10$. Difference: $9(A - B) = 18 \\Rightarrow A - B = 2$. Solving gives $A = 6, B = 4$, so the number is $64$.",
-    "rating": 880,
-    "source": "AMC 8 · Digits & Bases"
+    "statement": "What is $110_2$ in base $10$?",
+    "answer": "6",
+    "solution": "$110_2 = 4+2+0 = 6$.",
+    "rating": 500,
+    "source": "AMC 8 · Digits & Number Bases"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many two-digit positive integers have a digit sum equal to $10$?",
-    "answer": "9",
-    "solution": "The pairs $(A, B)$ with $A + B = 10$, $1 \\le A \\le 9$, $0 \\le B \\le 9$ are $(1,9),(2,8),(3,7),(4,6),(5,5),(6,4),(7,3),(8,2),(9,1)$ — exactly $9$ numbers.",
-    "rating": 920,
-    "source": "AMC 8 · Digits & Bases"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "A three-digit number $\\overline{ABC}$ satisfies $A = B + C$ and $A + B + C = 12$. How many such three-digit numbers are there?",
-    "answer": "7",
-    "solution": "Substituting $A = B + C$ into $A + B + C = 12$ gives $2A = 12$, so $A = 6$. Then $B + C = 6$ with $0 \\le B, C \\le 9$. The pairs $(B, C)$ are $(0,6),(1,5),(2,4),(3,3),(4,2),(5,1),(6,0)$ — $7$ numbers.",
-    "rating": 960,
-    "source": "AMC 8 · Digits & Bases"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the value of $\\overline{132}_5 + \\overline{214}_5$ in base $10$?",
-    "answer": "101",
-    "solution": "$\\overline{132}_5 = 25 + 15 + 2 = 42$ and $\\overline{214}_5 = 50 + 5 + 4 = 59$. Their sum is $42 + 59 = 101$.",
-    "rating": 970,
-    "source": "AMC 8 · Digits & Bases"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "A three-digit number equals $12$ times its digit sum. What is the number?",
-    "answer": "108",
-    "solution": "Let the number be $\\overline{ABC}$. Then $100A + 10B + C = 12(A + B + C)$, giving $88A = 2B + 11C$. For $A = 1$: $88 = 2B + 11C$; setting $C = 8$ gives $B = 0$. For $A \\ge 2$, the right side is at most $2(9) + 11(9) = 117 < 176$, so there are no further solutions. The number is $108$.",
-    "rating": 1000,
-    "source": "AMC 8 · Digits & Bases"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "In base $b$, the two-digit number $\\overline{23}_b$ equals $17$ in base $10$. What is $b$?",
-    "answer": "7",
-    "solution": "$2b + 3 = 17 \\Rightarrow 2b = 14 \\Rightarrow b = 7$.",
-    "rating": 1020,
-    "source": "AMC 8 · Digits & Bases"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "A two-digit number equals twice the product of its digits. What is the number?",
+    "statement": "What is the sum of the digits of $9999$?",
     "answer": "36",
-    "solution": "Let the number be $10A + B$. Then $10A + B = 2AB$, so $B(2A - 1) = 10A$ and $B = \\frac{10A}{2A - 1}$. Testing $A = 1$ through $9$ yields an integer only for $A = 3$: $B = 30/5 = 6$. The number is $36$. (Check: $2 \\times 3 \\times 6 = 36$.)",
-    "rating": 1050,
-    "source": "AMC 8 · Digits & Bases"
+    "solution": "$9+9+9+9=36$.",
+    "rating": 500,
+    "source": "AMC 8 · Digits & Number Bases"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the sum of all the digits of the integers from $1$ to $20$?",
-    "answer": "102",
-    "solution": "Integers $1$–$9$: digit sum $= 45$. Integers $10$–$19$: each contributes tens digit $1$ and units digits $0$–$9$, totaling $10 \\times 1 + (0 + 1 + \\cdots + 9) = 10 + 45 = 55$. Integer $20$: digit sum $= 2$. Grand total: $45 + 55 + 2 = 102$.",
-    "rating": 1100,
-    "source": "AMC 8 · Digits & Bases"
+    "statement": "What is $1000_2$ in base $10$?",
+    "answer": "8",
+    "solution": "$1000_2 = 2^3 = 8$.",
+    "rating": 500,
+    "source": "AMC 8 · Digits & Number Bases"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "A positive integer has base-$4$ representation $\\overline{AB}_4$ and base-$7$ representation $\\overline{BA}_7$, where $A \\ne 0$ and $B \\ne 0$. What is the integer?",
+    "statement": "How many digits are in the base-$2$ representation of $7$?",
+    "answer": "3",
+    "solution": "$7 = 111_2$, which has $3$ digits.",
+    "rating": 500,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "In the number $5280$, what is the place value of the digit $5$?",
+    "answer": "5000",
+    "solution": "The $5$ is in the thousands place: $5\\times1000=5000$.",
+    "rating": 500,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $1011_2$ in base $10$?",
+    "answer": "11",
+    "solution": "$1011_2 = 8+0+2+1 = 11$.",
+    "rating": 550,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $23_5$ in base $10$?",
+    "answer": "13",
+    "solution": "$23_5 = 2\\cdot5+3 = 13$.",
+    "rating": 550,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of the digits of $12345$?",
+    "answer": "15",
+    "solution": "$1+2+3+4+5=15$.",
+    "rating": 550,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $12$ in base $2$.",
+    "answer": "1100",
+    "solution": "$12 = 8+4 = 1100_2$.",
+    "rating": 550,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits does $255$ have in base $10$?",
+    "answer": "3",
+    "solution": "$255$ has $3$ digits.",
+    "rating": 550,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $100_5$ in base $10$?",
+    "answer": "25",
+    "solution": "$100_5 = 5^2 = 25$.",
+    "rating": 600,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $11111_2$ in base $10$?",
+    "answer": "31",
+    "solution": "$11111_2 = 16+8+4+2+1 = 31$.",
+    "rating": 600,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $20$ in base $3$.",
+    "answer": "202",
+    "solution": "$20 = 18+2 = 2\\cdot9+0\\cdot3+2 = 202_3$.",
+    "rating": 600,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of the digits of $2^{10} = 1024$?",
+    "answer": "7",
+    "solution": "$1+0+2+4=7$.",
+    "rating": 600,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $34_5$ in base $10$?",
+    "answer": "19",
+    "solution": "$34_5 = 3\\cdot5+4 = 19$.",
+    "rating": 600,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $30$ in base $2$.",
+    "answer": "11110",
+    "solution": "$30 = 16+8+4+2 = 11110_2$.",
+    "rating": 650,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $44_5$ in base $10$?",
+    "answer": "24",
+    "solution": "$44_5 = 4\\cdot5+4 = 24$.",
+    "rating": 650,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest three-digit number in base $5$, expressed in base $10$?",
+    "answer": "124",
+    "solution": "$444_5 = 4\\cdot25+4\\cdot5+4 = 124$.",
+    "rating": 650,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits does $100$ have in base $2$?",
+    "answer": "7",
+    "solution": "$100 = 1100100_2$, which has $7$ digits.",
+    "rating": 650,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of the digits of $111 \\times 111 = 12321$?",
     "answer": "9",
-    "solution": "Setting the representations equal: $4A + B = 7B + A \\Rightarrow 3A = 6B \\Rightarrow A = 2B$. Since $A$ must be a valid base-$4$ digit ($A \\le 3$) and $B \\ge 1$: $B = 1, A = 2$. The integer is $4(2) + 1 = 9$. (Check: $7(1) + 2 = 9$.)",
-    "rating": 1120,
-    "source": "AMC 8 · Digits & Bases"
+    "solution": "$1+2+3+2+1=9$.",
+    "rating": 650,
+    "source": "AMC 8 · Digits & Number Bases"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "A three-digit number has its three digits forming an arithmetic sequence with common difference $2$. (An arithmetic sequence is a list of numbers in which each term after the first is obtained by adding the same constant to the previous term.) What is the largest such three-digit number?",
-    "answer": "975",
-    "solution": "Decreasing sequences $A, A-2, A-4$ with $A \\le 9$ and $A - 4 \\ge 0$ give $A \\in \\{4,5,6,7,8,9\\}$, producing $420, 531, 642, 753, 864, 975$. The largest is $975$.",
-    "rating": 1150,
-    "source": "AMC 8 · Digits & Bases"
+    "statement": "Write $100$ in base $5$.",
+    "answer": "400",
+    "solution": "$100 = 4\\cdot25 = 400_5$.",
+    "rating": 700,
+    "source": "AMC 8 · Digits & Number Bases"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the largest four-digit integer with all distinct digits whose digit sum is $12$?",
-    "answer": "9210",
-    "solution": "To maximize, set $A = 9$, then choose remaining digits as small as possible while keeping them distinct and summing to $3$: $B = 2, C = 1, D = 0$. This gives $9210$ with digit sum $9 + 2 + 1 + 0 = 12$ and all digits distinct. Any other choice of $B, C, D$ produces a smaller number.",
-    "rating": 1200,
-    "source": "AMC 8 · Digits & Bases"
+    "statement": "What is $1010_2 + 101_2$ in base $10$?",
+    "answer": "15",
+    "solution": "$1010_2=10$ and $101_2=5$; $10+5=15$.",
+    "rating": 700,
+    "source": "AMC 8 · Digits & Number Bases"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "A three-digit number $\\overline{ABC}$ satisfies $\\overline{ABC} = A! + B! + C!$, where $n!$ (read \"$n$ factorial\") denotes the product $1 \\times 2 \\times \\cdots \\times n$ (for example, $4! = 1 \\times 2 \\times 3 \\times 4 = 24$). What is $A + B + C$?",
+    "statement": "Write $63$ in base $2$.",
+    "answer": "111111",
+    "solution": "$63 = 2^6-1 = 111111_2$.",
+    "rating": 700,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "In base $12$, the digit $A$ represents $10$. What is $2A_{12}$ in base $10$?",
+    "answer": "34",
+    "solution": "$2A_{12} = 2\\cdot12+10 = 34$.",
+    "rating": 700,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many three-digit numbers are there in base $5$?",
+    "answer": "100",
+    "solution": "The first digit has $4$ choices ($1$–$4$) and the other two have $5$ each: $4\\cdot5\\cdot5=100$.",
+    "rating": 700,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $200$ in base $7$.",
+    "answer": "404",
+    "solution": "$200 = 4\\cdot49+0\\cdot7+4 = 404_7$.",
+    "rating": 740,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $1234_5$ in base $10$?",
+    "answer": "194",
+    "solution": "$1\\cdot125+2\\cdot25+3\\cdot5+4 = 125+50+15+4 = 194$.",
+    "rating": 740,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the digit sum of the base-$2$ representation of $255$?",
+    "answer": "8",
+    "solution": "$255 = 11111111_2$, with eight $1$'s, so the digit sum is $8$.",
+    "rating": 740,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits does $1000$ have in base $2$?",
     "answer": "10",
-    "solution": "Since $7! = 5040 > 999$, each digit is at most $6$. The only three-digit solution is $145 = 1! + 4! + 5! = 1 + 24 + 120 = 145$. So $A + B + C = 1 + 4 + 5 = 10$.",
-    "rating": 1250,
-    "source": "AMC 8 · Digits & Bases"
+    "solution": "$1000 = 1111101000_2$, which has $10$ digits.",
+    "rating": 740,
+    "source": "AMC 8 · Digits & Number Bases"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "For how many integers $n$ with $1 \\le n \\le 100$ is the units digit of $n$ in base $10$ the same as the units digit of $n$ in base $5$?",
-    "answer": "50",
-    "solution": "The units digit of $n$ in base $5$ is the remainder when $n$ is divided by $5$; in base $10$ it is the remainder when $n$ is divided by $10$. If the base-$10$ units digit is $0, 1, 2, 3,$ or $4$, then it is already less than $5$, so it equals the remainder when $n$ is divided by $5$ as well — the two match. If the base-$10$ units digit is $5, 6, 7, 8,$ or $9$, the remainder when divided by $5$ is $0, 1, 2, 3,$ or $4$ respectively — different. So the two units digits agree exactly when the base-$10$ units digit is in $\\{0, 1, 2, 3, 4\\}$. From $1$ to $100$, these are the integers ending in $0, 1, 2, 3,$ or $4$: exactly $50$ integers.",
-    "rating": 1300,
-    "source": "AMC 8 · Digits & Bases"
+    "statement": "Write $2024$ in base $16$ (hexadecimal).",
+    "answer": "7E8",
+    "solution": "$2024 = 7\\cdot256 + 14\\cdot16 + 8 = 7E8_{16}$ (since $14=E$).",
+    "rating": 740,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $1000$ in base $8$.",
+    "answer": "1750",
+    "solution": "$1000 = 1\\cdot512+7\\cdot64+5\\cdot8+0 = 1750_8$.",
+    "rating": 780,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $77_8$ in base $10$?",
+    "answer": "63",
+    "solution": "$77_8 = 7\\cdot8+7 = 63$.",
+    "rating": 780,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many three-digit palindromes are there (numbers like $373$ that read the same both ways)?",
+    "answer": "90",
+    "solution": "The form is $\\overline{aba}$: $9$ choices for $a$ ($1$–$9$) and $10$ for $b$, giving $90$.",
+    "rating": 780,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of the digits of $2^{20} = 1048576$?",
+    "answer": "31",
+    "solution": "$1+0+4+8+5+7+6 = 31$.",
+    "rating": 780,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest three-digit number in base $4$, expressed in base $10$?",
+    "answer": "16",
+    "solution": "$100_4 = 4^2 = 16$.",
+    "rating": 780,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $255$ in base $16$ (hexadecimal).",
+    "answer": "FF",
+    "solution": "$255 = 15\\cdot16+15 = FF_{16}$ (since $15=F$).",
+    "rating": 820,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits does $2^{10}$ have in base $2$?",
+    "answer": "11",
+    "solution": "$2^{10} = 1\\underbrace{00\\cdots0}_{10}{}_2$, which has $11$ digits.",
+    "rating": 820,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $1111_2 \\times 11_2$ in base $10$?",
+    "answer": "45",
+    "solution": "$1111_2=15$ and $11_2=3$; $15\\times3=45$.",
+    "rating": 820,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of the digits of $3^{10} = 59049$?",
+    "answer": "27",
+    "solution": "$5+9+0+4+9 = 27$.",
+    "rating": 820,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many positive integers less than $100$ have a digit sum of $9$?",
+    "answer": "10",
+    "solution": "They are $9,18,27,36,45,54,63,72,81,90$ — ten numbers.",
+    "rating": 820,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $1000$ in base $3$.",
+    "answer": "1101001",
+    "solution": "Repeated division by $3$ gives $1000 = 1101001_3$.",
+    "rating": 860,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits does $1000000$ have in base $2$?",
+    "answer": "20",
+    "solution": "$2^{19}=524288\\le10^6<2^{20}=1048576$, so $10^6$ has $20$ binary digits.",
+    "rating": 860,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $4321_5$ in base $10$?",
+    "answer": "586",
+    "solution": "$4\\cdot125+3\\cdot25+2\\cdot5+1 = 500+75+10+1 = 586$.",
+    "rating": 860,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "In some base $b$, the number $21_b$ equals $13$ in base $10$. What is $b$?",
+    "answer": "6",
+    "solution": "$21_b = 2b+1 = 13$, so $b = 6$.",
+    "rating": 860,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many three-digit palindromes are divisible by $11$?",
+    "answer": "8",
+    "solution": "A palindrome $\\overline{aba}=101a+10b$ is divisible by $11$ when $2a-b\\equiv0\\pmod{11}$. Counting valid $(a,b)$ gives $8$.",
+    "rating": 860,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many positive integers less than $1000$ have a digit sum equal to $6$?",
+    "answer": "28",
+    "solution": "Counting all $1$-, $2$-, and $3$-digit numbers whose digits sum to $6$ gives $28$.",
+    "rating": 900,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many $1$'s appear in the base-$2$ representation of $2024$?",
+    "answer": "7",
+    "solution": "$2024 = 11111101000_2$, which contains seven $1$'s.",
+    "rating": 900,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $1234_8$ in base $10$?",
+    "answer": "668",
+    "solution": "$1\\cdot512+2\\cdot64+3\\cdot8+4 = 512+128+24+4 = 668$.",
+    "rating": 900,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many four-digit palindromes are there?",
+    "answer": "90",
+    "solution": "The form $\\overline{abba}$ has $9$ choices for $a$ and $10$ for $b$: $90$.",
+    "rating": 900,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "In some base $b$, the number $30_b$ equals $24$ in base $10$. What is $b$?",
+    "answer": "8",
+    "solution": "$30_b = 3b = 24$, so $b = 8$.",
+    "rating": 900,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $100$ are palindromes?",
+    "answer": "18",
+    "solution": "The one-digit numbers $1$–$9$ ($9$) and the two-digit palindromes $11,22,\\ldots,99$ ($9$) give $18$.",
+    "rating": 940,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $1729$ in base $12$.",
+    "answer": "1001",
+    "solution": "$1729 = 1728+1 = 12^3+1 = 1001_{12}$.",
+    "rating": 940,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of the digits of $2^{30} = 1073741824$?",
+    "answer": "37",
+    "solution": "$1+0+7+3+7+4+1+8+2+4 = 37$.",
+    "rating": 940,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $66_7 + 6_7$, expressed in base $7$?",
+    "answer": "105",
+    "solution": "$66_7=48$ and $6_7=6$; $48+6=54 = 1\\cdot49+0\\cdot7+5 = 105_7$.",
+    "rating": 940,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many three-digit numbers have all three digits different?",
+    "answer": "648",
+    "solution": "The hundreds digit has $9$ choices, the tens $9$ (any but the first, including $0$), the units $8$: $9\\cdot9\\cdot8=648$.",
+    "rating": 940,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many positive integers less than $1000$ have a digit sum of $10$?",
+    "answer": "63",
+    "solution": "Counting $1$-, $2$-, and $3$-digit numbers with digit sum $10$ gives $63$.",
+    "rating": 980,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $2024$ in base $6$.",
+    "answer": "13212",
+    "solution": "Repeated division by $6$ gives $2024 = 13212_6$.",
+    "rating": 980,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many four-digit palindromes are divisible by $5$?",
+    "answer": "10",
+    "solution": "A palindrome $\\overline{abba}$ ends in $a$, so divisibility by $5$ needs $a=5$; then $b$ is free: $10$ numbers.",
+    "rating": 980,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The digits of a two-digit number sum to $11$, and reversing the digits increases the number by $27$. What is the original number?",
+    "answer": "47",
+    "solution": "Let the number be $10a+b$ with $a+b=11$ and $9(b-a)=27$, so $b-a=3$. Then $a=4,b=7$: the number is $47$.",
+    "rating": 980,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits does $5^{10} = 9765625$ have?",
+    "answer": "7",
+    "solution": "$5^{10}=9765625$ has $7$ digits.",
+    "rating": 980,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many positive integers less than $1000$ have a digit sum of $12$?",
+    "answer": "73",
+    "solution": "Counting all such $1$-, $2$-, and $3$-digit numbers gives $73$.",
+    "rating": 1020,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits does $1000000$ have in base $16$?",
+    "answer": "5",
+    "solution": "$16^4=65536\\le10^6<16^5=1048576$, so $10^6$ has $5$ hexadecimal digits.",
+    "rating": 1020,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest three-digit number that is a palindrome in both base $10$ and base $2$?",
+    "answer": "717",
+    "solution": "Checking three-digit palindromes downward for a binary palindrome, $717 = 1011001101_2$ works (it reads the same both ways in binary too).",
+    "rating": 1020,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many three-digit numbers have a digit sum of $20$?",
+    "answer": "36",
+    "solution": "Counting three-digit numbers whose digits sum to $20$ gives $36$.",
+    "rating": 1020,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many three-digit numbers are palindromes in base $5$? (Count values, written in base $5$ as three digits.)",
+    "answer": "20",
+    "solution": "A base-$5$ palindrome $\\overline{aba}_5$ has $4$ choices for $a$ ($1$–$4$) and $5$ for $b$: $20$.",
+    "rating": 1020,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many palindromes are there from $1$ to $1000$?",
+    "answer": "108",
+    "solution": "One-digit: $9$; two-digit: $9$; three-digit: $90$. Total $9+9+90=108$.",
+    "rating": 1060,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $777$ in base $8$, then find its digit sum (in base $8$).",
+    "answer": "7",
+    "solution": "$777 = 1411_8$, and $1+4+1+1=7$.",
+    "rating": 1060,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many four-digit palindromes are divisible by $11$?",
+    "answer": "90",
+    "solution": "Every four-digit palindrome $\\overline{abba}=11(91a+10b)$ is divisible by $11$, so all $90$ qualify.",
+    "rating": 1060,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $10000$ are palindromes?",
+    "answer": "198",
+    "solution": "Counting palindromes with $1,2,3,$ and $4$ digits: $9+9+90+90=198$.",
+    "rating": 1060,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of the digits of $9^9 = 387420489$?",
+    "answer": "45",
+    "solution": "$3+8+7+4+2+0+4+8+9 = 45$.",
+    "rating": 1060,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many positive integers less than $1000$ have a digit sum divisible by $5$?",
+    "answer": "199",
+    "solution": "Counting numbers below $1000$ whose digit sum is $5,10,15,20,$ or $25$ gives $199$.",
+    "rating": 1100,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A three-digit number $\\overline{abc}$ and its reversal $\\overline{cba}$ differ by $396$. What is $a-c$?",
+    "answer": "4",
+    "solution": "The difference is $99(a-c)=396$, so $a-c=4$.",
+    "rating": 1100,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many five-digit palindromes are there?",
+    "answer": "900",
+    "solution": "The form $\\overline{abcba}$ has $9\\cdot10\\cdot10 = 900$ choices.",
+    "rating": 1100,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest four-digit palindrome that is divisible by $3$?",
+    "answer": "1221",
+    "solution": "The first four-digit palindromes are $1001,1111,1221,\\ldots$; $1221$ has digit sum $6$, divisible by $3$.",
+    "rating": 1100,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many four-digit numbers are there in base $3$?",
+    "answer": "54",
+    "solution": "The leading digit has $2$ choices ($1$ or $2$) and each other digit $3$: $2\\cdot27=54$.",
+    "rating": 1100,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many positive integers less than $10000$ have a digit sum of exactly $9$?",
+    "answer": "220",
+    "solution": "Counting $1$- through $4$-digit numbers with digit sum $9$ gives $220$.",
+    "rating": 1145,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of all two-digit numbers that equal four times their digit sum?",
+    "answer": "120",
+    "solution": "$10a+b=4(a+b)$ gives $b=2a$: the numbers are $12,24,36,48$, summing to $120$.",
+    "rating": 1145,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many three-digit numbers have digits in strictly increasing order (like $158$)?",
+    "answer": "84",
+    "solution": "Choose any $3$ distinct digits from $1$–$9$; each set gives exactly one increasing number: $\\binom{9}{3}=84$.",
+    "rating": 1145,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For what base $b$ is $144_b = 100$ in base $10$?",
+    "answer": "8",
+    "solution": "$144_b = b^2+4b+4 = (b+2)^2 = 100$, so $b+2=10$ and $b=8$.",
+    "rating": 1145,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of all three-digit palindromes?",
+    "answer": "49500",
+    "solution": "Summing every $\\overline{aba}=101a+10b$ over $a=1$–$9$, $b=0$–$9$ gives $49500$.",
+    "rating": 1145,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many positive integers less than $1000$ have a digit sum of $13$?",
+    "answer": "75",
+    "solution": "Counting $1$-, $2$-, and $3$-digit numbers with digit sum $13$ gives $75$.",
+    "rating": 1190,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of all four-digit palindromes?",
+    "answer": "495000",
+    "solution": "Summing every $\\overline{abba}=1001a+110b$ over the $90$ palindromes gives $495000$.",
+    "rating": 1190,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For how many bases $b$ is the number $100$ (base ten) written with exactly three digits?",
+    "answer": "6",
+    "solution": "We need $b^2\\le100<b^3$, i.e. $5\\le b\\le10$: that is $6$ bases.",
+    "rating": 1190,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For how many bases $b$ does $2024$ (base ten) have exactly four digits?",
+    "answer": "6",
+    "solution": "We need $b^3\\le2024<b^4$, i.e. $7\\le b\\le12$: that is $6$ bases.",
+    "rating": 1190,
+    "source": "AMC 8 · Digits & Number Bases"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many three-digit palindromes are prime?",
+    "answer": "15",
+    "solution": "Checking each palindrome $\\overline{aba}$ for primality yields $15$ three-digit palindromic primes.",
+    "rating": 1190,
+    "source": "AMC 8 · Digits & Number Bases"
   }
 ]

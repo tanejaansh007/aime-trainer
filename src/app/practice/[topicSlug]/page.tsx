@@ -40,20 +40,7 @@ export default async function PracticePage({
     const maxRating = ratings[ratings.length - 1];
     const minPos = positionForRating(minRating);
     const maxPos = positionForRating(maxRating);
-
-    // Count problems per AMC 8 position, filling gaps with 0 so the histogram
-    // reads as an honest continuous difficulty axis.
-    const counts = new Map<number, number>();
-    for (const r of ratings) {
-      const pos = positionForRating(r);
-      counts.set(pos, (counts.get(pos) ?? 0) + 1);
-    }
-    const histogram = [];
-    for (let pos = minPos; pos <= maxPos; pos++) {
-      histogram.push({ pos, count: counts.get(pos) ?? 0 });
-    }
-
-    pool = { count: ratings.length, minRating, maxRating, minPos, maxPos, histogram };
+    pool = { count: ratings.length, minRating, maxRating, minPos, maxPos };
   }
 
   return (

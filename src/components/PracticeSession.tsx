@@ -18,7 +18,6 @@ export interface PoolStats {
   maxRating: number;
   minPos: number;
   maxPos: number;
-  histogram: { pos: number; count: number }[];
 }
 
 // Fallback presets for a section with no pool stats (empty pool). Aligned to
@@ -54,42 +53,24 @@ function poolStartOptions(pool: PoolStats) {
   }));
 }
 
-/** Visual difficulty meter: a per-position histogram + the section's ceiling. */
+/** Text-forward difficulty summary: the section's hardest level, stated plainly. */
 function SectionDifficulty({ pool }: { pool: PoolStats }) {
-  const maxCount = Math.max(...pool.histogram.map((h) => h.count), 1);
   return (
-    <div className="rounded-lg border border-slate-200 bg-slate-50 p-4 space-y-2">
+    <div className="rounded-lg border border-slate-200 bg-slate-50 p-4">
       <div className="flex items-baseline justify-between">
         <h3 className="text-sm font-semibold text-slate-700">Section difficulty</h3>
         <span className="text-xs text-slate-400">{pool.count} problems</span>
       </div>
-      <div className="flex items-end gap-0.5 h-14">
-        {pool.histogram.map((h) => {
-          const isMax = h.pos === pool.maxPos;
-          return (
-            <div
-              key={h.pos}
-              className={[
-                "flex-1 rounded-t transition-colors",
-                h.count === 0 ? "bg-slate-200" : isMax ? "bg-indigo-600" : "bg-indigo-300",
-              ].join(" ")}
-              style={{ height: `${h.count === 0 ? 3 : Math.max(6, (h.count / maxCount) * 48)}px` }}
-              title={`AMC 8 #${h.pos}: ${h.count} problem${h.count === 1 ? "" : "s"}`}
-            />
-          );
-        })}
+      <div className="mt-2 flex items-baseline gap-2">
+        <span className="text-3xl font-bold text-indigo-700">
+          {tierForPosition(pool.maxPos)}
+        </span>
+        <span className="text-sm text-slate-500">
+          up to AMC 8 <strong>#{pool.maxPos}</strong> (~{pool.maxRating} ELO)
+        </span>
       </div>
-      <div className="flex justify-between text-[10px] text-slate-400">
-        <span>#{pool.minPos}</span>
-        <span>#{pool.maxPos}</span>
-      </div>
-      <p className="text-xs text-slate-500">
-        Spans <strong>AMC 8 #{pool.minPos}–#{pool.maxPos}</strong> · ELO {pool.minRating}–
-        {pool.maxRating}. Hardest here ≈{" "}
-        <strong>
-          #{pool.maxPos} ({tierForPosition(pool.maxPos)})
-        </strong>
-        .
+      <p className="mt-1 text-xs text-slate-500">
+        Spans AMC 8 #{pool.minPos}–#{pool.maxPos} · ELO {pool.minRating}–{pool.maxRating}
       </p>
     </div>
   );

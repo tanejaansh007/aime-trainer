@@ -3,18 +3,97 @@
 import { useCallback, useEffect, useState } from "react";
 import Markdown from "@/components/Markdown";
 import type { PublicProblem } from "@/lib/problemDTO";
-import { RATING_MIN, RATING_MAX, clampRating } from "@/lib/elo";
+import {
+  RATING_MIN,
+  RATING_MAX,
+  clampRating,
+  ratingForPosition,
+  tierForPosition,
+} from "@/lib/elo";
 
-// Starting-rating presets aligned to AMC 8 difficulty bands.
-// The scale is stretched so a true #25 sits near 1500: an easy warm-up (#1)
-// is ~450 and the hardest problems feel genuinely hard.
-const PRESETS = [
-  { key: "intro",     label: "Intro",     rating: 550,  sub: "AMC 8 #1–5"   },
-  { key: "easy",      label: "Easy",      rating: 820,  sub: "AMC 8 #6–12"  },
-  { key: "medium",    label: "Medium",    rating: 1080, sub: "AMC 8 #13–18" },
-  { key: "hard",      label: "Hard",      rating: 1310, sub: "AMC 8 #19–22" },
-  { key: "challenge", label: "Challenge", rating: 1470, sub: "AMC 8 #23–25" },
-] as const;
+/** Difficulty summary of the section's actual problem pool (server-computed). */
+export interface PoolStats {
+  count: number;
+  minRating: number;
+  maxRating: number;
+  minPos: number;
+  maxPos: number;
+  histogram: { pos: number; count: number }[];
+}
+
+// Fallback presets for a section with no pool stats (empty pool). Aligned to
+// AMC 8 bands on the stretched scale (#1≈450 … #25≈1500).
+const FALLBACK_PRESETS = [
+  { rating: 550,  label: "Intro",     sub: "AMC 8 #1–5"   },
+  { rating: 820,  label: "Easy",      sub: "AMC 8 #6–12"  },
+  { rating: 1080, label: "Medium",    sub: "AMC 8 #13–18" },
+  { rating: 1310, label: "Hard",      sub: "AMC 8 #19–22" },
+  { rating: 1470, label: "Challenge", sub: "AMC 8 #23–25" },
+];
+
+/**
+ * Build starting-rating options from the section's real pool: evenly spaced
+ * AMC 8 positions between the easiest and hardest problems present, so every
+ * option maps to problems that actually exist here.
+ */
+function poolStartOptions(pool: PoolStats) {
+  const { minPos, maxPos } = pool;
+  if (minPos >= maxPos) {
+    return [{ rating: ratingForPosition(minPos), label: tierForPosition(minPos), sub: `AMC 8 #${minPos}` }];
+  }
+  const wanted = Math.min(5, maxPos - minPos + 1);
+  const anchors: number[] = [];
+  for (let i = 0; i < wanted; i++) {
+    const pos = Math.round(minPos + (i * (maxPos - minPos)) / (wanted - 1));
+    if (!anchors.includes(pos)) anchors.push(pos);
+  }
+  return anchors.map((pos) => ({
+    rating: ratingForPosition(pos),
+    label: tierForPosition(pos),
+    sub: `AMC 8 #${pos}`,
+  }));
+}
+
+/** Visual difficulty meter: a per-position histogram + the section's ceiling. */
+function SectionDifficulty({ pool }: { pool: PoolStats }) {
+  const maxCount = Math.max(...pool.histogram.map((h) => h.count), 1);
+  return (
+    <div className="rounded-lg border border-slate-200 bg-slate-50 p-4 space-y-2">
+      <div className="flex items-baseline justify-between">
+        <h3 className="text-sm font-semibold text-slate-700">Section difficulty</h3>
+        <span className="text-xs text-slate-400">{pool.count} problems</span>
+      </div>
+      <div className="flex items-end gap-0.5 h-14">
+        {pool.histogram.map((h) => {
+          const isMax = h.pos === pool.maxPos;
+          return (
+            <div
+              key={h.pos}
+              className={[
+                "flex-1 rounded-t transition-colors",
+                h.count === 0 ? "bg-slate-200" : isMax ? "bg-indigo-600" : "bg-indigo-300",
+              ].join(" ")}
+              style={{ height: `${h.count === 0 ? 3 : Math.max(6, (h.count / maxCount) * 48)}px` }}
+              title={`AMC 8 #${h.pos}: ${h.count} problem${h.count === 1 ? "" : "s"}`}
+            />
+          );
+        })}
+      </div>
+      <div className="flex justify-between text-[10px] text-slate-400">
+        <span>#{pool.minPos}</span>
+        <span>#{pool.maxPos}</span>
+      </div>
+      <p className="text-xs text-slate-500">
+        Spans <strong>AMC 8 #{pool.minPos}–#{pool.maxPos}</strong> · ELO {pool.minRating}–
+        {pool.maxRating}. Hardest here ≈{" "}
+        <strong>
+          #{pool.maxPos} ({tierForPosition(pool.maxPos)})
+        </strong>
+        .
+      </p>
+    </div>
+  );
+}
 
 interface AnswerResult {
   isCorrect: boolean;
@@ -40,11 +119,13 @@ export default function PracticeSession({
   topicName,
   initialRating,
   isAuthed,
+  pool,
 }: {
   topicSlug: string;
   topicName: string;
   initialRating: number | null;
   isAuthed: boolean;
+  pool: PoolStats | null;
 }) {
   const [rating, setRating] = useState<number | null>(initialRating);
   const [seenIds, setSeenIds] = useState<string[]>([]);
@@ -137,16 +218,28 @@ export default function PracticeSession({
 
   // ---- Difficulty picker (new session) ----
   if (rating === null) {
+    const options = pool ? poolStartOptions(pool) : FALLBACK_PRESETS;
+    // Clamp custom entry to the pool so you can't start above the hardest
+    // problem that actually exists in this section.
+    const lo = pool ? pool.minRating : RATING_MIN;
+    const hi = pool ? pool.maxRating : RATING_MAX;
+    const clampToPool = (r: number) => Math.min(hi, Math.max(lo, clampRating(r)));
     return (
       <div className="rounded-lg border border-slate-200 bg-white p-6 space-y-4">
         <h2 className="text-xl font-semibold">{topicName}</h2>
+
+        {pool && <SectionDifficulty pool={pool} />}
+
         <p className="text-slate-600">
           How hard should we start? Your rating will adapt from here.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
-          {PRESETS.map((p) => (
+        <div
+          className="grid grid-cols-2 gap-2"
+          style={{ gridTemplateColumns: `repeat(${Math.min(options.length, 5)}, minmax(0, 1fr))` }}
+        >
+          {options.map((p) => (
             <button
-              key={p.key}
+              key={`${p.rating}-${p.sub}`}
               onClick={() => startWithRating(p.rating)}
               className="rounded-md border border-slate-300 px-3 py-3 hover:border-indigo-500 hover:bg-indigo-50"
             >
@@ -156,30 +249,30 @@ export default function PracticeSession({
           ))}
         </div>
 
-        {/* Custom starting rating — any value in the full range. */}
+        {/* Custom starting rating — clamped to this section's range. */}
         <div className="flex items-end gap-2 pt-1">
           <label className="flex-1">
             <span className="block text-xs text-slate-500 mb-1">
-              Or enter a starting rating ({RATING_MIN}–{RATING_MAX})
+              Or enter a starting rating ({lo}–{hi})
             </span>
             <input
               type="number"
-              min={RATING_MIN}
-              max={RATING_MAX}
+              min={lo}
+              max={hi}
               value={custom}
               onChange={(e) => setCustom(e.target.value)}
               onKeyDown={(e) => {
                 if (e.key === "Enter" && custom.trim()) {
-                  startWithRating(clampRating(Math.round(Number(custom))));
+                  startWithRating(clampToPool(Math.round(Number(custom))));
                 }
               }}
-              placeholder="e.g. 1450"
+              placeholder={`e.g. ${hi}`}
               className="w-full rounded-md border border-slate-300 px-3 py-2 focus:border-indigo-500 focus:outline-none"
             />
           </label>
           <button
             disabled={!custom.trim() || Number.isNaN(Number(custom))}
-            onClick={() => startWithRating(clampRating(Math.round(Number(custom))))}
+            onClick={() => startWithRating(clampToPool(Math.round(Number(custom))))}
             className="rounded-md bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700 disabled:opacity-50"
           >
             Start
@@ -209,6 +302,11 @@ export default function PracticeSession({
           <div>
             {stats.correct} / {stats.total} correct
           </div>
+          {pool && (
+            <div className="text-xs text-slate-400">
+              section maxes at #{pool.maxPos} (~{pool.maxRating})
+            </div>
+          )}
           {!isAuthed && <div className="text-xs text-amber-600">guest · not saved</div>}
         </div>
       </div>

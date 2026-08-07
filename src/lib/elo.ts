@@ -20,6 +20,45 @@ export const RATING_MIN = 100;
 export const RATING_MAX = 3000;
 
 /**
+ * Canonical AMC 8 position→rating curve (index 0 = problem #1 … index 24 = #25).
+ * Every problem generator anchors ratings to this curve, so it is the single
+ * source of truth for translating between a raw ELO and an AMC 8 position.
+ */
+export const POSITION_RATINGS = [
+  450, 500, 550, 600, 650, 700, 740, 780, 820, 860, 900, 940, 980,
+  1020, 1060, 1100, 1145, 1190, 1240, 1290, 1340, 1390, 1435, 1470, 1500,
+] as const;
+
+/** Rating anchored to an AMC 8 position (1–25). Clamps out-of-range positions. */
+export function ratingForPosition(pos: number): number {
+  const i = Math.min(POSITION_RATINGS.length, Math.max(1, Math.round(pos))) - 1;
+  return POSITION_RATINGS[i];
+}
+
+/** Nearest AMC 8 position (1–25) to a raw rating. */
+export function positionForRating(rating: number): number {
+  let best = 1;
+  let bestDist = Infinity;
+  for (let i = 0; i < POSITION_RATINGS.length; i++) {
+    const dist = Math.abs(POSITION_RATINGS[i] - rating);
+    if (dist < bestDist) {
+      bestDist = dist;
+      best = i + 1;
+    }
+  }
+  return best;
+}
+
+/** Absolute AMC 8 difficulty tier name for a position (1–25). */
+export function tierForPosition(pos: number): string {
+  if (pos <= 5) return "Intro";
+  if (pos <= 12) return "Easy";
+  if (pos <= 18) return "Medium";
+  if (pos <= 22) return "Hard";
+  return "Challenge";
+}
+
+/**
  * Probability the student answers correctly, per the ELO logistic curve.
  * Returns a value in (0, 1).
  */

@@ -7,6 +7,10 @@ import {
   dynamicK,
   RATING_MIN,
   RATING_MAX,
+  ratingForPosition,
+  positionForRating,
+  tierForPosition,
+  POSITION_RATINGS,
 } from "./elo";
 
 describe("expectedScore", () => {
@@ -85,5 +89,40 @@ describe("clampRating / startingRating", () => {
     expect(startingRating("easy")).toBe(750);
     expect(startingRating("medium")).toBe(1080);
     expect(startingRating("hard")).toBe(1350);
+  });
+});
+
+describe("position <-> rating curve", () => {
+  it("has 25 monotonically increasing anchors", () => {
+    expect(POSITION_RATINGS).toHaveLength(25);
+    for (let i = 1; i < POSITION_RATINGS.length; i++) {
+      expect(POSITION_RATINGS[i]).toBeGreaterThan(POSITION_RATINGS[i - 1]);
+    }
+  });
+
+  it("ratingForPosition returns the anchored rating and clamps out-of-range", () => {
+    expect(ratingForPosition(1)).toBe(450);
+    expect(ratingForPosition(25)).toBe(1500);
+    expect(ratingForPosition(0)).toBe(450);
+    expect(ratingForPosition(99)).toBe(1500);
+  });
+
+  it("positionForRating is the inverse at the anchors", () => {
+    expect(positionForRating(450)).toBe(1);
+    expect(positionForRating(1020)).toBe(14);
+    expect(positionForRating(1500)).toBe(25);
+  });
+
+  it("positionForRating snaps a between-anchors rating to the nearest position", () => {
+    expect(positionForRating(1005)).toBe(14); // 1020 (15 away) beats 980 (25 away)
+    expect(positionForRating(9999)).toBe(25);
+  });
+
+  it("tierForPosition bands positions into AMC 8 difficulty names", () => {
+    expect(tierForPosition(1)).toBe("Intro");
+    expect(tierForPosition(10)).toBe("Easy");
+    expect(tierForPosition(14)).toBe("Medium");
+    expect(tierForPosition(20)).toBe("Hard");
+    expect(tierForPosition(25)).toBe("Challenge");
   });
 });

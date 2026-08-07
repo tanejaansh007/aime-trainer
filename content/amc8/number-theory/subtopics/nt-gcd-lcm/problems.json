@@ -1,722 +1,882 @@
 [
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $12$ and $18$?",
-    "answer": "6",
-    "solution": "$12=2^2\\cdot3$ and $18=2\\cdot3^2$; the GCF takes the smaller power of each shared prime: $2\\cdot3=6$.",
-    "rating": 450,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the least common multiple of $4$ and $6$?",
-    "answer": "12",
-    "solution": "Multiples of $6$: $6,12$; $12$ is the first also divisible by $4$. So $\\mathrm{lcm}(4,6)=12$.",
-    "rating": 450,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $10$ and $15$?",
-    "answer": "5",
-    "solution": "The common factors of $10$ and $15$ are $1$ and $5$; the greatest is $5$.",
-    "rating": 450,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $8$ and $12$?",
-    "answer": "4",
-    "solution": "The largest number dividing both $8$ and $12$ is $4$.",
-    "rating": 450,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the least common multiple of $3$ and $5$?",
-    "answer": "15",
-    "solution": "Since $3$ and $5$ share no factors, $\\mathrm{lcm}(3,5)=3\\cdot5=15$.",
-    "rating": 450,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $24$ and $36$?",
-    "answer": "12",
-    "solution": "$24=2^3\\cdot3$, $36=2^2\\cdot3^2$; GCF $=2^2\\cdot3=12$.",
-    "rating": 500,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the least common multiple of $6$ and $8$?",
-    "answer": "24",
-    "solution": "$6=2\\cdot3$, $8=2^3$; LCM $=2^3\\cdot3=24$.",
-    "rating": 500,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $9$ and $15$?",
+    "statement": "What is $\\gcd(6, 9)$?",
     "answer": "3",
-    "solution": "Both are divisible by $3$ and nothing larger, so the GCF is $3$.",
-    "rating": 500,
+    "solution": "The common divisors of $6$ and $9$ are $1,3$; the greatest is $3$.",
+    "rating": 450,
     "source": "AMC 8 · GCD & LCM"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the least common multiple of $5$ and $10$?",
-    "answer": "10",
-    "solution": "$10$ is already a multiple of $5$, so $\\mathrm{lcm}(5,10)=10$.",
-    "rating": 500,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $14$ and $21$?",
-    "answer": "7",
-    "solution": "$14=2\\cdot7$, $21=3\\cdot7$; the only shared prime is $7$, so the GCF is $7$.",
-    "rating": 500,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $16$ and $24$?",
-    "answer": "8",
-    "solution": "$16=2^4$, $24=2^3\\cdot3$; GCF $=2^3=8$.",
-    "rating": 550,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the least common multiple of $8$ and $12$?",
-    "answer": "24",
-    "solution": "$8=2^3$, $12=2^2\\cdot3$; LCM $=2^3\\cdot3=24$.",
-    "rating": 550,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Two bells ring together, then ring every $6$ and $8$ minutes. After how many minutes do they next ring together?",
-    "answer": "24",
-    "solution": "They coincide at common multiples of $6$ and $8$; the first is $\\mathrm{lcm}(6,8)=24$ minutes.",
-    "rating": 550,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $20$ and $30$?",
-    "answer": "10",
-    "solution": "$20=2^2\\cdot5$, $30=2\\cdot3\\cdot5$; GCF $=2\\cdot5=10$.",
-    "rating": 550,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the least common multiple of $9$ and $12$?",
-    "answer": "36",
-    "solution": "$9=3^2$, $12=2^2\\cdot3$; LCM $=2^2\\cdot3^2=36$.",
-    "rating": 550,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $36$ and $48$?",
-    "answer": "12",
-    "solution": "$36=2^2\\cdot3^2$, $48=2^4\\cdot3$; GCF $=2^2\\cdot3=12$.",
-    "rating": 600,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the least common multiple of $10$ and $15$?",
-    "answer": "30",
-    "solution": "$10=2\\cdot5$, $15=3\\cdot5$; LCM $=2\\cdot3\\cdot5=30$.",
-    "rating": 600,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the side length of the largest square tile that can exactly tile a $12 \\times 18$ floor?",
+    "statement": "What is $\\mathrm{lcm}(2, 3)$?",
     "answer": "6",
-    "solution": "The tile's side must divide both $12$ and $18$, so it is $\\gcd(12,18)=6$.",
-    "rating": 600,
+    "solution": "The smallest common multiple of $2$ and $3$ is $6$.",
+    "rating": 450,
     "source": "AMC 8 · GCD & LCM"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $45$ and $60$?",
-    "answer": "15",
-    "solution": "$45=3^2\\cdot5$, $60=2^2\\cdot3\\cdot5$; GCF $=3\\cdot5=15$.",
-    "rating": 600,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the least common multiple of $6$, $9$, and $12$?",
-    "answer": "36",
-    "solution": "Taking the highest power of each prime: $2^2\\cdot3^2=36$.",
-    "rating": 600,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $48$ and $72$?",
-    "answer": "24",
-    "solution": "$48=2^4\\cdot3$, $72=2^3\\cdot3^2$; GCF $=2^3\\cdot3=24$.",
-    "rating": 650,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the least common multiple of $12$, $15$, and $20$?",
-    "answer": "60",
-    "solution": "Highest powers: $2^2\\cdot3\\cdot5=60$.",
-    "rating": 650,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Two positive integers have greatest common factor $6$ and least common multiple $36$. If one number is $12$, what is the other?",
-    "answer": "18",
-    "solution": "Since $\\gcd\\cdot\\mathrm{lcm}=$ the product of the numbers, the other is $\\frac{6\\cdot36}{12}=18$.",
-    "rating": 650,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Three lights blink every $4$, $6$, and $10$ seconds. After how many seconds do they all blink together?",
-    "answer": "60",
-    "solution": "They coincide at $\\mathrm{lcm}(4,6,10)=2^2\\cdot3\\cdot5=60$ seconds.",
-    "rating": 650,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $84$ and $120$?",
-    "answer": "12",
-    "solution": "$84=2^2\\cdot3\\cdot7$, $120=2^3\\cdot3\\cdot5$; GCF $=2^2\\cdot3=12$.",
-    "rating": 650,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the least common multiple of $8$, $12$, and $18$?",
-    "answer": "72",
-    "solution": "Highest powers: $2^3\\cdot3^2=72$.",
-    "rating": 700,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "For the numbers $18$ and $24$, what is the product of their greatest common factor and least common multiple?",
-    "answer": "432",
-    "solution": "$\\gcd\\cdot\\mathrm{lcm}=18\\cdot24=432$ (the product of the two numbers).",
-    "rating": 700,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the smallest positive integer divisible by $6$, $8$, and $9$?",
-    "answer": "72",
-    "solution": "This is $\\mathrm{lcm}(6,8,9)=2^3\\cdot3^2=72$.",
-    "rating": 700,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $72$ and $108$?",
-    "answer": "36",
-    "solution": "$72=2^3\\cdot3^2$, $108=2^2\\cdot3^3$; GCF $=2^2\\cdot3^2=36$.",
-    "rating": 700,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many positive integers divide both $24$ and $36$?",
-    "answer": "6",
-    "solution": "The common divisors are exactly the divisors of $\\gcd(24,36)=12$, and $12$ has $6$ divisors.",
-    "rating": 700,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Two positive integers have greatest common factor $8$ and product $384$. What is their least common multiple?",
-    "answer": "48",
-    "solution": "Since $\\gcd\\cdot\\mathrm{lcm}=$ product, $\\mathrm{lcm}=384/8=48$.",
-    "rating": 740,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the least common multiple of $15$, $20$, and $25$?",
-    "answer": "300",
-    "solution": "Highest powers: $2^2\\cdot3\\cdot5^2=300$.",
-    "rating": 740,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many unordered pairs of positive integers have greatest common factor $12$ and least common multiple $72$?",
-    "answer": "2",
-    "solution": "Writing the numbers as $12m,12n$ with $\\gcd(m,n)=1$ and $\\mathrm{lcm}(m,n)=6$: the coprime pairs $\\{m,n\\}$ with product $6$ are $\\{1,6\\}$ and $\\{2,3\\}$ — two pairs.",
-    "rating": 740,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the largest positive integer that divides both $2024$ and $2530$?",
-    "answer": "506",
-    "solution": "$2024=2^3\\cdot11\\cdot23$ and $2530=2\\cdot5\\cdot11\\cdot23$; the GCF is $2\\cdot11\\cdot23=506$.",
-    "rating": 740,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the smallest positive integer greater than $3$ that leaves remainder $3$ when divided by each of $4$, $5$, and $6$?",
-    "answer": "63",
-    "solution": "The number is $3$ more than a common multiple of $4,5,6$. Since $\\mathrm{lcm}(4,5,6)=60$, the answer is $63$.",
-    "rating": 740,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $108$ and $144$?",
-    "answer": "36",
-    "solution": "$108=2^2\\cdot3^3$, $144=2^4\\cdot3^2$; GCF $=2^2\\cdot3^2=36$.",
-    "rating": 780,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the least common multiple of $6$, $14$, and $21$?",
-    "answer": "42",
-    "solution": "Highest powers: $2\\cdot3\\cdot7=42$.",
-    "rating": 780,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "A field measures $84$ m by $126$ m. What is the side length of the largest square plots that tile it exactly?",
-    "answer": "42",
-    "solution": "The side divides both dimensions, so it is $\\gcd(84,126)=42$ m.",
-    "rating": 780,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $12$ are relatively prime to $12$?",
+    "statement": "What is $\\gcd(4, 8)$?",
     "answer": "4",
-    "solution": "The numbers coprime to $12$ in this range are $1,5,7,11$ — four of them ($\\varphi(12)=4$).",
-    "rating": 780,
+    "solution": "$4$ divides both, so $\\gcd(4,8) = 4$.",
+    "rating": 450,
     "source": "AMC 8 · GCD & LCM"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Two meshing gears have $8$ and $20$ teeth. How many revolutions does the $8$-tooth gear make before both return to their starting positions?",
+    "statement": "What is $\\mathrm{lcm}(4, 6)$?",
+    "answer": "12",
+    "solution": "$12$ is the smallest number both $4$ and $6$ divide.",
+    "rating": 450,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(10, 15)$?",
     "answer": "5",
-    "solution": "They realign after $\\mathrm{lcm}(8,20)=40$ teeth pass, which is $40/8=5$ revolutions of the small gear.",
+    "solution": "$5$ is the greatest common divisor of $10$ and $15$.",
+    "rating": 450,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(12, 18)$?",
+    "answer": "6",
+    "solution": "$12 = 2^2\\cdot3$ and $18 = 2\\cdot3^2$ share $2\\cdot3 = 6$.",
+    "rating": 500,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(3, 5)$?",
+    "answer": "15",
+    "solution": "Since $3$ and $5$ are coprime, $\\mathrm{lcm} = 3\\cdot5 = 15$.",
+    "rating": 500,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(7, 14)$?",
+    "answer": "7",
+    "solution": "$7$ divides $14$, so $\\gcd = 7$.",
+    "rating": 500,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(6, 8)$?",
+    "answer": "24",
+    "solution": "$6 = 2\\cdot3$, $8 = 2^3$, so $\\mathrm{lcm} = 2^3\\cdot3 = 24$.",
+    "rating": 500,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(9, 12)$?",
+    "answer": "3",
+    "solution": "They share only the factor $3$.",
+    "rating": 500,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(24, 36)$?",
+    "answer": "12",
+    "solution": "$24 = 2^3\\cdot3$, $36 = 2^2\\cdot3^2$, so $\\gcd = 2^2\\cdot3 = 12$.",
+    "rating": 550,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(4, 10)$?",
+    "answer": "20",
+    "solution": "$4 = 2^2$, $10 = 2\\cdot5$, so $\\mathrm{lcm} = 2^2\\cdot5 = 20$.",
+    "rating": 550,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(15, 25)$?",
+    "answer": "5",
+    "solution": "They share only the factor $5$.",
+    "rating": 550,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(9, 12)$?",
+    "answer": "36",
+    "solution": "$9 = 3^2$, $12 = 2^2\\cdot3$, so $\\mathrm{lcm} = 2^2\\cdot3^2 = 36$.",
+    "rating": 550,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Two numbers are relatively prime. What is their greatest common divisor?",
+    "answer": "1",
+    "solution": "Relatively prime means their gcd is $1$.",
+    "rating": 550,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(48, 60)$?",
+    "answer": "12",
+    "solution": "$48 = 2^4\\cdot3$, $60 = 2^2\\cdot3\\cdot5$, so $\\gcd = 2^2\\cdot3 = 12$.",
+    "rating": 600,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(8, 12)$?",
+    "answer": "24",
+    "solution": "$8 = 2^3$, $12 = 2^2\\cdot3$, so $\\mathrm{lcm} = 2^3\\cdot3 = 24$.",
+    "rating": 600,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(100, 75)$?",
+    "answer": "25",
+    "solution": "$100 = 2^2\\cdot5^2$, $75 = 3\\cdot5^2$, so $\\gcd = 5^2 = 25$.",
+    "rating": 600,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(10, 15)$?",
+    "answer": "30",
+    "solution": "$10 = 2\\cdot5$, $15 = 3\\cdot5$, so $\\mathrm{lcm} = 2\\cdot3\\cdot5 = 30$.",
+    "rating": 600,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "When $\\tfrac{12}{18}$ is reduced to lowest terms, what is the numerator?",
+    "answer": "2",
+    "solution": "$\\gcd(12,18) = 6$, and $12/6 = 2$.",
+    "rating": 600,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(36, 48)$?",
+    "answer": "12",
+    "solution": "$36 = 2^2\\cdot3^2$, $48 = 2^4\\cdot3$, so $\\gcd = 2^2\\cdot3 = 12$.",
+    "rating": 650,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(12, 15)$?",
+    "answer": "60",
+    "solution": "$12 = 2^2\\cdot3$, $15 = 3\\cdot5$, so $\\mathrm{lcm} = 2^2\\cdot3\\cdot5 = 60$.",
+    "rating": 650,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(14, 21)$?",
+    "answer": "7",
+    "solution": "They share only the factor $7$.",
+    "rating": 650,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(6, 9)$?",
+    "answer": "18",
+    "solution": "$6 = 2\\cdot3$, $9 = 3^2$, so $\\mathrm{lcm} = 2\\cdot3^2 = 18$.",
+    "rating": 650,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Two lights blink every $4$ seconds and every $6$ seconds. If they blink together now, after how many seconds do they next blink together?",
+    "answer": "12",
+    "solution": "They align at $\\mathrm{lcm}(4,6) = 12$ seconds.",
+    "rating": 650,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(72, 120)$?",
+    "answer": "24",
+    "solution": "$72 = 2^3\\cdot3^2$, $120 = 2^3\\cdot3\\cdot5$, so $\\gcd = 2^3\\cdot3 = 24$.",
+    "rating": 700,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(8, 10)$?",
+    "answer": "40",
+    "solution": "$8 = 2^3$, $10 = 2\\cdot5$, so $\\mathrm{lcm} = 2^3\\cdot5 = 40$.",
+    "rating": 700,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(45, 60)$?",
+    "answer": "15",
+    "solution": "$45 = 3^2\\cdot5$, $60 = 2^2\\cdot3\\cdot5$, so $\\gcd = 3\\cdot5 = 15$.",
+    "rating": 700,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(5, 6, 10)$?",
+    "answer": "30",
+    "solution": "$\\mathrm{lcm}(5,6,10) = 2\\cdot3\\cdot5 = 30$.",
+    "rating": 700,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Two ribbons of length $24$ cm and $36$ cm are each cut into equal pieces of the greatest possible length. How long is each piece?",
+    "answer": "12",
+    "solution": "The greatest equal length is $\\gcd(24,36) = 12$ cm.",
+    "rating": 700,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(84, 126)$?",
+    "answer": "42",
+    "solution": "$84 = 2^2\\cdot3\\cdot7$, $126 = 2\\cdot3^2\\cdot7$, so $\\gcd = 2\\cdot3\\cdot7 = 42$.",
+    "rating": 740,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(9, 15)$?",
+    "answer": "45",
+    "solution": "$9 = 3^2$, $15 = 3\\cdot5$, so $\\mathrm{lcm} = 3^2\\cdot5 = 45$.",
+    "rating": 740,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Two numbers have product $200$ and greatest common divisor $10$. What is their least common multiple?",
+    "answer": "20",
+    "solution": "$\\mathrm{lcm} = \\dfrac{\\text{product}}{\\gcd} = \\dfrac{200}{10} = 20$.",
+    "rating": 740,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(1, 47)$?",
+    "answer": "1",
+    "solution": "$1$ shares no prime with any number, so the gcd is $1$.",
+    "rating": 740,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(12, 18, 24)$?",
+    "answer": "72",
+    "solution": "$\\mathrm{lcm} = 2^3\\cdot3^2 = 72$.",
+    "rating": 740,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(120, 180)$?",
+    "answer": "60",
+    "solution": "$120 = 2^3\\cdot3\\cdot5$, $180 = 2^2\\cdot3^2\\cdot5$, so $\\gcd = 2^2\\cdot3\\cdot5 = 60$.",
     "rating": 780,
     "source": "AMC 8 · GCD & LCM"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $210$ and $126$?",
-    "answer": "42",
-    "solution": "$210=2\\cdot3\\cdot5\\cdot7$, $126=2\\cdot3^2\\cdot7$; GCF $=2\\cdot3\\cdot7=42$.",
-    "rating": 820,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the least common multiple of $9$, $12$, and $15$?",
-    "answer": "180",
-    "solution": "Highest powers: $2^2\\cdot3^2\\cdot5=180$.",
-    "rating": 820,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the sum of the greatest common factor and least common multiple of $24$ and $36$?",
-    "answer": "84",
-    "solution": "$\\gcd=12$ and $\\mathrm{lcm}=72$, so the sum is $84$.",
-    "rating": 820,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the smallest integer greater than $1$ that leaves remainder $1$ when divided by each of $6$, $8$, and $9$?",
-    "answer": "73",
-    "solution": "It is $1$ more than $\\mathrm{lcm}(6,8,9)=72$, namely $73$.",
-    "rating": 820,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many unordered pairs of positive integers have least common multiple $12$?",
-    "answer": "8",
-    "solution": "Counting ordered pairs $(a,b)$ with $\\mathrm{lcm}=12$ gives $15$; since only $(12,12)$ repeats, there are $(15+1)/2=8$ unordered pairs.",
-    "rating": 820,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $1071$ and $462$?",
-    "answer": "21",
-    "solution": "Euclid: $1071=2\\cdot462+147$, $462=3\\cdot147+21$, $147=7\\cdot21$, so the GCF is $21$.",
-    "rating": 860,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the least common multiple of $12$, $16$, $18$, and $20$?",
-    "answer": "720",
-    "solution": "Highest powers: $2^4\\cdot3^2\\cdot5=720$.",
-    "rating": 860,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Two runners complete a lap in $90$ and $120$ seconds. After how many minutes do they next meet at the starting line?",
-    "answer": "6",
-    "solution": "They meet after $\\mathrm{lcm}(90,120)=360$ seconds $=6$ minutes.",
-    "rating": 860,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Two numbers have greatest common factor $6$ and least common multiple $90$. If one number is $18$, what is the other?",
-    "answer": "30",
-    "solution": "The other is $\\frac{\\gcd\\cdot\\mathrm{lcm}}{18}=\\frac{6\\cdot90}{18}=30$.",
-    "rating": 860,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $100$ are relatively prime to $24$?",
-    "answer": "33",
-    "solution": "$24=2^3\\cdot3$, so about $\\tfrac13$ of numbers are coprime to it. Counting exactly from $1$ to $100$ gives $33$.",
-    "rating": 860,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $2^4\\cdot3^2\\cdot5$ and $2^2\\cdot3^3\\cdot7$?",
-    "answer": "36",
-    "solution": "Take the smaller power of each shared prime: $2^2\\cdot3^2=36$.",
-    "rating": 900,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the least common multiple of $2^4\\cdot3^2\\cdot5$ and $2^2\\cdot3^3\\cdot7$?",
-    "answer": "15120",
-    "solution": "Take the higher power of every prime: $2^4\\cdot3^3\\cdot5\\cdot7=15120$.",
-    "rating": 900,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the smallest positive integer that is a multiple of $14$, $21$, and $6$?",
-    "answer": "42",
-    "solution": "$\\mathrm{lcm}(14,21,6)=2\\cdot3\\cdot7=42$.",
-    "rating": 900,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many integers $n$ from $1$ to $100$ satisfy $\\gcd(n, 36) = 12$?",
-    "answer": "6",
-    "solution": "We need $n=12k$ with $\\gcd(12k,36)=12$, i.e. $\\gcd(k,3)=1$, and $12k\\le100$ so $k\\le8$. The valid $k\\in\\{1,2,4,5,7,8\\}$ give $6$ values.",
-    "rating": 900,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the product of the greatest common factor and least common multiple of $60$ and $48$?",
-    "answer": "2880",
-    "solution": "The product $\\gcd\\cdot\\mathrm{lcm}$ equals the product of the numbers: $60\\cdot48=2880$.",
-    "rating": 900,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $1234$ and $4321$?",
-    "answer": "1",
-    "solution": "Running the Euclidean algorithm reduces $(4321,1234)\\to\\cdots\\to(1,0)$, so the GCF is $1$; the numbers are relatively prime.",
-    "rating": 940,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the least common multiple of $1$, $2$, $3$, $4$, and $5$?",
+    "statement": "What is $\\mathrm{lcm}(10, 12, 15)$?",
     "answer": "60",
-    "solution": "Highest powers: $2^2\\cdot3\\cdot5=60$.",
-    "rating": 940,
+    "solution": "$\\mathrm{lcm} = 2^2\\cdot3\\cdot5 = 60$.",
+    "rating": 780,
     "source": "AMC 8 · GCD & LCM"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many ordered pairs $(a,b)$ of positive integers satisfy $\\gcd(a,b)=1$ and $\\mathrm{lcm}(a,b)=60$?",
-    "answer": "8",
-    "solution": "$60=2^2\\cdot3\\cdot5$. For a coprime pair, each prime power goes entirely to $a$ or to $b$: $2^3=8$ ordered choices.",
-    "rating": 940,
+    "statement": "What is $\\gcd(100, 101)$?",
+    "answer": "1",
+    "solution": "Consecutive integers share no common factor, so $\\gcd = 1$.",
+    "rating": 780,
     "source": "AMC 8 · GCD & LCM"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Three bells ring every $15$, $18$, and $25$ minutes. After how many minutes do they all ring together again?",
-    "answer": "450",
-    "solution": "$\\mathrm{lcm}(15,18,25)=2\\cdot3^2\\cdot5^2=450$ minutes.",
-    "rating": 940,
+    "statement": "Two bells ring every $15$ minutes and every $20$ minutes. If they ring together now, after how many minutes do they next ring together?",
+    "answer": "60",
+    "solution": "They align at $\\mathrm{lcm}(15,20) = 60$ minutes.",
+    "rating": 780,
     "source": "AMC 8 · GCD & LCM"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $120$ are relatively prime to $120$?",
-    "answer": "32",
-    "solution": "$120=2^3\\cdot3\\cdot5$, so $\\varphi(120)=120\\left(\\tfrac12\\right)\\left(\\tfrac23\\right)\\left(\\tfrac45\\right)=32$.",
-    "rating": 940,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many ordered pairs $(a,b)$ of positive integers have $\\gcd(a,b)=4$ and $\\mathrm{lcm}(a,b)=48$?",
-    "answer": "4",
-    "solution": "Write $a=4m,b=4n$ with $\\gcd(m,n)=1$, $\\mathrm{lcm}(m,n)=12$. The coprime ordered pairs with product $12$ are $(1,12),(12,1),(3,4),(4,3)$ — four.",
-    "rating": 980,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the smallest integer greater than $2$ that leaves remainder $2$ when divided by each of $3$, $4$, and $5$?",
-    "answer": "62",
-    "solution": "It is $2$ more than $\\mathrm{lcm}(3,4,5)=60$, so $62$.",
-    "rating": 980,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $8!$ and $12!$?",
-    "answer": "40320",
-    "solution": "$8!$ divides $12!$, so $\\gcd(8!,12!)=8!=40320$.",
-    "rating": 980,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Two numbers have greatest common factor $15$ and least common multiple $90$. If one number is $45$, what is the other?",
-    "answer": "30",
-    "solution": "The other is $\\frac{15\\cdot90}{45}=30$.",
-    "rating": 980,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many ordered pairs $(a,b)$ of positive integers satisfy $\\mathrm{lcm}(a,b)=36$?",
-    "answer": "25",
-    "solution": "$36=2^2\\cdot3^2$. For each prime $p^e$, $\\max$ of the two exponents must be $e$, giving $2e+1$ choices: $(2\\cdot2+1)(2\\cdot2+1)=25$.",
-    "rating": 980,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many ordered pairs $(a,b)$ of positive integers satisfy $\\mathrm{lcm}(a,b)=72$?",
-    "answer": "35",
-    "solution": "$72=2^3\\cdot3^2$, so the count is $(2\\cdot3+1)(2\\cdot2+1)=7\\cdot5=35$.",
-    "rating": 1020,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the smallest positive integer that leaves remainders $3$, $4$, and $5$ when divided by $4$, $5$, and $6$ respectively?",
-    "answer": "59",
-    "solution": "Each remainder is one less than its divisor, so $n+1$ is a common multiple of $4,5,6$. The smallest gives $n+1=60$, so $n=59$.",
-    "rating": 1020,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $2^{10}-1$ and $2^{15}-1$?",
-    "answer": "31",
-    "solution": "There is an identity $\\gcd(2^m-1,2^n-1)=2^{\\gcd(m,n)}-1$. Here $\\gcd(10,15)=5$, so the answer is $2^5-1=31$.",
-    "rating": 1020,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the least common multiple of all the integers from $1$ to $10$?",
-    "answer": "2520",
-    "solution": "Take the highest prime powers $\\le10$: $2^3\\cdot3^2\\cdot5\\cdot7=2520$.",
-    "rating": 1020,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $200$ are relatively prime to $30$?",
-    "answer": "54",
-    "solution": "$30=2\\cdot3\\cdot5$; the density coprime to $30$ is $\\tfrac{1}{2}\\cdot\\tfrac{2}{3}\\cdot\\tfrac{4}{5}=\\tfrac{4}{15}$. Over $1$–$200$ this gives exactly $54$.",
-    "rating": 1020,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many ordered pairs $(a,b)$ of positive integers satisfy $a+b=100$ and $\\gcd(a,b)=1$?",
-    "answer": "40",
-    "solution": "$\\gcd(a,100-a)=\\gcd(a,100)$, so we count $a\\in\\{1,\\ldots,99\\}$ coprime to $100$: that is $\\varphi(100)=40$.",
-    "rating": 1060,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the smallest integer greater than $1$ that leaves remainder $1$ when divided by each of $2$, $3$, $4$, $5$, and $6$?",
-    "answer": "61",
-    "solution": "It is $1$ more than $\\mathrm{lcm}(2,3,4,5,6)=60$, so $61$.",
-    "rating": 1060,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many ordered pairs $(a,b)$ of positive integers satisfy $\\gcd(a,b)=1$ and $ab = 2^3\\cdot3^2\\cdot5\\cdot7$?",
-    "answer": "16",
-    "solution": "The four prime powers $2^3,3^2,5,7$ must each be assigned wholly to $a$ or to $b$: $2^4=16$ ordered pairs.",
-    "rating": 1060,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many positive integers divide both $720$ and $1080$?",
+    "statement": "What is the smallest positive integer that both $8$ and $12$ divide?",
     "answer": "24",
-    "solution": "Common divisors are the divisors of $\\gcd(720,1080)=360$, and $360$ has $24$ divisors.",
+    "solution": "That is $\\mathrm{lcm}(8,12) = 24$.",
+    "rating": 780,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(24, 36, 60)$?",
+    "answer": "12",
+    "solution": "All three share $2^2\\cdot3 = 12$.",
+    "rating": 820,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(4, 5, 6)$?",
+    "answer": "60",
+    "solution": "$\\mathrm{lcm} = 2^2\\cdot3\\cdot5 = 60$.",
+    "rating": 820,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Two numbers have product $360$ and least common multiple $60$. What is their greatest common divisor?",
+    "answer": "6",
+    "solution": "$\\gcd = \\dfrac{\\text{product}}{\\mathrm{lcm}} = \\dfrac{360}{60} = 6$.",
+    "rating": 820,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the side length of the smallest square that can be tiled exactly by $6 \\times 8$ rectangles?",
+    "answer": "24",
+    "solution": "The side must be a multiple of both $6$ and $8$, so it is $\\mathrm{lcm}(6,8) = 24$.",
+    "rating": 820,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $20$ are relatively prime to $20$?",
+    "answer": "8",
+    "solution": "They are $1,3,7,9,11,13,17,19$: that is $8$.",
+    "rating": 820,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(210, 126)$?",
+    "answer": "42",
+    "solution": "$210 = 2\\cdot3\\cdot5\\cdot7$, $126 = 2\\cdot3^2\\cdot7$, so $\\gcd = 2\\cdot3\\cdot7 = 42$.",
+    "rating": 860,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(14, 21)$?",
+    "answer": "42",
+    "solution": "$14 = 2\\cdot7$, $21 = 3\\cdot7$, so $\\mathrm{lcm} = 2\\cdot3\\cdot7 = 42$.",
+    "rating": 860,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Two gears have $12$ and $18$ teeth and mesh together. How many revolutions does the $12$-tooth gear make before both return to their starting positions?",
+    "answer": "3",
+    "solution": "They realign after $\\mathrm{lcm}(12,18) = 36$ teeth pass, which is $36/12 = 3$ revolutions of the small gear.",
+    "rating": 860,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Two numbers have greatest common divisor $6$ and least common multiple $36$. If one number is $12$, what is the other?",
+    "answer": "18",
+    "solution": "$\\dfrac{\\gcd\\cdot\\mathrm{lcm}}{\\text{one}} = \\dfrac{6\\cdot36}{12} = 18$.",
+    "rating": 860,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "When $\\tfrac{84}{126}$ is reduced to lowest terms, what is the numerator?",
+    "answer": "2",
+    "solution": "$\\gcd(84,126) = 42$, and $84/42 = 2$.",
+    "rating": 860,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(1000, 625)$?",
+    "answer": "125",
+    "solution": "$1000 = 2^3\\cdot5^3$, $625 = 5^4$, so $\\gcd = 5^3 = 125$.",
+    "rating": 900,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(16, 24)$?",
+    "answer": "48",
+    "solution": "$16 = 2^4$, $24 = 2^3\\cdot3$, so $\\mathrm{lcm} = 2^4\\cdot3 = 48$.",
+    "rating": 900,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Three lights blink every $6$, $8$, and $12$ seconds. After how many seconds do all three blink together?",
+    "answer": "24",
+    "solution": "They align at $\\mathrm{lcm}(6,8,12) = 24$ seconds.",
+    "rating": 900,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(2^4\\cdot3^2, \\; 2^2\\cdot3^3)$?",
+    "answer": "36",
+    "solution": "Take the smaller exponent of each prime: $2^2\\cdot3^2 = 36$.",
+    "rating": 900,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(2^3\\cdot3, \\; 2\\cdot3^2)$?",
+    "answer": "72",
+    "solution": "Take the larger exponent of each prime: $2^3\\cdot3^2 = 72$.",
+    "rating": 900,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(2^5\\cdot3^2\\cdot5, \\; 2^3\\cdot3^3)$?",
+    "answer": "72",
+    "solution": "Smaller exponents: $2^3\\cdot3^2 = 72$ (the prime $5$ is absent from the second number).",
+    "rating": 940,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(360, 480)$?",
+    "answer": "120",
+    "solution": "$360 = 2^3\\cdot3^2\\cdot5$, $480 = 2^5\\cdot3\\cdot5$, so $\\gcd = 2^3\\cdot3\\cdot5 = 120$.",
+    "rating": 940,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Two numbers have greatest common divisor $6$ and least common multiple $180$. If one number is $36$, what is the other?",
+    "answer": "30",
+    "solution": "$\\dfrac{6\\cdot180}{36} = 30$.",
+    "rating": 940,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $100$ are relatively prime to $12$?",
+    "answer": "33",
+    "solution": "In each block of $12$ there are $\\varphi(12) = 4$ coprime values; over $1$–$100$ this gives $33$.",
+    "rating": 940,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(2^5\\cdot3^2\\cdot5, \\; 2^3\\cdot3^3)$?",
+    "answer": "4320",
+    "solution": "Larger exponents: $2^5\\cdot3^3\\cdot5 = 4320$.",
+    "rating": 940,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(540, 630)$?",
+    "answer": "90",
+    "solution": "$540 = 2^2\\cdot3^3\\cdot5$, $630 = 2\\cdot3^2\\cdot5\\cdot7$, so $\\gcd = 2\\cdot3^2\\cdot5 = 90$.",
+    "rating": 980,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the product of $\\gcd(24,36)$ and $\\mathrm{lcm}(24,36)$?",
+    "answer": "864",
+    "solution": "$\\gcd\\cdot\\mathrm{lcm} = 24\\cdot36 = 864$ (the product of the two numbers).",
+    "rating": 980,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the greatest length of ruler markings that evenly divides both $180$ and $240$?",
+    "answer": "60",
+    "solution": "That length is $\\gcd(180,240) = 60$.",
+    "rating": 980,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many two-digit numbers are relatively prime to $10$?",
+    "answer": "36",
+    "solution": "They must end in $1,3,7,$ or $9$: four choices per group of ten, over nine tens, giving $36$.",
+    "rating": 980,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(540, 630)$?",
+    "answer": "3780",
+    "solution": "$\\mathrm{lcm} = \\dfrac{540\\cdot630}{\\gcd} = \\dfrac{540\\cdot630}{90} = 3780$.",
+    "rating": 980,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(2^{10}, \\; 2^6\\cdot3)$?",
+    "answer": "64",
+    "solution": "The common part is $2^6 = 64$.",
+    "rating": 1020,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(2^{10}, \\; 2^6\\cdot3)$?",
+    "answer": "3072",
+    "solution": "Larger exponents: $2^{10}\\cdot3 = 3072$.",
+    "rating": 1020,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "If $\\mathrm{lcm}(8, b) = 72$, how many positive integers $b$ are possible?",
+    "answer": "4",
+    "solution": "We need $b = 2^x\\cdot3^2$ with $x \\le 3$: $b \\in \\{9,18,36,72\\}$ — $4$ values.",
+    "rating": 1020,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Three bells ring every $9$, $12$, and $15$ minutes. After how many minutes do all three ring together?",
+    "answer": "180",
+    "solution": "They align at $\\mathrm{lcm}(9,12,15) = 180$ minutes.",
+    "rating": 1020,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $50$ are relatively prime to $50$?",
+    "answer": "20",
+    "solution": "$\\varphi(50) = 50\\left(1-\\tfrac12\\right)\\left(1-\\tfrac15\\right) = 20$.",
+    "rating": 1020,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(456, 678)$?",
+    "answer": "6",
+    "solution": "$456 = 2^3\\cdot3\\cdot19$, $678 = 2\\cdot3\\cdot113$, so $\\gcd = 2\\cdot3 = 6$.",
     "rating": 1060,
     "source": "AMC 8 · GCD & LCM"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "A $12$-tooth gear meshes with a $42$-tooth gear. How many full rotations does the $12$-tooth gear make before both first return to their starting positions?",
-    "answer": "7",
-    "solution": "They realign after $\\mathrm{lcm}(12,42)=84$ teeth, i.e. $84/12=7$ rotations of the small gear.",
+    "statement": "What is $\\mathrm{lcm}(21, 28, 35)$?",
+    "answer": "420",
+    "solution": "$21 = 3\\cdot7$, $28 = 2^2\\cdot7$, $35 = 5\\cdot7$, so $\\mathrm{lcm} = 2^2\\cdot3\\cdot5\\cdot7 = 420$.",
     "rating": 1060,
     "source": "AMC 8 · GCD & LCM"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many ordered pairs $(a,b)$ of positive integers satisfy $\\mathrm{lcm}(a,b)=144$?",
-    "answer": "45",
-    "solution": "$144=2^4\\cdot3^2$, so the count is $(2\\cdot4+1)(2\\cdot2+1)=9\\cdot5=45$.",
+    "statement": "Two numbers have greatest common divisor $12$ and least common multiple $360$. What is their product?",
+    "answer": "4320",
+    "solution": "$\\gcd\\cdot\\mathrm{lcm} = 12\\cdot360 = 4320$.",
+    "rating": 1060,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many positive integers divide both $60$ and $90$?",
+    "answer": "8",
+    "solution": "They are exactly the divisors of $\\gcd(60,90) = 30$, and $30$ has $8$ divisors.",
+    "rating": 1060,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(2024, 2020)$?",
+    "answer": "4",
+    "solution": "$\\gcd(2024,2020) = \\gcd(2020, 4) = 4$.",
+    "rating": 1060,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(2^6\\cdot3^4\\cdot5^2, \\; 2^4\\cdot3^5\\cdot5)$?",
+    "answer": "6480",
+    "solution": "Smaller exponents: $2^4\\cdot3^4\\cdot5 = 6480$.",
     "rating": 1100,
     "source": "AMC 8 · GCD & LCM"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the smallest positive integer that leaves remainders $1$, $2$, and $3$ when divided by $2$, $3$, and $4$ respectively?",
+    "statement": "How many integers from $1$ to $100$ are relatively prime to $30$?",
+    "answer": "26",
+    "solution": "In each block of $30$ there are $\\varphi(30) = 8$; over $1$–$100$ this gives $26$.",
+    "rating": 1100,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many unordered pairs $\\{a, b\\}$ of positive integers satisfy $\\gcd(a,b) = 1$ and $ab = 84$?",
+    "answer": "4",
+    "solution": "$84 = 2^2\\cdot3\\cdot7$; each prime power goes entirely to $a$ or $b$, giving pairs $\\{1,84\\},\\{4,21\\},\\{3,28\\},\\{7,12\\}$ — that is $4$.",
+    "rating": 1100,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(2^6\\cdot3^4\\cdot5^2, \\; 2^4\\cdot3^5\\cdot5)$?",
+    "answer": "388800",
+    "solution": "Larger exponents: $2^6\\cdot3^5\\cdot5^2 = 388800$.",
+    "rating": 1100,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Two comets appear every $12$ and $40$ years and were seen together in $2024$. In what year will they next be seen together?",
+    "answer": "2144",
+    "solution": "They realign after $\\mathrm{lcm}(12,40) = 120$ years: $2024 + 120 = 2144$.",
+    "rating": 1100,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(2^8\\cdot3^5, \\; 2^5\\cdot3^8\\cdot5)$?",
+    "answer": "7776",
+    "solution": "Smaller exponents: $2^5\\cdot3^5 = 7776$.",
+    "rating": 1145,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(30, 42, 70)$?",
+    "answer": "210",
+    "solution": "$30 = 2\\cdot3\\cdot5$, $42 = 2\\cdot3\\cdot7$, $70 = 2\\cdot5\\cdot7$, so $\\mathrm{lcm} = 2\\cdot3\\cdot5\\cdot7 = 210$.",
+    "rating": 1145,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many pairs $(a, b)$ with $1 \\le a \\le b \\le 12$ satisfy $\\gcd(a,b) = 1$?",
+    "answer": "46",
+    "solution": "Counting coprime pairs with $a \\le b$ up to $12$ gives $46$.",
+    "rating": 1145,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(n, n+1, n+2)$ for any positive integer $n$?",
+    "answer": "1",
+    "solution": "Consecutive integers are coprime, so the gcd of the three is $1$.",
+    "rating": 1145,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer that has both $18$ and $24$ as divisors?",
+    "answer": "72",
+    "solution": "That is $\\mathrm{lcm}(18,24) = 72$.",
+    "rating": 1145,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(1155, 1573)$?",
     "answer": "11",
-    "solution": "Each remainder is one less than its divisor, so $n\\equiv-1$ modulo $2,3,4$. Thus $n+1=\\mathrm{lcm}(2,3,4)=12$, giving $n=11$.",
-    "rating": 1100,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many ordered pairs $(a,b)$ of positive integers have $\\gcd(a,b)=12$ and $\\mathrm{lcm}(a,b)=720$?",
-    "answer": "8",
-    "solution": "Writing $a=12m,b=12n$ needs $\\gcd(m,n)=1$, $\\mathrm{lcm}(m,n)=60=2^2\\cdot3\\cdot5$: each of the $3$ prime powers goes to one side, $2^3=8$ ordered pairs.",
-    "rating": 1100,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $1000$ are relatively prime to $105$?",
-    "answer": "457",
-    "solution": "$105=3\\cdot5\\cdot7$. Counting integers in $1$–$1000$ divisible by none of $3,5,7$ gives $457$.",
-    "rating": 1100,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Three cyclists lap a track in $42$, $56$, and $63$ seconds. After how many seconds do they all meet at the starting line?",
-    "answer": "504",
-    "solution": "$\\mathrm{lcm}(42,56,63)=2^3\\cdot3^2\\cdot7=504$ seconds.",
-    "rating": 1100,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many ordered pairs $(a,b)$ of positive integers satisfy $\\mathrm{lcm}(a,b)=1000$?",
-    "answer": "49",
-    "solution": "$1000=2^3\\cdot5^3$, so the count is $(2\\cdot3+1)(2\\cdot3+1)=7\\cdot7=49$.",
-    "rating": 1145,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the smallest integer greater than $5$ that leaves remainder $5$ when divided by each of $6$, $8$, and $9$?",
-    "answer": "77",
-    "solution": "It is $5$ more than $\\mathrm{lcm}(6,8,9)=72$, namely $77$.",
-    "rating": 1145,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many unordered pairs $\\{a,b\\}$ of positive integers satisfy $\\mathrm{lcm}(a,b)=48$?",
-    "answer": "14",
-    "solution": "$48=2^4\\cdot3$ gives $(2\\cdot4+1)(2\\cdot1+1)=27$ ordered pairs. Only $(48,48)$ repeats, so there are $(27+1)/2=14$ unordered pairs.",
-    "rating": 1145,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the greatest common factor of $2^{48}-1$ and $2^{36}-1$?",
-    "answer": "4095",
-    "solution": "Using $\\gcd(2^m-1,2^n-1)=2^{\\gcd(m,n)}-1$ with $\\gcd(48,36)=12$: the answer is $2^{12}-1=4095$.",
-    "rating": 1145,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Two numbers have least common multiple $1400$ and greatest common factor $10$. If one number is $200$, what is the other?",
-    "answer": "70",
-    "solution": "The other is $\\frac{\\gcd\\cdot\\mathrm{lcm}}{200}=\\frac{10\\cdot1400}{200}=70$.",
-    "rating": 1145,
-    "source": "AMC 8 · GCD & LCM"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many ordered pairs $(a,b)$ of positive integers satisfy $\\mathrm{lcm}(a,b)=1200$?",
-    "answer": "135",
-    "solution": "$1200=2^4\\cdot3\\cdot5^2$, so the count is $(2\\cdot4+1)(2\\cdot1+1)(2\\cdot2+1)=9\\cdot3\\cdot5=135$.",
+    "solution": "$1155 = 3\\cdot5\\cdot7\\cdot11$ and $1573 = 11^2\\cdot13$ share only $11$.",
     "rating": 1190,
     "source": "AMC 8 · GCD & LCM"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the least common multiple of all the integers from $1$ to $12$?",
-    "answer": "27720",
-    "solution": "Take the highest prime powers $\\le12$: $2^3\\cdot3^2\\cdot5\\cdot7\\cdot11=27720$.",
+    "statement": "What is $\\mathrm{lcm}(12, 16, 18, 24)$?",
+    "answer": "144",
+    "solution": "$\\mathrm{lcm} = 2^4\\cdot3^2 = 144$.",
     "rating": 1190,
     "source": "AMC 8 · GCD & LCM"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many ordered pairs $(a,b)$ of positive integers satisfy $\\gcd(a,b)=1$ and $ab=360$?",
-    "answer": "8",
-    "solution": "$360=2^3\\cdot3^2\\cdot5$; for a coprime pair each of the $3$ prime powers goes entirely to one side, giving $2^3=8$ ordered pairs.",
+    "statement": "How many integers from $1$ to $1000$ are relatively prime to $6$?",
+    "answer": "333",
+    "solution": "A fraction $\\tfrac13$ of the integers are coprime to $6$, giving $333$.",
     "rating": 1190,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "If $\\gcd(a,b)\\cdot\\mathrm{lcm}(a,b) = 2400$ and $\\gcd(a,b) = 20$, what is $\\mathrm{lcm}(a,b)$?",
+    "answer": "120",
+    "solution": "$\\mathrm{lcm} = 2400/20 = 120$.",
+    "rating": 1190,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many ordered pairs $(a, b)$ of positive integers satisfy $\\mathrm{lcm}(a,b) = 12$?",
+    "answer": "15",
+    "solution": "For $12 = 2^2\\cdot3$: exponent pairs with max $2$ number $5$, with max $1$ number $3$; total $5\\cdot3 = 15$.",
+    "rating": 1190,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(2^{10}\\cdot3^7\\cdot5^4, \\; 2^7\\cdot3^{10}\\cdot5^2\\cdot7)$?",
+    "answer": "6998400",
+    "solution": "Take the smaller exponent of each shared prime: $2^7\\cdot3^7\\cdot5^2 = 6998400$.",
+    "rating": 1240,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many ordered pairs $(a, b)$ with $1 \\le a, b \\le 20$ satisfy $\\gcd(a,b) = 1$?",
+    "answer": "255",
+    "solution": "Counting coprime ordered pairs in the $20 \\times 20$ grid gives $255$.",
+    "rating": 1240,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many unordered pairs $\\{a, b\\}$ of positive integers satisfy $\\mathrm{lcm}(a,b) = 100$?",
+    "answer": "13",
+    "solution": "Counting factor pairs of $100 = 2^2\\cdot5^2$ whose lcm is $100$ gives $13$ unordered pairs.",
+    "rating": 1240,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Three runners complete a lap in $60$, $72$, and $90$ seconds. After how many seconds are they all together at the start again?",
+    "answer": "360",
+    "solution": "They align at $\\mathrm{lcm}(60,72,90) = 360$ seconds.",
+    "rating": 1240,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "If $\\gcd(2^{100}, \\; 6^{100}) = 2^k$, what is $k$?",
+    "answer": "100",
+    "solution": "$6^{100} = 2^{100}\\cdot3^{100}$, so the common power of $2$ is $2^{100}$, giving $k = 100$.",
+    "rating": 1240,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "If $\\gcd(2^{100}\\cdot3^{50}, \\; 2^{60}\\cdot3^{80}) = 2^a\\cdot3^b$, what is $a + b$?",
+    "answer": "110",
+    "solution": "Smaller exponents: $a = 60$, $b = 50$, so $a+b = 110$.",
+    "rating": 1290,
     "source": "AMC 8 · GCD & LCM"
   },
   {
     "type": "SHORT_ANSWER",
     "statement": "How many integers from $1$ to $2024$ are relatively prime to $2024$?",
     "answer": "880",
-    "solution": "$2024=2^3\\cdot11\\cdot23$, so $\\varphi(2024)=2024\\left(\\tfrac12\\right)\\left(\\tfrac{10}{11}\\right)\\left(\\tfrac{22}{23}\\right)=880$.",
-    "rating": 1190,
+    "solution": "$2024 = 2^3\\cdot11\\cdot23$, so $\\varphi(2024) = 2024\\cdot\\tfrac12\\cdot\\tfrac{10}{11}\\cdot\\tfrac{22}{23} = 880$.",
+    "rating": 1290,
     "source": "AMC 8 · GCD & LCM"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Two positive integers have product $7200$ and least common multiple $360$. What is their greatest common factor?",
-    "answer": "20",
-    "solution": "Since $\\gcd\\cdot\\mathrm{lcm}=$ product, $\\gcd=7200/360=20$.",
-    "rating": 1190,
+    "statement": "How many unordered pairs $\\{a, b\\}$ of positive integers have $\\gcd(a,b) = 6$ and $\\mathrm{lcm}(a,b) = 36$?",
+    "answer": "2",
+    "solution": "Writing $a = 6m$, $b = 6n$ with $\\gcd(m,n) = 1$ and $mn = 6$: pairs $\\{1,6\\},\\{2,3\\}$ give $\\{6,36\\},\\{12,18\\}$ — that is $2$.",
+    "rating": 1290,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many ordered pairs $(a, b)$ with $1 \\le a, b \\le 30$ satisfy $\\mathrm{lcm}(a,b) = 30$?",
+    "answer": "27",
+    "solution": "For $30 = 2\\cdot3\\cdot5$, each prime contributes $3$ exponent-pair choices: $3^3 = 27$.",
+    "rating": 1290,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\gcd(1000, 750, 500)$?",
+    "answer": "250",
+    "solution": "All three share $2\\cdot5^3 = 250$.",
+    "rating": 1290,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many ordered pairs $(a, b)$ of positive integers satisfy $\\mathrm{lcm}(a,b) = 72$?",
+    "answer": "35",
+    "solution": "For $72 = 2^3\\cdot3^2$: max-$3$ exponent pairs number $7$, max-$2$ number $5$; total $7\\cdot5 = 35$.",
+    "rating": 1340,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers $n$ from $1$ to $100$ satisfy $\\gcd(n, 12) = 6$?",
+    "answer": "8",
+    "solution": "$\\gcd(n,12) = 6$ means $6 \\mid n$ but $4 \\nmid n$: $n = 6,18,30,\\dots,90$ — that is $8$.",
+    "rating": 1340,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $\\mathrm{lcm}(8, 12, 30)$?",
+    "answer": "120",
+    "solution": "$\\mathrm{lcm} = 2^3\\cdot3\\cdot5 = 120$.",
+    "rating": 1340,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers $n$ from $1$ to $100$ satisfy $\\gcd(n, 100) = 10$?",
+    "answer": "4",
+    "solution": "$n = 10k$ with $\\gcd(k,10) = 1$ and $k \\le 10$: $k \\in \\{1,3,7,9\\}$ — that is $4$.",
+    "rating": 1340,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many unordered pairs $\\{a, b\\}$ have $\\gcd(a,b) = 8$ and $\\mathrm{lcm}(a,b) = 240$?",
+    "answer": "4",
+    "solution": "Writing $a = 8m$, $b = 8n$ coprime with $mn = 30$: pairs $\\{1,30\\},\\{2,15\\},\\{3,10\\},\\{5,6\\}$ — that is $4$.",
+    "rating": 1340,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many ordered pairs $(a, b)$ with $1 \\le a, b \\le 10$ satisfy $\\gcd(a,b) = 1$?",
+    "answer": "63",
+    "solution": "Counting coprime ordered pairs in the $10 \\times 10$ grid gives $63$.",
+    "rating": 1390,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many unordered pairs $\\{a, b\\}$ of positive integers satisfy $\\mathrm{lcm}(a,b) = 120$?",
+    "answer": "32",
+    "solution": "Counting factor pairs of $120 = 2^3\\cdot3\\cdot5$ whose lcm is $120$ gives $32$ unordered pairs.",
+    "rating": 1390,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "If $\\gcd(2^{200}, \\; 12^{100}) = 2^k$, what is $k$?",
+    "answer": "200",
+    "solution": "$12^{100} = 2^{200}\\cdot3^{100}$, so the common power of $2$ is $2^{200}$, giving $k = 200$.",
+    "rating": 1390,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $2024$ are relatively prime to $6$?",
+    "answer": "675",
+    "solution": "A fraction $\\tfrac13$ of the integers are coprime to $6$; over $1$–$2024$ this gives $675$.",
+    "rating": 1390,
+    "source": "AMC 8 · GCD & LCM"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of all positive integers less than $20$ that are relatively prime to $20$?",
+    "answer": "80",
+    "solution": "The values $1,3,7,9,11,13,17,19$ sum to $80$.",
+    "rating": 1390,
     "source": "AMC 8 · GCD & LCM"
   }
 ]

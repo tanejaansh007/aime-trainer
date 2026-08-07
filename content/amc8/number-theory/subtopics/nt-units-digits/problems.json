@@ -19,15 +19,15 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $6 \\times 6$?",
     "answer": "6",
-    "solution": "$6\\times6=36$, units digit $6$.",
+    "solution": "$6\\times6=36$; the units digit is $6$.",
     "rating": 450,
     "source": "AMC 8 · Units Digits & Cycles"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $125 \\times 4$?",
-    "answer": "0",
-    "solution": "$125\\times4=500$, units digit $0$.",
+    "statement": "What is the units digit of $84 - 17$?",
+    "answer": "7",
+    "solution": "$84-17=67$; the units digit is $7$.",
     "rating": 450,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -35,7 +35,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $9 + 9 + 9$?",
     "answer": "7",
-    "solution": "$27$ has units digit $7$.",
+    "solution": "$9+9+9=27$; the units digit is $7$.",
     "rating": 450,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -43,23 +43,23 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $13 \\times 17$?",
     "answer": "1",
-    "solution": "Only $3\\times7=21$ matters; the units digit is $1$.",
+    "solution": "Only the units digits matter: $3\\times7=21$, so the units digit is $1$.",
     "rating": 500,
     "source": "AMC 8 · Units Digits & Cycles"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $2^3$?",
-    "answer": "8",
-    "solution": "$2^3=8$.",
-    "rating": 500,
-    "source": "AMC 8 · Units Digits & Cycles"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $44 \\times 55$?",
+    "statement": "What is the units digit of $128 \\times 135$?",
     "answer": "0",
-    "solution": "$4\\times5=20$, so the units digit is $0$.",
+    "solution": "The second factor ends in $5$ and the first is even, so the product ends in $0$.",
+    "rating": 500,
+    "source": "AMC 8 · Units Digits & Cycles"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $7 + 17 + 27 + 37$?",
+    "answer": "8",
+    "solution": "Each ends in $7$; $4\\times7=28$, so the sum ends in $8$.",
     "rating": 500,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -73,9 +73,9 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $7 + 17 + 27 + 37$?",
-    "answer": "8",
-    "solution": "The sum is $88$, units digit $8$.",
+    "statement": "What is the units digit of $56 \\times 56$?",
+    "answer": "6",
+    "solution": "$6\\times6=36$, so the units digit is $6$.",
     "rating": 500,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -91,7 +91,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $2^4$?",
     "answer": "6",
-    "solution": "$2^4=16$, units digit $6$.",
+    "solution": "$2^4=16$, so the units digit is $6$.",
     "rating": 550,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -99,7 +99,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $12 \\times 13 \\times 14$?",
     "answer": "4",
-    "solution": "Only $2\\times3\\times4=24$ matters; the units digit is $4$.",
+    "solution": "Multiply units digits: $2\\times3\\times4=24$, so the answer is $4$.",
     "rating": 550,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -113,9 +113,9 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $9^2$?",
-    "answer": "1",
-    "solution": "$9^2=81$, units digit $1$.",
+    "statement": "What is the units digit of $6^{20}$?",
+    "answer": "6",
+    "solution": "Every positive power of $6$ ends in $6$.",
     "rating": 550,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -123,7 +123,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $2^5$?",
     "answer": "2",
-    "solution": "$2^5=32$, units digit $2$.",
+    "solution": "$2^5=32$; the units digit is $2$. (The units digits of $2^n$ cycle $2,4,8,6$.)",
     "rating": 600,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -131,7 +131,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $3^3$?",
     "answer": "7",
-    "solution": "$3^3=27$, units digit $7$.",
+    "solution": "$3^3=27$, so the units digit is $7$.",
     "rating": 600,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -139,15 +139,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $4^2$?",
     "answer": "6",
-    "solution": "$4^2=16$, units digit $6$.",
-    "rating": 600,
-    "source": "AMC 8 · Units Digits & Cycles"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $6^{100}$?",
-    "answer": "6",
-    "solution": "Every positive power of $6$ ends in $6$.",
+    "solution": "$4^2=16$, so the units digit is $6$. (Even powers of $4$ end in $6$.)",
     "rating": 600,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -155,7 +147,15 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $8^3$?",
     "answer": "2",
-    "solution": "$8^3=512$, units digit $2$.",
+    "solution": "$8^3=512$; the units digit is $2$.",
+    "rating": 600,
+    "source": "AMC 8 · Units Digits & Cycles"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $9^3$?",
+    "answer": "9",
+    "solution": "Powers of $9$ end in $9,1,9,1,\\dots$; an odd power ends in $9$.",
     "rating": 600,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -163,39 +163,39 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $2^{10}$?",
     "answer": "4",
-    "solution": "Units of powers of $2$ cycle $2,4,8,6$; $10\\equiv2\\pmod4$ gives $4$.",
+    "solution": "The units digits of $2^n$ cycle $2,4,8,6$ with length $4$. Since $10\\equiv2\\pmod4$, the answer is $4$.",
     "rating": 650,
     "source": "AMC 8 · Units Digits & Cycles"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $3^4$?",
+    "statement": "What is the units digit of $3^{4}$?",
     "answer": "1",
-    "solution": "$3^4=81$, units digit $1$.",
+    "solution": "$3^4=81$, so the units digit is $1$. (Powers of $3$ cycle $3,9,7,1$.)",
     "rating": 650,
     "source": "AMC 8 · Units Digits & Cycles"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $7^3$?",
+    "statement": "What is the units digit of $7^{3}$?",
     "answer": "3",
-    "solution": "$7^3=343$, units digit $3$.",
+    "solution": "$7^3=343$; the units digit is $3$.",
     "rating": 650,
     "source": "AMC 8 · Units Digits & Cycles"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $9^3$?",
-    "answer": "9",
-    "solution": "Powers of $9$ alternate $9,1$; an odd exponent gives $9$.",
-    "rating": 650,
-    "source": "AMC 8 · Units Digits & Cycles"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $4^5$?",
+    "statement": "What is the units digit of $4^{5}$?",
     "answer": "4",
-    "solution": "Powers of $4$ alternate $4,6$; an odd exponent gives $4$.",
+    "solution": "Powers of $4$ alternate $4,6$; an odd power ends in $4$.",
+    "rating": 650,
+    "source": "AMC 8 · Units Digits & Cycles"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $12^{4}$?",
+    "answer": "6",
+    "solution": "Only the base's units digit $2$ matters, and $2^4=16$, so the answer is $6$.",
     "rating": 650,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -203,7 +203,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $2^{20}$?",
     "answer": "6",
-    "solution": "Cycle $2,4,8,6$; $20\\equiv0\\pmod4$ gives the $4$th term, $6$.",
+    "solution": "$2^n$ cycles $2,4,8,6$ (length $4$); $20\\equiv0\\pmod4$ lands on the last, $6$.",
     "rating": 700,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -211,15 +211,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $3^{10}$?",
     "answer": "9",
-    "solution": "Cycle $3,9,7,1$; $10\\equiv2$ gives $9$.",
-    "rating": 700,
-    "source": "AMC 8 · Units Digits & Cycles"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $7^{10}$?",
-    "answer": "9",
-    "solution": "Cycle $7,9,3,1$; $10\\equiv2$ gives $9$.",
+    "solution": "$3^n$ cycles $3,9,7,1$; $10\\equiv2\\pmod4$ gives $9$.",
     "rating": 700,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -227,15 +219,23 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $8^{8}$?",
     "answer": "6",
-    "solution": "Cycle $8,4,2,6$; $8\\equiv0\\pmod4$ gives $6$.",
+    "solution": "$8^n$ cycles $8,4,2,6$; $8\\equiv0\\pmod4$ gives $6$.",
     "rating": 700,
     "source": "AMC 8 · Units Digits & Cycles"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $12^{12}$?",
-    "answer": "6",
-    "solution": "The units follow powers of $2$: $2,4,8,6$; $12\\equiv0$ gives $6$.",
+    "statement": "What is the units digit of $2^{7} + 3^{7}$?",
+    "answer": "5",
+    "solution": "$2^7=128$ ends in $8$ and $3^7=2187$ ends in $7$; $8+7=15$, so the sum ends in $5$.",
+    "rating": 700,
+    "source": "AMC 8 · Units Digits & Cycles"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $13^{6}$?",
+    "answer": "9",
+    "solution": "Only the $3$ matters; $3^6$: $6\\equiv2\\pmod4$ in the cycle $3,9,7,1$ gives $9$.",
     "rating": 700,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -243,15 +243,23 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $2^{2024}$?",
     "answer": "6",
-    "solution": "Cycle $2,4,8,6$; $2024\\equiv0\\pmod4$ gives $6$.",
+    "solution": "$2^n$ cycles $2,4,8,6$; $2024\\equiv0\\pmod4$, so the units digit is $6$.",
     "rating": 740,
     "source": "AMC 8 · Units Digits & Cycles"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $3^{2023}$?",
-    "answer": "7",
-    "solution": "Cycle $3,9,7,1$; $2023\\equiv3$ gives $7$.",
+    "statement": "What is the units digit of $1! + 2! + 3! + 4!$?",
+    "answer": "3",
+    "solution": "$1+2+6+24=33$, so the units digit is $3$.",
+    "rating": 740,
+    "source": "AMC 8 · Units Digits & Cycles"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $3 + 3^2 + 3^3 + 3^4$?",
+    "answer": "0",
+    "solution": "$3+9+27+81=120$. (One full cycle of units digits $3+9+7+1=20$ ends in $0$.) The units digit is $0$.",
     "rating": 740,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -259,23 +267,15 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $7^{2024}$?",
     "answer": "1",
-    "solution": "Cycle $7,9,3,1$; $2024\\equiv0$ gives $1$.",
+    "solution": "$7^n$ cycles $7,9,3,1$; $2024\\equiv0\\pmod4$, so the units digit is $1$.",
     "rating": 740,
     "source": "AMC 8 · Units Digits & Cycles"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $13^{17}$?",
-    "answer": "3",
-    "solution": "Follow powers of $3$: $3,9,7,1$; $17\\equiv1$ gives $3$.",
-    "rating": 740,
-    "source": "AMC 8 · Units Digits & Cycles"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $9^{2023}$?",
-    "answer": "9",
-    "solution": "Powers of $9$ alternate $9,1$; an odd exponent gives $9$.",
+    "statement": "What is the units digit of $1 + 2 + 3 + \\cdots + 2024$?",
+    "answer": "0",
+    "solution": "The sum is $\\tfrac{2024\\cdot2025}{2}=2{,}049{,}300$, which ends in $0$.",
     "rating": 740,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -283,7 +283,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $2^{100} + 3^{100}$?",
     "answer": "7",
-    "solution": "$2^{100}$ ends in $6$ and $3^{100}$ ends in $1$; $6+1=7$.",
+    "solution": "$100\\equiv0\\pmod4$: $2^{100}$ ends in $6$ and $3^{100}$ ends in $1$. $6+1=7$.",
     "rating": 780,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -291,7 +291,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $4^{2024}$?",
     "answer": "6",
-    "solution": "Powers of $4$ alternate $4,6$; an even exponent gives $6$.",
+    "solution": "Powers of $4$ end in $4,6,4,6,\\dots$; an even exponent ends in $6$.",
     "rating": 780,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -299,15 +299,15 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $17^{19}$?",
     "answer": "3",
-    "solution": "Follow powers of $7$: $7,9,3,1$; $19\\equiv3$ gives $3$.",
+    "solution": "Only the $7$ matters; $19\\equiv3\\pmod4$ in the cycle $7,9,3,1$ gives $3$.",
     "rating": 780,
     "source": "AMC 8 · Units Digits & Cycles"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $8^{2024}$?",
-    "answer": "6",
-    "solution": "Cycle $8,4,2,6$; $2024\\equiv0\\pmod4$ gives $6$.",
+    "statement": "What is the units digit of $2^{2024} \\times 5^{3}$?",
+    "answer": "0",
+    "solution": "The factor $5^3$ ends in $5$ and $2^{2024}$ is even, so the product ends in $0$.",
     "rating": 780,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -315,39 +315,31 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $26^{50}$?",
     "answer": "6",
-    "solution": "Every positive power of a number ending in $6$ ends in $6$.",
+    "solution": "Only the $6$ matters, and every positive power of $6$ ends in $6$.",
     "rating": 780,
-    "source": "AMC 8 · Units Digits & Cycles"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $2^{2024} \\times 3^{2024}$?",
-    "answer": "6",
-    "solution": "$2^{2024}$ ends in $6$ and $3^{2024}$ ends in $1$; $6\\times1=6$.",
-    "rating": 820,
     "source": "AMC 8 · Units Digits & Cycles"
   },
   {
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $1! + 2! + 3! + 4! + 5!$?",
     "answer": "3",
-    "solution": "$1+2+6+24+120=153$, units digit $3$.",
+    "solution": "$1+2+6+24+120=153$; the units digit is $3$. (From $5!$ on, factorials end in $0$.)",
     "rating": 820,
     "source": "AMC 8 · Units Digits & Cycles"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $1 + 2 + 3 + \\cdots + 2024$?",
+    "statement": "What is the units digit of $1 + 2 + 3 + \\cdots + 100$?",
     "answer": "0",
-    "solution": "The sum is $\\frac{2024\\cdot2025}{2}=2\\,049\\,300$, whose units digit is $0$.",
+    "solution": "The sum is $\\tfrac{100\\cdot101}{2}=5050$, ending in $0$.",
     "rating": 820,
     "source": "AMC 8 · Units Digits & Cycles"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $7^7$?",
+    "statement": "What is the units digit of $7^{7}$?",
     "answer": "3",
-    "solution": "Cycle $7,9,3,1$; $7\\equiv3\\pmod4$ gives $3$.",
+    "solution": "$7^n$ cycles $7,9,3,1$; $7\\equiv3\\pmod4$ gives $3$.",
     "rating": 820,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -355,23 +347,31 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $2^1 + 2^2 + 2^3 + \\cdots + 2^{10}$?",
     "answer": "6",
-    "solution": "The sum is $2^{11}-2=2046$, units digit $6$.",
+    "solution": "This equals $2^{11}-2 = 2046$, so the units digit is $6$.",
     "rating": 820,
     "source": "AMC 8 · Units Digits & Cycles"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $3^{27}$?",
-    "answer": "7",
-    "solution": "Cycle $3,9,7,1$; $27\\equiv3\\pmod4$ gives $7$.",
-    "rating": 860,
+    "statement": "What is the units digit of $2^{2024} \\times 3^{2024}$?",
+    "answer": "6",
+    "solution": "$2^{2024}$ ends in $6$, $3^{2024}$ ends in $1$; $6\\times1=6$.",
+    "rating": 820,
     "source": "AMC 8 · Units Digits & Cycles"
   },
   {
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $1! + 2! + 3! + \\cdots + 100!$?",
     "answer": "3",
-    "solution": "For $k\\ge5$, $k!$ ends in $0$. So only $1!+2!+3!+4!=33$ matters, giving units digit $3$.",
+    "solution": "Every factorial from $5!$ on ends in $0$, so only $1!+2!+3!+4!=33$ matters. The units digit is $3$.",
+    "rating": 860,
+    "source": "AMC 8 · Units Digits & Cycles"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $3^{27}$?",
+    "answer": "7",
+    "solution": "$3^n$ cycles $3,9,7,1$; $27\\equiv3\\pmod4$ gives $7$.",
     "rating": 860,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -379,7 +379,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $2^{2024} + 7^{2024} + 8^{2024}$?",
     "answer": "3",
-    "solution": "The units are $6$, $1$, and $6$; $6+1+6=13$, units digit $3$.",
+    "solution": "$2^{2024}\\to6$, $7^{2024}\\to1$, $8^{2024}\\to6$ (all exponents $\\equiv0\\pmod4$); $6+1+6=13$, ending in $3$.",
     "rating": 860,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -387,15 +387,15 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $13^{13} \\times 17^{17}$?",
     "answer": "1",
-    "solution": "$13^{13}$ ends in $3$ (since $13\\equiv1\\bmod4$) and $17^{17}$ ends in $7$; $3\\times7=21$, units digit $1$.",
+    "solution": "$3^{13}\\to3$ ($13\\equiv1$) and $7^{17}\\to7$ ($17\\equiv1$); $3\\times7=21$, ending in $1$.",
     "rating": 860,
     "source": "AMC 8 · Units Digits & Cycles"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $9^9$?",
+    "statement": "What is the units digit of $9^{99}$?",
     "answer": "9",
-    "solution": "Powers of $9$ alternate $9,1$; an odd exponent gives $9$.",
+    "solution": "Powers of $9$ end in $9,1,9,1,\\dots$; an odd exponent ends in $9$.",
     "rating": 860,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -403,15 +403,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $2^{100} \\times 3^{50}$?",
     "answer": "4",
-    "solution": "$2^{100}$ ends in $6$ and $3^{50}$ ends in $9$ ($50\\equiv2$); $6\\times9=54$, units digit $4$.",
-    "rating": 900,
-    "source": "AMC 8 · Units Digits & Cycles"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $7^{7^7}$?",
-    "answer": "3",
-    "solution": "The units digit of $7^n$ depends on $n\\bmod4$. Since $7^7\\equiv3\\pmod4$, we take the $3$rd term of $7,9,3,1$: $3$.",
+    "solution": "$2^{100}\\to6$ and $3^{50}\\to9$ ($50\\equiv2\\pmod4$); $6\\times9=54$, ending in $4$.",
     "rating": 900,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -427,7 +419,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $123^{456}$?",
     "answer": "1",
-    "solution": "Follow powers of $3$: $3,9,7,1$; $456\\equiv0\\pmod4$ gives $1$.",
+    "solution": "Only the $3$ matters; $456\\equiv0\\pmod4$ in the cycle $3,9,7,1$ gives $1$.",
     "rating": 900,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -435,7 +427,15 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $4^{4^4}$?",
     "answer": "6",
-    "solution": "$4^4=256$ is even, and powers of $4$ with even exponent end in $6$.",
+    "solution": "$4^4=256$ is even, and even powers of $4$ end in $6$.",
+    "rating": 900,
+    "source": "AMC 8 · Units Digits & Cycles"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $3^1 + 3^2 + 3^3 + \\cdots + 3^{20}$?",
+    "answer": "0",
+    "solution": "The units digits cycle $3,9,7,1$ (sum $20$) every $4$ terms; $20$ terms give $5$ full cycles, ending in $0$.",
     "rating": 900,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -443,15 +443,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $1^1 + 2^2 + 3^3 + 4^4 + 5^5$?",
     "answer": "3",
-    "solution": "The terms end in $1,4,7,6,5$; their sum $23$ has units digit $3$.",
-    "rating": 940,
-    "source": "AMC 8 · Units Digits & Cycles"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $2^{1024}$?",
-    "answer": "6",
-    "solution": "Cycle $2,4,8,6$; $1024\\equiv0\\pmod4$ gives $6$.",
+    "solution": "Units digits: $1,4,7,6,5$; their sum is $23$, ending in $3$.",
     "rating": 940,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -459,15 +451,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $3^1 + 3^2 + 3^3 + \\cdots + 3^{2024}$?",
     "answer": "0",
-    "solution": "The units cycle $3,9,7,1$ sum to $20$ per block of $4$ (units $0$). Since $2024$ is a multiple of $4$, the total ends in $0$.",
-    "rating": 940,
-    "source": "AMC 8 · Units Digits & Cycles"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $8^{2024} \\times 9^{2024}$?",
-    "answer": "6",
-    "solution": "$8^{2024}$ ends in $6$ and $9^{2024}$ ends in $1$; $6\\times1=6$.",
+    "solution": "Units digits cycle $3,9,7,1$ (sum $20$) every $4$ terms; $2024$ terms are exactly $506$ cycles, ending in $0$.",
     "rating": 940,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -475,7 +459,23 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $2024^{2024}$?",
     "answer": "6",
-    "solution": "Follow powers of $4$: even exponents end in $6$.",
+    "solution": "Only the $4$ matters; $2024$ is even, and even powers of $4$ end in $6$.",
+    "rating": 940,
+    "source": "AMC 8 · Units Digits & Cycles"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $8^{2024} \\times 9^{2024}$?",
+    "answer": "6",
+    "solution": "$8^{2024}\\to6$ and $9^{2024}\\to1$ (even power); $6\\times1=6$.",
+    "rating": 940,
+    "source": "AMC 8 · Units Digits & Cycles"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $2^{1024}$?",
+    "answer": "6",
+    "solution": "$1024\\equiv0\\pmod4$ in the cycle $2,4,8,6$, so the units digit is $6$.",
     "rating": 940,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -491,7 +491,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $7^1 + 7^2 + 7^3 + \\cdots + 7^{2024}$?",
     "answer": "0",
-    "solution": "The units cycle $7,9,3,1$ sum to $20$ per block of $4$. As $2024$ is a multiple of $4$, the total ends in $0$.",
+    "solution": "Units digits cycle $7,9,3,1$ (sum $20$) every $4$ terms; $2024$ terms make $506$ full cycles, ending in $0$.",
     "rating": 980,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -499,7 +499,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $2^1 \\times 2^2 \\times 2^3 \\times \\cdots \\times 2^{10}$?",
     "answer": "8",
-    "solution": "The product is $2^{1+2+\\cdots+10}=2^{55}$. Cycle $2,4,8,6$; $55\\equiv3\\pmod4$ gives $8$.",
+    "solution": "The exponents add to $1+2+\\cdots+10=55$, so this is $2^{55}$; $55\\equiv3\\pmod4$ gives $8$.",
     "rating": 980,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -507,7 +507,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $(2^{2024} + 3^{2024})^2$?",
     "answer": "9",
-    "solution": "The base ends in $6+1=7$, and $7^2=49$ ends in $9$.",
+    "solution": "Inside ends in $6+1=7$; then $7^2=49$ ends in $9$.",
     "rating": 980,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -515,7 +515,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $13! + 14! + 15! + \\cdots + 20!$?",
     "answer": "0",
-    "solution": "Every factorial from $5!$ onward ends in $0$, so this sum ends in $0$.",
+    "solution": "Every factorial from $5!$ on ends in $0$, so this whole sum ends in $0$.",
     "rating": 980,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -523,7 +523,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $2^{3^4}$?",
     "answer": "2",
-    "solution": "$3^4=81$, and cycle $2,4,8,6$ with $81\\equiv1\\pmod4$ gives $2$.",
+    "solution": "$3^4=81$ and $81\\equiv1\\pmod4$, so $2^{81}$ has the same units digit as $2^1$, namely $2$.",
     "rating": 1020,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -539,7 +539,7 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $3^{2024} + 7^{2024} + 9^{2024}$?",
     "answer": "3",
-    "solution": "Each ends in $1$ ($3^{2024},7^{2024}$ since $2024\\equiv0\\bmod4$, and $9^{even}$); $1+1+1=3$.",
+    "solution": "Each exponent is even/$\\equiv0\\pmod4$: $3^{2024}\\to1$, $7^{2024}\\to1$, $9^{2024}\\to1$; $1+1+1=3$.",
     "rating": 1020,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -547,39 +547,31 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $2^{2024} \\times 3^{2024} \\times 7^{2024}$?",
     "answer": "6",
-    "solution": "The units are $6,1,1$; $6\\times1\\times1=6$.",
+    "solution": "$2^{2024}\\to6$, $3^{2024}\\to1$, $7^{2024}\\to1$; $6\\times1\\times1=6$.",
     "rating": 1020,
-    "source": "AMC 8 · Units Digits & Cycles"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $2 \\times \\underbrace{11\\cdots1}_{2024}$ (the number of $2024$ ones)?",
-    "answer": "2",
-    "solution": "The repunit ends in $1$, so twice it ends in $2$.",
-    "rating": 1020,
-    "source": "AMC 8 · Units Digits & Cycles"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $7^{7^{7^7}}$?",
-    "answer": "3",
-    "solution": "The units of $7^n$ depend on $n\\bmod4$. Since $7\\equiv3\\pmod4$, any odd power of $7$ is $\\equiv3\\pmod4$, so the exponent tower is $\\equiv3$, giving the $3$rd term of $7,9,3,1$: $3$.",
-    "rating": 1060,
     "source": "AMC 8 · Units Digits & Cycles"
   },
   {
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $2^{2025} - 2^{2024}$?",
     "answer": "6",
-    "solution": "$2^{2025}-2^{2024}=2^{2024}$, which ends in $6$.",
+    "solution": "$2^{2025}-2^{2024}=2^{2024}(2-1)=2^{2024}$, which ends in $6$.",
+    "rating": 1020,
+    "source": "AMC 8 · Units Digits & Cycles"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $2^{2^{2^2}} = 2^{16}$?",
+    "answer": "6",
+    "solution": "$2^{16}=65536$. Since $16\\equiv0\\pmod4$ in the cycle $2,4,8,6$, the units digit is $6$.",
     "rating": 1060,
     "source": "AMC 8 · Units Digits & Cycles"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $1^3 + 2^3 + 3^3 + \\cdots + 100^3$?",
-    "answer": "0",
-    "solution": "The sum of the first $100$ cubes is $\\left(\\frac{100\\cdot101}{2}\\right)^2=5050^2$, which ends in $0$.",
+    "statement": "What is the units digit of $1^1 + 2^2 + 3^3 + \\cdots + 10^{10}$?",
+    "answer": "7",
+    "solution": "Units digits are $1,4,7,6,5,6,3,6,9,0$; their sum is $47$, ending in $7$.",
     "rating": 1060,
     "source": "AMC 8 · Units Digits & Cycles"
   },
@@ -587,15 +579,23 @@
     "type": "SHORT_ANSWER",
     "statement": "What is the units digit of $9^{9^9}$?",
     "answer": "9",
-    "solution": "Powers of $9$ alternate $9,1$ by parity of the exponent. Since $9^9$ is odd, the result ends in $9$.",
+    "solution": "$9^9$ is odd, and an odd power of $9$ ends in $9$.",
     "rating": 1060,
     "source": "AMC 8 · Units Digits & Cycles"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the units digit of $123456789^{2024}$?",
-    "answer": "1",
-    "solution": "Follow powers of $9$: even exponents end in $1$.",
+    "statement": "What is the units digit of $3^{1000} + 7^{1000}$?",
+    "answer": "2",
+    "solution": "$1000\\equiv0\\pmod4$: $3^{1000}\\to1$ and $7^{1000}\\to1$; $1+1=2$.",
+    "rating": 1060,
+    "source": "AMC 8 · Units Digits & Cycles"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $2^{2024} \\times 2^{2024}$?",
+    "answer": "6",
+    "solution": "This is $2^{4048}$, and $4048\\equiv0\\pmod4$, so the units digit is $6$.",
     "rating": 1060,
     "source": "AMC 8 · Units Digits & Cycles"
   }

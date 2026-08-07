@@ -1,763 +1,882 @@
 [
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many of the integers $1, 2, 3, \\ldots, 10$ are even?",
-    "answer": "5",
-    "solution": "The even numbers are $2,4,6,8,10$, so there are $5$ of them.",
-    "rating": 450,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "MULTIPLE_CHOICE",
-    "statement": "Is $29$ a prime number?",
-    "choices": [
-      "A) Yes",
-      "B) No"
-    ],
-    "answer": "A",
-    "solution": "$29$ has no divisors other than $1$ and itself (it is not divisible by $2,3,$ or $5$, and $5^2=25<29<36=6^2$), so it is prime.",
-    "rating": 450,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
     "statement": "What is the smallest prime number?",
     "answer": "2",
-    "solution": "The smallest prime is $2$ — the only even prime.",
+    "solution": "$2$ is the smallest prime.",
     "rating": 450,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many one-digit prime numbers are there?",
-    "answer": "4",
-    "solution": "The one-digit primes are $2,3,5,7$, so there are $4$.",
+    "statement": "Is $15$ divisible by $5$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "$15 = 3\\cdot5$, so yes.",
     "rating": 450,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the only even prime number?",
-    "answer": "2",
-    "solution": "Every even number greater than $2$ is divisible by $2$, so $2$ is the only even prime.",
+    "statement": "What is the largest one-digit prime?",
+    "answer": "7",
+    "solution": "The one-digit primes are $2,3,5,7$; the largest is $7$.",
     "rating": 450,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
-    "type": "MULTIPLE_CHOICE",
-    "statement": "Is $57$ a prime number?",
-    "choices": [
-      "A) Yes",
-      "B) No"
-    ],
-    "answer": "B",
-    "solution": "$57 = 3 \\times 19$, so it is composite, not prime.",
+    "type": "SHORT_ANSWER",
+    "statement": "How many even numbers are there from $1$ to $10$ inclusive?",
+    "answer": "5",
+    "solution": "They are $2,4,6,8,10$: that is $5$.",
+    "rating": 450,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $21$ a prime number? Answer Yes or No.",
+    "answer": "No",
+    "solution": "$21 = 3\\cdot7$, so it is not prime.",
+    "rating": 450,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A number is divisible by $10$ exactly when its units digit equals what?",
+    "answer": "0",
+    "solution": "A multiple of $10$ must end in $0$.",
     "rating": 500,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the largest prime number less than $20$?",
-    "answer": "19",
-    "solution": "Checking downward from $19$: it is prime.",
+    "statement": "How many multiples of $3$ are there from $1$ to $20$?",
+    "answer": "6",
+    "solution": "They are $3,6,\\dots,18$: that is $6$.",
     "rating": 500,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many multiples of $5$ are there from $1$ to $40$?",
-    "answer": "8",
-    "solution": "They are $5,10,\\ldots,40$, which is $40\\div 5 = 8$ numbers.",
+    "statement": "What is the smallest prime factor of $35$?",
+    "answer": "5",
+    "solution": "$35 = 5\\cdot7$, so its smallest prime factor is $5$.",
     "rating": 500,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the sum of the three smallest prime numbers?",
+    "statement": "Is $51$ a prime number? Answer Yes or No.",
+    "answer": "No",
+    "solution": "$51 = 3\\cdot17$, so it is not prime.",
+    "rating": 500,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of the first three prime numbers?",
     "answer": "10",
-    "solution": "The three smallest primes are $2,3,5$, and $2+3+5 = 10$.",
+    "solution": "$2+3+5 = 10$.",
     "rating": 500,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the smallest two-digit prime number?",
+    "statement": "Is $123$ divisible by $3$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "Its digit sum $1+2+3 = 6$ is divisible by $3$, so yes.",
+    "rating": 550,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many multiples of $5$ are there from $1$ to $50$?",
+    "answer": "10",
+    "solution": "They are $5,10,\\dots,50$: that is $10$.",
+    "rating": 550,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest two-digit prime?",
     "answer": "11",
-    "solution": "$10$ is composite; $11$ is prime.",
-    "rating": 500,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "MULTIPLE_CHOICE",
-    "statement": "Using the divisibility rule for $3$: is $246$ divisible by $3$?",
-    "choices": [
-      "A) Yes",
-      "B) No"
-    ],
-    "answer": "A",
-    "solution": "The digit sum is $2+4+6 = 12$, which is a multiple of $3$, so $246$ is divisible by $3$.",
+    "solution": "$11$ is the smallest two-digit prime.",
     "rating": 550,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the sum of all prime numbers less than $12$?",
-    "answer": "28",
-    "solution": "The primes below $12$ are $2,3,5,7,11$; their sum is $28$.",
-    "rating": 550,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many prime numbers are there strictly between $10$ and $30$?",
-    "answer": "6",
-    "solution": "They are $11,13,17,19,23,29$ — six primes.",
-    "rating": 550,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the smallest prime number greater than $50$?",
-    "answer": "53",
-    "solution": "$51=3\\cdot17$ and $52$ is even; $53$ is prime.",
-    "rating": 550,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "MULTIPLE_CHOICE",
-    "statement": "Is $132$ divisible by $6$?",
-    "choices": [
-      "A) Yes",
-      "B) No"
-    ],
-    "answer": "A",
-    "solution": "$132$ is even (divisible by $2$) and its digit sum $1+3+2=6$ is a multiple of $3$, so it is divisible by $6$.",
-    "rating": 550,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the largest two-digit prime number?",
-    "answer": "97",
-    "solution": "Checking downward from $99$: $99,98,96,95,94,93,92,91=7\\cdot13$, and $97$ is prime.",
-    "rating": 600,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $60$ are divisible by $7$?",
-    "answer": "8",
-    "solution": "$\\lfloor 60/7 \\rfloor = 8$ (namely $7,14,\\ldots,56$).",
-    "rating": 600,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "The three-digit number $\\overline{34d}$ is a multiple of $5$. What is the greatest possible digit $d$?",
+    "statement": "What is the largest prime factor of $45$?",
     "answer": "5",
-    "solution": "A multiple of $5$ ends in $0$ or $5$; the greater choice is $d=5$.",
-    "rating": 600,
+    "solution": "$45 = 3^2\\cdot5$, so the largest prime factor is $5$.",
+    "rating": 550,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the smallest digit $d$ for which $\\overline{71d}$ is divisible by $3$?",
-    "answer": "1",
-    "solution": "We need $7+1+d = 8+d$ divisible by $3$. The smallest such $d$ is $1$ (giving digit sum $9$).",
-    "rating": 600,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many prime numbers lie strictly between $20$ and $40$?",
+    "statement": "How many prime numbers are there from $1$ to $10$?",
     "answer": "4",
-    "solution": "They are $23,29,31,37$ — four primes.",
+    "solution": "$2,3,5,7$: that is $4$.",
+    "rating": 550,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $1234$ divisible by $3$? Answer Yes or No.",
+    "answer": "No",
+    "solution": "Its digit sum is $1+2+3+4 = 10$, which is not divisible by $3$.",
     "rating": 600,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $120$ are divisible by $4$?",
-    "answer": "30",
-    "solution": "$\\lfloor 120/4 \\rfloor = 30$.",
+    "statement": "What is the smallest three-digit number divisible by $7$?",
+    "answer": "105",
+    "solution": "$7\\cdot15 = 105$ is the first three-digit multiple of $7$.",
+    "rating": 600,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many multiples of $4$ are there from $1$ to $100$?",
+    "answer": "25",
+    "solution": "They are $4,8,\\dots,100$: that is $25$.",
+    "rating": 600,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest prime factor of $91$?",
+    "answer": "7",
+    "solution": "$91 = 7\\cdot13$, so its smallest prime factor is $7$.",
+    "rating": 600,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many primes are there between $10$ and $20$?",
+    "answer": "4",
+    "solution": "$11,13,17,19$: that is $4$.",
+    "rating": 600,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $729$ divisible by $9$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "Its digit sum $7+2+9 = 18$ is divisible by $9$, so yes.",
     "rating": 650,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the sum of all prime numbers between $30$ and $50$?",
-    "answer": "199",
-    "solution": "The primes are $31,37,41,43,47$; their sum is $199$.",
-    "rating": 650,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "For how many digits $d$ is the number $\\overline{2d4}$ divisible by $4$?",
-    "answer": "5",
-    "solution": "Divisibility by $4$ depends on the last two digits $\\overline{d4}=10d+4$. This is a multiple of $4$ exactly when $d$ is even: $d\\in\\{0,2,4,6,8\\}$, so $5$ digits.",
-    "rating": 650,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "The number $\\overline{45d}$ is a multiple of $9$ and $d \\neq 0$. What is $d$?",
-    "answer": "9",
-    "solution": "We need $4+5+d = 9+d$ divisible by $9$, so $d=0$ or $9$. Since $d\\neq0$, $d=9$.",
-    "rating": 650,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many two-digit numbers are divisible by both $2$ and $3$?",
-    "answer": "15",
-    "solution": "Divisible by both means divisible by $6$: $12,18,\\ldots,96$, which is $15$ numbers.",
-    "rating": 650,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $250$ are divisible by $3$?",
-    "answer": "83",
-    "solution": "$\\lfloor 250/3 \\rfloor = 83$.",
-    "rating": 700,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "MULTIPLE_CHOICE",
-    "statement": "Is $8162$ divisible by $11$?",
-    "choices": [
-      "A) Yes",
-      "B) No"
-    ],
-    "answer": "A",
-    "solution": "The alternating digit sum (from the right) is $2-6+1-8=-11$, a multiple of $11$, so yes. Indeed $8162 = 11 \\times 742$.",
-    "rating": 700,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the greatest three-digit multiple of $7$?",
-    "answer": "994",
-    "solution": "$\\lfloor 999/7 \\rfloor = 142$ and $7 \\times 142 = 994$.",
-    "rating": 700,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "The number $\\overline{5d6}$ is divisible by $6$. What is the sum of all possible digits $d$?",
+    "statement": "What is the smallest positive integer divisible by both $4$ and $6$?",
     "answer": "12",
-    "solution": "The number ends in $6$, so it is even. For divisibility by $3$ we need $5+d+6=11+d$ divisible by $3$, giving $d\\in\\{1,4,7\\}$. Their sum is $12$.",
-    "rating": 700,
+    "solution": "$\\mathrm{lcm}(4,6) = 12$.",
+    "rating": 650,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $100$ are divisible by neither $2$ nor $5$?",
-    "answer": "40",
-    "solution": "Of $100$ numbers, $50$ are multiples of $2$ and $20$ of $5$, with $10$ multiples of $10$ counted twice: $50+20-10=60$ are divisible by $2$ or $5$, leaving $100-60=40$.",
-    "rating": 700,
+    "statement": "How many multiples of $6$ are there from $1$ to $100$?",
+    "answer": "16",
+    "solution": "They are $6,12,\\dots,96$: that is $16$.",
+    "rating": 650,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $600$ are divisible by $3$ or $5$?",
-    "answer": "280",
-    "solution": "By inclusion–exclusion: $200 + 120 - 40 = 280$.",
-    "rating": 740,
+    "statement": "Is $97$ a prime number? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "$97$ has no factor up to $9$, so it is prime.",
+    "rating": 650,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the smallest integer greater than $1$ that leaves remainder $1$ when divided by each of $2,3,4,$ and $6$?",
-    "answer": "13",
-    "solution": "Such a number is $1$ more than a common multiple of $2,3,4,6$. The least common multiple is $12$, so the answer is $13$.",
-    "rating": 740,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "For how many digits $d$ is $\\overline{7d2}$ a multiple of $4$?",
-    "answer": "5",
-    "solution": "The last two digits $\\overline{d2}=10d+2$ must be a multiple of $4$; this happens when $d$ is odd: $d\\in\\{1,3,5,7,9\\}$, so $5$ digits.",
-    "rating": 740,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the sum of all two-digit primes both of whose digits are prime?",
-    "answer": "186",
-    "solution": "The digits must come from $\\{2,3,5,7\\}$. The two-digit primes with both digits prime are $23,37,53,73$; their sum is $186$.",
-    "rating": 740,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "MULTIPLE_CHOICE",
-    "statement": "Which of the following is a product of two distinct primes?",
-    "choices": [
-      "A) 21",
-      "B) 27",
-      "C) 25",
-      "D) 32",
-      "E) 8"
-    ],
-    "answer": "A",
-    "solution": "$27=3^3$, $25=5^2$, $32=2^5$, and $8=2^3$ are prime powers. Only $21=3\\times7$ is a product of two different primes.",
-    "rating": 740,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $1000$ are divisible by $8$?",
-    "answer": "125",
-    "solution": "$\\lfloor 1000/8 \\rfloor = 125$.",
-    "rating": 780,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many prime numbers are less than $50$?",
-    "answer": "15",
-    "solution": "The primes below $50$ are $2,3,5,7,11,13,17,19,23,29,31,37,41,43,47$ — $15$ of them.",
-    "rating": 780,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the sum of the smallest and largest two-digit primes?",
-    "answer": "108",
-    "solution": "The smallest is $11$ and the largest is $97$; $11+97=108$.",
-    "rating": 780,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $100$ are divisible by $6$ but not by $4$?",
-    "answer": "8",
-    "solution": "Multiples of $6$ up to $100$: $16$. Those also divisible by $4$ are the multiples of $12$: $8$. So $16-8=8$.",
-    "rating": 780,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "The five-digit number $\\overline{3456d}$ is divisible by $6$. What is the sum of all possible values of $d$?",
-    "answer": "6",
-    "solution": "It must be even, so $d\\in\\{0,2,4,6,8\\}$, and the digit sum $18+d$ must be a multiple of $3$, so $d\\in\\{0,3,6,9\\}$. Both hold for $d\\in\\{0,6\\}$, summing to $6$.",
-    "rating": 780,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $2025$ are divisible by $9$?",
-    "answer": "225",
-    "solution": "$\\lfloor 2025/9 \\rfloor = 225$.",
-    "rating": 820,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many two-digit prime numbers are there?",
-    "answer": "21",
-    "solution": "Counting the primes from $11$ to $97$ gives $21$.",
-    "rating": 820,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the sum of all the positive divisors of $30$?",
-    "answer": "72",
-    "solution": "$30$ has divisors $1,2,3,5,6,10,15,30$, which sum to $72$. (Or $(1+2)(1+3)(1+5)=72$.)",
-    "rating": 820,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $60$ are divisible by $2$, $3$, or $5$?",
-    "answer": "44",
-    "solution": "The numbers divisible by none of $2,3,5$ number $60\\cdot\\tfrac12\\cdot\\tfrac23\\cdot\\tfrac45=16$, so $60-16=44$ are divisible by at least one.",
-    "rating": 820,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "MULTIPLE_CHOICE",
-    "statement": "Which of these numbers has the most distinct prime factors?",
-    "choices": [
-      "A) 30",
-      "B) 64",
-      "C) 81",
-      "D) 100",
-      "E) 128"
-    ],
-    "answer": "A",
-    "solution": "$64=2^6$, $81=3^4$, $128=2^7$ each have one prime factor; $100=2^2\\cdot5^2$ has two; $30=2\\cdot3\\cdot5$ has three.",
-    "rating": 820,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $100$ are divisible by $3$ but not by $2$?",
-    "answer": "17",
-    "solution": "Multiples of $3$: $33$. Those also even are multiples of $6$: $16$. So $33-16=17$.",
-    "rating": 860,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the smallest positive integer with exactly $3$ positive divisors?",
-    "answer": "4",
-    "solution": "A number has exactly $3$ divisors only when it is the square of a prime, $p^2$. The smallest is $2^2=4$ (divisors $1,2,4$).",
-    "rating": 860,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Two consecutive prime numbers have product $143$. What is their sum?",
-    "answer": "24",
-    "solution": "$143 = 11 \\times 13$, and $11,13$ are consecutive primes, so their sum is $24$.",
-    "rating": 860,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $200$ are divisible by $6$ or $10$?",
+    "statement": "What is the largest prime less than $50$?",
     "answer": "47",
-    "solution": "Multiples of $6$: $33$; of $10$: $20$; of $\\mathrm{lcm}(6,10)=30$: $6$. So $33+20-6=47$.",
+    "solution": "$47$ is prime and $48,49$ are not.",
+    "rating": 650,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $121$ divisible by $11$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "$121 = 11^2$, so yes.",
+    "rating": 700,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer divisible by each of $2$, $3$, $4$, and $5$?",
+    "answer": "60",
+    "solution": "$\\mathrm{lcm}(2,3,4,5) = 60$.",
+    "rating": 700,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $100$ are divisible by $3$ or $5$?",
+    "answer": "47",
+    "solution": "$33 + 20 - 6 = 47$ (subtracting the multiples of $15$).",
+    "rating": 700,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of the primes between $10$ and $20$?",
+    "answer": "60",
+    "solution": "$11+13+17+19 = 60$.",
+    "rating": 700,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For what digit $d$ is the number $\\overline{1d5}$ divisible by $9$?",
+    "answer": "3",
+    "solution": "The digit sum $1+d+5 = 6+d$ must be a multiple of $9$, so $d = 3$.",
+    "rating": 700,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many two-digit numbers are divisible by $7$?",
+    "answer": "13",
+    "solution": "They are $14, 21, \\dots, 98$: that is $13$.",
+    "rating": 740,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest three-digit number divisible by both $6$ and $8$?",
+    "answer": "120",
+    "solution": "$\\mathrm{lcm}(6,8) = 24$, and $24\\cdot5 = 120$ is the first three-digit multiple.",
+    "rating": 740,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $100$ are divisible by neither $2$ nor $3$?",
+    "answer": "33",
+    "solution": "Divisible by $2$ or $3$: $50+33-16 = 67$; the rest is $100-67 = 33$.",
+    "rating": 740,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $143$ a prime number? Answer Yes or No.",
+    "answer": "No",
+    "solution": "$143 = 11\\cdot13$, so it is not prime.",
+    "rating": 740,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest prime factor of $100$?",
+    "answer": "5",
+    "solution": "$100 = 2^2\\cdot5^2$, so the largest prime factor is $5$.",
+    "rating": 740,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $2024$ divisible by $8$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "Its last three digits form $024 = 24 = 8\\cdot3$, which is divisible by $8$, so yes.",
+    "rating": 780,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many multiples of $12$ are there from $1$ to $200$?",
+    "answer": "16",
+    "solution": "They are $12,24,\\dots,192$: that is $16$.",
+    "rating": 780,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of all prime numbers less than $20$?",
+    "answer": "77",
+    "solution": "$2+3+5+7+11+13+17+19 = 77$.",
+    "rating": 780,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest integer greater than $50$ whose only prime factors are $2$ and $3$?",
+    "answer": "54",
+    "solution": "Numbers of the form $2^a 3^b$ near $50$: $48$ is too small, and the next is $54 = 2\\cdot3^3$.",
+    "rating": 780,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $50$ are divisible by $2$ or $5$?",
+    "answer": "30",
+    "solution": "$25 + 10 - 5 = 30$ (subtracting the multiples of $10$).",
+    "rating": 780,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For how many digits $d$ is the number $\\overline{3d6}$ divisible by $4$?",
+    "answer": "5",
+    "solution": "Divisibility by $4$ depends on the last two digits $\\overline{d6}$: $16,36,56,76,96$ work, so $d \\in \\{1,3,5,7,9\\}$ — $5$ values.",
+    "rating": 820,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many multiples of $3$ are there from $100$ to $200$ inclusive?",
+    "answer": "33",
+    "solution": "They run $102, 105, \\dots, 198$: that is $33$.",
+    "rating": 820,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many primes $p$ below $30$ have $p+2$ also prime?",
+    "answer": "5",
+    "solution": "They are $3,5,11,17,29$ (with $5,7,13,19,31$): that is $5$.",
+    "rating": 820,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer divisible by every integer from $1$ to $5$?",
+    "answer": "60",
+    "solution": "$\\mathrm{lcm}(1,2,3,4,5) = 60$.",
+    "rating": 820,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $221$ a prime number? Answer Yes or No.",
+    "answer": "No",
+    "solution": "$221 = 13\\cdot17$, so it is not prime.",
+    "rating": 820,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $100$ are divisible by both $3$ and $4$?",
+    "answer": "8",
+    "solution": "Divisible by both means divisible by $12$: $12,24,\\dots,96$ — that is $8$.",
     "rating": 860,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer divisible by every integer from $1$ to $6$?",
+    "answer": "60",
+    "solution": "$\\mathrm{lcm}(1,\\dots,6) = 60$.",
+    "rating": 860,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many primes are there between $50$ and $60$?",
+    "answer": "2",
+    "solution": "$53$ and $59$: that is $2$.",
+    "rating": 860,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest four-digit number divisible by $9$?",
+    "answer": "1008",
+    "solution": "$1008$ has digit sum $9$ and is the first four-digit multiple of $9$.",
+    "rating": 860,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $200$ are divisible by $6$ or $8$?",
+    "answer": "50",
+    "solution": "Multiples of $6$: $33$; of $8$: $25$; of $24$: $8$; so $33+25-8 = 50$.",
+    "rating": 860,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $1000$ are divisible by $7$?",
+    "answer": "142",
+    "solution": "$\\lfloor 1000/7 \\rfloor = 142$.",
+    "rating": 900,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer divisible by each of $8$, $9$, and $10$?",
+    "answer": "360",
+    "solution": "$\\mathrm{lcm}(8,9,10) = 360$.",
+    "rating": 900,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $100$ are divisible by $2$, $3$, or $5$?",
+    "answer": "74",
+    "solution": "By inclusion–exclusion: $50+33+20-16-10-6+3 = 74$.",
+    "rating": 900,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $391$ a prime number? Answer Yes or No.",
+    "answer": "No",
+    "solution": "$391 = 17\\cdot23$, so it is not prime.",
+    "rating": 900,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
     "statement": "What is the largest prime factor of $2024$?",
     "answer": "23",
-    "solution": "$2024 = 2^3 \\cdot 11 \\cdot 23$, so the largest prime factor is $23$.",
-    "rating": 860,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many prime numbers are there from $1$ to $100$?",
-    "answer": "25",
-    "solution": "There are $25$ primes below $100$.",
+    "solution": "$2024 = 2^3\\cdot11\\cdot23$, so the largest prime factor is $23$.",
     "rating": 900,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many pairs of twin primes $(p, p+2)$ have both primes less than $50$?",
-    "answer": "6",
-    "solution": "The twin-prime pairs are $(3,5),(5,7),(11,13),(17,19),(29,31),(41,43)$ — six pairs.",
-    "rating": 900,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the sum of all positive divisors of $100$?",
-    "answer": "217",
-    "solution": "$100=2^2\\cdot5^2$, so the divisor sum is $(1+2+4)(1+5+25)=7\\cdot31=217$.",
-    "rating": 900,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $300$ are divisible by exactly one of $3$ and $4$?",
-    "answer": "125",
-    "solution": "Multiples of $3$: $100$; of $4$: $75$; of $12$: $25$. Numbers divisible by exactly one are $(100-25)+(75-25)=125$.",
-    "rating": 900,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "The integer $N$ has prime factorization $2^3 \\cdot 3^2 \\cdot 5$. How many positive divisors does $N$ have?",
-    "answer": "24",
-    "solution": "Add one to each exponent and multiply: $(3+1)(2+1)(1+1)=4\\cdot3\\cdot2=24$.",
-    "rating": 900,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $1000$ are divisible by none of $2$, $3$, and $5$?",
-    "answer": "266",
-    "solution": "By inclusion–exclusion the count divisible by at least one is $500+333+200-166-100-66+33=734$, so $1000-734=266$ are divisible by none.",
+    "statement": "How many integers from $1$ to $30$ are relatively prime to $30$?",
+    "answer": "8",
+    "solution": "They are $1,7,11,13,17,19,23,29$: that is $8$ (this is $\\varphi(30)$).",
     "rating": 940,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the smallest positive integer with exactly $6$ positive divisors?",
-    "answer": "12",
-    "solution": "We need $6=(a+1)(b+1)$, e.g. exponents $2$ and $1$: $p^2 q$. The smallest is $2^2\\cdot3=12$ (divisors $1,2,3,4,6,12$).",
+    "statement": "What is the smallest multiple of $6$ that is also a perfect square?",
+    "answer": "36",
+    "solution": "A square multiple of $6$ needs $2^2\\cdot3^2 = 36$.",
     "rating": 940,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the sum of the distinct prime factors of $2310$?",
-    "answer": "28",
-    "solution": "$2310 = 2\\cdot3\\cdot5\\cdot7\\cdot11$, and $2+3+5+7+11=28$.",
+    "statement": "How many three-digit numbers are multiples of $11$?",
+    "answer": "81",
+    "solution": "They are $110, 121, \\dots, 990$: that is $\\tfrac{990-110}{11}+1 = 81$.",
     "rating": 940,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $500$ are divisible by $7$ but not by $5$?",
-    "answer": "57",
-    "solution": "Multiples of $7$: $71$; multiples of $35$: $14$. So $71-14=57$.",
-    "rating": 940,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "MULTIPLE_CHOICE",
-    "statement": "Which of the following numbers is NOT prime?",
-    "choices": [
-      "A) 91",
-      "B) 83",
-      "C) 79",
-      "D) 73",
-      "E) 61"
-    ],
-    "answer": "A",
-    "solution": "$91 = 7 \\times 13$ is composite; the other four are all prime.",
+    "statement": "What is the sum of all two-digit multiples of $15$?",
+    "answer": "315",
+    "solution": "$15+30+45+60+75+90 = 315$.",
     "rating": 940,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many positive divisors does $360$ have?",
-    "answer": "24",
-    "solution": "$360 = 2^3\\cdot3^2\\cdot5$, so it has $(3+1)(2+1)(1+1)=24$ divisors.",
+    "statement": "How many primes $p$ satisfy $20 < p < 40$?",
+    "answer": "4",
+    "solution": "$23,29,31,37$: that is $4$.",
+    "rating": 940,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $1000$ are divisible by neither $2$ nor $5$?",
+    "answer": "400",
+    "solution": "A fraction $\\tfrac12\\cdot\\tfrac45 = \\tfrac25$ survive, giving $\\tfrac25\\cdot1000 = 400$.",
     "rating": 980,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $100$ have an odd number of positive divisors?",
-    "answer": "10",
-    "solution": "Only perfect squares have an odd number of divisors. The squares up to $100$ are $1,4,9,\\ldots,100$ — $10$ of them.",
+    "statement": "What is the smallest positive integer divisible by each of $4$, $6$, $9$, and $10$?",
+    "answer": "180",
+    "solution": "$\\mathrm{lcm}(4,6,9,10) = 180$.",
     "rating": 980,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the smallest positive integer divisible by each of $1,2,3,4,5,$ and $6$?",
-    "answer": "60",
-    "solution": "This is $\\mathrm{lcm}(1,2,3,4,5,6)=2^2\\cdot3\\cdot5=60$.",
+    "statement": "For how many digits $d$ is the number $\\overline{12d}$ divisible by $6$?",
+    "answer": "2",
+    "solution": "It must be even and have digit sum $3+d$ divisible by $3$: $d \\in \\{0,6\\}$ — $2$ values.",
     "rating": 980,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $2024$ are divisible by $4$ or $6$ but not by $12$?",
-    "answer": "507",
-    "solution": "A number divisible by both $4$ and $6$ is divisible by $12$. Removing those from the $4$-or-$6$ count: $(506+337-168)-168=507$.",
+    "statement": "How many integers from $1$ to $100$ have a digit sum divisible by $3$?",
+    "answer": "33",
+    "solution": "A number has digit sum divisible by $3$ exactly when it is a multiple of $3$: $33$ of them.",
     "rating": 980,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many prime numbers are there strictly between $100$ and $200$?",
-    "answer": "21",
-    "solution": "Counting the primes from $101$ to $199$ gives $21$.",
+    "statement": "Is $323$ a prime number? Answer Yes or No.",
+    "answer": "No",
+    "solution": "$323 = 17\\cdot19$, so it is not prime.",
     "rating": 980,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $10000$ are perfect squares or perfect cubes?",
-    "answer": "117",
-    "solution": "Squares: $100$. Cubes: $21$. Sixth powers (counted twice): $1,64,729,4096 \\Rightarrow 4$. So $100+21-4=117$.",
+    "statement": "How many integers from $1$ to $1000$ are divisible by $3$ or $7$?",
+    "answer": "428",
+    "solution": "$333 + 142 - 47 = 428$ (subtracting multiples of $21$).",
     "rating": 1020,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the smallest positive integer with exactly $12$ positive divisors?",
-    "answer": "60",
-    "solution": "Testing small numbers, $60 = 2^2\\cdot3\\cdot5$ has $(2+1)(1+1)(1+1)=12$ divisors, and nothing smaller does.",
+    "statement": "What is the largest three-digit number divisible by both $4$ and $9$?",
+    "answer": "972",
+    "solution": "Divisible by both means divisible by $36$; the largest three-digit multiple is $36\\cdot27 = 972$.",
     "rating": 1020,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many positive integers less than $100$ are the product of two distinct primes (such as $6 = 2\\cdot3$)?",
+    "statement": "How many two-digit numbers are divisible by neither $2$ nor $3$?",
     "answer": "30",
-    "solution": "These are the squarefree semiprimes $pq$ with $p<q$. Counting all such products below $100$ gives $30$.",
+    "solution": "Of the $90$ two-digit numbers, $60$ are divisible by $2$ or $3$, leaving $30$.",
     "rating": 1020,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the sum of all two-digit multiples of $9$?",
-    "answer": "585",
-    "solution": "They are $18,27,\\ldots,99$ — ten terms averaging $\\tfrac{18+99}{2}=58.5$, so the sum is $585$.",
+    "statement": "How many primes are there between $100$ and $110$?",
+    "answer": "4",
+    "solution": "$101,103,107,109$: that is $4$.",
     "rating": 1020,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "For how many integers $n$ with $1 \\le n \\le 50$ is $\\gcd(n, 50) = 1$?",
-    "answer": "20",
-    "solution": "This is Euler's $\\varphi(50)=\\varphi(2)\\varphi(25)=1\\cdot20=20$.",
+    "statement": "What is the smallest positive integer divisible by $12$ and $18$?",
+    "answer": "36",
+    "solution": "$\\mathrm{lcm}(12,18) = 36$.",
     "rating": 1020,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many positive divisors of $2^4 \\cdot 3^3 \\cdot 5^2$ are perfect squares?",
-    "answer": "12",
-    "solution": "A divisor $2^a3^b5^c$ is a perfect square when each exponent is even: $a\\in\\{0,2,4\\}$ (3 ways), $b\\in\\{0,2\\}$ (2), $c\\in\\{0,2\\}$ (2), giving $3\\cdot2\\cdot2=12$.",
+    "statement": "How many integers from $1$ to $500$ are divisible by $4$ but not by $6$?",
+    "answer": "84",
+    "solution": "Multiples of $4$: $125$; those also divisible by $6$ (i.e., by $12$): $41$; so $125-41 = 84$.",
     "rating": 1060,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer divisible by every integer from $1$ to $10$?",
+    "answer": "2520",
+    "solution": "$\\mathrm{lcm}(1,2,\\dots,10) = 2520$.",
+    "rating": 1060,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of the primes between $40$ and $50$?",
+    "answer": "131",
+    "solution": "$41+43+47 = 131$.",
+    "rating": 1060,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For how many digits $d$ is the number $\\overline{5d64}$ divisible by $8$?",
+    "answer": "5",
+    "solution": "Divisibility by $8$ depends on the last three digits $\\overline{d64}$; testing $d = 0,\\dots,9$ leaves $d \\in \\{0,2,4,6,8\\}$ — $5$ values.",
+    "rating": 1060,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $100$ are divisible by exactly one of $2$ and $3$?",
+    "answer": "51",
+    "solution": "Divisible by $2$ not $3$: $50-16 = 34$; by $3$ not $2$: $33-16 = 17$; total $51$.",
+    "rating": 1060,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $1000$ are divisible by $6$ but not by $4$?",
+    "answer": "83",
+    "solution": "Multiples of $6$: $166$; those also divisible by $4$ (i.e., by $12$): $83$; so $166-83 = 83$.",
+    "rating": 1100,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive multiple of $7$ that leaves remainder $1$ when divided by $5$?",
+    "answer": "21",
+    "solution": "$7, 14, 21, \\dots$: the first that is $\\equiv 1 \\pmod 5$ is $21$.",
+    "rating": 1100,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many primes below $100$ end in the digit $3$?",
+    "answer": "7",
+    "solution": "$3,13,23,43,53,73,83$: that is $7$ (note $33,63,93$ are composite).",
+    "rating": 1100,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest three-digit prime?",
+    "answer": "997",
+    "solution": "$997$ is prime, and $998,999$ are not.",
+    "rating": 1100,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $1000$ are divisible by $2$, $3$, and $5$?",
+    "answer": "33",
+    "solution": "Divisible by all three means divisible by $30$: $\\lfloor 1000/30 \\rfloor = 33$.",
+    "rating": 1100,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $2024$ are divisible by $3$ or $5$ but not by $15$?",
+    "answer": "810",
+    "solution": "$(674 - 134) + (404 - 134) = 810$, removing multiples of $15$ from each group.",
+    "rating": 1145,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer divisible by each of $6$, $10$, and $15$?",
+    "answer": "30",
+    "solution": "$\\mathrm{lcm}(6,10,15) = 30$.",
+    "rating": 1145,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $100$ are relatively prime to $100$?",
+    "answer": "40",
+    "solution": "$\\varphi(100) = 100\\left(1-\\tfrac12\\right)\\left(1-\\tfrac15\\right) = 40$.",
+    "rating": 1145,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $100$ are divisible by $4$ or $9$ but not both?",
+    "answer": "32",
+    "solution": "Multiples of $4$: $25$; of $9$: $11$; of $36$: $2$; those divisible by exactly one number $25+11-2\\cdot2 = 32$.",
+    "rating": 1145,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest prime factor of $5040$?",
+    "answer": "7",
+    "solution": "$5040 = 2^4\\cdot3^2\\cdot5\\cdot7$, so the largest prime factor is $7$.",
+    "rating": 1145,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $1000$ are relatively prime to $30$?",
+    "answer": "266",
+    "solution": "In each block of $30$ there are $\\varphi(30) = 8$; over $1$–$1000$ this gives $266$.",
+    "rating": 1190,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer divisible by every integer from $1$ to $12$?",
+    "answer": "27720",
+    "solution": "$\\mathrm{lcm}(1,2,\\dots,12) = 27720$.",
+    "rating": 1190,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many prime numbers are there from $1$ to $200$?",
+    "answer": "46",
+    "solution": "There are $46$ primes below $200$.",
+    "rating": 1190,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $1000$ are divisible by $7$ or $11$?",
+    "answer": "220",
+    "solution": "$142 + 90 - 12 = 220$ (subtracting multiples of $77$).",
+    "rating": 1190,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many perfect squares between $1$ and $1000$ are divisible by $4$?",
+    "answer": "15",
+    "solution": "Even squares $(2k)^2$; since $30^2 = 900 \\le 1000 < 32^2$, we get $k = 1,\\dots,15$: that is $15$.",
+    "rating": 1190,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $10000$ are divisible by $2$, $3$, or $5$?",
+    "answer": "7334",
+    "solution": "By inclusion–exclusion: $5000+3333+2000-1666-1000-666+333 = 7334$.",
+    "rating": 1240,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer that is both a multiple of $18$ and a perfect cube?",
+    "answer": "216",
+    "solution": "A cube divisible by $18 = 2\\cdot3^2$ must contain $2^3\\cdot3^3 = 216 = 6^3$.",
+    "rating": 1240,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the digit sum of the smallest positive integer divisible by every integer from $1$ to $9$?",
+    "answer": "9",
+    "solution": "$\\mathrm{lcm}(1,\\dots,9) = 2520$, whose digit sum is $2+5+2+0 = 9$.",
+    "rating": 1240,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many primes $p < 50$ satisfy $p \\equiv 1 \\pmod 4$?",
+    "answer": "6",
+    "solution": "$5,13,17,29,37,41$: that is $6$.",
+    "rating": 1240,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $1000$ are divisible by none of $6$, $10$, or $15$?",
+    "answer": "734",
+    "solution": "Removing multiples of $6,10,15$ by inclusion–exclusion leaves $734$.",
+    "rating": 1240,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $1000$ are divisible by exactly two of $2$, $3$, and $5$?",
+    "answer": "233",
+    "solution": "By inclusion–exclusion, the counts in exactly two of the sets total $133+67+33 = 233$.",
+    "rating": 1290,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer $n$ for which $n$, $n+1$, and $n+2$ are all composite?",
+    "answer": "8",
+    "solution": "$8, 9, 10$ are all composite, and no smaller run of three works.",
+    "rating": 1290,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $100$ have exactly two distinct prime factors?",
+    "answer": "56",
+    "solution": "Counting numbers whose factorization uses exactly two different primes gives $56$.",
+    "rating": 1290,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many primes are there between $100$ and $200$?",
+    "answer": "21",
+    "solution": "There are $21$ primes in that range.",
+    "rating": 1290,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest four-digit number divisible by $11$?",
+    "answer": "9999",
+    "solution": "$9999 = 11\\cdot909$, so it is the largest four-digit multiple of $11$.",
+    "rating": 1290,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
     "statement": "How many integers from $1$ to $1000$ are divisible by $6$ but by neither $4$ nor $9$?",
     "answer": "55",
-    "solution": "Multiples of $6$: $166$. Remove those also divisible by $4$ (i.e. by $12$: $83$) or by $9$ (i.e. by $18$: $55$), adding back multiples of $36$ ($27$): $166-83-55+27=55$.",
-    "rating": 1060,
+    "solution": "Removing from the multiples of $6$ those also divisible by $4$ or $9$ leaves $55$.",
+    "rating": 1340,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the smallest positive integer that has exactly $8$ positive divisors?",
-    "answer": "24",
-    "solution": "$8=(a+1)(b+1)(c+1)$ options include $2\\cdot2\\cdot2$: $p q r$, and $4\\cdot2$: $p^3 q$. The smallest is $24=2^3\\cdot3$ (divisors $1,2,3,4,6,8,12,24$).",
-    "rating": 1060,
+    "statement": "What is the smallest positive integer that is divisible by $12$ and is a perfect square?",
+    "answer": "36",
+    "solution": "A square multiple of $12 = 2^2\\cdot3$ needs another factor of $3$: $2^2\\cdot3^2 = 36$.",
+    "rating": 1340,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the sum of the digits of the smallest prime greater than $500$?",
+    "statement": "How many integers from $1$ to $100$ are squarefree (not divisible by any perfect square greater than $1$)?",
+    "answer": "61",
+    "solution": "Removing multiples of $4,9,25,49$ (with inclusion–exclusion) leaves $61$.",
+    "rating": 1340,
+    "source": "AMC 8 · Divisibility & Primes"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many primes $p \\le 100$ have $p+2$ also prime?",
     "answer": "8",
-    "solution": "$501=3\\cdot167$ and $502$ is even; $503$ is prime, and $5+0+3=8$.",
-    "rating": 1060,
+    "solution": "The smaller members of twin-prime pairs up to $100$ are $3,5,11,17,29,41,59,71$: that is $8$.",
+    "rating": 1340,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many integers $n$ with $1 \\le n \\le 100$ have exactly $3$ positive divisors?",
-    "answer": "4",
-    "solution": "Exactly $3$ divisors means $n=p^2$ for a prime $p$: $4,9,25,49$ (since $11^2=121>100$) — four numbers.",
-    "rating": 1060,
+    "statement": "What is the smallest positive integer divisible by every integer from $1$ to $7$?",
+    "answer": "420",
+    "solution": "$\\mathrm{lcm}(1,2,\\dots,7) = 420$.",
+    "rating": 1340,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many positive integers less than $1000$ are divisible by exactly one of $3$ and $5$?",
+    "statement": "How many integers from $1$ to $1000$ are relatively prime to $1000$?",
     "answer": "400",
-    "solution": "Multiples of $3$: $333$; of $5$: $199$; of $15$: $66$. Divisible by exactly one: $(333-66)+(199-66)=400$.",
-    "rating": 1100,
+    "solution": "$\\varphi(1000) = 1000\\left(1-\\tfrac12\\right)\\left(1-\\tfrac15\\right) = 400$.",
+    "rating": 1390,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the smallest positive integer with exactly $15$ positive divisors?",
-    "answer": "144",
-    "solution": "$15=3\\cdot5=(2+1)(4+1)$, so $n=p^4 q^2$. Minimizing, $2^4\\cdot3^2=144$ (smaller than $2^2\\cdot3^4=324$).",
-    "rating": 1100,
+    "statement": "What is the smallest positive integer divisible by every integer from $1$ to $15$?",
+    "answer": "360360",
+    "solution": "$\\mathrm{lcm}(1,2,\\dots,15) = 360360$.",
+    "rating": 1390,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $2024$ are divisible by both $3$ and $5$ but not by $2$?",
-    "answer": "67",
-    "solution": "Multiples of $15$: $134$. The even ones are multiples of $30$: $67$. Odd multiples of $15$: $134-67=67$.",
-    "rating": 1100,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "For how many integers $n$ from $1$ to $60$ is $n$ relatively prime to $60$?",
+    "statement": "How many perfect squares from $1$ to $10000$ are multiples of $6$?",
     "answer": "16",
-    "solution": "$\\varphi(60)=60\\left(1-\\tfrac12\\right)\\left(1-\\tfrac13\\right)\\left(1-\\tfrac15\\right)=16$.",
-    "rating": 1100,
+    "solution": "A square divisible by $6$ must be divisible by $36$, i.e. $(6m)^2$ with $6m \\le 100$: $m = 1,\\dots,16$ — that is $16$.",
+    "rating": 1390,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the sum of all positive divisors of $2024$?",
-    "answer": "4320",
-    "solution": "$2024=2^3\\cdot11\\cdot23$, so the divisor sum is $(1+2+4+8)(1+11)(1+23)=15\\cdot12\\cdot24=4320$.",
-    "rating": 1100,
+    "statement": "How many prime numbers are there below $500$?",
+    "answer": "95",
+    "solution": "There are $95$ primes below $500$.",
+    "rating": 1390,
     "source": "AMC 8 · Divisibility & Primes"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many integers $n$ with $1 \\le n \\le 100$ are such that both $n$ and $n+1$ are composite?",
-    "answer": "50",
-    "solution": "We count the integers $n$ from $1$ to $100$ for which neither $n$ nor $n+1$ is prime. Sweeping through the range, exactly $50$ values of $n$ qualify.",
-    "rating": 1145,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the smallest odd positive integer with exactly $10$ positive divisors?",
-    "answer": "405",
-    "solution": "$10=2\\cdot5=(1+1)(4+1)$, so $n=p\\,q^4$ with odd primes. Minimizing, $3^4\\cdot5=405$.",
-    "rating": 1145,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $2024$ are divisible by at least one of $6, 10,$ and $15$?",
-    "answer": "539",
-    "solution": "Up to $2024$ there are $337$ multiples of $6$, $202$ of $10$, and $134$ of $15$. Every pairwise LCM and the triple LCM equal $30$ ($67$ multiples). Inclusion–exclusion: $337+202+134-3\\cdot67+67=539$.",
-    "rating": 1145,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the smallest positive integer $n$ such that $n, n+1, n+2,$ and $n+3$ are all composite?",
-    "answer": "24",
-    "solution": "We need four consecutive composite numbers. The runs $14,15,16$ and $20,21,22$ have length $3$ (broken by $17$ and $23$). The first run of length $4$ is $24,25,26,27$, so $n=24$.",
-    "rating": 1145,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many even integers from $4$ to $100$ can be written as a sum of two prime numbers?",
-    "answer": "49",
-    "solution": "By checking each even number (Goldbach's conjecture holds in this range), every even number from $4$ to $100$ works — all $49$ of them.",
-    "rating": 1145,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many positive integers less than $2024$ are divisible by exactly two of $2$, $3$, and $5$?",
-    "answer": "472",
-    "solution": "Count numbers below $2024$ in exactly two of the divisibility classes (divisible by two of $2,3,5$ but not the third). Inclusion–exclusion gives $472$.",
-    "rating": 1190,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the smallest positive integer with exactly $18$ positive divisors?",
-    "answer": "180",
-    "solution": "$18=2\\cdot3\\cdot3=(1+1)(2+1)(2+1)$, so $n=p\\,q^2 r^2$; minimizing gives $2^2\\cdot3^2\\cdot5=180$.",
-    "rating": 1190,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $10000$ are divisible by $2$ or $3$ but not by $5$?",
-    "answer": "5334",
-    "solution": "Divisible by $2$ or $3$: $5000+3333-1666=6667$. Remove those also divisible by $5$ (by $10$ or $15$, minus by $30$): $1000+666-333=1333$. So $6667-1333=5334$.",
-    "rating": 1190,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the largest prime $p$ such that $p^2 < 2024$?",
-    "answer": "43",
-    "solution": "$\\sqrt{2024}\\approx 44.99$, so we need the largest prime at most $44$, which is $43$ ($43^2=1849<2024<2025=45^2$).",
-    "rating": 1190,
-    "source": "AMC 8 · Divisibility & Primes"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many integers $n$ with $1 \\le n \\le 1000$ satisfy $\\gcd(n, 1000) = 1$?",
-    "answer": "400",
-    "solution": "$1000=2^3\\cdot5^3$, so $\\varphi(1000)=1000\\left(1-\\tfrac12\\right)\\left(1-\\tfrac15\\right)=400$.",
-    "rating": 1190,
+    "statement": "What is the largest prime factor of $10!$?",
+    "answer": "7",
+    "solution": "$10!$ is a product of $1$ through $10$; the largest prime among those is $7$.",
+    "rating": 1390,
     "source": "AMC 8 · Divisibility & Primes"
   }
 ]

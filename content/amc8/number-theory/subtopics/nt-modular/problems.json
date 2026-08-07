@@ -753,5 +753,285 @@
     "solution": "For $k\\ge5$, $k!$ is a multiple of $15$. So only $1!+2!+3!+4!=33\\equiv3\\pmod{15}$ contributes.",
     "rating": 1190,
     "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer that is $\\equiv2\\pmod3$, $\\equiv3\\pmod5$, $\\equiv2\\pmod7$, and $\\equiv7\\pmod{11}$?",
+    "answer": "128",
+    "solution": "The moduli $3,5,7,11$ are coprime, so the Chinese Remainder Theorem gives a unique solution modulo $1155$. Solving the system step by step yields $128$.",
+    "rating": 1240,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^{100}$ is divided by $125$?",
+    "answer": "1",
+    "solution": "Since $\\gcd(2,125)=1$ and $\\varphi(125)=100$, Euler's theorem gives $2^{100}\\equiv1\\pmod{125}$.",
+    "rating": 1240,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $3^{2024}$ is divided by $100$?",
+    "answer": "81",
+    "solution": "$3^{20}\\equiv1\\pmod{100}$ and $2024\\equiv4\\pmod{20}$, so $3^{2024}\\equiv3^4=81$.",
+    "rating": 1240,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers $n$ with $1\\le n\\le100$ satisfy $n^3\\equiv n\\pmod{6}$?",
+    "answer": "100",
+    "solution": "$n^3-n=(n-1)n(n+1)$ is a product of three consecutive integers, always divisible by $6$. So all $100$ values work.",
+    "rating": 1240,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $5^{30}$ is divided by $31$?",
+    "answer": "1",
+    "solution": "By Fermat's little theorem, $5^{30}\\equiv1\\pmod{31}$.",
+    "rating": 1240,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What are the last three digits of $7^{9999}$? (remainder mod $1000$)",
+    "answer": "143",
+    "solution": "Since $\\varphi(1000)=400$ and $9999\\equiv-1\\pmod{400}$, $7^{9999}$ is the inverse of $7$ modulo $1000$. Computing that inverse gives $143$.",
+    "rating": 1290,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $3^{100}$ is divided by $100$?",
+    "answer": "1",
+    "solution": "$3^{20}\\equiv1\\pmod{100}$, so $3^{100}=(3^{20})^5\\equiv1$; the remainder is $1$.",
+    "rating": 1290,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer $n>1$ with $n\\equiv1\\pmod{6}$, $n\\equiv1\\pmod{10}$, and $n\\equiv1\\pmod{15}$?",
+    "answer": "31",
+    "solution": "We need $n-1$ divisible by $\\mathrm{lcm}(6,10,15)=30$, so the smallest $n>1$ is $31$.",
+    "rating": 1290,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $10^{100}$ is divided by $7$?",
+    "answer": "4",
+    "solution": "$10\\equiv3\\pmod7$, and powers of $3$ cycle with length $6$; $100\\equiv4$, giving remainder $4$.",
+    "rating": 1290,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers $n$ with $0\\le n<20$ satisfy $n^2\\equiv4\\pmod{20}$?",
+    "answer": "4",
+    "solution": "Testing residues, $n\\in\\{2,8,12,18\\}$ satisfy $n^2\\equiv4\\pmod{20}$: four values.",
+    "rating": 1290,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers $n$ with $1\\le n\\le1000$ satisfy $n^2\\equiv1\\pmod{120}$?",
+    "answer": "133",
+    "solution": "$120=2^3\\cdot3\\cdot5$; the number of solutions of $n^2\\equiv1$ per period of $120$ is $16$. Over $1$–$1000$ (which is $8\\tfrac13$ periods) there are $133$.",
+    "rating": 1340,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^{1000}$ is divided by $1000$?",
+    "answer": "376",
+    "solution": "By computing $2^{1000}\\bmod1000$ (last three digits) one gets $376$.",
+    "rating": 1340,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer that is $\\equiv1\\pmod2$, $\\equiv2\\pmod3$, $\\equiv3\\pmod4$, $\\equiv4\\pmod5$, and $\\equiv5\\pmod6$?",
+    "answer": "59",
+    "solution": "Each remainder is one less than the divisor, so $n\\equiv-1$; then $n+1=\\mathrm{lcm}(2,3,4,5,6)=60$, giving $n=59$.",
+    "rating": 1340,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $7^{2024}$ is divided by $48$?",
+    "answer": "1",
+    "solution": "$7^2=49\\equiv1\\pmod{48}$, so $7^{2024}=(7^2)^{1012}\\equiv1$.",
+    "rating": 1340,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $3^{3^{3^3}}$?",
+    "answer": "7",
+    "solution": "The units digit of $3^n$ depends on $n\\bmod4$. Since $3^{27}\\equiv3\\pmod4$, we take the $3$rd term of $3,9,7,1$, which is $7$.",
+    "rating": 1340,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^{2024}$ is divided by $2024$?",
+    "answer": "1864",
+    "solution": "Writing $2024=8\\cdot11\\cdot23$ and combining $2^{2024}$ modulo $8$, $11$, and $23$ by the Chinese Remainder Theorem gives $1864$.",
+    "rating": 1390,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers $n$ with $1\\le n\\le210$ are coprime to $210$ and satisfy $n^2\\equiv1\\pmod{210}$?",
+    "answer": "8",
+    "solution": "$210=2\\cdot3\\cdot5\\cdot7$. Modulo $2$ the equation $n^2\\equiv1$ has one solution; modulo $3$, $5$, and $7$ it has two each. So there are $1\\cdot2\\cdot2\\cdot2=8$ solutions.",
+    "rating": 1390,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $12^{34}$ is divided by $100$?",
+    "answer": "64",
+    "solution": "Computing the last two digits of $12^{34}$ gives $64$.",
+    "rating": 1390,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the multiplicative order of $3$ modulo $100$ (the smallest $k>0$ with $3^k\\equiv1\\pmod{100}$)?",
+    "answer": "20",
+    "solution": "We seek the smallest $k$ with $3^k\\equiv1\\pmod{100}$. Since $3^{20}\\equiv1$ and no smaller power works, the order is $20$.",
+    "rating": 1390,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $99^{99}$ is divided by $100$?",
+    "answer": "99",
+    "solution": "$99\\equiv-1\\pmod{100}$, so $99^{99}\\equiv(-1)^{99}=-1\\equiv99$.",
+    "rating": 1390,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $30!$ is divided by $31$?",
+    "answer": "30",
+    "solution": "By Wilson's theorem, for a prime $p$, $(p-1)!\\equiv-1\\pmod p$. So $30!\\equiv-1\\equiv30\\pmod{31}$.",
+    "rating": 1435,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^{2024}+3^{2024}+4^{2024}+5^{2024}+6^{2024}$ is divided by $7$?",
+    "answer": "6",
+    "solution": "Modulo $7$, each base coprime to $7$ raised to $2024$ (with $2024\\equiv2\\pmod6$) equals its square: $4,2,2,4,1$. The sum $13\\equiv6\\pmod7$.",
+    "rating": 1435,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers $n$ with $1\\le n\\le1000$ satisfy $n^2\\equiv n\\pmod{100}$?",
+    "answer": "40",
+    "solution": "$n^2\\equiv n\\pmod{100}$ means $100\\mid n(n-1)$; the solutions per $100$ are $n\\equiv0,1,25,76$, giving $4$ per period, so $40$ over $1$–$1000$.",
+    "rating": 1435,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $10^{10^{10}}$ is divided by $7$?",
+    "answer": "4",
+    "solution": "$10\\equiv3\\pmod7$ with order $6$, so we need $10^{10}\\bmod6=4$; then $3^4\\equiv4\\pmod7$.",
+    "rating": 1435,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $13^{100}$ is divided by $17$?",
+    "answer": "1",
+    "solution": "By Fermat, $13^{16}\\equiv1\\pmod{17}$, so $13^{100}=13^{96}\\cdot13^4\\equiv13^4$. Computing, $13^4\\equiv4\\pmod{17}$.",
+    "rating": 1435,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^{2024}$ is divided by $1000$?",
+    "answer": "216",
+    "solution": "For exponents $\\ge3$ the last three digits of powers of $2$ have period $100$; $2024\\equiv24$, so $2^{2024}\\equiv2^{24}\\equiv216\\pmod{1000}$.",
+    "rating": 1470,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers $n$ with $1\\le n\\le1000$ satisfy both $n\\equiv3\\pmod7$ and $n\\equiv5\\pmod{9}$?",
+    "answer": "15",
+    "solution": "By CRT the pair of conditions gives one residue mod $63$. Counting how many such $n$ lie in $1$–$1000$ gives $15$.",
+    "rating": 1470,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $7^{7^{7}}$ is divided by $100$?",
+    "answer": "43",
+    "solution": "The order of $7$ mod $100$ is $4$; since $7^7\\equiv3\\pmod4$, we get $7^{7^7}\\equiv7^3\\equiv343\\equiv43\\pmod{100}$.",
+    "rating": 1470,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer $n$ such that $n!$ is divisible by $2024$?",
+    "answer": "23",
+    "solution": "$2024=2^3\\cdot11\\cdot23$; the binding factor is the prime $23$, so $n!$ first contains it at $n=23$.",
+    "rating": 1470,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $3^{1000}$ is divided by $1000$?",
+    "answer": "1",
+    "solution": "The order of $3$ modulo $1000$ is $100$, so $3^{1000}=(3^{100})^{10}\\equiv1\\pmod{1000}$.",
+    "rating": 1470,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What are the last three digits of $6^{2024}$? (remainder mod $1000$)",
+    "answer": "896",
+    "solution": "Combining $6^{2024}$ modulo $8$ and modulo $125$ via the Chinese Remainder Theorem gives $896$.",
+    "rating": 1500,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2024^{2024^{2024}}$ is divided by $9$?",
+    "answer": "1",
+    "solution": "$2024\\equiv8\\equiv-1\\pmod9$. The exponent $2024^{2024}$ is even, so $(-1)^{\\text{even}}=1$; the remainder is $1$.",
+    "rating": 1500,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers $n$ with $1\\le n\\le2520$ satisfy $n^2\\equiv1\\pmod{2520}$?",
+    "answer": "32",
+    "solution": "$2520=2^3\\cdot3^2\\cdot5\\cdot7$. The count of solutions to $n^2\\equiv1$ is $4\\cdot2\\cdot2\\cdot2=32$.",
+    "rating": 1500,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $50!$ is divided by $53$?",
+    "answer": "26",
+    "solution": "By Wilson, $52!\\equiv-1\\pmod{53}$. Since $52!\\equiv50!\\cdot51\\cdot52\\equiv50!\\cdot(-2)(-1)=2\\cdot50!$, we solve $2\\cdot50!\\equiv-1\\equiv52$, giving $50!\\equiv26\\pmod{53}$.",
+    "rating": 1500,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^{2^{2^2}}=2^{16}$ is divided by $1000$?",
+    "answer": "536",
+    "solution": "$2^{16}=65536$, so the remainder mod $1000$ is $536$.",
+    "rating": 1500,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
   }
 ]

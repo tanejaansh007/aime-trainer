@@ -1,162 +1,674 @@
 [
   {
     "type": "SHORT_ANSWER",
-    "statement": "Write $\\frac{1}{4}$ as a decimal.",
-    "answer": "0.25",
-    "solution": "$\\frac{1}{4} = \\frac{25}{100} = 0.25$.",
-    "rating": 630,
+    "statement": "Write $\\dfrac{1}{2}$ as a decimal.",
+    "answer": "0.5",
+    "solution": "$\\frac{1}{2} = 0.5$.",
+    "rating": 450,
     "source": "AMC 8 · Terminating & Repeating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Write $\\frac{1}{8}$ as a decimal.",
+    "statement": "Write $\\dfrac{1}{4}$ as a decimal.",
+    "answer": "0.25",
+    "solution": "$\\frac{1}{4} = 0.25$.",
+    "rating": 450,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{3}{10}$ as a decimal.",
+    "answer": "0.3",
+    "solution": "$\\frac{3}{10} = 0.3$.",
+    "rating": 450,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{1}{5}$ as a decimal.",
+    "answer": "0.2",
+    "solution": "$\\frac{1}{5} = 0.2$.",
+    "rating": 450,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{7}{10}$ as a decimal.",
+    "answer": "0.7",
+    "solution": "$\\frac{7}{10} = 0.7$.",
+    "rating": 450,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{1}{8}$ as a decimal.",
     "answer": "0.125",
-    "solution": "$\\frac{1}{8} = \\frac{125}{1000} = 0.125$.",
+    "solution": "$\\frac{1}{8} = 0.125$.",
+    "rating": 500,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{3}{4}$ as a decimal.",
+    "answer": "0.75",
+    "solution": "$\\frac{3}{4} = 0.75$.",
+    "rating": 500,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "Is $\\dfrac{1}{3}$ a terminating decimal?",
+    "choices": [
+      "A) Yes",
+      "B) No"
+    ],
+    "answer": "B",
+    "solution": "$\\frac{1}{3}=0.333\\ldots$ repeats forever, so it does not terminate (the denominator has a factor of $3$).",
+    "rating": 500,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{2}{5}$ as a decimal.",
+    "answer": "0.4",
+    "solution": "$\\frac{2}{5} = 0.4$.",
+    "rating": 500,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{1}{20}$ as a decimal.",
+    "answer": "0.05",
+    "solution": "$\\frac{1}{20} = 0.05$.",
+    "rating": 500,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "Which of these is a terminating decimal?",
+    "choices": [
+      "A) 1/6",
+      "B) 1/8"
+    ],
+    "answer": "B",
+    "solution": "$\\frac{1}{8}=0.125$ terminates, while $\\frac{1}{6}$ repeats (denominator has a factor of $3$).",
+    "rating": 550,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{3}{8}$ as a decimal.",
+    "answer": "0.375",
+    "solution": "$\\frac{3}{8} = 0.375$.",
+    "rating": 550,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{9}{20}$ as a decimal.",
+    "answer": "0.45",
+    "solution": "$\\frac{9}{20} = 0.45$.",
+    "rating": 550,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal for $\\dfrac{1}{3}$ is $0.333\\ldots$. What single digit repeats?",
+    "answer": "3",
+    "solution": "The repeating digit is $3$.",
+    "rating": 550,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{1}{16}$ as a decimal.",
+    "answer": "0.0625",
+    "solution": "$\\frac{1}{16} = 0.0625$.",
+    "rating": 550,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "Does $\\dfrac{1}{12}$ terminate?",
+    "choices": [
+      "A) Yes",
+      "B) No"
+    ],
+    "answer": "B",
+    "solution": "$12=2^2\\cdot3$; the factor of $3$ means $\\frac{1}{12}=0.0833\\ldots$ repeats.",
+    "rating": 600,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the first digit after the decimal point of $\\dfrac{1}{3}$?",
+    "answer": "3",
+    "solution": "$\\frac{1}{3}=0.333\\ldots$, so the first digit is $3$.",
+    "rating": 600,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{7}{8}$ as a decimal.",
+    "answer": "0.875",
+    "solution": "$\\frac{7}{8} = 0.875$.",
+    "rating": 600,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal for $\\dfrac{1}{9}$ is $0.111\\ldots$. What digit repeats?",
+    "answer": "1",
+    "solution": "The repeating digit is $1$.",
+    "rating": 600,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "Does $\\dfrac{7}{40}$ terminate?",
+    "choices": [
+      "A) Yes",
+      "B) No"
+    ],
+    "answer": "A",
+    "solution": "$40=2^3\\cdot5$ has only the primes $2$ and $5$, so $\\frac{7}{40}=0.175$ terminates.",
+    "rating": 600,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the length of the repeating block of $\\dfrac{1}{3}$?",
+    "answer": "1",
+    "solution": "$\\frac{1}{3}=0.\\overline{3}$, a single repeating digit, so the block length is $1$.",
     "rating": 650,
     "source": "AMC 8 · Terminating & Repeating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Write the decimal $0.6$ as a fraction in lowest terms.",
-    "answer": "3/5",
-    "solution": "$0.6 = \\frac{6}{10} = \\frac{3}{5}$.",
-    "rating": 670,
-    "source": "AMC 8 · Terminating & Repeating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "The decimal for $\\frac{1}{7}$ is $0.142857142857\\ldots$. What is the $4$th digit after the decimal point?",
-    "answer": "8",
-    "solution": "The digits are $1, 4, 2, 8, 5, 7$ (then repeat). The $4$th digit is $8$.",
-    "rating": 690,
-    "source": "AMC 8 · Terminating & Repeating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Write $\\frac{7}{20}$ as a decimal.",
-    "answer": "0.35",
-    "solution": "$20 = 2^2\\cdot 5$ (only $2$s and $5$s), so it terminates: $\\frac{7}{20} = \\frac{35}{100} = 0.35$.",
-    "rating": 730,
-    "source": "AMC 8 · Terminating & Repeating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Does $\\frac{5}{12}$ give a terminating or a repeating decimal? Answer 'terminating' or 'repeating'.",
-    "answer": "repeating",
-    "solution": "$12 = 2^2\\cdot 3$. The factor of $3$ (not $2$ or $5$) means $\\frac{5}{12}$ repeats.",
-    "rating": 760,
-    "source": "AMC 8 · Terminating & Repeating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Write $\\frac{7}{25}$ as a decimal.",
-    "answer": "0.28",
-    "solution": "$25 = 5^2$, so it terminates. Scale to a power of ten: $\\frac{7}{25} = \\frac{28}{100} = 0.28$.",
-    "rating": 790,
-    "source": "AMC 8 · Terminating & Repeating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many of these five fractions terminate: $\\frac{1}{6},\\ \\frac{3}{8},\\ \\frac{5}{12},\\ \\frac{7}{40},\\ \\frac{9}{50}$?",
-    "answer": "3",
-    "solution": "A fraction in lowest terms terminates exactly when its denominator has only $2$s and $5$s. $\\frac{3}{8}\\,(2^3)$, $\\frac{7}{40}\\,(2^3\\cdot5)$, and $\\frac{9}{50}\\,(2\\cdot5^2)$ terminate; $\\frac{1}{6}$ and $\\frac{5}{12}$ have a factor of $3$ and repeat. That is $3$.",
-    "rating": 830,
-    "source": "AMC 8 · Terminating & Repeating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Write $0.\\overline{36}$ as a fraction in lowest terms.",
-    "answer": "4/11",
-    "solution": "Let $x = 0.\\overline{36}$. Then $100x = 36.\\overline{36}$, so $99x = 36$ and $x = \\frac{36}{99} = \\frac{4}{11}$.",
-    "rating": 920,
-    "source": "AMC 8 · Terminating & Repeating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Write $0.\\overline{7}$ as a fraction in lowest terms.",
-    "answer": "7/9",
-    "solution": "Let $x = 0.\\overline{7}$. Then $10x = 7.\\overline{7}$, so $9x = 7$ and $x = \\frac{7}{9}$.",
-    "rating": 890,
-    "source": "AMC 8 · Terminating & Repeating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Convert the mixed repeating decimal $0.1\\overline{6}$ to a fraction in lowest terms.",
-    "answer": "1/6",
-    "solution": "Let $x = 0.1\\overline{6}$. Then $10x = 1.\\overline{6}$ and $100x = 16.\\overline{6}$. Subtracting, $90x = 15$, so $x = \\frac{15}{90} = \\frac{1}{6}$.",
-    "rating": 950,
-    "source": "AMC 8 · Terminating & Repeating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the length of the repeating block in the decimal expansion of $\\frac{1}{7}$?",
+    "statement": "What is the length of the repeating block of $\\dfrac{1}{7}$?",
     "answer": "6",
-    "solution": "$\\frac{1}{7} = 0.\\overline{142857}$. The block $142857$ has length $6$ (the smallest $k$ with $10^k \\equiv 1 \\pmod 7$).",
+    "solution": "$\\frac{1}{7}=0.\\overline{142857}$, a block of length $6$.",
+    "rating": 650,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $0.75$ as a fraction $\\dfrac{a}{b}$ in lowest terms, then give $a+b$.",
+    "answer": "7",
+    "solution": "$0.75=\\frac{3}{4}$, so $a+b=3+4=7$.",
+    "rating": 650,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the length of the repeating block of $\\dfrac{1}{11}$?",
+    "answer": "2",
+    "solution": "$\\frac{1}{11}=0.\\overline{09}$, a block of length $2$.",
+    "rating": 650,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "Does $\\dfrac{3}{25}$ terminate?",
+    "choices": [
+      "A) Yes",
+      "B) No"
+    ],
+    "answer": "A",
+    "solution": "$25=5^2$ has only the prime $5$, so $\\frac{3}{25}=0.12$ terminates.",
+    "rating": 650,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the length of the repeating block of $\\dfrac{1}{13}$?",
+    "answer": "6",
+    "solution": "$\\frac{1}{13}=0.\\overline{076923}$, a block of length $6$.",
+    "rating": 700,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The repeating decimal $0.\\overline{6}$ equals $\\dfrac{a}{b}$ in lowest terms. What is $a+b$?",
+    "answer": "5",
+    "solution": "$0.\\overline{6}=\\frac{6}{9}=\\frac{2}{3}$, so $a+b=5$.",
+    "rating": 700,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $100$th digit after the decimal point of $\\dfrac{1}{3}$?",
+    "answer": "3",
+    "solution": "Every digit of $0.\\overline{3}$ is $3$.",
+    "rating": 700,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of $\\tfrac12,\\tfrac13,\\tfrac14,\\tfrac15,\\tfrac16$ are terminating decimals?",
+    "answer": "3",
+    "solution": "$\\frac12,\\frac14,\\frac15$ terminate; $\\frac13,\\frac16$ repeat. So $3$ terminate.",
+    "rating": 700,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "In $\\dfrac{1}{7}=0.\\overline{142857}$, what is the $4$th digit after the decimal point?",
+    "answer": "8",
+    "solution": "The block is $142857$; its $4$th digit is $8$.",
+    "rating": 700,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the length of the repeating block of $\\dfrac{1}{37}$?",
+    "answer": "3",
+    "solution": "$\\frac{1}{37}=0.\\overline{027}$, a block of length $3$.",
+    "rating": 740,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $0.\\overline{3} + 0.\\overline{6}$?",
+    "answer": "1",
+    "solution": "$\\frac13+\\frac23 = 1$.",
+    "rating": 740,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The repeating decimal $0.\\overline{12}$ equals $\\dfrac{a}{b}$ in lowest terms. What is $a+b$?",
+    "answer": "37",
+    "solution": "$0.\\overline{12}=\\frac{12}{99}=\\frac{4}{33}$, so $a+b=37$.",
+    "rating": 740,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $50$th digit after the decimal point of $\\dfrac{1}{7}=0.\\overline{142857}$?",
+    "answer": "4",
+    "solution": "$50\\equiv2\\pmod6$, so we take the $2$nd digit of $142857$, which is $4$.",
+    "rating": 740,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "Which fraction has a longer repeating block?",
+    "choices": [
+      "A) 1/7",
+      "B) 1/11"
+    ],
+    "answer": "A",
+    "solution": "$\\frac{1}{7}$ has period $6$ while $\\frac{1}{11}$ has period $2$, so $\\frac17$ is longer.",
+    "rating": 740,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the length of the repeating block of $\\dfrac{1}{101}$?",
+    "answer": "4",
+    "solution": "The order of $10$ modulo $101$ is $4$ (since $10^4\\equiv1$), so the period is $4$.",
+    "rating": 780,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The repeating decimal $0.\\overline{27}$ equals $\\dfrac{a}{b}$ in lowest terms. What is $a+b$?",
+    "answer": "14",
+    "solution": "$0.\\overline{27}=\\frac{27}{99}=\\frac{3}{11}$, so $a+b=14$.",
+    "rating": 780,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $2024$th digit after the decimal point of $0.\\overline{142857}$?",
+    "answer": "4",
+    "solution": "$2024\\equiv2\\pmod6$, so we take the $2$nd digit, $4$.",
+    "rating": 780,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers $n$ with $1\\le n\\le20$ make $\\dfrac{1}{n}$ a terminating decimal?",
+    "answer": "8",
+    "solution": "We need $n$ of the form $2^a5^b$: $1,2,4,5,8,10,16,20$ — eight values.",
+    "rating": 780,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal $0.1\\overline{6}$ equals $\\dfrac{a}{b}$ in lowest terms. What is $a+b$?",
+    "answer": "7",
+    "solution": "$0.1\\overline{6}=\\frac{16-1}{90}=\\frac{15}{90}=\\frac{1}{6}$, so $a+b=7$.",
+    "rating": 780,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the length of the repeating block of $\\dfrac{1}{41}$?",
+    "answer": "5",
+    "solution": "The order of $10$ modulo $41$ is $5$, so the period is $5$.",
+    "rating": 820,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $7 \\times 0.\\overline{142857}$?",
+    "answer": "1",
+    "solution": "$0.\\overline{142857}=\\frac17$, so $7\\times\\frac17=1$.",
+    "rating": 820,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the length of the repeating block of $\\dfrac{5}{13}$?",
+    "answer": "6",
+    "solution": "$\\frac{5}{13}$ has the same period as $\\frac{1}{13}$: length $6$.",
+    "rating": 820,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For how many integers $n$ with $1\\le n\\le11$ does $\\dfrac{n}{12}$ (in lowest terms) terminate?",
+    "answer": "3",
+    "solution": "$\\frac{n}{12}$ terminates only if reducing removes the factor of $3$, i.e. $3\\mid n$: $n=3,6,9$ — three values.",
+    "rating": 820,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of the digits in one repeating block of $\\dfrac{1}{7}$ (the block $142857$)?",
+    "answer": "27",
+    "solution": "$1+4+2+8+5+7=27$.",
+    "rating": 820,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the length of the repeating block of $\\dfrac{1}{27}$?",
+    "answer": "3",
+    "solution": "$\\frac{1}{27}=0.\\overline{037}$, a block of length $3$.",
+    "rating": 860,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The repeating decimal $0.\\overline{123}$ equals $\\dfrac{a}{b}$ in lowest terms. What is $a+b$?",
+    "answer": "374",
+    "solution": "$0.\\overline{123}=\\frac{123}{999}=\\frac{41}{333}$, so $a+b=374$.",
+    "rating": 860,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $1000$th digit after the decimal point of $\\dfrac{1}{7}$?",
+    "answer": "8",
+    "solution": "$1000\\equiv4\\pmod6$, so we take the $4$th digit of $142857$, which is $8$.",
+    "rating": 860,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers $n$ with $1\\le n\\le100$ make $\\dfrac{1}{n}$ a terminating decimal?",
+    "answer": "15",
+    "solution": "We count $n=2^a5^b\\le100$: there are $15$ such integers.",
+    "rating": 860,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal $0.4\\overline{5}$ equals $\\dfrac{a}{b}$ in lowest terms. What is $a+b$?",
+    "answer": "131",
+    "solution": "$0.4\\overline{5}=\\frac{45-4}{90}=\\frac{41}{90}$, so $a+b=131$.",
+    "rating": 860,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the length of the repeating block of $\\dfrac{1}{77}$?",
+    "answer": "6",
+    "solution": "$77=7\\cdot11$; the period is $\\mathrm{lcm}(6,2)=6$.",
+    "rating": 900,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $0.\\overline{1}+0.\\overline{2}+0.\\overline{3}+\\cdots+0.\\overline{9}$?",
+    "answer": "5",
+    "solution": "Each $0.\\overline{k}=\\frac{k}{9}$, so the sum is $\\frac{1+2+\\cdots+9}{9}=\\frac{45}{9}=5$.",
+    "rating": 900,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $2024$th digit after the decimal point of $\\dfrac{1}{17}$?",
+    "answer": "2",
+    "solution": "$\\frac{1}{17}$ has period $16$; since $2024\\equiv8\\pmod{16}$, we take the $8$th digit of its block, which is $2$.",
+    "rating": 900,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $3$rd digit after the decimal point of $\\dfrac{2}{7}$?",
+    "answer": "5",
+    "solution": "$\\frac{2}{7}=0.\\overline{285714}$; the $3$rd digit is $5$.",
+    "rating": 900,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "Does $\\dfrac{7}{80}$ terminate?",
+    "choices": [
+      "A) Yes",
+      "B) No"
+    ],
+    "answer": "A",
+    "solution": "$80=2^4\\cdot5$ has only primes $2$ and $5$, so $\\frac{7}{80}=0.0875$ terminates.",
+    "rating": 900,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the length of the repeating block of $\\dfrac{1}{239}$?",
+    "answer": "7",
+    "solution": "The order of $10$ modulo $239$ is $7$, so the period is $7$.",
+    "rating": 940,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers $n$ with $1\\le n\\le50$ make $\\dfrac{1}{n}$ a repeating (non-terminating) decimal?",
+    "answer": "38",
+    "solution": "Of the $50$ values, $12$ give terminating decimals ($n=2^a5^b$), so $50-12=38$ repeat.",
+    "rating": 940,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $0.\\overline{9}$ as a whole number?",
+    "answer": "1",
+    "solution": "$0.\\overline{9}=\\frac{9}{9}=1$.",
+    "rating": 940,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $100$th digit after the decimal point of $\\dfrac{1}{13}=0.\\overline{076923}$?",
+    "answer": "9",
+    "solution": "$100\\equiv4\\pmod6$, so we take the $4$th digit of $076923$, which is $9$.",
+    "rating": 940,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of the digits in one repeating block of $\\dfrac{1}{13}$ (the block $076923$)?",
+    "answer": "27",
+    "solution": "$0+7+6+9+2+3=27$.",
+    "rating": 940,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the length of the repeating block of $\\dfrac{1}{49}$?",
+    "answer": "42",
+    "solution": "The order of $10$ modulo $49$ is $42$, so the period is $42$.",
     "rating": 980,
     "source": "AMC 8 · Terminating & Repeating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Write $0.\\overline{142857}$ as a fraction in lowest terms.",
-    "answer": "1/7",
-    "solution": "A pure repeat is the block over that many $9$s: $0.\\overline{142857} = \\frac{142857}{999999}$, which reduces to $\\frac{1}{7}$.",
-    "rating": 1050,
+    "statement": "For how many integers $n$ with $1\\le n\\le30$ does $\\dfrac{n}{30}$ (in lowest terms) terminate?",
+    "answer": "10",
+    "solution": "$30=2\\cdot3\\cdot5$; $\\frac{n}{30}$ terminates when reducing removes the $3$, i.e. $3\\mid n$: the multiples of $3$ up to $30$ number $10$.",
+    "rating": 980,
     "source": "AMC 8 · Terminating & Repeating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Among the fractions $\\frac{1}{12}, \\frac{2}{12}, \\ldots, \\frac{11}{12}$, how many are terminating decimals?",
-    "answer": "3",
-    "solution": "$\\frac{n}{12}$ terminates only when reducing removes the factor of $3$, i.e. when $3 \\mid n$: $\\frac{3}{12}=\\frac14$, $\\frac{6}{12}=\\frac12$, $\\frac{9}{12}=\\frac34$. That is $3$ fractions.",
-    "rating": 1080,
+    "statement": "The decimal $0.12\\overline{45}$ equals $\\dfrac{a}{b}$ in lowest terms. What is $a+b$?",
+    "answer": "1237",
+    "solution": "$0.12\\overline{45}=\\frac{1245-12}{9900}=\\frac{1233}{9900}=\\frac{137}{1100}$, so $a+b=1237$.",
+    "rating": 980,
     "source": "AMC 8 · Terminating & Repeating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "A repeating decimal whose repeating block has three digits, $0.\\overline{abc}$, always equals a fraction whose denominator divides what whole number?",
-    "answer": "999",
-    "solution": "$0.\\overline{abc} = \\frac{\\overline{abc}}{999}$ (the block over three $9$s), so the reduced denominator always divides $999$.",
-    "rating": 1110,
+    "statement": "What is the $500$th digit after the decimal point of $\\dfrac{3}{7}$?",
+    "answer": "2",
+    "solution": "$\\frac{3}{7}=0.\\overline{428571}$; $500\\equiv2\\pmod6$, so the digit is $2$.",
+    "rating": 980,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "Which fraction has the longer repeating block?",
+    "choices": [
+      "A) 1/17",
+      "B) 1/19"
+    ],
+    "answer": "B",
+    "solution": "$\\frac{1}{17}$ has period $16$ and $\\frac{1}{19}$ has period $18$, so $\\frac1{19}$ is longer.",
+    "rating": 980,
     "source": "AMC 8 · Terminating & Repeating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Write $0.\\overline{123}$ as a fraction in lowest terms.",
-    "answer": "41/333",
-    "solution": "$0.\\overline{123} = \\frac{123}{999}$. Both share a factor of $3$: $\\frac{123}{999} = \\frac{41}{333}$, and $41$ is prime with no common factor with $333 = 3^2\\cdot 37$.",
-    "rating": 1130,
+    "statement": "What is the sum of the repeating-block lengths of $\\dfrac{1}{7}$, $\\dfrac{1}{13}$, and $\\dfrac{1}{11}$?",
+    "answer": "14",
+    "solution": "The periods are $6$, $6$, and $2$; their sum is $14$.",
+    "rating": 1020,
     "source": "AMC 8 · Terminating & Repeating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What integer equals $0.\\overline{4} + 0.\\overline{5}$?",
+    "statement": "How many integers $n$ with $1\\le n\\le200$ make $\\dfrac{1}{n}$ a terminating decimal?",
+    "answer": "19",
+    "solution": "Counting $n=2^a5^b\\le200$ gives $19$.",
+    "rating": 1020,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $0.\\overline{45}$ as $\\dfrac{a}{b}$ in lowest terms and give the numerator $a$.",
+    "answer": "5",
+    "solution": "$0.\\overline{45}=\\frac{45}{99}=\\frac{5}{11}$, so $a=5$.",
+    "rating": 1020,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest integer $n>1$ whose reciprocal $\\dfrac{1}{n}$ has a repeating block of length exactly $6$?",
+    "answer": "7",
+    "solution": "$\\frac{1}{7}=0.\\overline{142857}$ has period $6$, and no smaller $n$ does.",
+    "rating": 1020,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $1000$th digit after the decimal point of $\\dfrac{1}{11}=0.\\overline{09}$?",
+    "answer": "9",
+    "solution": "The block is $09$; an even position gives the $2$nd digit, $9$.",
+    "rating": 1020,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the length of the repeating block of $\\dfrac{1}{9999}$?",
+    "answer": "4",
+    "solution": "Since $10^4\\equiv1\\pmod{9999}$, the period is $4$.",
+    "rating": 1060,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers $n$ with $1\\le n\\le1000$ make $\\dfrac{1}{n}$ a terminating decimal?",
+    "answer": "29",
+    "solution": "Counting $n=2^a5^b\\le1000$ gives $29$.",
+    "rating": 1060,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest integer $n>1$ whose reciprocal $\\dfrac{1}{n}$ has a repeating block of length exactly $3$?",
+    "answer": "27",
+    "solution": "$\\frac{1}{27}=0.\\overline{037}$ has period $3$, and no smaller $n$ gives period $3$.",
+    "rating": 1060,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $5$th digit after the decimal point of $\\dfrac{2}{7}=0.\\overline{285714}$?",
     "answer": "1",
-    "solution": "$0.\\overline{4} = \\frac{4}{9}$ and $0.\\overline{5} = \\frac{5}{9}$, so the sum is $\\frac{9}{9} = 1$.",
-    "rating": 1170,
+    "solution": "The block is $285714$; its $5$th digit is $1$.",
+    "rating": 1060,
     "source": "AMC 8 · Terminating & Repeating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the smallest base $b > 2$ in which $\\frac{1}{3}$ has a terminating expansion?",
-    "answer": "3",
-    "solution": "$\\frac{1}{3}$ terminates in base $b$ exactly when every prime factor of the denominator divides $b$ — here, when $3 \\mid b$. The smallest such $b > 2$ is $3$ (where $\\frac{1}{3} = 0.1_3$).",
-    "rating": 1200,
+    "statement": "How many of $\\dfrac{1}{2},\\dfrac{1}{3},\\ldots,\\dfrac{1}{10}$ are terminating decimals?",
+    "answer": "5",
+    "solution": "The terminating ones have denominator $2,4,5,8,10$ — five of them.",
+    "rating": 1060,
     "source": "AMC 8 · Terminating & Repeating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Write $0.\\overline{1} + 0.\\overline{2} + 0.\\overline{3}$ as a fraction in lowest terms.",
-    "answer": "2/3",
-    "solution": "Each term is a single digit over $9$: $\\frac{1}{9} + \\frac{2}{9} + \\frac{3}{9} = \\frac{6}{9} = \\frac{2}{3}$.",
-    "rating": 1220,
+    "statement": "What is the sum of the repeating-block lengths of $\\dfrac{1}{3},\\dfrac{1}{7},\\dfrac{1}{9},\\dfrac{1}{11},\\dfrac{1}{13}$?",
+    "answer": "16",
+    "solution": "The periods are $1,6,1,2,6$; their sum is $16$.",
+    "rating": 1100,
     "source": "AMC 8 · Terminating & Repeating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "For how many integer bases $b$ with $2 \\le b \\le 10$ does $\\frac{1}{6}$ have a terminating expansion?",
-    "answer": "1",
-    "solution": "$\\frac{1}{6}$ terminates in base $b$ exactly when every prime factor of $6$ (namely $2$ and $3$) divides $b$ — that is, when $6 \\mid b$. In $2 \\le b \\le 10$, only $b = 6$ qualifies, so the count is $1$.",
-    "rating": 1250,
+    "statement": "How many integers $n$ with $2\\le n\\le100$ give $\\dfrac{1}{n}$ a purely repeating decimal (that is, $n$ is coprime to $10$)?",
+    "answer": "39",
+    "solution": "A reciprocal is purely repeating exactly when $n$ shares no factor of $2$ or $5$. Counting $n$ from $2$ to $100$ coprime to $10$ gives $39$.",
+    "rating": 1100,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The repeating decimal $0.\\overline{2024}$ equals $\\dfrac{a}{b}$ in lowest terms. What is $a+b$?",
+    "answer": "1093",
+    "solution": "$0.\\overline{2024}=\\frac{2024}{9999}=\\frac{184}{909}$ (dividing by $11$), so $a+b=1093$.",
+    "rating": 1100,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $2024$th digit after the decimal point of $\\dfrac{1}{7}$?",
+    "answer": "4",
+    "solution": "$2024\\equiv2\\pmod6$, so the digit is the $2$nd of $142857$, which is $4$.",
+    "rating": 1100,
+    "source": "AMC 8 · Terminating & Repeating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $1000000$th digit after the decimal point of $\\dfrac{1}{13}=0.\\overline{076923}$?",
+    "answer": "9",
+    "solution": "$10^6\\equiv4\\pmod6$, so we take the $4$th digit of $076923$, which is $9$.",
+    "rating": 1100,
     "source": "AMC 8 · Terminating & Repeating Decimals"
   }
 ]

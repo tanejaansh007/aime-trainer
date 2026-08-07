@@ -1,197 +1,757 @@
 [
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the remainder when $100$ is divided by $7$?",
+    "statement": "What is the remainder when $17$ is divided by $5$?",
     "answer": "2",
-    "solution": "$100 = 14\\times 7 + 2$, so the remainder is $2$.",
-    "rating": 630,
-    "source": "AMC 8 · Modular Arithmetic"
+    "solution": "$17 = 3\\cdot5 + 2$, so the remainder is $2$.",
+    "rating": 450,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "A clock reads $3$ o'clock. What hour will it show $100$ hours later? (Give the hour on a $12$-hour clock.)",
+    "statement": "What is the remainder when $23$ is divided by $4$?",
+    "answer": "3",
+    "solution": "$23 = 5\\cdot4 + 3$, so the remainder is $3$.",
+    "rating": 450,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $20$ is divided by $6$?",
+    "answer": "2",
+    "solution": "$20 = 3\\cdot6 + 2$, so the remainder is $2$.",
+    "rating": 450,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $30$ is divided by $7$?",
+    "answer": "2",
+    "solution": "$30 = 4\\cdot7 + 2$, so the remainder is $2$.",
+    "rating": 450,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $100$ is divided by $9$?",
+    "answer": "1",
+    "solution": "$100 = 11\\cdot9 + 1$, so the remainder is $1$.",
+    "rating": 450,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $45$ is divided by $6$?",
+    "answer": "3",
+    "solution": "$45 = 7\\cdot6 + 3$, so the remainder is $3$.",
+    "rating": 500,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $58$ is divided by $7$?",
+    "answer": "2",
+    "solution": "$58 = 8\\cdot7 + 2$, so the remainder is $2$.",
+    "rating": 500,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $100$ is divided by $3$?",
+    "answer": "1",
+    "solution": "The digit sum of $100$ is $1$, so the remainder mod $3$ is $1$.",
+    "rating": 500,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $77$ is divided by $10$?",
     "answer": "7",
-    "solution": "Hours repeat every $12$, so reduce: $100 \\equiv 4 \\pmod{12}$. Then $3 + 4 = 7$, so the clock shows $7$ o'clock.",
-    "rating": 650,
-    "source": "AMC 8 · Modular Arithmetic"
+    "solution": "The remainder mod $10$ is the units digit, $7$.",
+    "rating": 500,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "If today is Monday, what day of the week will it be $45$ days from now?",
-    "answer": "Thursday",
-    "solution": "Days repeat every $7$, and $45 \\equiv 3 \\pmod 7$. Three days after Monday is Thursday.",
-    "rating": 670,
-    "source": "AMC 8 · Modular Arithmetic"
+    "statement": "What is the remainder when $50$ is divided by $8$?",
+    "answer": "2",
+    "solution": "$50 = 6\\cdot8 + 2$, so the remainder is $2$.",
+    "rating": 500,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $7 \\times 8$ is divided by $5$?",
+    "answer": "1",
+    "solution": "$7\\times8=56=11\\cdot5+1$, so the remainder is $1$.",
+    "rating": 550,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A clock shows $9$ o'clock. What hour will it show $5$ hours later?",
+    "answer": "2",
+    "solution": "$9+5=14$, and $14-12=2$, so it shows $2$ o'clock.",
+    "rating": 550,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $123$ is divided by $10$?",
+    "answer": "3",
+    "solution": "The remainder mod $10$ is the units digit, $3$.",
+    "rating": 550,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^5$ is divided by $7$?",
+    "answer": "4",
+    "solution": "$2^5=32=4\\cdot7+4$, so the remainder is $4$.",
+    "rating": 550,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $34 \\times 27$?",
+    "answer": "8",
+    "solution": "The units digit depends only on $4\\times7=28$, so it is $8$.",
+    "rating": 550,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $15+26+37$ is divided by $4$?",
+    "answer": "2",
+    "solution": "$15+26+37=78=19\\cdot4+2$, so the remainder is $2$.",
+    "rating": 600,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
   },
   {
     "type": "MULTIPLE_CHOICE",
-    "statement": "Which of the following numbers leaves a remainder of $2$ when divided by $5$?",
+    "statement": "Today is Tuesday. What day of the week will it be in $10$ days?",
     "choices": [
-      "A) $24$",
-      "B) $30$",
-      "C) $37$",
-      "D) $45$",
-      "E) $58$"
+      "A) Wednesday",
+      "B) Thursday",
+      "C) Friday",
+      "D) Saturday",
+      "E) Sunday"
     ],
     "answer": "C",
-    "solution": "A number's remainder mod $5$ comes straight from its last digit. The remainders are $24\\to4$, $30\\to0$, $37\\to2$, $45\\to0$, $58\\to3$. Only $37$ leaves remainder $2$.",
-    "rating": 690,
-    "source": "AMC 8 · Modular Arithmetic"
+    "solution": "Advancing 10 days is the same as advancing $ 10 \\bmod 7 = 3$ days. Counting 3 day(s) from Tuesday lands on Friday.",
+    "rating": 600,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $250$ is divided by $9$?",
+    "answer": "7",
+    "solution": "The digit sum $2+5+0=7$ gives the remainder mod $9$, which is $7$.",
+    "rating": 600,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
   },
   {
     "type": "SHORT_ANSWER",
     "statement": "What is the remainder when $3^4$ is divided by $5$?",
     "answer": "1",
-    "solution": "$3^4 = 81 = 16\\times 5 + 1$, so the remainder is $1$.",
-    "rating": 730,
-    "source": "AMC 8 · Modular Arithmetic"
+    "solution": "$3^4=81=16\\cdot5+1$, so the remainder is $1$.",
+    "rating": 600,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "The powers $2, 2^2, 2^3, \\dots$ taken mod $7$ repeat in a cycle. What is the length of that cycle?",
+    "statement": "A number leaves remainder $3$ when divided by $7$. What is the remainder when twice that number is divided by $7$?",
+    "answer": "6",
+    "solution": "If $n\\equiv3$, then $2n\\equiv6\\pmod 7$, so the remainder is $6$.",
+    "rating": 600,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^{10}$ is divided by $3$?",
+    "answer": "1",
+    "solution": "$2\\equiv-1\\pmod3$, so $2^{10}\\equiv(-1)^{10}=1$.",
+    "rating": 650,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $12345$ is divided by $9$?",
+    "answer": "6",
+    "solution": "The digit sum is $1+2+3+4+5=15$, whose digit sum is $6$; the remainder is $6$.",
+    "rating": 650,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A clock shows $8$ o'clock. What hour will it show after $100$ hours?",
+    "answer": "12",
+    "solution": "$100\\equiv4\\pmod{12}$, and $8+4=12$, so it shows $12$ o'clock.",
+    "rating": 650,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $7^4$?",
+    "answer": "1",
+    "solution": "$7^4=2401$, whose units digit is $1$.",
+    "rating": 650,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A number leaves remainder $4$ when divided by $9$. What is the remainder when $8$ is added to it, then divided by $9$?",
     "answer": "3",
-    "solution": "Mod $7$: $2^1\\equiv2$, $2^2\\equiv4$, $2^3\\equiv1$, then it repeats. The cycle $2, 4, 1$ has length $3$.",
-    "rating": 760,
-    "source": "AMC 8 · Modular Arithmetic"
+    "solution": "$4+8=12\\equiv3\\pmod9$, so the remainder is $3$.",
+    "rating": 650,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^{20}$ is divided by $5$?",
+    "answer": "1",
+    "solution": "Units of powers of $2$ mod $5$ cycle $2,4,3,1$ with length $4$; since $20\\equiv0$, $2^{20}\\equiv1$.",
+    "rating": 700,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "What day of the week is $30$ days after a Wednesday?",
+    "choices": [
+      "A) Wednesday",
+      "B) Thursday",
+      "C) Friday",
+      "D) Saturday",
+      "E) Sunday"
+    ],
+    "answer": "C",
+    "solution": "Advancing 30 days is the same as advancing $ 30 \\bmod 7 = 2$ days. Counting 2 day(s) from Wednesday lands on Friday.",
+    "rating": 700,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $1000$ is divided by $7$?",
+    "answer": "6",
+    "solution": "$1000=142\\cdot7+6$, so the remainder is $6$.",
+    "rating": 700,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $3^{10}$?",
+    "answer": "9",
+    "solution": "Units of powers of $3$ cycle $3,9,7,1$ (length $4$); $10\\equiv2$, giving units digit $9$.",
+    "rating": 700,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $5^{100}$ is divided by $4$?",
+    "answer": "1",
+    "solution": "$5\\equiv1\\pmod4$, so $5^{100}\\equiv1$.",
+    "rating": 700,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $7^{50}$ is divided by $5$?",
+    "answer": "4",
+    "solution": "$7\\equiv2\\pmod5$ and powers of $2$ cycle $2,4,3,1$; $50\\equiv2$, so the remainder is $4$.",
+    "rating": 740,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $2^{2024}$?",
+    "answer": "6",
+    "solution": "Units of powers of $2$ cycle $2,4,8,6$ (length $4$); $2024\\equiv0$, giving units digit $6$.",
+    "rating": 740,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $3^{2024}$ is divided by $5$?",
+    "answer": "1",
+    "solution": "Powers of $3$ mod $5$ cycle $3,4,2,1$; $2024\\equiv0$, so the remainder is $1$.",
+    "rating": 740,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $1+2+3+\\cdots+100$ is divided by $7$?",
+    "answer": "3",
+    "solution": "The sum is $\\frac{100\\cdot101}{2}=5050=721\\cdot7+3$, so the remainder is $3$.",
+    "rating": 740,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "January 1 falls on a Monday. In a $365$-day year, what day is the next January 1?",
+    "choices": [
+      "A) Sunday",
+      "B) Monday",
+      "C) Tuesday",
+      "D) Wednesday",
+      "E) Thursday"
+    ],
+    "answer": "C",
+    "solution": "Advancing 365 days is the same as advancing $ 365 \\bmod 7 = 1$ days. Counting 1 day(s) from Monday lands on Tuesday.",
+    "rating": 740,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
   },
   {
     "type": "SHORT_ANSWER",
     "statement": "What is the remainder when $2^{100}$ is divided by $7$?",
     "answer": "2",
-    "solution": "Powers of $2$ mod $7$ cycle as $2, 4, 1$ with length $3$. Since $100 \\equiv 1 \\pmod 3$, $2^{100}$ matches $2^1 \\equiv 2 \\pmod 7$.",
-    "rating": 800,
-    "source": "AMC 8 · Modular Arithmetic"
-  },
-  {
-    "type": "MULTIPLE_CHOICE",
-    "statement": "What is the remainder when $7^{2024}$ is divided by $4$?",
-    "choices": [
-      "A) $0$",
-      "B) $1$",
-      "C) $2$",
-      "D) $3$",
-      "E) Cannot be determined"
-    ],
-    "answer": "B",
-    "solution": "$7$ is odd, so every power $7^n$ is odd — its remainder mod $4$ must be odd, eliminating $0$ and $2$. Since $7 \\equiv -1 \\pmod 4$ and the exponent $2024$ is even, $7^{2024} \\equiv (-1)^{2024} = 1 \\pmod 4$.",
-    "rating": 830,
-    "source": "AMC 8 · Modular Arithmetic"
+    "solution": "Powers of $2$ mod $7$ cycle $2,4,1$ (length $3$); $100\\equiv1$, so the remainder is $2$.",
+    "rating": 780,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Using Fermat's Little Theorem, what is the remainder when $5^{12}$ is divided by $13$?",
+    "statement": "What is the units digit of $7^{2024}$?",
     "answer": "1",
-    "solution": "Since $13$ is prime and does not divide $5$, Fermat's Little Theorem gives $5^{12} \\equiv 1 \\pmod{13}$.",
-    "rating": 890,
-    "source": "AMC 8 · Modular Arithmetic"
+    "solution": "Units of powers of $7$ cycle $7,9,3,1$; $2024\\equiv0$, giving units digit $1$.",
+    "rating": 780,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the remainder when $1! + 2! + 3! + \\cdots + 10!$ is divided by $5$?",
+    "statement": "What is the remainder when $123456$ is divided by $11$?",
     "answer": "3",
-    "solution": "For every $k \\ge 5$, $k!$ contains a factor of $5$, so $k! \\equiv 0 \\pmod 5$. Only $1!+2!+3!+4! = 1+2+6+24 = 33$ matters, and $33 \\equiv 3 \\pmod 5$.",
-    "rating": 920,
-    "source": "AMC 8 · Modular Arithmetic"
+    "solution": "Using the alternating digit sum $6-5+4-3+2-1=3$, the remainder is $3$.",
+    "rating": 780,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the smallest positive integer $k$ such that $2^k \\equiv 1 \\pmod 7$?",
+    "statement": "What is the remainder when $2^{10}+3^{10}$ is divided by $5$?",
     "answer": "3",
-    "solution": "Compute powers of $2$ mod $7$: $2, 4, 1$. The first time we reach $1$ is at $2^3$, so $k = 3$.",
-    "rating": 950,
-    "source": "AMC 8 · Modular Arithmetic"
+    "solution": "$2^{10}\\equiv4$ and $3^{10}\\equiv4\\pmod5$, so the sum is $8\\equiv3$.",
+    "rating": 780,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
   },
   {
-    "type": "MULTIPLE_CHOICE",
-    "statement": "What is the value of $10! = 1\\times 2\\times 3\\times\\cdots\\times 10$?",
-    "choices": [
-      "A) $3628800$",
-      "B) $3627800$",
-      "C) $3628080$",
-      "D) $3618800$",
-      "E) $3620800$"
-    ],
-    "answer": "A",
-    "solution": "$10!$ has factors $2, 4, 6, 8, 10$ supplying plenty of $2$s and the factors $5, 10$ supplying two $5$s, so it ends in exactly two zeros — that kills $3628080$ (ends in $80$). It is also divisible by $9$, so its digit sum must be a multiple of $9$: $3627800\\,(26)$, $3618800\\,(26)$, and $3620800\\,(19)$ all fail. Only $3628800$ (digit sum $27$) survives.",
-    "rating": 980,
-    "source": "AMC 8 · Modular Arithmetic"
+    "type": "SHORT_ANSWER",
+    "statement": "A clock shows $3$ o'clock. What hour will it show after $50$ hours?",
+    "answer": "5",
+    "solution": "$50\\equiv2\\pmod{12}$, and $3+2=5$, so it shows $5$ o'clock.",
+    "rating": 780,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $3^{100}$ is divided by $7$?",
+    "answer": "4",
+    "solution": "Powers of $3$ mod $7$ cycle $3,2,6,4,5,1$ (length $6$); $100\\equiv4$, so the remainder is $4$.",
+    "rating": 820,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $13^{2024}$?",
+    "answer": "1",
+    "solution": "The units digit follows powers of $3$: $3,9,7,1$; $2024\\equiv0$, giving units digit $1$.",
+    "rating": 820,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $5^{30}$ is divided by $7$?",
+    "answer": "1",
+    "solution": "Powers of $5$ mod $7$ cycle with length $6$; $30\\equiv0$, so the remainder is $1$.",
+    "rating": 820,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^{2024}$ is divided by $9$?",
+    "answer": "4",
+    "solution": "Powers of $2$ mod $9$ cycle $2,4,8,7,5,1$ (length $6$); $2024\\equiv2$, so the remainder is $4$.",
+    "rating": 820,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
   },
   {
     "type": "SHORT_ANSWER",
     "statement": "What is the smallest positive integer that leaves remainder $2$ when divided by $3$ and remainder $3$ when divided by $5$?",
     "answer": "8",
-    "solution": "List numbers that are $3$ more than a multiple of $5$: $3, 8, 13, \\dots$ The first that also leaves remainder $2$ mod $3$ is $8$ ($8 = 2\\times3 + 2$).",
-    "rating": 1050,
-    "source": "AMC 8 · Modular Arithmetic"
+    "solution": "Checking numbers $\\equiv3\\pmod5$ ($3,8,13,\\ldots$): $8$ also gives remainder $2$ mod $3$.",
+    "rating": 820,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many integers from $1$ to $100$ leave a remainder of $4$ when divided by $7$?",
-    "answer": "14",
-    "solution": "These are $4, 11, 18, \\dots, 95$, an arithmetic list. The count is $\\left\\lfloor\\frac{100-4}{7}\\right\\rfloor + 1 = 13 + 1 = 14$.",
-    "rating": 1080,
-    "source": "AMC 8 · Modular Arithmetic"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the smallest integer greater than $1$ that leaves remainder $1$ when divided by each of $4$, $5$, and $6$?",
-    "answer": "61",
-    "solution": "Such a number is $1$ more than a common multiple of $4, 5, 6$. Their least common multiple is $60$, so the next candidate after $1$ is $60 + 1 = 61$.",
-    "rating": 1110,
-    "source": "AMC 8 · Modular Arithmetic"
-  },
-  {
-    "type": "MULTIPLE_CHOICE",
-    "statement": "Which of the following leaves a remainder of $1$ when divided by both $2$ and $3$?",
-    "choices": [
-      "A) $25$",
-      "B) $28$",
-      "C) $33$",
-      "D) $40$",
-      "E) $51$"
-    ],
-    "answer": "A",
-    "solution": "Remainder $1$ mod $2$ means the number is odd, eliminating $28$ and $40$. Among the odd choices, the remainder mod $3$ must be $1$: $25 \\to 1$, $33 \\to 0$, $51 \\to 0$. Only $25$ works.",
-    "rating": 1130,
-    "source": "AMC 8 · Modular Arithmetic"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the smallest positive integer that leaves remainder $1$ when divided by $2$, remainder $2$ when divided by $3$, and remainder $3$ when divided by $4$?",
-    "answer": "11",
-    "solution": "Each condition says the number is one short of a multiple of its divisor, so $n + 1$ is a multiple of $2$, $3$, and $4$ at once. The least common multiple is $12$, giving $n = 12 - 1 = 11$.",
-    "rating": 1170,
-    "source": "AMC 8 · Modular Arithmetic"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the remainder when $7^{100}$ is divided by $100$?",
+    "statement": "What are the last two digits of $7^{100}$? (Give the two-digit remainder mod $100$.)",
     "answer": "1",
-    "solution": "$7^4 = 2401 \\equiv 1 \\pmod{100}$. Since $100$ is a multiple of $4$, $7^{100} = (7^4)^{25} \\equiv 1^{25} = 1 \\pmod{100}$.",
-    "rating": 1200,
-    "source": "AMC 8 · Modular Arithmetic"
+    "solution": "$7^4=2401\\equiv1\\pmod{100}$, so $7^{100}=(7^4)^{25}\\equiv1$; the last two digits are $01$, i.e. $1$.",
+    "rating": 860,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the remainder when $2^{2024}$ is divided by $10$?",
-    "answer": "6",
-    "solution": "The remainder mod $10$ is the units digit. Powers of $2$ cycle $2, 4, 8, 6$ with length $4$; since $2024 \\equiv 0 \\pmod 4$, we take the last entry, $6$.",
-    "rating": 1220,
-    "source": "AMC 8 · Modular Arithmetic"
+    "statement": "What is the units digit of $2^{2024}+3^{2024}$?",
+    "answer": "7",
+    "solution": "$2^{2024}$ ends in $6$ and $3^{2024}$ ends in $1$; $6+1=7$.",
+    "rating": 860,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^{50}$ is divided by $7$?",
+    "answer": "4",
+    "solution": "Powers of $2$ mod $7$ cycle $2,4,1$; $50\\equiv2$, so the remainder is $4$.",
+    "rating": 860,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer that is $\\equiv 1 \\pmod 4$ and $\\equiv 2 \\pmod 5$?",
+    "answer": "17",
+    "solution": "Numbers $\\equiv2\\pmod5$ are $2,7,12,17,\\ldots$; $17$ is the first that is also $\\equiv1\\pmod4$.",
+    "rating": 860,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $100^{100}$ is divided by $7$?",
+    "answer": "2",
+    "solution": "$100\\equiv2\\pmod7$, and powers of $2$ cycle $2,4,1$; $100\\equiv1$, so the remainder is $2$.",
+    "rating": 860,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What are the last two digits of $3^{100}$? (remainder mod $100$)",
+    "answer": "1",
+    "solution": "$3^{20}\\equiv1\\pmod{100}$, so $3^{100}=(3^{20})^5\\equiv1$; the last two digits are $01$.",
+    "rating": 900,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^{1000}$ is divided by $1000$?",
+    "answer": "376",
+    "solution": "Computing $2^{1000}\\bmod1000$ (its last three digits) gives $376$.",
+    "rating": 900,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
   },
   {
     "type": "MULTIPLE_CHOICE",
-    "statement": "Without multiplying it out fully, determine which of the following equals $111 \\times 111$.",
+    "statement": "What day of the week is $1000$ days after a Sunday?",
     "choices": [
-      "A) $12331$",
-      "B) $12321$",
-      "C) $12341$",
-      "D) $11221$",
-      "E) $12300$"
+      "A) Thursday",
+      "B) Friday",
+      "C) Saturday",
+      "D) Sunday",
+      "E) Monday"
     ],
-    "answer": "B",
-    "solution": "The product ends in $1\\times 1 = 1$, so eliminate $12300$. Also $111$ is divisible by $3$, so the product is divisible by $9$ — its digit sum must be a multiple of $9$. Digit sums: $12331\\to10$, $12341\\to11$, $11221\\to7$ all fail; $12321\\to9$ passes. So $111\\times111 = 12321$.",
-    "rating": 1250,
-    "source": "AMC 8 · Modular Arithmetic"
+    "answer": "C",
+    "solution": "Advancing 1000 days is the same as advancing $ 1000 \\bmod 7 = 6$ days. Counting 6 day(s) from Sunday lands on Saturday.",
+    "rating": 900,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer leaving remainders $3$, $4$, and $5$ when divided by $4$, $5$, and $6$?",
+    "answer": "59",
+    "solution": "Each remainder is one less than its divisor, so $n\\equiv-1$; thus $n+1=\\mathrm{lcm}(4,5,6)=60$ and $n=59$.",
+    "rating": 900,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $1!+2!+3!+\\cdots+10!$ is divided by $5$?",
+    "answer": "3",
+    "solution": "For $k\\ge5$, $k!\\equiv0\\pmod5$. So only $1!+2!+3!+4!=33\\equiv3\\pmod5$ matters.",
+    "rating": 900,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $1!+2!+3!+\\cdots+100!$ is divided by $12$?",
+    "answer": "9",
+    "solution": "For $k\\ge4$, $k!$ is a multiple of $12$. So only $1!+2!+3!=9$ matters, giving remainder $9$.",
+    "rating": 940,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $7^{7^7}$?",
+    "answer": "3",
+    "solution": "The units digit of $7^n$ depends on $n\\bmod4$. Since $7^7\\equiv3\\pmod4$, we use the $3$rd term of $7,9,3,1$, which is $3$.",
+    "rating": 940,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What are the last two digits of $2^{2024}$? (remainder mod $100$)",
+    "answer": "16",
+    "solution": "The last two digits of powers of $2$ cycle with period $20$ (for exponents $\\ge2$); $2024\\equiv4\\pmod{20}$ gives the same ending as $2^{24}$, namely $16$.",
+    "rating": 940,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer that is $\\equiv2\\pmod5$ and $\\equiv3\\pmod7$?",
+    "answer": "17",
+    "solution": "Numbers $\\equiv3\\pmod7$ are $3,10,17,\\ldots$; $17$ is the first also $\\equiv2\\pmod5$.",
+    "rating": 940,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $10^{10}$ is divided by $7$?",
+    "answer": "4",
+    "solution": "$10\\equiv3\\pmod7$ and powers of $3$ cycle with length $6$; $10\\equiv4$, so the remainder is $4$.",
+    "rating": 940,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What are the last two digits of $2^{2024}$ minus... give $2^{2024} \\bmod 100$.",
+    "answer": "16",
+    "solution": "As above, $2^{2024}\\equiv2^{24}\\equiv16\\pmod{100}$.",
+    "rating": 980,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $3^{27}$ is divided by $5$?",
+    "answer": "2",
+    "solution": "Powers of $3$ mod $5$ cycle $3,4,2,1$; $27\\equiv3$, so the remainder is $2$.",
+    "rating": 980,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer leaving remainders $1,2,3,4$ when divided by $2,3,4,5$ respectively?",
+    "answer": "59",
+    "solution": "Each remainder is one less than the divisor, so $n\\equiv-1$; then $n+1=\\mathrm{lcm}(2,3,4,5)=60$, giving $n=59$.",
+    "rating": 980,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $7^{2024}$?",
+    "answer": "1",
+    "solution": "Units of $7$ cycle $7,9,3,1$; $2024\\equiv0$, giving units digit $1$.",
+    "rating": 980,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when the $2024$-digit number $\\underbrace{11\\cdots1}_{2024}$ is divided by $9$?",
+    "answer": "8",
+    "solution": "The digit sum is $2024$, and $2024\\equiv8\\pmod9$ (since $2+0+2+4=8$), so the remainder is $8$.",
+    "rating": 980,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^{2024}+2024$ is divided by $7$?",
+    "answer": "5",
+    "solution": "$2^{2024}\\equiv4$ (cycle $2,4,1$, $2024\\equiv2$) and $2024\\equiv1\\pmod7$; $4+1=5$.",
+    "rating": 1020,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What are the last two digits of $7^{2024}$? (remainder mod $100$)",
+    "answer": "1",
+    "solution": "$7^4\\equiv1\\pmod{100}$ and $2024\\equiv0\\pmod4$, so $7^{2024}\\equiv1$; the last two digits are $01$.",
+    "rating": 1020,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer that is $\\equiv3\\pmod7$ and $\\equiv5\\pmod{11}$?",
+    "answer": "38",
+    "solution": "Numbers $\\equiv5\\pmod{11}$ are $5,16,27,38,49,60,\\ldots$; the first also $\\equiv3\\pmod7$ is $38$.",
+    "rating": 1020,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $13^{100}$ is divided by $7$?",
+    "answer": "1",
+    "solution": "$13\\equiv-1\\pmod7$, so $13^{100}\\equiv(-1)^{100}=1$.",
+    "rating": 1020,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "MULTIPLE_CHOICE",
+    "statement": "What day of the week is $2024$ days after a Monday?",
+    "choices": [
+      "A) Sunday",
+      "B) Monday",
+      "C) Tuesday",
+      "D) Wednesday",
+      "E) Thursday"
+    ],
+    "answer": "C",
+    "solution": "Advancing 2024 days is the same as advancing $ 2024 \\bmod 7 = 1$ days. Counting 1 day(s) from Monday lands on Tuesday.",
+    "rating": 1020,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^{100}+3^{100}+4^{100}$ is divided by $5$?",
+    "answer": "3",
+    "solution": "Modulo $5$: $2^{100}\\equiv1$, $3^{100}\\equiv1$, and $4\\equiv-1$ so $4^{100}\\equiv1$; the sum is $3$.",
+    "rating": 1060,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What are the last two digits of $3^{2024}$? (remainder mod $100$)",
+    "answer": "81",
+    "solution": "$3^{20}\\equiv1\\pmod{100}$ and $2024\\equiv4\\pmod{20}$, so $3^{2024}\\equiv3^4=81$.",
+    "rating": 1060,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer that leaves remainder $6$ when divided by each of $7$, $8$, and $9$?",
+    "answer": "6",
+    "solution": "We need $n-6$ divisible by $\\mathrm{lcm}(7,8,9)=504$, so $n=504+6=510$.",
+    "rating": 1060,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $12345678$ is divided by $9$?",
+    "answer": "0",
+    "solution": "The digit sum $1+2+\\cdots+8=36$ is a multiple of $9$, so the remainder is $0$.",
+    "rating": 1060,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $2^1+2^2+2^3+\\cdots+2^{10}$?",
+    "answer": "6",
+    "solution": "$2^1+\\cdots+2^{10}=2^{11}-2=2046$, whose units digit is $6$.",
+    "rating": 1060,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^{2024}$ is divided by $1000$? (its last three digits)",
+    "answer": "216",
+    "solution": "The last three digits of powers of $2$ (for exponents $\\ge3$) cycle with period $100$; $2024\\equiv24\\pmod{100}$, so $2^{2024}\\equiv2^{24}\\equiv216\\pmod{1000}$.",
+    "rating": 1100,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer that is $\\equiv2\\pmod3$, $\\equiv3\\pmod5$, and $\\equiv2\\pmod7$?",
+    "answer": "23",
+    "solution": "By the Chinese Remainder Theorem there is a unique solution mod $105$; checking gives $n=23$.",
+    "rating": 1100,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What are the last two digits of $2^{2024}+3^{2024}$? (remainder mod $100$)",
+    "answer": "97",
+    "solution": "$2^{2024}\\equiv16$ and $3^{2024}\\equiv81\\pmod{100}$, so the sum is $97$.",
+    "rating": 1100,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $1^{2024}+2^{2024}+\\cdots+10^{2024}$ is divided by $5$?",
+    "answer": "3",
+    "solution": "Modulo $5$, each integer coprime to $5$ raised to $2024$ (a multiple of $4$) gives $1$. Among $1$–$10$ there are $8$ such numbers (contributing $8$) and the multiples of $5$ contribute $0$, so the total is $8\\equiv3\\pmod5$.",
+    "rating": 1100,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For which digit $d$ is the four-digit number $\\overline{34d5}$ divisible by $7$?",
+    "answer": "6",
+    "solution": "The value is $3405+10d$. Since $3405\\equiv3$ and $10\\equiv3\\pmod7$, we need $3+3d\\equiv0$, i.e. $d\\equiv6\\pmod7$; the digit is $6$.",
+    "rating": 1100,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $7^{100}+11^{100}$ is divided by $13$?",
+    "answer": "12",
+    "solution": "By Fermat, $a^{12}\\equiv1\\pmod{13}$ for $a$ coprime to $13$, so $a^{100}=a^{96}\\cdot a^4\\equiv a^4$. Then $7^4\\equiv9$ and $11^4\\equiv3$, summing to $12$.",
+    "rating": 1145,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What are the last two digits of $21^{2024}$? (remainder mod $100$)",
+    "answer": "81",
+    "solution": "$21^{2024}\\bmod100$: since $21\\equiv21$ and its order mod $100$ divides $20$ ($21^{2024}\\equiv21^4$), we get $21^4\\equiv81\\pmod{100}$.",
+    "rating": 1145,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer leaving remainders $1,2,3,4,5,6$ when divided by $2,3,4,5,6,7$ respectively?",
+    "answer": "419",
+    "solution": "Each remainder is one less than the divisor, so $n\\equiv-1$; then $n+1=\\mathrm{lcm}(2,\\ldots,7)=420$, giving $n=419$.",
+    "rating": 1145,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2024^{2024}$ is divided by $7$?",
+    "answer": "1",
+    "solution": "$2024\\equiv1\\pmod7$ (since $2024=289\\cdot7+1$), so $2024^{2024}\\equiv1$.",
+    "rating": 1145,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers $n$ from $1$ to $100$ satisfy $n^2 \\equiv 1 \\pmod 5$?",
+    "answer": "40",
+    "solution": "$n^2\\equiv1\\pmod5$ exactly when $n\\equiv\\pm1\\pmod5$: two residues out of every five, so $\\tfrac{2}{5}\\cdot100=40$.",
+    "rating": 1145,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $3^{2024}$ is divided by $1000$? (its last three digits)",
+    "answer": "481",
+    "solution": "Since $3^{100}\\equiv1\\pmod{1000}$ and $2024\\equiv24\\pmod{100}$, we have $3^{2024}\\equiv3^{24}\\equiv481\\pmod{1000}$.",
+    "rating": 1190,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What are the last two digits of $2024^{2024}$? (remainder mod $100$)",
+    "answer": "76",
+    "solution": "$2024\\equiv24\\pmod{100}$. Computing $24^{2024}\\bmod100$ gives $76$.",
+    "rating": 1190,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest integer greater than $1$ that leaves remainder $1$ when divided by each of $3$, $4$, and $5$?",
+    "answer": "61",
+    "solution": "We need $n-1$ divisible by $\\mathrm{lcm}(3,4,5)=60$, so the smallest such $n>1$ is $61$.",
+    "rating": 1190,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers $n$ from $1$ to $120$ satisfy $n^2 \\equiv 1 \\pmod{24}$?",
+    "answer": "40",
+    "solution": "For every $n$ coprime to $24$, $n^2\\equiv1\\pmod{24}$. There are $\\varphi(24)=8$ such residues per block of $24$, so over $1$–$120$ there are $8\\cdot5=40$.",
+    "rating": 1190,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $1!+2!+3!+\\cdots+2024!$ is divided by $15$?",
+    "answer": "3",
+    "solution": "For $k\\ge5$, $k!$ is a multiple of $15$. So only $1!+2!+3!+4!=33\\equiv3\\pmod{15}$ contributes.",
+    "rating": 1190,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
   }
 ]

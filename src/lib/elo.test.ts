@@ -82,8 +82,8 @@ describe("clampRating / startingRating", () => {
     expect(clampRating(1234)).toBe(1234);
   });
   it("maps presets to starting ratings", () => {
-    expect(startingRating("easy")).toBe(800);
-    expect(startingRating("medium")).toBe(1200);
-    expect(startingRating("hard")).toBe(1600);
+    expect(startingRating("easy")).toBe(750);
+    expect(startingRating("medium")).toBe(1080);
+    expect(startingRating("hard")).toBe(1350);
   });
 });

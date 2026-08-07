@@ -6,12 +6,14 @@ import type { PublicProblem } from "@/lib/problemDTO";
 import { RATING_MIN, RATING_MAX, clampRating } from "@/lib/elo";
 
 // Starting-rating presets aligned to AMC 8 difficulty bands.
+// The scale is stretched so a true #25 sits near 1500: an easy warm-up (#1)
+// is ~450 and the hardest problems feel genuinely hard.
 const PRESETS = [
-  { key: "intro",     label: "Intro",     rating: 620,  sub: "AMC 8 #1–5"   },
-  { key: "easy",      label: "Easy",      rating: 780,  sub: "AMC 8 #6–12"  },
-  { key: "medium",    label: "Medium",    rating: 960,  sub: "AMC 8 #13–18" },
-  { key: "hard",      label: "Hard",      rating: 1100, sub: "AMC 8 #19–22" },
-  { key: "challenge", label: "Challenge", rating: 1220, sub: "AMC 8 #23–25" },
+  { key: "intro",     label: "Intro",     rating: 550,  sub: "AMC 8 #1–5"   },
+  { key: "easy",      label: "Easy",      rating: 820,  sub: "AMC 8 #6–12"  },
+  { key: "medium",    label: "Medium",    rating: 1080, sub: "AMC 8 #13–18" },
+  { key: "hard",      label: "Hard",      rating: 1310, sub: "AMC 8 #19–22" },
+  { key: "challenge", label: "Challenge", rating: 1470, sub: "AMC 8 #23–25" },
 ] as const;
 
 interface AnswerResult {
@@ -27,9 +29,9 @@ interface AnswerResult {
 /** Label a problem rating within the AMC 8 difficulty range. */
 function difficultyLabel(rating: number): string {
   if (rating < 700)  return "Intro";
-  if (rating < 850)  return "Easy";
-  if (rating < 1000) return "Medium";
-  if (rating < 1150) return "Hard";
+  if (rating < 960)  return "Easy";
+  if (rating < 1200) return "Medium";
+  if (rating < 1400) return "Hard";
   return "Challenge";
 }
 

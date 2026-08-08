@@ -1,1 +1,802 @@
-[]
+[
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{1}{2}$ as a decimal.",
+    "answer": "0.5",
+    "solution": "$1 \\div 2 = 0.5$.",
+    "rating": 450,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{1}{4}$ as a decimal.",
+    "answer": "0.25",
+    "solution": "$1 \\div 4 = 0.25$.",
+    "rating": 450,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{3}{4}$ as a decimal.",
+    "answer": "0.75",
+    "solution": "$3 \\div 4 = 0.75$.",
+    "rating": 450,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{1}{5}$ as a decimal.",
+    "answer": "0.2",
+    "solution": "$1 \\div 5 = 0.2$.",
+    "rating": 450,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{1}{10}$ as a decimal.",
+    "answer": "0.1",
+    "solution": "$1 \\div 10 = 0.1$.",
+    "rating": 450,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal for $\\dfrac{1}{3}$ is $0.333\\ldots$, repeating one digit forever. What is that digit?",
+    "answer": "3",
+    "solution": "$1/3 = 0.\\overline{3}$, so the repeating digit is $3$.",
+    "rating": 450,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{3}{5}$ as a decimal.",
+    "answer": "0.6",
+    "solution": "$3 \\div 5 = 0.6$.",
+    "rating": 500,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{1}{8}$ as a decimal.",
+    "answer": "0.125",
+    "solution": "$1 \\div 8 = 0.125$.",
+    "rating": 500,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{7}{10}$ as a decimal.",
+    "answer": "0.7",
+    "solution": "$7 \\div 10 = 0.7$.",
+    "rating": 500,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{3}{25}$ as a decimal.",
+    "answer": "0.12",
+    "solution": "$3 \\div 25 = 0.12$.",
+    "rating": 500,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{9}{20}$ as a decimal.",
+    "answer": "0.45",
+    "solution": "$9 \\div 20 = 0.45$.",
+    "rating": 500,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal for $\\dfrac{2}{3}$ is $0.666\\ldots$, repeating one digit forever. What is that digit?",
+    "answer": "6",
+    "solution": "$2/3 = 0.\\overline{6}$, so the repeating digit is $6$.",
+    "rating": 500,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{5}{8}$ as a decimal.",
+    "answer": "0.625",
+    "solution": "$5 \\div 8 = 0.625$.",
+    "rating": 550,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{7}{16}$ as a decimal.",
+    "answer": "0.4375",
+    "solution": "$7 \\div 16 = 0.4375$ (the denominator $16 = 2^4$ is a power of $2$, so it terminates).",
+    "rating": 550,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{7}{20}$ as a decimal.",
+    "answer": "0.35",
+    "solution": "$7 \\div 20 = 0.35$.",
+    "rating": 550,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{13}{25}$ as a decimal.",
+    "answer": "0.52",
+    "solution": "$13 \\div 25 = 0.52$.",
+    "rating": 550,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{11}{40}$ as a decimal.",
+    "answer": "0.275",
+    "solution": "$11 \\div 40 = 0.275$.",
+    "rating": 550,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal for $\\dfrac{1}{6}$ is $0.1666\\ldots$, which repeats one digit forever. What is that repeating digit?",
+    "answer": "6",
+    "solution": "$1/6 = 0.1\\overline{6}$, so the repeating digit is $6$.",
+    "rating": 550,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{3}{8}$ as a decimal.",
+    "answer": "0.375",
+    "solution": "$3 \\div 8 = 0.375$.",
+    "rating": 600,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{9}{16}$ as a decimal.",
+    "answer": "0.5625",
+    "solution": "$9 \\div 16 = 0.5625$.",
+    "rating": 600,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{21}{50}$ as a decimal.",
+    "answer": "0.42",
+    "solution": "$21 \\div 50 = 0.42$.",
+    "rating": 600,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{17}{40}$ as a decimal.",
+    "answer": "0.425",
+    "solution": "$17 \\div 40 = 0.425$.",
+    "rating": 600,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal for $\\dfrac{5}{6}$ is $0.8333\\ldots$, which repeats one digit forever. What is that repeating digit?",
+    "answer": "3",
+    "solution": "$5/6 = 0.8\\overline{3}$, so the repeating digit is $3$.",
+    "rating": 600,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal for $\\dfrac{1}{9}$ repeats one digit forever. What is that digit?",
+    "answer": "1",
+    "solution": "$1/9 = 0.\\overline{1}$, so the repeating digit is $1$.",
+    "rating": 600,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Which one of $\\dfrac{7}{24}$, $\\dfrac{9}{40}$, $\\dfrac{11}{35}$ has a terminating decimal?",
+    "answer": "9/40",
+    "solution": "$24 = 2^3\\cdot3$ and $35 = 5\\cdot7$ each keep a prime other than $2,5$, so those repeat. $40 = 2^3\\cdot5$ has only $2$s and $5$s, so $\\dfrac{9}{40}$ terminates.",
+    "rating": 650,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Does $\\dfrac{3}{20}$ have a terminating decimal? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "$20 = 2^2\\cdot5$ has only the primes $2$ and $5$, so $\\dfrac{3}{20}$ terminates.",
+    "rating": 650,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Does $\\dfrac{5}{12}$ have a terminating decimal? Answer Yes or No.",
+    "answer": "No",
+    "solution": "$12 = 2^2\\cdot3$ has a factor of $3$, so $\\dfrac{5}{12}$ repeats.",
+    "rating": 650,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of $\\dfrac{1}{6}$, $\\dfrac{3}{8}$, $\\dfrac{4}{15}$, $\\dfrac{7}{50}$ have terminating decimals?",
+    "answer": "2",
+    "solution": "$\\dfrac{3}{8}$ ($8=2^3$) and $\\dfrac{7}{50}$ ($50=2\\cdot5^2$) terminate; $6$ and $15$ carry a factor of $3$, so those repeat. That is $2$ terminating.",
+    "rating": 650,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Which one of $\\dfrac{5}{12}$, $\\dfrac{7}{16}$, $\\dfrac{2}{9}$ has a terminating decimal?",
+    "answer": "7/16",
+    "solution": "$16 = 2^4$ uses only the prime $2$, so $\\dfrac{7}{16}$ terminates; $12$ and $9$ carry a factor of $3$.",
+    "rating": 650,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Does $\\dfrac{9}{14}$ have a terminating decimal? Answer Yes or No.",
+    "answer": "No",
+    "solution": "$14 = 2\\cdot7$ has a factor of $7$, so $\\dfrac{9}{14}$ repeats.",
+    "rating": 650,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Which one of $\\dfrac{4}{15}$, $\\dfrac{7}{25}$, $\\dfrac{5}{18}$ has a terminating decimal?",
+    "answer": "7/25",
+    "solution": "$25 = 5^2$ uses only the prime $5$, so $\\dfrac{7}{25}$ terminates; $15$ and $18$ carry a factor of $3$.",
+    "rating": 700,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of $\\dfrac{3}{14}$, $\\dfrac{9}{16}$, $\\dfrac{11}{30}$, $\\dfrac{13}{40}$ have terminating decimals?",
+    "answer": "2",
+    "solution": "$\\dfrac{9}{16}$ ($16=2^4$) and $\\dfrac{13}{40}$ ($40=2^3\\cdot5$) terminate; $14$ and $30$ carry primes other than $2,5$. That is $2$.",
+    "rating": 700,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Does $\\dfrac{21}{56}$ have a terminating decimal? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "Reduce first: $\\dfrac{21}{56} = \\dfrac{3}{8}$, and $8 = 2^3$, so it terminates.",
+    "rating": 700,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Does $\\dfrac{15}{24}$ have a terminating decimal? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "Reduce first: $\\dfrac{15}{24} = \\dfrac{5}{8}$, and $8 = 2^3$, so it terminates.",
+    "rating": 700,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Which one of $\\dfrac{7}{22}$, $\\dfrac{9}{28}$, $\\dfrac{3}{16}$ has a terminating decimal?",
+    "answer": "3/16",
+    "solution": "$16 = 2^4$ uses only the prime $2$, so $\\dfrac{3}{16}$ terminates; $22 = 2\\cdot11$ and $28 = 2^2\\cdot7$ carry other primes.",
+    "rating": 700,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of $\\dfrac{1}{12}$, $\\dfrac{5}{16}$, $\\dfrac{7}{30}$, $\\dfrac{9}{50}$ have terminating decimals?",
+    "answer": "2",
+    "solution": "$\\dfrac{5}{16}$ and $\\dfrac{9}{50}$ terminate; $12$ and $30$ carry a factor of $3$. That is $2$.",
+    "rating": 700,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Does $\\dfrac{14}{35}$ have a terminating decimal? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "The raw denominator $35 = 5\\cdot7$ looks like it repeats, but $\\dfrac{14}{35} = \\dfrac{2}{5}$ after reducing, and $5$ uses only the prime $5$ — so it terminates.",
+    "rating": 740,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Does $\\dfrac{6}{15}$ have a terminating decimal? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "$\\dfrac{6}{15} = \\dfrac{2}{5}$ after reducing, and $5$ uses only the prime $5$, so it terminates.",
+    "rating": 740,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Which one of $\\dfrac{14}{21}$, $\\dfrac{22}{45}$, $\\dfrac{33}{40}$ has a terminating decimal?",
+    "answer": "33/40",
+    "solution": "$\\dfrac{14}{21} = \\dfrac{2}{3}$ (repeats) and $45 = 3^2\\cdot5$ (repeats); $40 = 2^3\\cdot5$, so $\\dfrac{33}{40}$ terminates.",
+    "rating": 740,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of $\\dfrac{26}{65}$, $\\dfrac{9}{24}$, $\\dfrac{7}{28}$, $\\dfrac{5}{24}$ have terminating decimals?",
+    "answer": "3",
+    "solution": "$\\dfrac{26}{65}=\\dfrac{2}{5}$, $\\dfrac{9}{24}=\\dfrac{3}{8}$, and $\\dfrac{7}{28}=\\dfrac{1}{4}$ all terminate; $\\dfrac{5}{24}$ (with $24=2^3\\cdot3$) repeats. That is $3$.",
+    "rating": 740,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Does $\\dfrac{45}{72}$ have a terminating decimal? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "$\\dfrac{45}{72} = \\dfrac{5}{8}$ after reducing, and $8 = 2^3$, so it terminates despite the $3$ in $72$.",
+    "rating": 740,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Which one of $\\dfrac{12}{35}$, $\\dfrac{15}{22}$, $\\dfrac{9}{48}$ has a terminating decimal?",
+    "answer": "9/48",
+    "solution": "$\\dfrac{9}{48} = \\dfrac{3}{16}$ terminates ($16=2^4$); $\\dfrac{12}{35}$ keeps a $7$ and $\\dfrac{15}{22}$ keeps an $11$.",
+    "rating": 740,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $0.\\overline{27}$ as a fraction in simplest form.",
+    "answer": "3/11",
+    "solution": "A $2$-digit block gives $0.\\overline{27} = \\dfrac{27}{99} = \\dfrac{3}{11}$.",
+    "rating": 780,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $0.\\overline{18}$ as a fraction in simplest form.",
+    "answer": "2/11",
+    "solution": "$0.\\overline{18} = \\dfrac{18}{99} = \\dfrac{2}{11}$.",
+    "rating": 780,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $0.\\overline{45}$ as a fraction in simplest form.",
+    "answer": "5/11",
+    "solution": "$0.\\overline{45} = \\dfrac{45}{99} = \\dfrac{5}{11}$.",
+    "rating": 780,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $0.\\overline{6}$ as a fraction in simplest form.",
+    "answer": "2/3",
+    "solution": "A $1$-digit block gives $0.\\overline{6} = \\dfrac{6}{9} = \\dfrac{2}{3}$.",
+    "rating": 780,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $0.\\overline{09}$ as a fraction in simplest form.",
+    "answer": "1/11",
+    "solution": "$0.\\overline{09} = \\dfrac{9}{99} = \\dfrac{1}{11}$.",
+    "rating": 780,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $0.\\overline{135}$ as a fraction in simplest form.",
+    "answer": "5/37",
+    "solution": "A $3$-digit block gives $0.\\overline{135} = \\dfrac{135}{999} = \\dfrac{5}{37}$.",
+    "rating": 780,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits are in the repeating block of $\\dfrac{1}{13}$?",
+    "answer": "6",
+    "solution": "Dividing, the remainders are $1\\to10\\to9\\to12\\to3\\to4\\to1$, returning to $1$ after $6$ steps: $1/13 = 0.\\overline{076923}$, a block of $6$ digits.",
+    "rating": 820,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits are in the repeating block of $\\dfrac{1}{7}$?",
+    "answer": "6",
+    "solution": "$1/7 = 0.\\overline{142857}$; the remainders cycle back after $6$ steps, so the block has $6$ digits.",
+    "rating": 820,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits are in the repeating block of $\\dfrac{1}{11}$?",
+    "answer": "2",
+    "solution": "$1/11 = 0.\\overline{09}$; the remainder returns after $2$ steps, so the block has $2$ digits.",
+    "rating": 820,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits are in the repeating block of $\\dfrac{1}{37}$?",
+    "answer": "3",
+    "solution": "$1/37 = 0.\\overline{027}$; the remainders close after $3$ steps, so the block has $3$ digits.",
+    "rating": 820,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits are in the repeating block of $\\dfrac{1}{41}$?",
+    "answer": "5",
+    "solution": "$1/41 = 0.\\overline{02439}$; the remainders cycle after $5$ steps, so the block has $5$ digits.",
+    "rating": 820,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits are in the repeating block of $\\dfrac{2}{7}$?",
+    "answer": "6",
+    "solution": "$2/7 = 0.\\overline{285714}$; like all sevenths it has a repeating block of $6$ digits.",
+    "rating": 820,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits are in the repeating block of $\\dfrac{1}{27}$?",
+    "answer": "3",
+    "solution": "$1/27 = 0.\\overline{037}$; the remainders return after $3$ steps, so the block has $3$ digits.",
+    "rating": 860,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits are in the repeating block of $\\dfrac{1}{33}$?",
+    "answer": "2",
+    "solution": "$1/33 = 0.\\overline{03}$; the remainders return after $2$ steps, so the block has $2$ digits.",
+    "rating": 860,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits are in the repeating block of $\\dfrac{1}{21}$?",
+    "answer": "6",
+    "solution": "$1/21 = 0.\\overline{047619}$; the remainders close after $6$ steps, so the block has $6$ digits.",
+    "rating": 860,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits are in the repeating block of $\\dfrac{5}{13}$?",
+    "answer": "6",
+    "solution": "$5/13 = 0.\\overline{384615}$; like all thirteenths it has a repeating block of $6$ digits.",
+    "rating": 860,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits are in the repeating block of $\\dfrac{1}{101}$?",
+    "answer": "4",
+    "solution": "$1/101 = 0.\\overline{0099}$; the remainders return after $4$ steps, so the block has $4$ digits.",
+    "rating": 860,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits are in the repeating block of $\\dfrac{1}{39}$?",
+    "answer": "6",
+    "solution": "$1/39 = 0.\\overline{025641}$; the remainders close after $6$ steps, so the block has $6$ digits.",
+    "rating": 860,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits are in the repeating block of $\\dfrac{1}{77}$?",
+    "answer": "6",
+    "solution": "$1/77 = 0.\\overline{012987}$; the remainders cycle after $6$ steps, so the block has $6$ digits.",
+    "rating": 900,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits are in the repeating block of $\\dfrac{3}{7}$?",
+    "answer": "6",
+    "solution": "$3/7 = 0.\\overline{428571}$; like all sevenths it has a repeating block of $6$ digits.",
+    "rating": 900,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits are in the repeating block of $\\dfrac{1}{111}$?",
+    "answer": "3",
+    "solution": "$1/111 = 0.\\overline{009}$; the remainders return after $3$ steps, so the block has $3$ digits.",
+    "rating": 900,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits are in the repeating block of $\\dfrac{7}{11}$?",
+    "answer": "2",
+    "solution": "$7/11 = 0.\\overline{63}$; like all elevenths it has a repeating block of $2$ digits.",
+    "rating": 900,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits are in the repeating block of $\\dfrac{1}{143}$?",
+    "answer": "6",
+    "solution": "$1/143 = 0.\\overline{006993}$; the remainders close after $6$ steps, so the block has $6$ digits.",
+    "rating": 900,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "When $\\dfrac{7}{37}$ is written as a repeating decimal, what is the sum of the digits in its repeating block?",
+    "answer": "18",
+    "solution": "Since $37\\cdot27 = 999$, $\\dfrac{7}{37} = \\dfrac{7\\cdot27}{999} = \\dfrac{189}{999} = 0.\\overline{189}$. The digits $1+8+9 = 18$.",
+    "rating": 940,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "When $\\dfrac{1}{27}$ is written as a repeating decimal, what is the sum of the digits in its repeating block?",
+    "answer": "10",
+    "solution": "Since $27\\cdot37 = 999$, $\\dfrac{1}{27} = \\dfrac{37}{999} = 0.\\overline{037}$. The digits $0+3+7 = 10$.",
+    "rating": 940,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "When $\\dfrac{5}{37}$ is written as a repeating decimal, what is the sum of the digits in its repeating block?",
+    "answer": "9",
+    "solution": "$\\dfrac{5}{37} = \\dfrac{5\\cdot27}{999} = \\dfrac{135}{999} = 0.\\overline{135}$. The digits $1+3+5 = 9$.",
+    "rating": 940,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "When $\\dfrac{1}{13}$ is written as a repeating decimal, what is the sum of the digits in its repeating block?",
+    "answer": "27",
+    "solution": "Since $13\\cdot76923 = 999999$, $\\dfrac{1}{13} = \\dfrac{76923}{999999} = 0.\\overline{076923}$. The digits $0+7+6+9+2+3 = 27$.",
+    "rating": 940,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "When $\\dfrac{2}{37}$ is written as a repeating decimal, what is the sum of the digits in its repeating block?",
+    "answer": "9",
+    "solution": "$\\dfrac{2}{37} = \\dfrac{2\\cdot27}{999} = \\dfrac{54}{999} = 0.\\overline{054}$. The digits $0+5+4 = 9$.",
+    "rating": 940,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $50$th digit after the decimal point in $\\dfrac{1}{7}$?",
+    "answer": "4",
+    "solution": "$1/7 = 0.\\overline{142857}$, period $6$. Since $50 \\equiv 2 \\pmod 6$, the $50$th digit is the $2$nd of the block: $4$.",
+    "rating": 980,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $100$th digit after the decimal point in $\\dfrac{1}{7}$?",
+    "answer": "8",
+    "solution": "$1/7 = 0.\\overline{142857}$, period $6$. Since $100 \\equiv 4 \\pmod 6$, the digit is the $4$th of the block: $8$.",
+    "rating": 980,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $25$th digit after the decimal point in $\\dfrac{1}{11}$?",
+    "answer": "0",
+    "solution": "$1/11 = 0.\\overline{09}$, period $2$. Since $25$ is odd, the digit is the $1$st of the block: $0$.",
+    "rating": 980,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $40$th digit after the decimal point in $\\dfrac{1}{13}$?",
+    "answer": "9",
+    "solution": "$1/13 = 0.\\overline{076923}$, period $6$. Since $40 \\equiv 4 \\pmod 6$, the digit is the $4$th of the block: $9$.",
+    "rating": 980,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $30$th digit after the decimal point in $\\dfrac{2}{7}$?",
+    "answer": "4",
+    "solution": "$2/7 = 0.\\overline{285714}$, period $6$. Since $30 \\equiv 0 \\pmod 6$, the digit is the last of the block: $4$.",
+    "rating": 980,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $45$th digit after the decimal point in $\\dfrac{1}{7}$?",
+    "answer": "2",
+    "solution": "$1/7 = 0.\\overline{142857}$, period $6$. Since $45 \\equiv 3 \\pmod 6$, the digit is the $3$rd of the block: $2$.",
+    "rating": 1020,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $60$th digit after the decimal point in $\\dfrac{1}{13}$?",
+    "answer": "3",
+    "solution": "$1/13 = 0.\\overline{076923}$, period $6$. Since $60 \\equiv 0 \\pmod 6$, the digit is the last of the block: $3$.",
+    "rating": 1020,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $33$rd digit after the decimal point in $\\dfrac{5}{11}$?",
+    "answer": "4",
+    "solution": "$5/11 = 0.\\overline{45}$, period $2$. Since $33$ is odd, the digit is the $1$st of the block: $4$.",
+    "rating": 1020,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $50$th digit after the decimal point in $\\dfrac{1}{27}$?",
+    "answer": "3",
+    "solution": "$1/27 = 0.\\overline{037}$, period $3$. Since $50 \\equiv 2 \\pmod 3$, the digit is the $2$nd of the block: $3$.",
+    "rating": 1020,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $100$th digit after the decimal point in $\\dfrac{3}{7}$?",
+    "answer": "5",
+    "solution": "$3/7 = 0.\\overline{428571}$, period $6$. Since $100 \\equiv 4 \\pmod 6$, the digit is the $4$th of the block: $5$.",
+    "rating": 1020,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $74$th digit after the decimal point in $\\dfrac{1}{7}$?",
+    "answer": "4",
+    "solution": "$1/7 = 0.\\overline{142857}$, period $6$. Since $74 \\equiv 2 \\pmod 6$, the digit is the $2$nd of the block: $4$.",
+    "rating": 1060,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $88$th digit after the decimal point in $\\dfrac{1}{13}$?",
+    "answer": "9",
+    "solution": "$1/13 = 0.\\overline{076923}$, period $6$. Since $88 \\equiv 4 \\pmod 6$, the digit is the $4$th of the block: $9$.",
+    "rating": 1060,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $55$th digit after the decimal point in $\\dfrac{4}{11}$?",
+    "answer": "3",
+    "solution": "$4/11 = 0.\\overline{36}$, period $2$. Since $55$ is odd, the digit is the $1$st of the block: $3$.",
+    "rating": 1060,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $47$th digit after the decimal point in $\\dfrac{1}{37}$?",
+    "answer": "2",
+    "solution": "$1/37 = 0.\\overline{027}$, period $3$. Since $47 \\equiv 2 \\pmod 3$, the digit is the $2$nd of the block: $2$.",
+    "rating": 1060,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $200$th digit after the decimal point in $\\dfrac{6}{7}$?",
+    "answer": "5",
+    "solution": "$6/7 = 0.\\overline{857142}$, period $6$. Since $200 \\equiv 2 \\pmod 6$, the digit is the $2$nd of the block: $5$.",
+    "rating": 1060,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal for $\\dfrac{7}{12}$ eventually repeats. How many digits come before the repeating block starts?",
+    "answer": "2",
+    "solution": "$12 = 2^2\\cdot3$. The power of $2$ forces $\\max(2,0) = 2$ non-repeating digits: $7/12 = 0.58\\overline{3}$, with $2$ digits before the block.",
+    "rating": 1100,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal for $\\dfrac{1}{6}$ eventually repeats. How many digits come before the repeating block starts?",
+    "answer": "1",
+    "solution": "$6 = 2\\cdot3$. The power of $2$ forces $\\max(1,0) = 1$ non-repeating digit: $1/6 = 0.1\\overline{6}$.",
+    "rating": 1100,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal for $\\dfrac{1}{12}$ eventually repeats. How many digits come before the repeating block starts?",
+    "answer": "2",
+    "solution": "$12 = 2^2\\cdot3$, so $\\max(2,0) = 2$ non-repeating digits: $1/12 = 0.08\\overline{3}$.",
+    "rating": 1100,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal for $\\dfrac{5}{24}$ eventually repeats. How many digits come before the repeating block starts?",
+    "answer": "3",
+    "solution": "$24 = 2^3\\cdot3$, so $\\max(3,0) = 3$ non-repeating digits: $5/24 = 0.208\\overline{3}$.",
+    "rating": 1100,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal for $\\dfrac{7}{15}$ eventually repeats. How many digits come before the repeating block starts?",
+    "answer": "1",
+    "solution": "$15 = 3\\cdot5$. The power of $5$ forces $\\max(0,1) = 1$ non-repeating digit: $7/15 = 0.4\\overline{6}$.",
+    "rating": 1100,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal for $\\dfrac{1}{18}$ eventually repeats. How many digits come before the repeating block starts?",
+    "answer": "1",
+    "solution": "$18 = 2\\cdot3^2$, so $\\max(1,0) = 1$ non-repeating digit: $1/18 = 0.0\\overline{5}$.",
+    "rating": 1145,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal for $\\dfrac{1}{24}$ eventually repeats. How many digits come before the repeating block starts?",
+    "answer": "3",
+    "solution": "$24 = 2^3\\cdot3$, so $\\max(3,0) = 3$ non-repeating digits: $1/24 = 0.041\\overline{6}$.",
+    "rating": 1145,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal for $\\dfrac{1}{28}$ eventually repeats. How many digits come before the repeating block starts?",
+    "answer": "2",
+    "solution": "$28 = 2^2\\cdot7$, so $\\max(2,0) = 2$ non-repeating digits: $1/28 = 0.03\\overline{571428}$.",
+    "rating": 1145,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal for $\\dfrac{1}{48}$ eventually repeats. How many digits come before the repeating block starts?",
+    "answer": "4",
+    "solution": "$48 = 2^4\\cdot3$, so $\\max(4,0) = 4$ non-repeating digits: $1/48 = 0.0208\\overline{3}$.",
+    "rating": 1145,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal for $\\dfrac{7}{30}$ eventually repeats. How many digits come before the repeating block starts?",
+    "answer": "1",
+    "solution": "$30 = 2\\cdot3\\cdot5$, so $\\max(1,1) = 1$ non-repeating digit: $7/30 = 0.2\\overline{3}$.",
+    "rating": 1145,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "If $0.375 + x = 0.\\overline{123}$, what is $x$ as a fraction in simplest form?",
+    "answer": "-671/2664",
+    "solution": "$0.375 = \\dfrac{3}{8}$ and $0.\\overline{123} = \\dfrac{123}{999} = \\dfrac{41}{333}$. Then $x = \\dfrac{41}{333} - \\dfrac{3}{8} = -\\dfrac{671}{2664}$.",
+    "rating": 1190,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "If $x + 0.25 = 0.\\overline{6}$, what is $x$ as a fraction in simplest form?",
+    "answer": "5/12",
+    "solution": "$0.\\overline{6} = \\dfrac{2}{3}$ and $0.25 = \\dfrac{1}{4}$, so $x = \\dfrac{2}{3} - \\dfrac{1}{4} = \\dfrac{5}{12}$.",
+    "rating": 1190,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "If $0.1 + x = 0.\\overline{1}$, what is $x$ as a fraction in simplest form?",
+    "answer": "1/90",
+    "solution": "$0.\\overline{1} = \\dfrac{1}{9}$ and $0.1 = \\dfrac{1}{10}$, so $x = \\dfrac{1}{9} - \\dfrac{1}{10} = \\dfrac{1}{90}$.",
+    "rating": 1190,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "If $0.5 + x = 0.\\overline{45}$, what is $x$ as a fraction in simplest form?",
+    "answer": "-1/22",
+    "solution": "$0.\\overline{45} = \\dfrac{45}{99} = \\dfrac{5}{11}$ and $0.5 = \\dfrac{1}{2}$, so $x = \\dfrac{5}{11} - \\dfrac{1}{2} = -\\dfrac{1}{22}$.",
+    "rating": 1190,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "If $0.2 + x = 0.\\overline{18}$, what is $x$ as a fraction in simplest form?",
+    "answer": "-1/55",
+    "solution": "$0.\\overline{18} = \\dfrac{18}{99} = \\dfrac{2}{11}$ and $0.2 = \\dfrac{1}{5}$, so $x = \\dfrac{2}{11} - \\dfrac{1}{5} = -\\dfrac{1}{55}$.",
+    "rating": 1190,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  }
+]

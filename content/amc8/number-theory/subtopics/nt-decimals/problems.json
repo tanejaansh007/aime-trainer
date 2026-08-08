@@ -89,9 +89,9 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Write $\\dfrac{1}{5} + \\dfrac{1}{4}$ as a decimal.",
-    "answer": "0.45",
-    "solution": "$\\dfrac{1}{5} + \\dfrac{1}{4} = \\dfrac{9}{20} = 0.45$.",
+    "statement": "Of $\\dfrac{2}{5}$, $0.3$, and $\\dfrac{11}{20}$, which is the smallest?",
+    "answer": "0.3",
+    "solution": "As decimals these are $0.4$, $0.3$, $0.55$; the smallest is $0.3$.",
     "rating": 500,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
@@ -105,17 +105,17 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Write $0.125$ as a fraction in lowest terms.",
-    "answer": "1/8",
-    "solution": "$0.125 = \\dfrac{125}{1000} = \\dfrac{1}{8}$.",
+    "statement": "Write $0.48$ as a fraction in lowest terms.",
+    "answer": "12/25",
+    "solution": "$0.48 = \\dfrac{48}{100} = \\dfrac{12}{25}$.",
     "rating": 550,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "The decimal for $\\dfrac{2}{3}$ repeats a single digit forever. What is that digit?",
-    "answer": "6",
-    "solution": "$2/3 = 0.\\overline{6}$, so the repeating digit is $6$.",
+    "statement": "The decimal for $\\dfrac{5}{6}$ is $0.8333\\ldots$, which repeats one digit forever. What is that digit?",
+    "answer": "3",
+    "solution": "$5/6 = 0.8\\overline{3}$, so the repeating digit is $3$.",
     "rating": 550,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
@@ -129,17 +129,17 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Of $\\dfrac{2}{5}$, $0.3$, and $\\dfrac{3}{8}$, which is the smallest?",
-    "answer": "0.3",
-    "solution": "As decimals these are $0.4$, $0.3$, $0.375$; the smallest is $0.3$.",
+    "statement": "Which is larger, $\\dfrac{9}{16}$ or $0.55$?",
+    "answer": "9/16",
+    "solution": "$\\dfrac{9}{16} = 0.5625 > 0.55$, so $\\dfrac{9}{16}$ is larger.",
     "rating": 550,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Write $\\dfrac{3}{8} + \\dfrac{1}{2}$ as a decimal.",
-    "answer": "0.875",
-    "solution": "$\\dfrac{3}{8} + \\dfrac{1}{2} = \\dfrac{7}{8} = 0.875$.",
+    "statement": "Write $\\dfrac{3}{20} + \\dfrac{1}{8}$ as a decimal.",
+    "answer": "0.275",
+    "solution": "$\\dfrac{3}{20} + \\dfrac{1}{8} = \\dfrac{11}{40} = 0.275$.",
     "rating": 550,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
@@ -153,73 +153,73 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Write $0.48$ as a fraction in lowest terms.",
-    "answer": "12/25",
-    "solution": "$0.48 = \\dfrac{48}{100} = \\dfrac{12}{25}$.",
+    "statement": "Write $0.52$ as a fraction in lowest terms.",
+    "answer": "13/25",
+    "solution": "$0.52 = \\dfrac{52}{100} = \\dfrac{13}{25}$.",
     "rating": 600,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "The decimal for $\\dfrac{5}{6}$ is $0.8333\\ldots$, which repeats one digit forever. What is that digit?",
-    "answer": "3",
-    "solution": "$5/6 = 0.8\\overline{3}$, so the repeating digit is $3$.",
-    "rating": 600,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "When $\\dfrac{3}{16}$ is written as a terminating decimal, how many digits appear after the decimal point?",
-    "answer": "4",
-    "solution": "$3/16 = 0.1875$, which has $4$ digits after the decimal point.",
-    "rating": 600,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What digit is in the thousandths place of the decimal for $\\dfrac{3}{16}$?",
-    "answer": "7",
-    "solution": "$3/16 = 0.1875$; the thousandths digit (third after the point) is $7$.",
-    "rating": 600,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Of $\\dfrac{1}{2}$, $0.45$, and $\\dfrac{4}{9}$, which is the smallest?",
-    "answer": "4/9",
-    "solution": "As decimals these are $0.5$, $0.45$, $0.444\\ldots$; the smallest is $\\dfrac{4}{9}$.",
-    "rating": 600,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Which one of $\\dfrac{7}{24}$, $\\dfrac{9}{40}$, $\\dfrac{11}{35}$ has a terminating decimal?",
-    "answer": "9/40",
-    "solution": "$24 = 2^3\\cdot3$ and $35 = 5\\cdot7$ keep a prime other than $2,5$, so they repeat. $40 = 2^3\\cdot5$, so $\\dfrac{9}{40}$ terminates.",
-    "rating": 650,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Does $\\dfrac{5}{12}$ have a terminating decimal? Answer Yes or No.",
-    "answer": "No",
-    "solution": "$12 = 2^2\\cdot3$ has a factor of $3$, so $\\dfrac{5}{12}$ repeats.",
-    "rating": 650,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many of $\\dfrac{1}{6}$, $\\dfrac{3}{8}$, $\\dfrac{4}{15}$, $\\dfrac{7}{50}$ have terminating decimals?",
+    "statement": "What digit is in the thousandths place of the decimal for $\\dfrac{13}{16}$?",
     "answer": "2",
-    "solution": "$\\dfrac{3}{8}$ and $\\dfrac{7}{50}$ terminate; $6$ and $15$ carry a factor of $3$. That is $2$.",
+    "solution": "$13/16 = 0.8125$; the thousandths digit (third after the point) is $2$.",
+    "rating": 600,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "When $\\dfrac{7}{32}$ is written as a terminating decimal, how many digits appear after the decimal point?",
+    "answer": "5",
+    "solution": "$7/32 = 0.21875$, which has $5$ digits after the decimal point.",
+    "rating": 600,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Of $\\dfrac{3}{4}$, $0.7$, and $\\dfrac{4}{5}$, which is the smallest?",
+    "answer": "0.7",
+    "solution": "As decimals these are $0.75$, $0.7$, $0.8$; the smallest is $0.7$.",
+    "rating": 600,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write $\\dfrac{1}{5} + \\dfrac{11}{40}$ as a decimal.",
+    "answer": "0.475",
+    "solution": "$\\dfrac{1}{5} + \\dfrac{11}{40} = \\dfrac{19}{40} = 0.475$.",
+    "rating": 600,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Which one of $\\dfrac{5}{14}$, $\\dfrac{17}{25}$, $\\dfrac{9}{22}$ has a terminating decimal?",
+    "answer": "17/25",
+    "solution": "$14 = 2\\cdot7$ and $22 = 2\\cdot11$ keep a prime other than $2,5$, so they repeat. $25 = 5^2$, so $\\dfrac{17}{25}$ terminates.",
     "rating": 650,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "For how many integers $n$ with $1 \\le n \\le 10$ does $\\dfrac{1}{n}$ have a terminating decimal?",
+    "statement": "Does $\\dfrac{9}{14}$ have a terminating decimal? Answer Yes or No.",
+    "answer": "No",
+    "solution": "$14 = 2\\cdot7$ has a factor of $7$, so $\\dfrac{9}{14}$ repeats.",
+    "rating": 650,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of $\\dfrac{5}{36}$, $\\dfrac{9}{50}$, $\\dfrac{4}{15}$, $\\dfrac{13}{40}$ have terminating decimals?",
+    "answer": "2",
+    "solution": "$\\dfrac{9}{50}$ and $\\dfrac{13}{40}$ terminate; $36$ and $15$ carry a factor of $3$. That is $2$.",
+    "rating": 650,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For how many integers $n$ with $1 \\le n \\le 12$ does $\\dfrac{1}{n}$ have a terminating decimal?",
     "answer": "6",
-    "solution": "The terminating cases are $n = 1,2,4,5,8,10$ (only primes $2$ and $5$) — that is $6$.",
+    "solution": "The terminating cases are $n = 1,2,4,5,8,10$ — that is $6$.",
     "rating": 650,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
@@ -233,105 +233,105 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the largest integer $n < 30$ for which $\\dfrac{1}{n}$ has a terminating decimal?",
-    "answer": "25",
-    "solution": "We need only primes $2,5$. Under $30$ the candidates are $16, 20, 25$; the largest is $25$.",
+    "statement": "What is the largest integer $n < 35$ for which $\\dfrac{1}{n}$ has a terminating decimal?",
+    "answer": "32",
+    "solution": "We need only primes $2,5$. Under $35$ the candidates are $16, 20, 25, 32$; the largest is $32 = 2^5$.",
     "rating": 650,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Which one of $\\dfrac{4}{15}$, $\\dfrac{7}{25}$, $\\dfrac{5}{18}$ has a terminating decimal?",
-    "answer": "7/25",
-    "solution": "$25 = 5^2$ uses only the prime $5$, so $\\dfrac{7}{25}$ terminates; $15$ and $18$ carry a factor of $3$.",
+    "statement": "Which one of $\\dfrac{3}{14}$, $\\dfrac{7}{40}$, $\\dfrac{5}{26}$ has a terminating decimal?",
+    "answer": "7/40",
+    "solution": "$14 = 2\\cdot7$ and $26 = 2\\cdot13$ carry a prime other than $2,5$; $40 = 2^3\\cdot5$, so $\\dfrac{7}{40}$ terminates.",
     "rating": 700,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Does $\\dfrac{21}{56}$ have a terminating decimal? Answer Yes or No.",
+    "statement": "Does $\\dfrac{42}{60}$ have a terminating decimal? Answer Yes or No.",
     "answer": "Yes",
-    "solution": "Reduce first: $\\dfrac{21}{56} = \\dfrac{3}{8}$, and $8 = 2^3$, so it terminates.",
+    "solution": "Reduce first: $\\dfrac{42}{60} = \\dfrac{7}{10}$, and $10 = 2\\cdot5$, so it terminates.",
     "rating": 700,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many of $\\dfrac{3}{14}$, $\\dfrac{9}{16}$, $\\dfrac{11}{30}$, $\\dfrac{13}{40}$ have terminating decimals?",
+    "statement": "How many of $\\dfrac{3}{28}$, $\\dfrac{11}{50}$, $\\dfrac{7}{45}$, $\\dfrac{3}{32}$ have terminating decimals?",
     "answer": "2",
-    "solution": "$\\dfrac{9}{16}$ and $\\dfrac{13}{40}$ terminate; $14$ and $30$ carry primes other than $2,5$. That is $2$.",
+    "solution": "$\\dfrac{11}{50}$ and $\\dfrac{3}{32}$ terminate; $28$ and $45$ carry primes other than $2,5$. That is $2$.",
     "rating": 700,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "For how many integers $n$ with $1 \\le n \\le 20$ does $\\dfrac{1}{n}$ have a terminating decimal?",
+    "statement": "For how many integers $n$ with $1 \\le n \\le 18$ does $\\dfrac{1}{n}$ have a terminating decimal?",
+    "answer": "7",
+    "solution": "The terminating cases are $n = 1,2,4,5,8,10,16$ — that is $7$.",
+    "rating": 700,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For exactly one integer $n$ with $31 < n < 40$, the fraction $\\dfrac{1}{n}$ terminates. What is $n$?",
+    "answer": "32",
+    "solution": "Between $31$ and $40$ the only number whose primes are just $2$ and $5$ is $32 = 2^5$.",
+    "rating": 700,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest integer $n < 60$ for which $\\dfrac{1}{n}$ has a terminating decimal?",
+    "answer": "50",
+    "solution": "We need only primes $2,5$. Under $60$ the largest such number is $50 = 2\\cdot5^2$.",
+    "rating": 700,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Which one of $\\dfrac{14}{35}$, $\\dfrac{22}{45}$, $\\dfrac{3}{22}$ has a terminating decimal?",
+    "answer": "14/35",
+    "solution": "$\\dfrac{14}{35} = \\dfrac{2}{5}$ terminates (its $7$s cancel); $45 = 3^2\\cdot5$ and $22 = 2\\cdot11$ keep other primes.",
+    "rating": 740,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Does $\\dfrac{51}{60}$ have a terminating decimal? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "$\\dfrac{51}{60} = \\dfrac{17}{20}$ after reducing, and $20 = 2^2\\cdot5$, so it terminates despite the $3$ in $60$.",
+    "rating": 740,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of $\\dfrac{26}{65}$, $\\dfrac{45}{72}$, $\\dfrac{21}{56}$, $\\dfrac{13}{30}$ have terminating decimals?",
+    "answer": "3",
+    "solution": "$\\dfrac{26}{65}=\\dfrac{2}{5}$, $\\dfrac{45}{72}=\\dfrac{5}{8}$, $\\dfrac{21}{56}=\\dfrac{3}{8}$ terminate; $\\dfrac{13}{30}$ repeats. That is $3$.",
+    "rating": 740,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For how many integers $n$ with $1 \\le n \\le 24$ does $\\dfrac{1}{n}$ have a terminating decimal?",
     "answer": "8",
     "solution": "The terminating cases are $n = 1,2,4,5,8,10,16,20$ — that is $8$.",
-    "rating": 700,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "For exactly one integer $n$ with $30 < n < 40$, the fraction $\\dfrac{1}{n}$ terminates. What is $n$?",
-    "answer": "32",
-    "solution": "Between $30$ and $40$ the only number whose primes are just $2$ and $5$ is $32 = 2^5$.",
-    "rating": 700,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the largest integer $n < 50$ for which $\\dfrac{1}{n}$ has a terminating decimal?",
-    "answer": "40",
-    "solution": "We need only primes $2,5$. Under $50$ the largest such number is $40 = 2^3\\cdot5$ ($80$ and $50$ are too big or excluded).",
-    "rating": 700,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Which one of $\\dfrac{14}{21}$, $\\dfrac{22}{45}$, $\\dfrac{33}{40}$ has a terminating decimal?",
-    "answer": "33/40",
-    "solution": "$\\dfrac{14}{21} = \\dfrac{2}{3}$ repeats and $45 = 3^2\\cdot5$ repeats; $40 = 2^3\\cdot5$, so $\\dfrac{33}{40}$ terminates.",
     "rating": 740,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Does $\\dfrac{45}{72}$ have a terminating decimal? Answer Yes or No.",
-    "answer": "Yes",
-    "solution": "$\\dfrac{45}{72} = \\dfrac{5}{8}$ after reducing, and $8 = 2^3$, so it terminates despite the $3$ in $72$.",
-    "rating": 740,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many of $\\dfrac{26}{65}$, $\\dfrac{9}{24}$, $\\dfrac{7}{28}$, $\\dfrac{5}{24}$ have terminating decimals?",
-    "answer": "3",
-    "solution": "$\\dfrac{26}{65}=\\dfrac{2}{5}$, $\\dfrac{9}{24}=\\dfrac{3}{8}$, $\\dfrac{7}{28}=\\dfrac{1}{4}$ all terminate; $\\dfrac{5}{24}$ repeats. That is $3$.",
-    "rating": 740,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "For how many integers $n$ with $1 \\le n \\le 30$ does $\\dfrac{1}{n}$ have a terminating decimal?",
-    "answer": "9",
-    "solution": "The terminating cases are $n = 1,2,4,5,8,10,16,20,25$ — that is $9$.",
-    "rating": 740,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "For exactly one integer $n$ with $45 < n < 55$, the fraction $\\dfrac{1}{n}$ terminates. What is $n$?",
+    "statement": "For exactly one integer $n$ with $46 < n < 55$, the fraction $\\dfrac{1}{n}$ terminates. What is $n$?",
     "answer": "50",
-    "solution": "Between $45$ and $55$ the only number whose primes are just $2$ and $5$ is $50 = 2\\cdot5^2$.",
+    "solution": "Between $46$ and $55$ the only number whose primes are just $2$ and $5$ is $50 = 2\\cdot5^2$.",
     "rating": 740,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the largest integer $n < 100$ for which $\\dfrac{1}{n}$ has a terminating decimal?",
+    "statement": "What is the largest integer $n < 90$ for which $\\dfrac{1}{n}$ has a terminating decimal?",
     "answer": "80",
-    "solution": "We need only primes $2,5$. Under $100$ the largest such number is $80 = 2^4\\cdot5$.",
+    "solution": "We need only primes $2,5$. Under $90$ the largest such number is $80 = 2^4\\cdot5$.",
     "rating": 740,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
@@ -345,7 +345,7 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "When $0.\\overline{18}$ is written as a fraction $\\dfrac{p}{q}$ in lowest terms, what is $p + q$?",
+    "statement": "When $0.\\overline{18}$ is written as a fraction $\\tfrac{p}{q}$ in lowest terms, what is $p + q$?",
     "answer": "13",
     "solution": "$0.\\overline{18} = \\dfrac{18}{99} = \\dfrac{2}{11}$, so $p + q = 2 + 11 = 13$.",
     "rating": 780,
@@ -361,7 +361,7 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "When $0.\\overline{6}$ is written as a fraction $\\dfrac{p}{q}$ in lowest terms, what is $p + q$?",
+    "statement": "When $0.\\overline{6}$ is written as a fraction $\\tfrac{p}{q}$ in lowest terms, what is $p + q$?",
     "answer": "5",
     "solution": "$0.\\overline{6} = \\dfrac{6}{9} = \\dfrac{2}{3}$, so $p + q = 2 + 3 = 5$.",
     "rating": 780,
@@ -377,7 +377,7 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "When $0.\\overline{09}$ is written as a fraction $\\dfrac{p}{q}$ in lowest terms, what is $p + q$?",
+    "statement": "When $0.\\overline{09}$ is written as a fraction $\\tfrac{p}{q}$ in lowest terms, what is $p + q$?",
     "answer": "12",
     "solution": "$0.\\overline{09} = \\dfrac{9}{99} = \\dfrac{1}{11}$, so $p + q = 1 + 11 = 12$.",
     "rating": 780,
@@ -393,41 +393,41 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Which of $\\dfrac{1}{7}$, $\\dfrac{1}{11}$, $\\dfrac{1}{37}$ has the longest repeating block?",
-    "answer": "1/7",
-    "solution": "The block lengths are $6$, $2$, and $3$; the longest belongs to $\\dfrac{1}{7}$.",
-    "rating": 820,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
     "statement": "Given that $\\dfrac{1}{7} = 0.\\overline{142857}$, how many digits are in the repeating block of $\\dfrac{3}{7}$?",
     "answer": "6",
-    "solution": "Every fraction with denominator $7$ shares the same cycle of remainders, so $\\dfrac{3}{7}$ also has a $6$-digit block.",
+    "solution": "Every fraction with denominator $7$ shares the same remainder cycle, so $\\dfrac{3}{7}$ also has a $6$-digit block.",
     "rating": 820,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "The repeating blocks of $\\dfrac{1}{13}$ and $\\dfrac{1}{11}$ differ in length. By how many digits?",
-    "answer": "4",
-    "solution": "$\\dfrac{1}{13}$ has a $6$-digit block and $\\dfrac{1}{11}$ a $2$-digit block, a difference of $6 - 2 = 4$.",
+    "statement": "The repeating blocks of $\\dfrac{1}{21}$ and $\\dfrac{1}{27}$ differ in length. By how many digits?",
+    "answer": "3",
+    "solution": "$\\dfrac{1}{21}$ has a $6$-digit block and $\\dfrac{1}{27}$ a $3$-digit block, a difference of $6 - 3 = 3$.",
     "rating": 820,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "For exactly one of $n = 7, 11, 27$, the decimal $\\dfrac{1}{n}$ has a repeating block of exactly $6$ digits. Which $n$?",
+    "statement": "Which of $\\dfrac{2}{7}$, $\\dfrac{4}{11}$, $\\dfrac{2}{37}$ has the longest repeating block?",
+    "answer": "2/7",
+    "solution": "The block lengths are $6$, $2$, and $3$; the longest belongs to $\\dfrac{2}{7}$.",
+    "rating": 820,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Exactly one of $\\dfrac{4}{7}$, $\\dfrac{5}{11}$, $\\dfrac{4}{27}$ has a repeating block of exactly $6$ digits. Which one?",
+    "answer": "4/7",
+    "solution": "The block lengths are $6$, $2$, $3$; only $\\dfrac{4}{7}$ has $6$ digits.",
+    "rating": 820,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Written as repeating decimals, $\\dfrac{1}{143}$ and $\\dfrac{1}{3}$ have repeating blocks. What is the combined number of digits in the two blocks?",
     "answer": "7",
-    "solution": "The block lengths are $6$ (for $7$), $2$ (for $11$), $3$ (for $27$); only $n = 7$ gives $6$.",
-    "rating": 820,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Written as repeating decimals, $\\dfrac{1}{7}$ and $\\dfrac{1}{11}$ have repeating blocks. What is the combined number of digits in the two blocks?",
-    "answer": "8",
-    "solution": "The blocks have $6$ and $2$ digits, for a total of $6 + 2 = 8$.",
+    "solution": "The blocks have $6$ and $1$ digits, for a total of $6 + 1 = 7$.",
     "rating": 820,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
@@ -441,41 +441,41 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Which of $\\dfrac{1}{11}$, $\\dfrac{1}{27}$, $\\dfrac{1}{41}$ has the longest repeating block?",
-    "answer": "1/41",
-    "solution": "The block lengths are $2$, $3$, and $5$; the longest belongs to $\\dfrac{1}{41}$.",
-    "rating": 860,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Given that $\\dfrac{1}{13} = 0.\\overline{076923}$, how many digits are in the repeating block of $\\dfrac{5}{13}$?",
-    "answer": "6",
-    "solution": "All fractions with denominator $13$ share the same remainder cycle, so $\\dfrac{5}{13}$ also has a $6$-digit block.",
-    "rating": 860,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "The repeating blocks of $\\dfrac{1}{41}$ and $\\dfrac{1}{11}$ differ in length. By how many digits?",
+    "statement": "Given that $\\dfrac{1}{37} = 0.\\overline{027}$, how many digits are in the repeating block of $\\dfrac{10}{37}$?",
     "answer": "3",
-    "solution": "$\\dfrac{1}{41}$ has a $5$-digit block and $\\dfrac{1}{11}$ a $2$-digit block, a difference of $5 - 2 = 3$.",
+    "solution": "All fractions with denominator $37$ share the same remainder cycle, so $\\dfrac{10}{37}$ also has a $3$-digit block.",
     "rating": 860,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "For exactly one of $n = 11, 37, 41$, the decimal $\\dfrac{1}{n}$ has a repeating block of exactly $3$ digits. Which $n$?",
-    "answer": "37",
-    "solution": "The block lengths are $2$ (for $11$), $3$ (for $37$), $5$ (for $41$); only $n = 37$ gives $3$.",
+    "statement": "The repeating blocks of $\\dfrac{1}{39}$ and $\\dfrac{1}{11}$ differ in length. By how many digits?",
+    "answer": "4",
+    "solution": "$\\dfrac{1}{39}$ has a $6$-digit block and $\\dfrac{1}{11}$ a $2$-digit block, a difference of $6 - 2 = 4$.",
     "rating": 860,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Written as repeating decimals, $\\dfrac{1}{13}$ and $\\dfrac{1}{37}$ have repeating blocks. What is the combined number of digits in the two blocks?",
-    "answer": "9",
-    "solution": "The blocks have $6$ and $3$ digits, for a total of $6 + 3 = 9$.",
+    "statement": "Which of $\\dfrac{5}{13}$, $\\dfrac{2}{33}$, $\\dfrac{2}{41}$ has the longest repeating block?",
+    "answer": "5/13",
+    "solution": "The block lengths are $6$, $2$, and $5$; the longest belongs to $\\dfrac{5}{13}$.",
+    "rating": 860,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Exactly one of $\\dfrac{5}{7}$, $\\dfrac{9}{11}$, $\\dfrac{5}{27}$ has a repeating block of exactly $3$ digits. Which one?",
+    "answer": "5/27",
+    "solution": "The block lengths are $6$, $2$, $3$; only $\\dfrac{5}{27}$ has $3$ digits.",
+    "rating": 860,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Written as repeating decimals, $\\dfrac{1}{91}$ and $\\dfrac{1}{99}$ have repeating blocks. What is the combined number of digits in the two blocks?",
+    "answer": "8",
+    "solution": "The blocks have $6$ and $2$ digits, for a total of $6 + 2 = 8$.",
     "rating": 860,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
@@ -489,33 +489,33 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Which of $\\dfrac{1}{13}$, $\\dfrac{1}{33}$, $\\dfrac{1}{101}$ has the longest repeating block?",
-    "answer": "1/13",
-    "solution": "The block lengths are $6$, $2$, and $4$; the longest belongs to $\\dfrac{1}{13}$.",
+    "statement": "Given that $\\dfrac{1}{33} = 0.\\overline{03}$, how many digits are in the repeating block of $\\dfrac{5}{33}$?",
+    "answer": "2",
+    "solution": "All fractions with denominator $33$ share the same remainder cycle, so $\\dfrac{5}{33}$ also has a $2$-digit block.",
     "rating": 900,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Given that $\\dfrac{1}{7} = 0.\\overline{142857}$, how many digits are in the repeating block of $\\dfrac{4}{7}$?",
-    "answer": "6",
-    "solution": "Every seventh shares the same remainder cycle, so $\\dfrac{4}{7}$ also has a $6$-digit block.",
+    "statement": "The repeating blocks of $\\dfrac{1}{77}$ and $\\dfrac{1}{9}$ differ in length. By how many digits?",
+    "answer": "5",
+    "solution": "$\\dfrac{1}{77}$ has a $6$-digit block and $\\dfrac{1}{9}$ a $1$-digit block, a difference of $6 - 1 = 5$.",
     "rating": 900,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "For exactly one of $n = 3, 11, 21$, the decimal $\\dfrac{1}{n}$ has a repeating block of exactly $6$ digits. Which $n$?",
-    "answer": "21",
-    "solution": "The block lengths are $1$ (for $3$), $2$ (for $11$), $6$ (for $21$); only $n = 21$ gives $6$.",
+    "statement": "Which of $\\dfrac{8}{11}$, $\\dfrac{2}{27}$, $\\dfrac{4}{41}$ has the longest repeating block?",
+    "answer": "4/41",
+    "solution": "The block lengths are $2$, $3$, and $5$; the longest belongs to $\\dfrac{4}{41}$.",
     "rating": 900,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Written as repeating decimals, $\\dfrac{1}{41}$ and $\\dfrac{1}{27}$ have repeating blocks. What is the combined number of digits in the two blocks?",
-    "answer": "8",
-    "solution": "The blocks have $5$ and $3$ digits, for a total of $5 + 3 = 8$.",
+    "statement": "Exactly one of $\\dfrac{6}{7}$, $\\dfrac{10}{11}$, $\\dfrac{7}{27}$ has a repeating block of exactly $2$ digits. Which one?",
+    "answer": "10/11",
+    "solution": "The block lengths are $6$, $2$, $3$; only $\\dfrac{10}{11}$ has $2$ digits.",
     "rating": 900,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
@@ -531,151 +531,151 @@
     "type": "SHORT_ANSWER",
     "statement": "The fraction $\\dfrac{4}{37}$ can be written as $\\dfrac{k}{999}$ for some integer $k$. What is $k$?",
     "answer": "108",
-    "solution": "Since $999 = 27\\cdot37$, scaling by $27$ gives $\\dfrac{4}{37} = \\dfrac{4\\cdot27}{999} = \\dfrac{108}{999}$, so $k = 108$.",
+    "solution": "Since $999 = 27\\cdot37$, scaling by $27$ gives $\\dfrac{4}{37} = \\dfrac{108}{999}$, so $k = 108$.",
     "rating": 940,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "When $\\dfrac{1}{13}$ is written as a repeating decimal, what is the sum of the digits in its repeating block?",
-    "answer": "27",
-    "solution": "$\\dfrac{1}{13} = 0.\\overline{076923}$, and $0+7+6+9+2+3 = 27$.",
-    "rating": 940,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "The fraction $\\dfrac{1}{27}$ can be written as $\\dfrac{k}{999}$ for some integer $k$. What is $k$?",
-    "answer": "37",
-    "solution": "Since $999 = 27\\cdot37$, $\\dfrac{1}{27} = \\dfrac{37}{999}$, so $k = 37$.",
-    "rating": 940,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "When $\\dfrac{1}{41}$ is written as a repeating decimal, what is the sum of the digits in its repeating block?",
-    "answer": "18",
-    "solution": "$\\dfrac{1}{41} = 0.\\overline{02439}$, and $0+2+4+3+9 = 18$.",
-    "rating": 940,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the $50$th digit after the decimal point in $\\dfrac{1}{7}$?",
-    "answer": "4",
-    "solution": "$1/7 = 0.\\overline{142857}$, period $6$. Since $50 \\equiv 2 \\pmod 6$, the digit is the $2$nd of the block: $4$.",
-    "rating": 980,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "In the repeating decimal for $\\dfrac{1}{7} = 0.142857\\ldots$, in which decimal place does the digit $8$ first appear?",
-    "answer": "4",
-    "solution": "The block is $142857$, so $8$ first appears in the $4$th decimal place.",
-    "rating": 980,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the sum of the first $6$ digits after the decimal point in $\\dfrac{1}{13}$?",
-    "answer": "27",
-    "solution": "The first $6$ digits are the block $076923$, summing to $0+7+6+9+2+3 = 27$.",
-    "rating": 980,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "How many times does the digit $1$ appear among the first $12$ digits after the decimal point in $\\dfrac{1}{7}$?",
-    "answer": "2",
-    "solution": "$1/7 = 0.\\overline{142857}$ contains one $1$ per $6$-digit block, so in $12$ places it appears $2$ times.",
-    "rating": 980,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "The decimal for $\\dfrac{5}{11}$ is $0.\\overline{45}$. What is its $33$rd digit after the decimal point?",
-    "answer": "4",
-    "solution": "The period is $2$, and $33$ is odd, so the digit is the $1$st of the block: $4$.",
-    "rating": 980,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the $40$th digit after the decimal point in $\\dfrac{1}{13}$?",
+    "statement": "When $\\dfrac{5}{37}$ is written as a repeating decimal, what is the sum of the digits in its repeating block?",
     "answer": "9",
-    "solution": "$1/13 = 0.\\overline{076923}$, period $6$. Since $40 \\equiv 4 \\pmod 6$, the digit is the $4$th of the block: $9$.",
-    "rating": 1020,
+    "solution": "$\\dfrac{5}{37} = \\dfrac{135}{999} = 0.\\overline{135}$, and $1+3+5 = 9$.",
+    "rating": 940,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "In the repeating decimal for $\\dfrac{1}{7} = 0.142857\\ldots$, in which decimal place does the digit $7$ first appear?",
-    "answer": "6",
-    "solution": "The block is $142857$, so $7$ first appears in the $6$th decimal place.",
-    "rating": 1020,
+    "statement": "The fraction $\\dfrac{10}{27}$ can be written as $\\dfrac{k}{999}$ for some integer $k$. What is $k$?",
+    "answer": "370",
+    "solution": "Since $999 = 27\\cdot37$, scaling by $37$ gives $\\dfrac{10}{27} = \\dfrac{370}{999}$, so $k = 370$.",
+    "rating": 940,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the sum of the first $12$ digits after the decimal point in $\\dfrac{1}{7}$?",
-    "answer": "54",
-    "solution": "Twelve digits is two full blocks of $142857$ (each summing to $27$), so the total is $2\\cdot27 = 54$.",
-    "rating": 1020,
+    "statement": "When $\\dfrac{9}{41}$ is written as a repeating decimal, what is the sum of the digits in its repeating block?",
+    "answer": "18",
+    "solution": "$\\dfrac{9}{41} = 0.\\overline{21951}$, and $2+1+9+5+1 = 18$.",
+    "rating": 940,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many times does the digit $7$ appear among the first $18$ digits after the decimal point in $\\dfrac{1}{7}$?",
-    "answer": "3",
-    "solution": "Each $6$-digit block $142857$ contains one $7$, so in $18$ places (three blocks) it appears $3$ times.",
-    "rating": 1020,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "The decimal for $\\dfrac{1}{27}$ is $0.\\overline{037}$. What is its $50$th digit after the decimal point?",
-    "answer": "3",
-    "solution": "The period is $3$, and $50 \\equiv 2 \\pmod 3$, so the digit is the $2$nd of the block: $3$.",
-    "rating": 1020,
-    "source": "AMC 8 · Repeating & Terminating Decimals"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the $100$th digit after the decimal point in $\\dfrac{3}{7}$?",
+    "statement": "What is the $50$th digit after the decimal point in $\\dfrac{2}{13}$?",
     "answer": "5",
-    "solution": "$3/7 = 0.\\overline{428571}$, period $6$. Since $100 \\equiv 4 \\pmod 6$, the digit is the $4$th of the block: $5$.",
-    "rating": 1060,
+    "solution": "$2/13 = 0.\\overline{153846}$, period $6$. Since $50 \\equiv 2 \\pmod 6$, the digit is the $2$nd of the block: $5$.",
+    "rating": 980,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "In the repeating decimal for $\\dfrac{1}{13} = 0.076923\\ldots$, in which decimal place does the digit $9$ first appear?",
-    "answer": "4",
-    "solution": "The block is $076923$, so $9$ first appears in the $4$th decimal place.",
-    "rating": 1060,
+    "statement": "The decimal for $\\dfrac{7}{11}$ is $0.\\overline{63}$. What is its $33$rd digit after the decimal point?",
+    "answer": "6",
+    "solution": "The period is $2$, and $33$ is odd, so the digit is the $1$st of the block: $6$.",
+    "rating": 980,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "What is the sum of the first $18$ digits after the decimal point in $\\dfrac{1}{13}$?",
-    "answer": "81",
-    "solution": "Eighteen digits is three full blocks of $076923$ (each summing to $27$), so the total is $3\\cdot27 = 81$.",
-    "rating": 1060,
+    "statement": "What is the sum of the first $6$ digits after the decimal point in $\\dfrac{3}{13}$?",
+    "answer": "27",
+    "solution": "The first six digits are the block $230769$, summing to $2+3+0+7+6+9 = 27$.",
+    "rating": 980,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "How many times does the digit $2$ appear among the first $12$ digits after the decimal point in $\\dfrac{1}{13}$?",
+    "statement": "In the repeating decimal for $\\dfrac{8}{13} = 0.615384\\ldots$, in which decimal place does the digit $5$ first appear?",
+    "answer": "3",
+    "solution": "The block is $615384$, so $5$ first appears in the $3$rd decimal place.",
+    "rating": 980,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many times does the digit $3$ appear among the first $12$ digits after the decimal point in $\\dfrac{11}{13}$?",
     "answer": "2",
-    "solution": "Each $6$-digit block $076923$ contains one $2$, so in $12$ places (two blocks) it appears $2$ times.",
+    "solution": "$11/13 = 0.\\overline{846153}$ has one $3$ per $6$-digit block, so in $12$ places it appears $2$ times.",
+    "rating": 980,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $40$th digit after the decimal point in $\\dfrac{3}{41}$?",
+    "answer": "7",
+    "solution": "$3/41 = 0.\\overline{07317}$, period $5$. Since $40 \\equiv 0 \\pmod 5$, the digit is the last of the block: $7$.",
+    "rating": 1020,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The decimal for $\\dfrac{4}{13}$ is $0.\\overline{307692}$. What is its $40$th digit after the decimal point?",
+    "answer": "6",
+    "solution": "The period is $6$, and $40 \\equiv 4 \\pmod 6$, so the digit is the $4$th of the block: $6$.",
+    "rating": 1020,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of the first $10$ digits after the decimal point in $\\dfrac{5}{41}$?",
+    "answer": "36",
+    "solution": "Ten digits is two full blocks of $12195$ (each summing to $18$), so the total is $2\\cdot18 = 36$.",
+    "rating": 1020,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "In the repeating decimal for $\\dfrac{9}{13} = 0.692307\\ldots$, in which decimal place does the digit $0$ first appear?",
+    "answer": "5",
+    "solution": "The block is $692307$, so $0$ first appears in the $5$th decimal place.",
+    "rating": 1020,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many times does the digit $2$ appear among the first $9$ digits after the decimal point in $\\dfrac{6}{37}$?",
+    "answer": "3",
+    "solution": "$6/37 = 0.\\overline{162}$ has one $2$ per $3$-digit block, so in $9$ places it appears $3$ times.",
+    "rating": 1020,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the $100$th digit after the decimal point in $\\dfrac{6}{13}$?",
+    "answer": "5",
+    "solution": "$6/13 = 0.\\overline{461538}$, period $6$. Since $100 \\equiv 4 \\pmod 6$, the digit is the $4$th of the block: $5$.",
     "rating": 1060,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "The decimal for $\\dfrac{1}{37}$ is $0.\\overline{027}$. What is its $47$th digit after the decimal point?",
+    "statement": "The decimal for $\\dfrac{8}{27}$ is $0.\\overline{296}$. What is its $50$th digit after the decimal point?",
+    "answer": "9",
+    "solution": "The period is $3$, and $50 \\equiv 2 \\pmod 3$, so the digit is the $2$nd of the block: $9$.",
+    "rating": 1060,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the sum of the first $12$ digits after the decimal point in $\\dfrac{7}{13}$?",
+    "answer": "54",
+    "solution": "Twelve digits is two full blocks of $538461$ (each summing to $27$), so the total is $2\\cdot27 = 54$.",
+    "rating": 1060,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "In the repeating decimal for $\\dfrac{3}{37} = 0.081081\\ldots$, in which decimal place does the digit $8$ first appear?",
     "answer": "2",
-    "solution": "The period is $3$, and $47 \\equiv 2 \\pmod 3$, so the digit is the $2$nd of the block: $2$.",
+    "solution": "The block is $081$, so $8$ first appears in the $2$nd decimal place.",
+    "rating": 1060,
+    "source": "AMC 8 · Repeating & Terminating Decimals"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many times does the digit $9$ appear among the first $12$ digits after the decimal point in $\\dfrac{12}{13}$?",
+    "answer": "2",
+    "solution": "$12/13 = 0.\\overline{923076}$ has one $9$ per $6$-digit block, so in $12$ places it appears $2$ times.",
     "rating": 1060,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
@@ -689,9 +689,9 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "The decimal for $\\dfrac{7}{12}$ is $0.58\\overline{3}$. What is the last digit before the repeating block begins?",
-    "answer": "8",
-    "solution": "The two non-repeating digits are $5$ and $8$, so the digit just before the block is $8$.",
+    "statement": "The decimal for $\\dfrac{11}{12}$ is $0.91\\overline{6}$. What is the last digit before the repeating block begins?",
+    "answer": "1",
+    "solution": "The two non-repeating digits are $9$ and $1$, so the digit just before the block is $1$.",
     "rating": 1100,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
@@ -705,17 +705,17 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Before their repeating blocks begin, $\\dfrac{1}{24}$ has more non-repeating digits than $\\dfrac{1}{6}$. How many more?",
+    "statement": "Before their repeating blocks begin, $\\dfrac{1}{24}$ has more non-repeating digits than $\\dfrac{1}{18}$. How many more?",
     "answer": "2",
-    "solution": "$1/24$ has $\\max(3,0)=3$ non-repeating digits and $1/6$ has $1$, a difference of $3 - 1 = 2$.",
+    "solution": "$1/24$ has $\\max(3,0)=3$ non-repeating digits and $1/18$ has $1$, a difference of $3 - 1 = 2$.",
     "rating": 1100,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Among $\\dfrac{1}{12}$, $\\dfrac{1}{24}$, $\\dfrac{7}{15}$, which has the most non-repeating digits before its repeating block?",
-    "answer": "1/24",
-    "solution": "The counts are $2$, $3$, and $1$; the most belongs to $\\dfrac{1}{24}$.",
+    "statement": "Among $\\dfrac{7}{18}$, $\\dfrac{13}{24}$, $\\dfrac{7}{15}$, which has the most non-repeating digits before its repeating block?",
+    "answer": "13/24",
+    "solution": "The counts are $1$, $3$, and $1$; the most belongs to $\\dfrac{13}{24}$.",
     "rating": 1100,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
@@ -729,9 +729,9 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "The decimal for $\\dfrac{5}{24}$ is $0.208\\overline{3}$. What is the last digit before the repeating block begins?",
+    "statement": "The decimal for $\\dfrac{17}{24}$ is $0.708\\overline{3}$. What is the last digit before the repeating block begins?",
     "answer": "8",
-    "solution": "The three non-repeating digits are $2$, $0$, $8$, so the digit just before the block is $8$.",
+    "solution": "The three non-repeating digits are $7$, $0$, $8$, so the digit just before the block is $8$.",
     "rating": 1145,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
@@ -753,9 +753,9 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Among $\\dfrac{1}{18}$, $\\dfrac{1}{28}$, $\\dfrac{1}{48}$, which has the most non-repeating digits before its repeating block?",
-    "answer": "1/48",
-    "solution": "The counts are $1$, $2$, and $4$; the most belongs to $\\dfrac{1}{48}$.",
+    "statement": "Among $\\dfrac{5}{18}$, $\\dfrac{11}{24}$, $\\dfrac{11}{30}$, which has the most non-repeating digits before its repeating block?",
+    "answer": "11/24",
+    "solution": "The counts are $1$, $3$, and $1$; the most belongs to $\\dfrac{11}{24}$.",
     "rating": 1145,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
@@ -777,25 +777,25 @@
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "If $x + 0.25 = 0.\\overline{6}$, what is $x$ as a fraction in lowest terms?",
-    "answer": "5/12",
-    "solution": "$0.\\overline{6} = \\dfrac{2}{3}$ and $0.25 = \\dfrac{1}{4}$, so $x = \\dfrac{2}{3} - \\dfrac{1}{4} = \\dfrac{5}{12}$.",
+    "statement": "If $x + 0.25 = 0.\\overline{7}$, what is $x$ as a fraction in lowest terms?",
+    "answer": "19/36",
+    "solution": "$0.\\overline{7} = \\dfrac{7}{9}$ and $0.25 = \\dfrac{1}{4}$, so $x = \\dfrac{7}{9} - \\dfrac{1}{4} = \\dfrac{19}{36}$.",
     "rating": 1190,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "If $x - 0.25 = 0.\\overline{6}$, what is the $3$rd digit after the decimal point of $x$?",
-    "answer": "6",
-    "solution": "$x = \\dfrac{1}{4} + \\dfrac{2}{3} = \\dfrac{11}{12} = 0.91\\overline{6}$, whose $3$rd decimal digit is $6$.",
+    "statement": "If $x - 0.05 = 0.\\overline{54}$, what is the $3$rd digit after the decimal point of $x$?",
+    "answer": "5",
+    "solution": "$x = \\dfrac{1}{20} + \\dfrac{54}{99} = \\dfrac{131}{220} = 0.59\\overline{54}$, whose $3$rd decimal digit is $5$.",
     "rating": 1190,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "If $0.1 + x = 0.\\overline{1}$, what is $x$ as a fraction in lowest terms?",
-    "answer": "1/90",
-    "solution": "$0.\\overline{1} = \\dfrac{1}{9}$ and $0.1 = \\dfrac{1}{10}$, so $x = \\dfrac{1}{9} - \\dfrac{1}{10} = \\dfrac{1}{90}$.",
+    "statement": "If $0.2 + x = 0.\\overline{81}$, what is $x$ as a fraction in lowest terms?",
+    "answer": "34/55",
+    "solution": "$0.\\overline{81} = \\dfrac{81}{99} = \\dfrac{9}{11}$ and $0.2 = \\dfrac{1}{5}$, so $x = \\dfrac{9}{11} - \\dfrac{1}{5} = \\dfrac{34}{55}$.",
     "rating": 1190,
     "source": "AMC 8 · Repeating & Terminating Decimals"
   }

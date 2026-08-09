@@ -1,1 +1,802 @@
-[]
+[
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $5142$ divisible by $3$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "The digit sum is $5+1+4+2 = 12$, which is divisible by $3$, so yes.",
+    "rating": 450,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $7516$ divisible by $4$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "The last two digits form $16$, which is divisible by $4$, so yes.",
+    "rating": 450,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $3416$ divisible by $8$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "The last three digits form $416 = 8\\times52$, which is divisible by $8$, so yes.",
+    "rating": 450,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $2915$ divisible by $11$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "The alternating digit sum $5-1+9-2 = 11$ is divisible by $11$, so yes.",
+    "rating": 450,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $4128$ divisible by $6$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "It is even, and its digit sum $4+1+2+8 = 15$ is divisible by $3$, so it is divisible by $6$.",
+    "rating": 450,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $5231$ is divided by $9$?",
+    "answer": "2",
+    "solution": "The remainder mod $9$ equals the digit sum mod $9$: $5+2+3+1 = 11$, and $11 = 9 + 2$, so the remainder is $2$.",
+    "rating": 450,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $7268$ divisible by $3$? Answer Yes or No.",
+    "answer": "No",
+    "solution": "The digit sum is $7+2+6+8 = 23$, which is not divisible by $3$, so no.",
+    "rating": 500,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $6453$ divisible by $9$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "The digit sum is $6+4+5+3 = 18$, which is divisible by $9$, so yes.",
+    "rating": 500,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $5140$ divisible by $8$? Answer Yes or No.",
+    "answer": "No",
+    "solution": "The last three digits form $140$, and $140 = 8\\times17 + 4$ is not divisible by $8$, so no.",
+    "rating": 500,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $6394$ divisible by $11$? Answer Yes or No.",
+    "answer": "No",
+    "solution": "The alternating digit sum $4-9+3-6 = -8$ is not divisible by $11$, so no.",
+    "rating": 500,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $4530$ divisible by $10$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "Its last digit is $0$, so it is divisible by $10$.",
+    "rating": 500,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $7046$ is divided by $9$?",
+    "answer": "8",
+    "solution": "The digit sum is $7+0+4+6 = 17$, and $17 = 9 + 8$, so the remainder is $8$.",
+    "rating": 500,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $8110$ divisible by $9$? Answer Yes or No.",
+    "answer": "No",
+    "solution": "The digit sum is $8+1+1+0 = 10$, which is not divisible by $9$, so no.",
+    "rating": 550,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $9338$ divisible by $4$? Answer Yes or No.",
+    "answer": "No",
+    "solution": "The last two digits form $38$, and $38 = 4\\times9 + 2$ is not divisible by $4$, so no.",
+    "rating": 550,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $7624$ divisible by $8$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "The last three digits form $624 = 8\\times78$, which is divisible by $8$, so yes.",
+    "rating": 550,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $5314$ divisible by $6$? Answer Yes or No.",
+    "answer": "No",
+    "solution": "It is even, but its digit sum $5+3+1+4 = 13$ is not divisible by $3$, so it is not divisible by $6$.",
+    "rating": 550,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $6725$ divisible by $10$? Answer Yes or No.",
+    "answer": "No",
+    "solution": "Its last digit is $5$, not $0$, so it is not divisible by $10$.",
+    "rating": 550,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $4853$ is divided by $9$?",
+    "answer": "2",
+    "solution": "The digit sum is $4+8+5+3 = 20$, and $20 = 18 + 2$, so the remainder is $2$.",
+    "rating": 550,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $24813$ divisible by $3$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "The digit sum is $2+4+8+1+3 = 18$, which is divisible by $3$, so yes.",
+    "rating": 600,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $51237$ divisible by $9$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "The digit sum is $5+1+2+3+7 = 18$, which is divisible by $9$, so yes.",
+    "rating": 600,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $32748$ divisible by $4$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "The last two digits form $48 = 4\\times12$, which is divisible by $4$, so yes.",
+    "rating": 600,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $90728$ divisible by $11$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "The alternating digit sum $8-2+7-0+9 = 22$ is divisible by $11$, so yes.",
+    "rating": 600,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $27564$ divisible by $6$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "It is even, and its digit sum $2+7+5+6+4 = 24$ is divisible by $3$, so it is divisible by $6$.",
+    "rating": 600,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $38090$ divisible by $10$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "Its last digit is $0$, so it is divisible by $10$.",
+    "rating": 600,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For which digit $d$ is $\\overline{3d5}$ divisible by $9$?",
+    "answer": "1",
+    "solution": "Need $3+d+5 = 8+d \\equiv 0 \\pmod 9$, so $d = 1$ (giving digit sum $9$).",
+    "rating": 650,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For which digit $d$ (with $d \\neq 0$) is $\\overline{d436}$ divisible by $9$?",
+    "answer": "5",
+    "solution": "Need $d+4+3+6 = d+13 \\equiv 0 \\pmod 9$, so $d = 5$ (giving digit sum $18$).",
+    "rating": 650,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For which digit $d$ is $\\overline{2d63}$ divisible by $11$?",
+    "answer": "5",
+    "solution": "The alternating sum is $3-6+d-2 = d-5$; setting $d-5 \\equiv 0 \\pmod{11}$ gives $d = 5$.",
+    "rating": 650,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest digit $d$ for which $\\overline{73d}$ is divisible by $4$?",
+    "answer": "6",
+    "solution": "$\\overline{73d} = 730+d$ is divisible by $4$ when $30+d \\equiv 0 \\pmod 4$, i.e. $d \\in \\{2,6\\}$; the largest is $6$.",
+    "rating": 650,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits $d$ (from $0$ to $9$) make $\\overline{43d}$ divisible by $6$?",
+    "answer": "2",
+    "solution": "$\\overline{43d}$ must be even and have digit sum $7+d$ divisible by $3$; only $d = 2$ and $d = 8$ work, so $2$ digits.",
+    "rating": 650,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits $d$ (from $0$ to $9$) make $\\overline{5d1}$ divisible by $3$?",
+    "answer": "4",
+    "solution": "Need $5+d+1 = 6+d$ divisible by $3$, i.e. $d \\in \\{0,3,6,9\\}$ — that is $4$ digits.",
+    "rating": 650,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For which digit $d$ is $\\overline{6d1}$ divisible by $9$?",
+    "answer": "2",
+    "solution": "Need $6+d+1 = 7+d \\equiv 0 \\pmod 9$, so $d = 2$ (digit sum $9$).",
+    "rating": 700,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For which digit $d$ is $\\overline{4d18}$ divisible by $11$?",
+    "answer": "8",
+    "solution": "The alternating sum is $8-1+d-4 = d+3$; setting $d+3 \\equiv 0 \\pmod{11}$ gives $d = 8$.",
+    "rating": 700,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest digit $d$ for which $\\overline{1d6}$ is divisible by $8$?",
+    "answer": "7",
+    "solution": "$\\overline{1d6} = 106+10d$ is divisible by $8$ when $d \\in \\{3,7\\}$; the largest is $7$ (giving $176 = 8\\times22$).",
+    "rating": 700,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits $d$ (from $0$ to $9$) make $\\overline{45d}$ divisible by $4$?",
+    "answer": "2",
+    "solution": "$\\overline{45d} = 450+d$ is divisible by $4$ when $50+d \\equiv 0 \\pmod 4$, i.e. $d \\in \\{2,6\\}$ — $2$ digits.",
+    "rating": 700,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits $d$ (from $0$ to $9$) make $\\overline{5d4}$ divisible by $6$?",
+    "answer": "4",
+    "solution": "$\\overline{5d4}$ is even already, and needs digit sum $9+d$ divisible by $3$, i.e. $d \\in \\{0,3,6,9\\}$ — $4$ digits.",
+    "rating": 700,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits $d$ (from $0$ to $9$) make $\\overline{82d}$ divisible by $3$?",
+    "answer": "3",
+    "solution": "Need $8+2+d = 10+d$ divisible by $3$, i.e. $d \\in \\{2,5,8\\}$ — that is $3$ digits.",
+    "rating": 700,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For which digit $d$ (with $d \\neq 0$) is $\\overline{d185}$ divisible by $9$?",
+    "answer": "4",
+    "solution": "Need $d+1+8+5 = d+14 \\equiv 0 \\pmod 9$, so $d = 4$ (digit sum $18$).",
+    "rating": 740,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For which digit $d$ is $\\overline{7d25}$ divisible by $11$?",
+    "answer": "4",
+    "solution": "The alternating sum is $5-2+d-7 = d-4$; setting $d-4 \\equiv 0 \\pmod{11}$ gives $d = 4$.",
+    "rating": 740,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest digit $d$ for which $\\overline{5d2}$ is divisible by $4$?",
+    "answer": "9",
+    "solution": "$\\overline{5d2} = 500+10d+2$ is divisible by $4$ when $10d+2 \\equiv 0 \\pmod 4$, i.e. $d$ odd; the largest is $9$.",
+    "rating": 740,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest digit $d$ for which $\\overline{2d40}$ is divisible by $8$?",
+    "answer": "8",
+    "solution": "Divisibility by $8$ depends on the last three digits $\\overline{d40} = 100d+40$; this is a multiple of $8$ exactly when $d$ is even, so the largest is $8$.",
+    "rating": 740,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits $d$ (from $0$ to $9$) make $\\overline{2d0}$ divisible by $6$?",
+    "answer": "3",
+    "solution": "$\\overline{2d0}$ ends in $0$ (even) and needs digit sum $2+d$ divisible by $3$, i.e. $d \\in \\{1,4,7\\}$ — $3$ digits.",
+    "rating": 740,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits $d$ (from $0$ to $9$) make $\\overline{8d4}$ divisible by $4$?",
+    "answer": "5",
+    "solution": "$\\overline{8d4} = 800+10d+4$ is divisible by $4$ when $10d+4 \\equiv 0 \\pmod 4$, i.e. $d$ even — $\\{0,2,4,6,8\\}$, $5$ digits.",
+    "rating": 740,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For which digit $d$ is $\\overline{82d4}$ divisible by $9$?",
+    "answer": "4",
+    "solution": "Need $8+2+d+4 = d+14 \\equiv 0 \\pmod 9$, so $d = 4$ (digit sum $18$).",
+    "rating": 780,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For which digit $d$ (with $d \\neq 0$) is $\\overline{d6032}$ divisible by $9$?",
+    "answer": "7",
+    "solution": "Need $d+6+0+3+2 = d+11 \\equiv 0 \\pmod 9$, so $d = 7$ (digit sum $18$).",
+    "rating": 780,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest digit $d$ for which $\\overline{5d12}$ is divisible by $8$?",
+    "answer": "9",
+    "solution": "The last three digits are $\\overline{d12} = 100d+12$; this is divisible by $8$ when $d$ is odd, so the largest is $9$ ($912 = 8\\times114$).",
+    "rating": 780,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits $d$ (from $0$ to $9$) make $\\overline{12d}$ divisible by $4$?",
+    "answer": "3",
+    "solution": "$\\overline{12d} = 120+d$ is divisible by $4$ when $20+d \\equiv 0 \\pmod 4$, i.e. $d \\in \\{0,4,8\\}$ — $3$ digits.",
+    "rating": 780,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many digits $d$ (from $0$ to $9$) make $\\overline{3d9}$ divisible by $3$?",
+    "answer": "4",
+    "solution": "Need $3+d+9 = 12+d$ divisible by $3$, i.e. $d \\in \\{0,3,6,9\\}$ — that is $4$ digits.",
+    "rating": 780,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest digit $d$ for which $\\overline{63d}$ is divisible by $4$?",
+    "answer": "6",
+    "solution": "$\\overline{63d} = 630+d$ is divisible by $4$ when $30+d \\equiv 0 \\pmod 4$, i.e. $d \\in \\{2,6\\}$; the largest is $6$.",
+    "rating": 780,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest three-digit number divisible by both $6$ and $8$?",
+    "answer": "120",
+    "solution": "Divisible by both means divisible by $\\mathrm{lcm}(6,8) = 24$. The smallest three-digit multiple of $24$ is $24\\times5 = 120$.",
+    "rating": 820,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest three-digit number divisible by both $3$ and $4$?",
+    "answer": "996",
+    "solution": "Divisible by both means divisible by $\\mathrm{lcm}(3,4) = 12$. The largest three-digit multiple of $12$ is $12\\times83 = 996$.",
+    "rating": 820,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many two-digit numbers are divisible by both $2$ and $9$?",
+    "answer": "5",
+    "solution": "Divisible by both means divisible by $\\mathrm{lcm}(2,9) = 18$: $18,36,54,72,90$ — five numbers.",
+    "rating": 820,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many three-digit numbers are divisible by both $4$ and $9$?",
+    "answer": "25",
+    "solution": "Divisible by both means divisible by $\\mathrm{lcm}(4,9) = 36$: from $108$ to $972$ there are $25$ such numbers.",
+    "rating": 820,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest two-digit number divisible by both $2$ and $3$?",
+    "answer": "12",
+    "solution": "Divisible by both means divisible by $\\mathrm{lcm}(2,3) = 6$; the smallest two-digit multiple of $6$ is $12$.",
+    "rating": 820,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest number greater than $100$ that is divisible by both $8$ and $9$?",
+    "answer": "144",
+    "solution": "Divisible by both means divisible by $\\mathrm{lcm}(8,9) = 72$; the first multiple past $100$ is $72\\times2 = 144$.",
+    "rating": 820,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest three-digit number divisible by both $9$ and $10$?",
+    "answer": "180",
+    "solution": "Divisible by both means divisible by $\\mathrm{lcm}(9,10) = 90$. The smallest three-digit multiple of $90$ is $90\\times2 = 180$.",
+    "rating": 860,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest three-digit number divisible by both $6$ and $9$?",
+    "answer": "990",
+    "solution": "Divisible by both means divisible by $\\mathrm{lcm}(6,9) = 18$. The largest three-digit multiple of $18$ is $18\\times55 = 990$.",
+    "rating": 860,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many two-digit numbers are divisible by both $3$ and $8$?",
+    "answer": "4",
+    "solution": "Divisible by both means divisible by $\\mathrm{lcm}(3,8) = 24$: $24,48,72,96$ — four numbers.",
+    "rating": 860,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many three-digit numbers are divisible by both $6$ and $10$?",
+    "answer": "30",
+    "solution": "Divisible by both means divisible by $\\mathrm{lcm}(6,10) = 30$: from $120$ to $990$ there are $30$ such numbers.",
+    "rating": 860,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest two-digit number divisible by both $4$ and $5$?",
+    "answer": "20",
+    "solution": "Divisible by both means divisible by $\\mathrm{lcm}(4,5) = 20$; the smallest two-digit multiple is $20$ itself.",
+    "rating": 860,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest number greater than $200$ that is divisible by both $4$ and $9$?",
+    "answer": "216",
+    "solution": "Divisible by both means divisible by $\\mathrm{lcm}(4,9) = 36$; the first multiple past $200$ is $36\\times6 = 216$.",
+    "rating": 860,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest three-digit number divisible by both $4$ and $10$?",
+    "answer": "100",
+    "solution": "Divisible by both means divisible by $\\mathrm{lcm}(4,10) = 20$. The smallest three-digit multiple of $20$ is $100$.",
+    "rating": 900,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest three-digit number divisible by both $8$ and $9$?",
+    "answer": "936",
+    "solution": "Divisible by both means divisible by $\\mathrm{lcm}(8,9) = 72$. The largest three-digit multiple of $72$ is $72\\times13 = 936$.",
+    "rating": 900,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many two-digit numbers are divisible by both $5$ and $9$?",
+    "answer": "2",
+    "solution": "Divisible by both means divisible by $\\mathrm{lcm}(5,9) = 45$: $45$ and $90$ — that is $2$ numbers.",
+    "rating": 900,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many three-digit numbers are divisible by both $8$ and $10$?",
+    "answer": "22",
+    "solution": "Divisible by both means divisible by $\\mathrm{lcm}(8,10) = 40$: from $120$ to $960$ there are $22$ such numbers.",
+    "rating": 900,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest two-digit number divisible by both $3$ and $5$?",
+    "answer": "15",
+    "solution": "Divisible by both means divisible by $\\mathrm{lcm}(3,5) = 15$; the smallest two-digit multiple is $15$ itself.",
+    "rating": 900,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many three-digit multiples of $6$ have a digit sum of $12$?",
+    "answer": "34",
+    "solution": "Digit sum $12$ already forces divisibility by $3$, so we need three-digit $\\overline{abc}$ with $a+b+c = 12$ and $c$ even. Counting the valid triples gives $34$.",
+    "rating": 940,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For how many integers $n$ from $1$ to $100$ is $n$ divisible by $2$ or $5$ (or both)?",
+    "answer": "60",
+    "solution": "By inclusion-exclusion: $\\lfloor100/2\\rfloor + \\lfloor100/5\\rfloor - \\lfloor100/10\\rfloor = 50 + 20 - 10 = 60$.",
+    "rating": 940,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For how many integers $n$ from $1$ to $60$ is $n$ divisible by neither $2$ nor $3$?",
+    "answer": "20",
+    "solution": "Divisible by $2$ or $3$: $30 + 20 - 10 = 40$ numbers; the remaining $60 - 40 = 20$ are divisible by neither.",
+    "rating": 940,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many two-digit numbers are divisible by $2$ or $3$ (or both)?",
+    "answer": "60",
+    "solution": "By inclusion-exclusion on the two-digit numbers: $45 + 30 - 15 = 60$.",
+    "rating": 940,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For how many integers $n$ from $1$ to $30$ is $n$ divisible by exactly one of $2$ and $3$?",
+    "answer": "15",
+    "solution": "Divisible by $2$: $15$; by $3$: $10$; by both ($6$): $5$. Exactly one is $15 + 10 - 2\\times5 = 15$.",
+    "rating": 940,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many three-digit multiples of $6$ have a digit sum of $15$?",
+    "answer": "34",
+    "solution": "Digit sum $15$ forces divisibility by $3$, so we need three-digit $\\overline{abc}$ with $a+b+c = 15$ and $c$ even. Counting the valid triples gives $34$.",
+    "rating": 980,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For how many integers $n$ from $1$ to $100$ is $n$ divisible by $3$ or $5$ (or both)?",
+    "answer": "47",
+    "solution": "By inclusion-exclusion: $\\lfloor100/3\\rfloor + \\lfloor100/5\\rfloor - \\lfloor100/15\\rfloor = 33 + 20 - 6 = 47$.",
+    "rating": 980,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many three-digit multiples of $15$ have a digit sum of $6$?",
+    "answer": "7",
+    "solution": "A multiple of $15$ ends in $0$ or $5$ and has digit sum divisible by $3$. Requiring digit sum exactly $6$ and checking the cases gives $7$ numbers.",
+    "rating": 980,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many two-digit numbers are divisible by $3$ or $4$ (or both)?",
+    "answer": "44",
+    "solution": "By inclusion-exclusion on the two-digit numbers: $30 + 22 - 8 = 44$.",
+    "rating": 980,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many three-digit multiples of $6$ have a units digit of $4$?",
+    "answer": "30",
+    "solution": "Multiples of $6$ ending in $4$ occur every $30$ (e.g. $24,54,84,\\ldots$); between $100$ and $999$ there are $30$ of them.",
+    "rating": 980,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many three-digit multiples of $6$ have a digit sum of $6$?",
+    "answer": "12",
+    "solution": "Digit sum $6$ forces divisibility by $3$, so we need three-digit $\\overline{abc}$ with $a+b+c = 6$ and $c$ even. Counting the valid triples gives $12$.",
+    "rating": 1020,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For how many integers $n$ from $1$ to $50$ is $n$ divisible by neither $3$ nor $4$?",
+    "answer": "26",
+    "solution": "Divisible by $3$ or $4$: $16 + 12 - 4 = 24$; the remaining $50 - 24 = 26$ are divisible by neither.",
+    "rating": 1020,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many three-digit multiples of $4$ have a digit sum of $12$?",
+    "answer": "17",
+    "solution": "A multiple of $4$ is fixed by its last two digits; among three-digit numbers with digit sum $12$, exactly $17$ are divisible by $4$.",
+    "rating": 1020,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many two-digit numbers are divisible by $5$ or $6$ (or both)?",
+    "answer": "30",
+    "solution": "By inclusion-exclusion on the two-digit numbers: $18 + 15 - 3 = 30$.",
+    "rating": 1020,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many three-digit multiples of $4$ have a units digit of $6$?",
+    "answer": "45",
+    "solution": "Multiples of $4$ ending in $6$ occur every $20$ (e.g. $16,36,56,\\ldots$); between $100$ and $999$ there are $45$ of them.",
+    "rating": 1020,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For how many integers $n$ from $1$ to $120$ is $n$ divisible by $4$ or $6$ (or both)?",
+    "answer": "40",
+    "solution": "By inclusion-exclusion: $\\lfloor120/4\\rfloor + \\lfloor120/6\\rfloor - \\lfloor120/12\\rfloor = 30 + 20 - 10 = 40$.",
+    "rating": 1060,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For how many integers $n$ from $1$ to $40$ is $n$ divisible by neither $2$ nor $5$?",
+    "answer": "16",
+    "solution": "Divisible by $2$ or $5$: $20 + 8 - 4 = 24$; the remaining $40 - 24 = 16$ are divisible by neither.",
+    "rating": 1060,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many three-digit multiples of $12$ have a digit sum of $9$?",
+    "answer": "13",
+    "solution": "A multiple of $12$ is divisible by both $3$ and $4$; digit sum $9$ already guarantees the $3$ part, and checking the divisible-by-$4$ condition leaves $13$ numbers.",
+    "rating": 1060,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many three-digit multiples of $8$ have a units digit of $0$?",
+    "answer": "22",
+    "solution": "A multiple of $8$ ending in $0$ is a multiple of $40$; between $100$ and $999$ there are $22$ of them.",
+    "rating": 1060,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For how many integers $n$ from $1$ to $100$ is $n$ divisible by exactly one of $4$ and $6$?",
+    "answer": "25",
+    "solution": "Divisible by $4$: $25$; by $6$: $16$; by both ($12$): $8$. Exactly one is $25 + 16 - 2\\times8 = 25$.",
+    "rating": 1060,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many four-digit numbers of the form $\\overline{4x7y}$ (the blanks $x$ and $y$ may differ) are divisible by $36$?",
+    "answer": "2",
+    "solution": "Divisible by $36$ means by $4$ and $9$. For $4$: $\\overline{7y}$ divisible by $4$ gives $y \\in \\{2,6\\}$. For $9$: $11+x+y \\equiv 0 \\pmod 9$, giving $(x,y) = (5,2)$ or $(1,6)$. That is $2$ numbers.",
+    "rating": 1100,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest five-digit number of the form $\\overline{4x6y8}$ (the blanks may differ) that is divisible by $12$?",
+    "answer": "49668",
+    "solution": "Divisibility by $4$ needs $\\overline{y8}$ divisible by $4$; by $3$ needs $18+x+y \\equiv 0 \\pmod 3$. Maximizing gives $x=9,y=6$, so the number is $49668$.",
+    "rating": 1100,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest four-digit number of the form $\\overline{2x8y}$ (the blanks may differ) that is divisible by $18$?",
+    "answer": "2088",
+    "solution": "Divisibility by $18$ means by $2$ and $9$. Minimizing with $x=0$: $\\overline{8y}$ even and $10+x+y \\equiv 0 \\pmod 9$ forces $y=8$, giving $2088$.",
+    "rating": 1100,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many four-digit numbers of the form $\\overline{3x4y}$ (the blanks may differ) are divisible by $24$?",
+    "answer": "6",
+    "solution": "Divisible by $24$ means by $8$ and $3$. The last three digits $\\overline{x4y}$ handle the $8$ part and $7+x+y \\equiv 0 \\pmod 3$ the $3$ part; the casework yields $6$ valid pairs.",
+    "rating": 1100,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest four-digit number of the form $\\overline{6xy4}$ (the blanks may differ) that is divisible by $72$?",
+    "answer": "6984",
+    "solution": "Divisible by $72$ means by $8$ and $9$. Maximizing, $x=9$; then divisibility by $9$ ($19+x+y \\equiv 0$) and by $8$ (last three digits) forces $y=8$, giving $6984$.",
+    "rating": 1100,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many four-digit numbers of the form $\\overline{8x2y}$ (the blanks may differ) are divisible by $36$?",
+    "answer": "4",
+    "solution": "For $4$: $\\overline{2y}$ divisible by $4$ gives $y \\in \\{0,4,8\\}$. For $9$: $10+x+y \\equiv 0 \\pmod 9$. The valid pairs are $(8,0),(4,4),(0,8),(9,8)$ — that is $4$ numbers.",
+    "rating": 1145,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest five-digit number of the form $\\overline{8x1y4}$ (the blanks may differ) that is divisible by $12$?",
+    "answer": "89184",
+    "solution": "Divisibility by $4$ fixes $\\overline{y4}$; by $3$ needs $13+x+y \\equiv 0 \\pmod 3$. Maximizing gives $x=9,y=8$, so the number is $89184$.",
+    "rating": 1145,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest four-digit number of the form $\\overline{7xy4}$ (the blanks may differ) that is divisible by $18$?",
+    "answer": "7074",
+    "solution": "Divisible by $18$ means by $2$ and $9$; the number ends in $4$ (even), and $11+x+y \\equiv 0 \\pmod 9$ minimized with $x=0$ forces $y=7$, giving $7074$.",
+    "rating": 1145,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many four-digit numbers of the form $\\overline{5xy2}$ (the blanks may differ) are divisible by $24$?",
+    "answer": "8",
+    "solution": "Divisible by $24$ means by $8$ and $3$. The last three digits $\\overline{xy2}$ give the $8$ condition and $7+x+y \\equiv 0 \\pmod 3$ the $3$ condition; counting valid pairs gives $8$.",
+    "rating": 1145,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest four-digit number of the form $\\overline{4x3y}$ (the blanks may differ) that is divisible by $72$?",
+    "answer": "4536",
+    "solution": "Divisible by $72$ means by $8$ and $9$. Trying $x=5$ (larger $x$ leave no valid $y$): divisibility by $9$ ($7+x+y \\equiv 0$) and by $8$ give $y=6$, so the number is $4536$.",
+    "rating": 1145,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many four-digit numbers of the form $\\overline{3xy6}$ (the blanks may differ) are divisible by $36$?",
+    "answer": "6",
+    "solution": "For $4$: $\\overline{y6}$ divisible by $4$ needs $y$ odd. For $9$: $9+x+y \\equiv 0 \\pmod 9$, i.e. $x+y \\equiv 0$. Pairing each odd $y$ with a valid $x$ gives $6$ numbers.",
+    "rating": 1190,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest five-digit number of the form $\\overline{5x9y6}$ (the blanks may differ) that is divisible by $12$?",
+    "answer": "59976",
+    "solution": "Divisibility by $4$ fixes $\\overline{y6}$; by $3$ needs $20+x+y \\equiv 0 \\pmod 3$. Maximizing gives $x=9,y=7$, so the number is $59976$.",
+    "rating": 1190,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest four-digit number of the form $\\overline{1x6y}$ (the blanks may differ) that is divisible by $18$?",
+    "answer": "1062",
+    "solution": "Divisible by $18$ means by $2$ and $9$. Minimizing with $x=0$: $\\overline{6y}$ even and $7+x+y \\equiv 0 \\pmod 9$ forces $y=2$, giving $1062$.",
+    "rating": 1190,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many four-digit numbers of the form $\\overline{9x1y}$ (the blanks may differ) are divisible by $24$?",
+    "answer": "4",
+    "solution": "Divisible by $24$ means by $8$ and $3$. The last three digits $\\overline{x1y}$ give the $8$ condition and $10+x+y \\equiv 0 \\pmod 3$ the $3$ condition; counting valid pairs gives $4$.",
+    "rating": 1190,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest four-digit number of the form $\\overline{8xy2}$ (the blanks may differ) that is divisible by $72$?",
+    "answer": "8712",
+    "solution": "Divisible by $72$ means by $8$ and $9$. Maximizing, $x=7$; divisibility by $9$ ($10+x+y \\equiv 0$) and by $8$ (last three digits) force $y=1$, giving $8712$.",
+    "rating": 1190,
+    "source": "AMC 8 · Divisibility Rules"
+  }
+]

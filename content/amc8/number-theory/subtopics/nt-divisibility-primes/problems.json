@@ -1,42 +1,82 @@
 [
   {
     "type": "SHORT_ANSWER",
-    "statement": "Is $5142$ divisible by $3$? Answer Yes or No.",
+    "statement": "Is $5128$ divisible by $8$? Answer Yes or No.",
     "answer": "Yes",
-    "solution": "The digit sum is $5+1+4+2 = 12$, which is divisible by $3$, so yes.",
+    "solution": "The last three digits form $128 = 8\\times16$, so yes.",
     "rating": 450,
     "source": "AMC 8 · Divisibility Rules"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Is $7516$ divisible by $4$? Answer Yes or No.",
-    "answer": "Yes",
-    "solution": "The last two digits form $16$, which is divisible by $4$, so yes.",
+    "statement": "Which of $340$, $125$, $612$ is $\\textbf{not}$ divisible by $5$?",
+    "answer": "612",
+    "solution": "A multiple of $5$ ends in $0$ or $5$. Both $340$ and $125$ do; $612$ ends in $2$, so $612$ is not divisible by $5$.",
     "rating": 450,
     "source": "AMC 8 · Divisibility Rules"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Is $3416$ divisible by $8$? Answer Yes or No.",
-    "answer": "Yes",
-    "solution": "The last three digits form $416 = 8\\times52$, which is divisible by $8$, so yes.",
+    "statement": "How many of $132$, $214$, $450$, $306$ are divisible by $6$?",
+    "answer": "3",
+    "solution": "A number is divisible by $6$ when it is even and its digits sum to a multiple of $3$. All four are even; the digit sums are $6,7,9,9$, so $132$, $450$, $306$ qualify — that is $3$.",
     "rating": 450,
     "source": "AMC 8 · Divisibility Rules"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Is $2915$ divisible by $11$? Answer Yes or No.",
-    "answer": "Yes",
-    "solution": "The alternating digit sum $5-1+9-2 = 11$ is divisible by $11$, so yes.",
+    "statement": "Which digits from $0$ to $9$ can replace the blank in $5\\_$ so that the number is divisible by $5$?",
+    "answer": "0, 5",
+    "solution": "A number is divisible by $5$ exactly when its last digit is $0$ or $5$, so the blank can be $0$ or $5$.",
     "rating": 450,
     "source": "AMC 8 · Divisibility Rules"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Is $4128$ divisible by $6$? Answer Yes or No.",
-    "answer": "Yes",
-    "solution": "It is even, and its digit sum $4+1+2+8 = 15$ is divisible by $3$, so it is divisible by $6$.",
+    "statement": "What is the least positive integer that must be added to $284$ to make it a multiple of $9$?",
+    "answer": "4",
+    "solution": "$284$ has digit sum $14$, leaving remainder $5$ upon division by $9$; adding $4$ reaches the next multiple, $288$.",
     "rating": 450,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Which of $2$, $5$, and $10$ divide $470$?",
+    "answer": "2, 5, 10",
+    "solution": "$470$ is even (so divisible by $2$) and ends in $0$ (so divisible by both $5$ and $10$). All three divide it: $2, 5, 10$.",
+    "rating": 450,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $7163$ divisible by $11$? Answer Yes or No.",
+    "answer": "No",
+    "solution": "The alternating digit sum $3-6+1-7 = -9$ is not a multiple of $11$, so no.",
+    "rating": 500,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Which of $314$, $528$, $946$ is divisible by $4$?",
+    "answer": "528",
+    "solution": "Check the last two digits: $14$ and $46$ are not multiples of $4$, but $28 = 4\\times7$ is, so $528$ is divisible by $4$.",
+    "rating": 500,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of $316$, $522$, $836$, $914$ are divisible by $4$?",
+    "answer": "2",
+    "solution": "The last two digits are $16,22,36,14$; only $16$ and $36$ are multiples of $4$, so $316$ and $836$ qualify — that is $2$.",
+    "rating": 500,
+    "source": "AMC 8 · Divisibility Rules"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Which digits from $0$ to $9$ can replace the blank in $\\_4$ so that the number is even?",
+    "answer": "1, 2, 3, 4, 5, 6, 7, 8, 9",
+    "solution": "Evenness depends only on the last digit, which is already $4$, so the number is even no matter the leading digit. Since the leading digit of a two-digit number can't be $0$, every digit $1$ through $9$ works.",
+    "rating": 500,
     "source": "AMC 8 · Divisibility Rules"
   },
   {
@@ -44,47 +84,39 @@
     "statement": "What is the remainder when $5231$ is divided by $9$?",
     "answer": "2",
     "solution": "The remainder mod $9$ equals the digit sum mod $9$: $5+2+3+1 = 11$, and $11 = 9 + 2$, so the remainder is $2$.",
-    "rating": 450,
-    "source": "AMC 8 · Divisibility Rules"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Is $7268$ divisible by $3$? Answer Yes or No.",
-    "answer": "No",
-    "solution": "The digit sum is $7+2+6+8 = 23$, which is not divisible by $3$, so no.",
     "rating": 500,
     "source": "AMC 8 · Divisibility Rules"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Is $6453$ divisible by $9$? Answer Yes or No.",
-    "answer": "Yes",
-    "solution": "The digit sum is $6+4+5+3 = 18$, which is divisible by $9$, so yes.",
+    "statement": "Which of $2$, $5$, and $10$ divide $115$?",
+    "answer": "5",
+    "solution": "$115$ is odd (not divisible by $2$) and does not end in $0$ (not divisible by $10$), but it ends in $5$, so only $5$ divides it.",
     "rating": 500,
     "source": "AMC 8 · Divisibility Rules"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Is $5140$ divisible by $8$? Answer Yes or No.",
-    "answer": "No",
-    "solution": "The last three digits form $140$, and $140 = 8\\times17 + 4$ is not divisible by $8$, so no.",
-    "rating": 500,
+    "statement": "Which of $4275$, $3310$, $6148$ is divisible by $9$?",
+    "answer": "4275",
+    "solution": "The digit sums are $18$, $7$, and $19$; only $18$ is a multiple of $9$, so $4275$ is divisible by $9$.",
+    "rating": 550,
     "source": "AMC 8 · Divisibility Rules"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Is $6394$ divisible by $11$? Answer Yes or No.",
-    "answer": "No",
-    "solution": "The alternating digit sum $4-9+3-6 = -8$ is not divisible by $11$, so no.",
-    "rating": 500,
+    "statement": "Which of $728$, $516$, $934$ is $\\textbf{not}$ divisible by $4$?",
+    "answer": "934",
+    "solution": "Check the last two digits: $28$ and $16$ are multiples of $4$, but $34$ is not, so $934$ is not divisible by $4$.",
+    "rating": 550,
     "source": "AMC 8 · Divisibility Rules"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Is $4530$ divisible by $10$? Answer Yes or No.",
-    "answer": "Yes",
-    "solution": "Its last digit is $0$, so it is divisible by $10$.",
-    "rating": 500,
+    "statement": "How many of $512$, $740$, $624$, $936$ are divisible by $8$?",
+    "answer": "3",
+    "solution": "Testing the last three digits: $512 = 8\\times64$, $624 = 8\\times78$, $936 = 8\\times117$ all work, but $740 = 8\\times92 + 4$ does not — that is $3$.",
+    "rating": 550,
     "source": "AMC 8 · Divisibility Rules"
   },
   {
@@ -92,102 +124,70 @@
     "statement": "What is the remainder when $7046$ is divided by $9$?",
     "answer": "8",
     "solution": "The digit sum is $7+0+4+6 = 17$, and $17 = 9 + 8$, so the remainder is $8$.",
-    "rating": 500,
-    "source": "AMC 8 · Divisibility Rules"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Is $8110$ divisible by $9$? Answer Yes or No.",
-    "answer": "No",
-    "solution": "The digit sum is $8+1+1+0 = 10$, which is not divisible by $9$, so no.",
     "rating": 550,
     "source": "AMC 8 · Divisibility Rules"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Is $9338$ divisible by $4$? Answer Yes or No.",
-    "answer": "No",
-    "solution": "The last two digits form $38$, and $38 = 4\\times9 + 2$ is not divisible by $4$, so no.",
+    "statement": "What is the least positive integer that must be added to $613$ to make it a multiple of $4$?",
+    "answer": "3",
+    "solution": "$613$ leaves remainder $1$ when divided by $4$ (its last two digits give $13 = 4\\times3 + 1$); adding $3$ reaches $616 = 4\\times154$.",
     "rating": 550,
     "source": "AMC 8 · Divisibility Rules"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Is $7624$ divisible by $8$? Answer Yes or No.",
-    "answer": "Yes",
-    "solution": "The last three digits form $624 = 8\\times78$, which is divisible by $8$, so yes.",
-    "rating": 550,
-    "source": "AMC 8 · Divisibility Rules"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Is $5314$ divisible by $6$? Answer Yes or No.",
-    "answer": "No",
-    "solution": "It is even, but its digit sum $5+3+1+4 = 13$ is not divisible by $3$, so it is not divisible by $6$.",
-    "rating": 550,
-    "source": "AMC 8 · Divisibility Rules"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "Is $6725$ divisible by $10$? Answer Yes or No.",
-    "answer": "No",
-    "solution": "Its last digit is $5$, not $0$, so it is not divisible by $10$.",
-    "rating": 550,
-    "source": "AMC 8 · Divisibility Rules"
-  },
-  {
-    "type": "SHORT_ANSWER",
-    "statement": "What is the remainder when $4853$ is divided by $9$?",
+    "statement": "Which of $2$, $5$, and $10$ divide $286$?",
     "answer": "2",
-    "solution": "The digit sum is $4+8+5+3 = 20$, and $20 = 18 + 2$, so the remainder is $2$.",
+    "solution": "$286$ is even (divisible by $2$) but ends in $6$, so it is divisible by neither $5$ nor $10$. Only $2$ divides it.",
     "rating": 550,
     "source": "AMC 8 · Divisibility Rules"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Is $24813$ divisible by $3$? Answer Yes or No.",
+    "statement": "Is $43290$ divisible by $6$? Answer Yes or No.",
     "answer": "Yes",
-    "solution": "The digit sum is $2+4+8+1+3 = 18$, which is divisible by $3$, so yes.",
+    "solution": "It is even, and its digit sum $4+3+2+9+0 = 18$ is a multiple of $3$, so it is divisible by $6$.",
     "rating": 600,
     "source": "AMC 8 · Divisibility Rules"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Is $51237$ divisible by $9$? Answer Yes or No.",
-    "answer": "Yes",
-    "solution": "The digit sum is $5+1+2+3+7 = 18$, which is divisible by $9$, so yes.",
+    "statement": "Which of $52144$, $71028$, $83512$ is divisible by $3$?",
+    "answer": "71028",
+    "solution": "The digit sums are $16$, $18$, and $19$; only $18$ is a multiple of $3$, so $71028$ is divisible by $3$.",
     "rating": 600,
     "source": "AMC 8 · Divisibility Rules"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Is $32748$ divisible by $4$? Answer Yes or No.",
-    "answer": "Yes",
-    "solution": "The last two digits form $48 = 4\\times12$, which is divisible by $4$, so yes.",
+    "statement": "Which of $5301$, $6714$, $2380$ is $\\textbf{not}$ divisible by $9$?",
+    "answer": "2380",
+    "solution": "The digit sums are $9$, $18$, and $13$; $13$ is not a multiple of $9$, so $2380$ is not divisible by $9$.",
     "rating": 600,
     "source": "AMC 8 · Divisibility Rules"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Is $90728$ divisible by $11$? Answer Yes or No.",
-    "answer": "Yes",
-    "solution": "The alternating digit sum $8-2+7-0+9 = 22$ is divisible by $11$, so yes.",
+    "statement": "Which digits from $0$ to $9$ can replace the blank in $3\\_$ so that the number is divisible by $10$?",
+    "answer": "0",
+    "solution": "A number is divisible by $10$ exactly when its last digit is $0$, so the blank must be $0$.",
     "rating": 600,
     "source": "AMC 8 · Divisibility Rules"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Is $27564$ divisible by $6$? Answer Yes or No.",
-    "answer": "Yes",
-    "solution": "It is even, and its digit sum $2+7+5+6+4 = 24$ is divisible by $3$, so it is divisible by $6$.",
+    "statement": "What is the remainder when $6394$ is divided by $11$?",
+    "answer": "3",
+    "solution": "The alternating digit sum is $4-9+3-6 = -8 \\equiv 3 \\pmod{11}$, so the remainder is $3$.",
     "rating": 600,
     "source": "AMC 8 · Divisibility Rules"
   },
   {
     "type": "SHORT_ANSWER",
-    "statement": "Is $38090$ divisible by $10$? Answer Yes or No.",
-    "answer": "Yes",
-    "solution": "Its last digit is $0$, so it is divisible by $10$.",
+    "statement": "What is the least positive integer that must be added to $4517$ to make it a multiple of $6$?",
+    "answer": "1",
+    "solution": "$4517$ is odd with digit sum $17$; it leaves remainder $5$ upon division by $6$, so adding $1$ reaches $4518 = 6\\times753$.",
     "rating": 600,
     "source": "AMC 8 · Divisibility Rules"
   },

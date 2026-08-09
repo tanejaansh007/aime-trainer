@@ -13,13 +13,13 @@ The rules split into three families:
 | Divisor | Test |
 |---|---|
 | $2$ | last digit is even |
-| $5$ | last digit is $0$ or $5$ |
-| $10$ | last digit is $0$ |
-| $4$ | last **two** digits form a multiple of $4$ |
-| $8$ | last **three** digits form a multiple of $8$ |
 | $3$ | digit sum is a multiple of $3$ |
-| $9$ | digit sum is a multiple of $9$ |
+| $4$ | last **two** digits form a multiple of $4$ |
+| $5$ | last digit is $0$ or $5$ |
 | $6$ | passes **both** the $2$ and the $3$ tests |
+| $8$ | last **three** digits form a multiple of $8$ |
+| $9$ | digit sum is a multiple of $9$ |
+| $10$ | last digit is $0$ |
 | $11$ | alternating sum of digits is a multiple of $11$ |
 
 **Worked example (last digits).** *Is $5128$ divisible by $8$?*

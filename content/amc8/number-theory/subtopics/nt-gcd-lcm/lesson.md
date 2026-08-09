@@ -1,71 +1,93 @@
 # GCD & LCM
 
-The tiers move from reading GCD/LCM off factorizations, to the product identity,
-to multi-step problems that chain these ideas together.
+The **greatest common divisor** $\gcd(a,b)$ is the largest number that divides
+*both* $a$ and $b$. The **least common multiple** $\operatorname{lcm}(a,b)$ is the
+smallest positive number that *both* divide into. Nearly every problem in this set
+is one of three things: reading a GCD or LCM out of a word problem, using the
+identity $\gcd(a,b)\cdot\operatorname{lcm}(a,b)=a\cdot b$, or hunting for the numbers
+that satisfy a GCD/LCM condition.
 
 <!--band:t1-->
 ## Tier 1 · AMC 8 Intro
 
-From the factorizations, take the **lower** prime powers for the GCD and the
-**higher** ones for the LCM.
+The reliable way to get both at once is to **prime-factorize** each number, then:
 
-- **GCD** = "largest equal pieces" (cutting ribbons of $48$ and $60$ cm → $12$ cm pieces).
-- **LCM** = "events coinciding" (lights every $8$ s and $12$ s → together every $24$ s).
+- for the **GCD**, take the **lower** power of each shared prime;
+- for the **LCM**, take the **higher** power of every prime that appears.
 
-The LCM of several numbers takes the highest power of each prime across all of them:
-$\operatorname{lcm}(6, 9, 15) = 2\cdot 3^2\cdot 5 = 90$.
+For $8 = 2^3$ and $12 = 2^2\cdot 3$: $\gcd = 2^2 = 4$ and
+$\operatorname{lcm} = 2^3\cdot 3 = 24$.
+
+Two everyday shapes cover the whole tier:
+
+- **LCM = "when do repeating events line up again?"** Lights that flash every $4$ s
+  and $6$ s next flash together after $\operatorname{lcm}(4,6)$ seconds.
+- **GCD = "what is the largest identical group?"** Splitting two piles into as many
+  *identical* bundles as possible uses $\gcd$ of the pile sizes.
+
+**Worked example (LCM).** *Two bells ring every $15$ and $20$ minutes. After how many
+minutes do they next ring together?*
+Factor: $15 = 3\cdot 5$ and $20 = 2^2\cdot 5$. Take the highest power of each prime:
+$\operatorname{lcm} = 2^2\cdot 3\cdot 5 = 60$. They ring together again after
+**$60$ minutes**.
+
+**Worked example (GCD).** *A baker splits $36$ chocolate-chip and $48$ oatmeal
+cookies into identical bags, using as many bags as possible. How many cookies are in
+each bag?*
+The number of bags is $\gcd(36,48)$. Since $36 = 2^2\cdot 3^2$ and $48 = 2^4\cdot 3$,
+$\gcd = 2^2\cdot 3 = 12$ bags. Each bag holds $36/12 = 3$ chocolate-chip and
+$48/12 = 4$ oatmeal cookies, for $3 + 4 = \mathbf{7}$ cookies.
 
 <!--band:t2-->
 ## Tier 2 · AMC 8 Developing
 
-**The key identity:**
-$$ \gcd(a,b)\cdot\operatorname{lcm}(a,b) = a\cdot b. $$
-If the product is $96$ and $\gcd = 4$, then $\operatorname{lcm} = 96/4 = 24$.
+**Two-step GCD problems.** These first ask for the GCD, then a quantity you compute
+*from* it. Find the GCD, then divide.
 
-**Largest multiple in range.** The largest $k$-digit multiple of $m$ is
-$\left\lfloor\frac{10^k-1}{m}\right\rfloor\cdot m$.
+> *A teacher divides $45$ blue and $75$ red markers into identical sets, as many as
+> possible. How many red markers per set?*
+> There are $\gcd(45,75) = 15$ sets, so each has $75/15 = \mathbf{5}$ red markers.
 
-**Finding a missing number.** Given $\gcd = g$, $\operatorname{lcm} = L$, and one
-number $a$, the other is $\dfrac{gL}{a}$.
+**The key identity.** For any two positive integers,
+$$\gcd(a,b)\cdot\operatorname{lcm}(a,b) = a\cdot b.$$
+Rearranged, this answers a whole family of questions:
+
+- $\operatorname{lcm} = \dfrac{a\,b}{\gcd}$,  $\quad\gcd = \dfrac{a\,b}{\operatorname{lcm}}$,
+- and if you know $\gcd = g$, $\operatorname{lcm} = L$, and one number $a$, the other
+  is $\dfrac{g\,L}{a}$.
+
+**Worked example.** *Two positive integers have product $900$ and least common
+multiple $60$. What is their greatest common divisor?*
+Straight from the identity, $\gcd = \dfrac{a\,b}{\operatorname{lcm}} = \dfrac{900}{60}
+= \mathbf{15}$.
+
+**Worked example.** *Two integers have $\gcd = 7$ and $\operatorname{lcm} = 84$. One
+of them is $21$. Find the other.*
+Their product is $\gcd\cdot\operatorname{lcm} = 7\cdot 84 = 588$, so the other number
+is $588 / 21 = \mathbf{28}$.
 
 <!--band:t3-->
 ## Tier 3 · AMC 8 Proficient
 
-**GCD of large numbers.** Use the Euclidean algorithm: repeatedly replace the larger
-number with its remainder mod the smaller.
-$\gcd(720, 1008)$: $1008 = 1\cdot 720 + 288$, $720 = 2\cdot 288 + 144$,
-$288 = 2\cdot 144$, so $\gcd = 144$.
+**Counting pairs with a fixed LCM.** To count ordered pairs $(a,b)$ with
+$\operatorname{lcm}(a,b) = N$, work one prime at a time. If $N$ has the prime power
+$p^{e}$, then $a$ and $b$ carry powers $p^{i}$ and $p^{j}$ where $\max(i,j) = e$.
+The number of ordered pairs $(i,j)$ with $\max = e$ is $2e + 1$ (either $i = e$ with
+$j = 0,\dots,e$, or $j = e$ with $i = 0,\dots,e$, minus the once-double-counted
+$(e,e)$). Multiply these across all primes.
 
-**Sum of an arithmetic sequence.** When you need the sum of all multiples of $d$
-from $1$ to $N$, they form an arithmetic sequence with $\lfloor N/d\rfloor$ terms;
-use the average-times-count formula.
+**Worked example.** *How many ordered pairs $(a,b)$ satisfy
+$\operatorname{lcm}(a,b) = 12$?*
+$12 = 2^2\cdot 3$. For the prime $2$ (exponent $2$): $2(2)+1 = 5$ choices. For the
+prime $3$ (exponent $1$): $2(1)+1 = 3$ choices. Total $5\cdot 3 = \mathbf{15}$.
 
-**Checking GCF with a condition.** "The GCF of $a$ and $b$ that is a perfect
-square" — compute the GCF, then find its largest square factor.
+**Finding all pairs from GCD and LCM.** Write $a = g\,m$ and $b = g\,n$ where
+$g = \gcd(a,b)$. Then $m$ and $n$ are **coprime** ($\gcd(m,n) = 1$) and
+$m\,n = \dfrac{\operatorname{lcm}}{\gcd}$. Listing the coprime factor pairs of that
+quotient gives every valid pair.
 
-<!--band:t4-->
-## Tier 4 · AMC 8 Advanced
-
-**LCM from three or more numbers.** For each prime, take the highest exponent
-appearing in any of the numbers. Then verify divisibility separately.
-
-**Chain the product identity.** In multi-step problems, set up equations using
-$\gcd\cdot\operatorname{lcm} = $ product and solve for the unknown. If two
-conditions are given (e.g. GCD and LCM both fixed), list divisors of the LCM that
-also divide the GCD correctly.
-
-**Periodic problems.** If two events repeat every $a$ and $b$ steps, they coincide
-every $\operatorname{lcm}(a,b)$ steps. To count coincidences in a range, divide the
-range length by the LCM.
-
-<!--band:t5-->
-## Tier 5 · AMC 8 Expert
-
-**Building from GCD structure.** Write $a = g\cdot x$ and $b = g\cdot y$ where
-$g = \gcd(a,b)$. Then $\gcd(x,y) = 1$, and $\operatorname{lcm}(a,b) = g\cdot x\cdot y$.
-This lets you translate a GCD/LCM condition into a product condition on coprime
-numbers — useful for finding all valid pairs by listing factor pairs of $L/g$.
-
-**Combining with divisibility.** The hardest AMC 8 GCD/LCM problems layer a
-GCD/LCM condition with a divisibility or size constraint. Factorize everything first,
-then apply the constraints one at a time.
+**Worked example.** *Two integers have $\gcd = 8$ and $\operatorname{lcm} = 240$.
+What is the sum of all possible values of the smaller integer?*
+Write $a = 8m$, $b = 8n$ with $\gcd(m,n) = 1$ and $m\,n = 240/8 = 30$. The coprime
+factor pairs of $30$ are $(1,30),(2,15),(3,10),(5,6)$. Taking the smaller of each and
+scaling back by $8$ gives $8, 16, 24, 40$, which sum to $\mathbf{88}$.

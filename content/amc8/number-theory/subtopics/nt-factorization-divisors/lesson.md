@@ -1,74 +1,79 @@
 # Prime Factorization & Divisors
 
-One engine runs the whole topic: the prime factorization. The tiers build from
-listing divisors up to the divisor-count formula, sum of divisors, and square/cube
-factor counting.
+Every whole number greater than $1$ breaks into primes in exactly one way — its
+**prime factorization**. Once you have it, you can read off almost everything else:
+how many divisors the number has, what they sum to, whether it is a perfect square,
+and which numbers fit a given divisor count. This set builds from finding
+factorizations to using them backward.
 
 <!--band:t1-->
 ## Tier 1 · AMC 8 Intro
 
-**Factor first.** Write $n$ as a product of primes:
-$60 = 2^2\cdot 3\cdot 5$, $588 = 2^2\cdot 3\cdot 7^2$.
+**Factoring a number.** Pull out the smallest prime that divides it, over and over,
+until you are left with $1$. Then collect equal primes into exponents.
 
-**Divisors come in pairs** that multiply to $n$. List them for small numbers:
-$36$ has divisors $1, 2, 3, 4, 6, 9, 12, 18, 36$ — nine divisors.
+$$90 = 2\cdot 45 = 2\cdot 9\cdot 5 = 2\cdot 3^2\cdot 5.$$
 
-**Perfect numbers.** A number equals the sum of its proper divisors:
-$6 = 1+2+3$,\ $28 = 1+2+4+7+14$.
+**Testing whether a number is prime.** Trial-divide by primes $2, 3, 5, 7, 11, \dots$
+up to the number's square root. The classic trap is stopping at $2, 3, 5$: some
+composites hide a larger factor.
+
+**Worked example (factor).** *Write $500$ in exponent form.*
+$500 = 2\cdot 250 = 2\cdot 2\cdot 125 = 2^2\cdot 5^3$.
+
+**Worked example (prime or not).** *Is $187$ prime?*
+It is not even, its digits sum to $16$ (not a multiple of $3$), and it does not end in
+$0$ or $5$. Testing further, $187 / 7$ is not whole, but $187 / 11 = 17$. So
+$187 = 11\cdot 17$ — **composite**, not prime.
 
 <!--band:t2-->
 ## Tier 2 · AMC 8 Developing
 
-**Even vs. odd divisors.** A divisor is odd exactly when it has no factor of $2$
-— it only divides into the non-$2$ part of $n$. For $360 = 2^3\cdot 3^2\cdot 5$, strip
-the $2$s to get $3^2\cdot 5$, giving $(2+1)(1+1) = 6$ odd divisors.
+Everything here starts by factoring, then applies a formula.
 
-**Largest perfect square factor.** Keep each prime but cut each exponent down to the
-largest even number $\le$ the exponent. For $180 = 2^2\cdot 3^2\cdot 5$, the
-largest square factor is $2^2\cdot 3^2 = 36$, with square root $6$.
+**Number of divisors.** If $n = p_1^{e_1}\, p_2^{e_2}\cdots$, then $n$ has
+$$(e_1 + 1)(e_2 + 1)\cdots$$
+divisors — because each divisor independently chooses an exponent from $0$ up to
+$e_i$ for each prime.
+
+> *How many divisors does $72$ have?* $72 = 2^3\cdot 3^2$, so
+> $(3+1)(2+1) = \mathbf{12}$.
+
+**Sum of divisors.** Multiply, over each prime, the sum $1 + p + p^2 + \cdots + p^{e}$.
+
+**Worked example.** *What is the sum of the divisors of $40$?*
+$40 = 2^3\cdot 5$, so the sum is $(1+2+4+8)(1+5) = 15\cdot 6 = \mathbf{90}$.
+
+**Reaching a perfect square.** A number is a perfect square exactly when *every*
+exponent in its factorization is even. To reach the nearest perfect-square multiple,
+multiply by the product of the primes that currently have an **odd** exponent.
+
+**Worked example.** *What is the smallest positive integer that turns $294$ into a
+perfect square when multiplied?*
+$294 = 2\cdot 3\cdot 7^2$. The odd exponents are on $2$ and $3$, so multiply by
+$2\cdot 3 = \mathbf{6}$ (indeed $294\cdot 6 = 1764 = 42^2$).
 
 <!--band:t3-->
 ## Tier 3 · AMC 8 Proficient
 
-**Divisor-count formula.** Add $1$ to each exponent in the prime factorization and multiply:
-$$ d(n) = (a_1+1)(a_2+1)\cdots $$
-$2000 = 2^4\cdot 5^3 \Rightarrow d = (4+1)(3+1) = 5\cdot 4 = 20$.
+**Working backward from a divisor count.** Read the divisor formula in reverse:
 
-Run it **backwards** to build a target: the smallest integer with $6$ divisors has
-$d = (2+1)(1+1) = 6$, so use exponents $2$ and $1$ on the two smallest primes:
-$2^2\cdot 3 = 12$.
+- Exactly $3$ divisors means $(e+1) = 3$, so the number is $p^2$ — a **prime
+  squared**.
+- Exactly $5$ divisors means $p^4$ — a **prime to the fourth**.
 
-**Sum of divisors.** For each prime power $p^a$ in the factorization, the sum of its contributions is $1 + p + p^2 + \cdots + p^a = \dfrac{p^{a+1}-1}{p-1}$. Multiply these together for all prime powers.
+**Worked example.** *How many positive integers below $200$ have exactly $3$
+divisors?*
+They are the prime squares $p^2 < 200$, i.e. $p < \sqrt{200} \approx 14.1$. The primes
+are $2, 3, 5, 7, 11, 13$, giving $4, 9, 25, 49, 121, 169$ — that is $\mathbf{6}$
+numbers.
 
-$288 = 2^5\cdot 3^2$: the $2^5$ piece gives $1+2+4+8+16+32 = 63$; the $3^2$ piece gives $1+3+9 = 13$; sum of divisors $= 63\cdot 13 = 819$.
+**Casework over exponent patterns.** When a number has fixed primes and a fixed
+divisor count, list the exponent patterns, keep the ones that obey the constraints,
+and compare the values.
 
-<!--band:t4-->
-## Tier 4 · AMC 8 Advanced
-
-**Fixed divisor-count shapes.** Exactly $3$ divisors $\Rightarrow n = p^2$ (prime
-squared). Exactly $4$ divisors $\Rightarrow n = p^3$ or $n = pq$ (product of two
-distinct primes). Use this to list or count qualifying integers in a range.
-
-**Square factor counting.** A divisor is a perfect square iff every exponent in its
-factorization is even:
-$$ \#\text{square factors of } n = \prod\!\left(\lfloor a_i/2\rfloor + 1\right). $$
-For $2^3\cdot 3^5\cdot 5\cdot 7^2$: $\ (1+1)(2+1)(0+1)(1+1) = 12$.
-
-**Cube factor counting.** Same idea with floor division by $3$:
-$\prod(\lfloor a_i/3\rfloor + 1)$. For $25920 = 2^6\cdot 3^4\cdot 5$: $(2+1)(1+1)(0+1) = 6$.
-
-<!--band:t5-->
-## Tier 5 · AMC 8 Expert
-
-**Constrained minimum.** "Smallest $n$ with exactly $D$ divisors and divisible by $k$"
-— factor $k$, then extend its exponents to the cheapest shape that gives $d(n)=D$,
-adding new prime factors as needed. Always assign the largest exponents to the
-smallest primes.
-
-**Completing a square or cube.** Given $n$, find the smallest $k$ so that $nk$ is a
-perfect square (or cube): for each prime $p^a$ in $n$, supply the extra $p^{e-a}$
-where $e$ is the next multiple of $2$ (or $3$) above $a$.
-
-**Multi-step divisor problems.** Some problems require combining multiple techniques
-— e.g. finding the GCF of two numbers that itself must be a perfect square. Compute
-the GCF first via factorization, then check which of its divisors are perfect squares.
+**Worked example.** *The number $N = 2^a\cdot 3^b\cdot 7$ has exactly $24$ divisors,
+with $a \ge b \ge 1$. Find the smallest possible $N$.*
+The divisor count is $(a+1)(b+1)(1+1) = 24$, so $(a+1)(b+1) = 12$. With $a \ge b \ge
+1$, the options are $(a,b) = (5,1)$ giving $2^5\cdot 3\cdot 7 = 672$, and $(3,2)$
+giving $2^3\cdot 3^2\cdot 7 = 504$. The smallest is $\mathbf{504}$.

@@ -1,76 +1,83 @@
-# Divisibility & Primes
+# Divisibility Rules
 
-Five tiers across AMC 8 difficulty. Lower tiers cover divisibility tests and basic
-primality; higher tiers build to multi-condition counting and harder prime arguments.
-Switch tiers with the selector above.
+Divisibility rules let you check whether one number divides another *without actually
+dividing*. This set uses the rules for $2, 3, 4, 5, 6, 8, 9, 10,$ and $11$ — first
+applying one at a time, then combining two of them, and finally solving digit puzzles
+where two rules pin down two unknown digits at once.
 
 <!--band:t1-->
 ## Tier 1 · AMC 8 Intro
 
-**Divisibility tests** let you check a divisor without dividing:
+The rules split into three families:
 
-- **2:** last digit even. **5:** last digit $0$ or $5$.
-- **3 / 9:** the *digit sum* is divisible by $3$ / $9$.
-- **6:** divisible by **both** $2$ and $3$.
+| Divisor | Test |
+|---|---|
+| $2$ | last digit is even |
+| $5$ | last digit is $0$ or $5$ |
+| $10$ | last digit is $0$ |
+| $4$ | last **two** digits form a multiple of $4$ |
+| $8$ | last **three** digits form a multiple of $8$ |
+| $3$ | digit sum is a multiple of $3$ |
+| $9$ | digit sum is a multiple of $9$ |
+| $6$ | passes **both** the $2$ and the $3$ tests |
+| $11$ | alternating sum of digits is a multiple of $11$ |
 
-**Primality.** A number $>1$ is prime if no smaller prime divides it. For a
-two-digit number you only need to test $2, 3, 5, 7$. Remember: $1$ is not prime.
+**Worked example (last digits).** *Is $5128$ divisible by $8$?*
+Look only at the last three digits: $128 = 8\cdot 16$, so **yes**.
 
-**Worked example.** Is $91$ prime? Test $2$ (odd), $3$ (digit sum $10$, no), $5$
-(ends in $1$, no), $7$: $91 = 7\times 13$. Composite.
+**Worked example (digit sum).** *Which of $4275$, $3310$, $6148$ is divisible by $9$?*
+Their digit sums are $18$, $7$, and $19$. Only $18$ is a multiple of $9$, so
+$\mathbf{4275}$.
+
+**Worked example (alternating sum).** *Is $7163$ divisible by $11$?*
+Alternate signs from the right: $3 - 6 + 1 - 7 = -9$. That is not a multiple of $11$,
+so **no**.
 
 <!--band:t2-->
 ## Tier 2 · AMC 8 Developing
 
-Add two more tests and start **counting multiples**:
+**Solving for a missing digit.** When a blank makes a number divisible by $9$ (or
+$3$), the digit sum must land on a multiple of $9$ (or $3$). Set up the digit sum and
+solve for the blank.
 
-- **4:** the last two digits form a multiple of $4$.
-- **Counting multiples:** the number of multiples of $d$ in $\{1,\dots,N\}$ is
-  $\left\lfloor N/d\right\rfloor$.
+**Worked example.** *For which digit $d$ is $\overline{82d4}$ divisible by $9$?*
+The digit sum is $8 + 2 + d + 4 = 14 + d$. For divisibility by $9$ we need
+$14 + d \equiv 0 \pmod 9$, so $d = \mathbf{4}$ (making the sum $18$).
 
-**"But not" problems.** To count integers divisible by $a$ but **not** $b$, count
-multiples of $a$ then subtract those also divisible by $b$ (i.e. multiples of
-$\text{lcm}(a,b)$).
+**Combining two rules.** "Divisible by both $A$ and $B$" is the same as "divisible by
+$\operatorname{lcm}(A,B)$." Find that single number and search for its multiples.
 
-*Example:* Multiples of $4$ but not $6$ in $\{1,\dots,100\}$: $25 - 8 = 17$.
+**Worked example.** *What is the smallest three-digit number divisible by both $6$ and
+$8$?*
+$\operatorname{lcm}(6,8) = 24$. The smallest three-digit multiple of $24$ is
+$24\cdot 5 = \mathbf{120}$.
 
 <!--band:t3-->
 ## Tier 3 · AMC 8 Proficient
 
-**Counting divisible by $a$ or $b$:** count each separately, then subtract the overlap (numbers divisible by both, which means divisible by $\operatorname{lcm}(a,b)$):
-$$ \text{count} = \left\lfloor \tfrac{N}{a}\right\rfloor + \left\lfloor \tfrac{N}{b}\right\rfloor - \left\lfloor \tfrac{N}{\operatorname{lcm}(a,b)}\right\rfloor. $$
+**Divisibility meets counting.** A digit-sum rule can *guarantee* one condition for
+free. For example, a digit sum of $12$ is automatically a multiple of $3$, so among
+numbers with that digit sum, being a multiple of $6$ only requires being **even** —
+turning the problem into counting digit combinations with an even last digit.
 
-- Divisible by $3$ or $5$ in $1$–$100$: $33 + 20 - 6 = 47$.
-- Divisible by **neither**: $N$ minus that count.
+**Inclusion-exclusion.** To count numbers up to $N$ divisible by $A$ **or** $B$, add
+the two counts and subtract the overlap (multiples of the LCM), so you don't
+double-count:
+$$\left\lfloor\tfrac{N}{A}\right\rfloor + \left\lfloor\tfrac{N}{B}\right\rfloor
+- \left\lfloor\tfrac{N}{\operatorname{lcm}(A,B)}\right\rfloor.$$
 
-**Primes in a range.** List and test; the primes between $10$ and $30$ are
-$11, 13, 17, 19, 23, 29$ — six of them.
+**Worked example.** *For how many integers $n$ from $1$ to $120$ is $n$ divisible by
+$4$ or $6$?*
+$\left\lfloor\tfrac{120}{4}\right\rfloor + \left\lfloor\tfrac{120}{6}\right\rfloor -
+\left\lfloor\tfrac{120}{12}\right\rfloor = 30 + 20 - 10 = \mathbf{40}$.
 
-<!--band:t4-->
-## Tier 4 · AMC 8 Advanced
+**Two unknown digits, two rules.** For divisibility by a number like $36 = 4\cdot 9$,
+use each rule to restrict a different blank: the **last-digits** rule pins down a
+short list for one blank, and the **digit-sum** rule then fixes the other. Check the
+surviving combinations.
 
-**Exactly one of two conditions.** Take each count separately, remove the overlap from both:
-$$ (\text{count}_a - \text{overlap}) + (\text{count}_b - \text{overlap}). $$
-
-**Three conditions.** To count integers satisfying at least one of three divisibility conditions, add the three individual counts, subtract each pairwise overlap, then add back the triple overlap:
-$$ \text{count}_a + \text{count}_b + \text{count}_c - \text{overlap}_{ab} - \text{overlap}_{ac} - \text{overlap}_{bc} + \text{overlap}_{abc}. $$
-Each overlap count is $\lfloor N / \operatorname{lcm}(\cdots) \rfloor$.
-
-**Sum of primes** in a range: after listing them, add. Watch for the special case
-$2$ — it is the only even prime and may satisfy an extra condition others don't.
-
-<!--band:t5-->
-## Tier 5 · AMC 8 Expert
-
-**Digit-sum divisibility extended.** A number is divisible by $9$ iff its digit sum
-is; for divisibility by $11$ the *alternating* digit sum must be divisible by $11$.
-Use these to build or identify numbers with prescribed divisibility from digit
-constraints alone.
-
-**Prime gaps and twin primes.** Among larger primes, the only even prime is $2$, so
-any prime pair summing to an even number must include $2$ (if the sum is odd, one of
-them is $2$). This forces the other to equal the sum minus $2$.
-
-**Combining conditions.** Hard AMC 8 divisibility problems layer a divisibility
-condition with a size bound or a digit property — work each constraint separately,
-then intersect. Listing systematically beats guessing.
+**Worked example.** *How many numbers $\overline{4x7y}$ are divisible by $36$?*
+Divisibility by $4$ needs the last two digits $\overline{7y}$ to be a multiple of $4$,
+giving $y \in \{2, 6\}$. Divisibility by $9$ needs $4 + x + 7 + y = 11 + x + y \equiv 0
+\pmod 9$. For $y = 2$ that forces $x = 5$; for $y = 6$ it forces $x = 1$. So there are
+$\mathbf{2}$ such numbers ($4572$ and $4176$).

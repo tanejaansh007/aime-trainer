@@ -49,7 +49,9 @@ $48/12 = 4$ oatmeal cookies, for $3 + 4 = \mathbf{7}$ cookies.
 > There are $\gcd(45,75) = 15$ sets, so each has $75/15 = \mathbf{5}$ red markers.
 
 **The key identity.** For any two positive integers,
+
 $$\gcd(a,b)\cdot\operatorname{lcm}(a,b) = a\cdot b.$$
+
 Rearranged, this answers a whole family of questions:
 
 - $\operatorname{lcm} = \dfrac{a\,b}{\gcd}$,  $\quad\gcd = \dfrac{a\,b}{\operatorname{lcm}}$,

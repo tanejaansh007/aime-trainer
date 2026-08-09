@@ -63,8 +63,8 @@ turning the problem into counting digit combinations with an even last digit.
 **Inclusion-exclusion.** To count numbers up to $N$ divisible by $A$ **or** $B$, add
 the two counts and subtract the overlap (multiples of the LCM), so you don't
 double-count:
-$$\left\lfloor\tfrac{N}{A}\right\rfloor + \left\lfloor\tfrac{N}{B}\right\rfloor
-- \left\lfloor\tfrac{N}{\operatorname{lcm}(A,B)}\right\rfloor.$$
+
+$$\left\lfloor\tfrac{N}{A}\right\rfloor + \left\lfloor\tfrac{N}{B}\right\rfloor - \left\lfloor\tfrac{N}{\operatorname{lcm}(A,B)}\right\rfloor.$$
 
 **Worked example.** *For how many integers $n$ from $1$ to $120$ is $n$ divisible by
 $4$ or $6$?*

@@ -31,10 +31,13 @@ $187 = 11\cdot 17$ — **composite**, not prime.
 
 Everything here starts by factoring, then applies a formula.
 
-**Number of divisors.** If $n = p_1^{e_1}\, p_2^{e_2}\cdots$, then $n$ has
-$$(e_1 + 1)(e_2 + 1)\cdots$$
-divisors — because each divisor independently chooses an exponent from $0$ up to
-$e_i$ for each prime.
+**Number of divisors.** If $n = p_1^{e_1} p_2^{e_2}\cdots$, then the number of
+divisors of $n$ is
+
+$$(e_1 + 1)(e_2 + 1)\cdots,$$
+
+because each divisor independently picks an exponent from $0$ up to $e_i$ for each
+prime.
 
 > *How many divisors does $72$ have?* $72 = 2^3\cdot 3^2$, so
 > $(3+1)(2+1) = \mathbf{12}$.

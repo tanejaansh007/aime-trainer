@@ -35,3 +35,18 @@ body {
   font-size: 0.9em;
 }
 .md .katex-display { margin: 0.9rem 0; overflow-x: auto; overflow-y: hidden; }
+.md table {
+  border-collapse: collapse;
+  margin: 0.9rem 0;
+  display: block;
+  overflow-x: auto;
+  font-size: 0.95em;
+}
+.md th, .md td {
+  border: 1px solid #e2e8f0;
+  padding: 0.4rem 0.85rem;
+  text-align: left;
+  vertical-align: top;
+}
+.md th { background: #f8fafc; font-weight: 700; }
+.md tbody tr:nth-child(even), .md tr:nth-child(even) { background: #fbfcfe; }

@@ -27,20 +27,40 @@ export default async function LearnPage({
   if (!topic) notFound();
 
   const leveled = topic.lessons.filter((l) => l.band !== "all");
-  const hasBands = leveled.length > 0;
+  // Only the tiers that actually have a lesson for this topic, in ascending order.
+  const availableBands = LESSON_BANDS.filter((b) =>
+    leveled.some((l) => l.band === b.key),
+  );
+  const availableKeys = availableBands.map((b) => b.key) as readonly string[];
+  const hasBands = availableBands.length > 0;
 
-  // Choose the tier: explicit ?level= wins, else the logged-in user's rating for
+  // Preferred tier: explicit ?level= wins, else the logged-in user's rating for
   // this topic, else the middle tier.
-  let band: LessonBand = "t3";
+  let preferred: LessonBand = "t3";
   if (level && BAND_KEYS.includes(level)) {
-    band = level as LessonBand;
+    preferred = level as LessonBand;
   } else {
     const session = await auth();
     if (session?.user?.id) {
       const r = await prisma.userSubjectRating.findUnique({
         where: { userId_topicId: { userId: session.user.id, topicId: topic.id } },
       });
-      if (r) band = lessonBandForRating(r.rating);
+      if (r) preferred = lessonBandForRating(r.rating);
+    }
+  }
+
+  // Snap the preferred tier to one that actually has a lesson: the highest
+  // available tier at or below the preference, else the lowest available.
+  let band: LessonBand | undefined;
+  if (hasBands) {
+    if (availableKeys.includes(preferred)) {
+      band = preferred;
+    } else {
+      const prefIdx = LESSON_BANDS.findIndex((b) => b.key === preferred);
+      band = availableBands[0].key;
+      for (const b of availableBands) {
+        if (LESSON_BANDS.findIndex((x) => x.key === b.key) <= prefIdx) band = b.key;
+      }
     }
   }
 
@@ -70,7 +90,7 @@ export default async function LearnPage({
             Lesson difficulty (by rating)
           </div>
           <div className="flex flex-wrap gap-2">
-            {LESSON_BANDS.map((b) => (
+            {availableBands.map((b) => (
               <Link
                 key={b.key}
                 href={`/learn/${topic.slug}?level=${b.key}`}

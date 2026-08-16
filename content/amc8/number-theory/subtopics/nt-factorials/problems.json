@@ -1,1 +1,802 @@
-[]
+[
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $4!$?",
+    "answer": "24",
+    "solution": "$4! = 4\\times3\\times2\\times1 = 24$.",
+    "rating": 450,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $1! + 2! + 3!$?",
+    "answer": "9",
+    "solution": "$1 + 2 + 6 = 9$.",
+    "rating": 450,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $3!$?",
+    "answer": "6",
+    "solution": "$3! = 6$, so the units digit is $6$.",
+    "rating": 450,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $5! - 4!$?",
+    "answer": "96",
+    "solution": "$5! - 4! = 120 - 24 = 96$.",
+    "rating": 450,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For what positive integer $n$ is $n! = 120$?",
+    "answer": "5",
+    "solution": "$5! = 120$, so $n = 5$.",
+    "rating": 450,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $3! \\times 4!$?",
+    "answer": "144",
+    "solution": "$3! \\times 4! = 6\\times24 = 144$.",
+    "rating": 450,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $5!$?",
+    "answer": "120",
+    "solution": "$5! = 5\\times4\\times3\\times2\\times1 = 120$.",
+    "rating": 500,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Simplify $\\dfrac{7!}{6!}$.",
+    "answer": "7",
+    "solution": "$\\dfrac{7!}{6!} = 7$, since the $6!$ cancels.",
+    "rating": 500,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $4!$?",
+    "answer": "4",
+    "solution": "$4! = 24$, so the units digit is $4$.",
+    "rating": 500,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $6! - 5!$?",
+    "answer": "600",
+    "solution": "$6! - 5! = 720 - 120 = 600$.",
+    "rating": 500,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Simplify $\\dfrac{7! \\times 2}{6!}$.",
+    "answer": "14",
+    "solution": "$\\dfrac{7!}{6!} = 7$, so the expression is $7\\times2 = 14$.",
+    "rating": 500,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $2! \\times 5!$?",
+    "answer": "240",
+    "solution": "$2! \\times 5! = 2\\times120 = 240$.",
+    "rating": 500,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Simplify $\\dfrac{9!}{7!}$.",
+    "answer": "72",
+    "solution": "$\\dfrac{9!}{7!} = 9\\times8 = 72$ (the $7!$ cancels).",
+    "rating": 550,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $2! + 3! + 4!$?",
+    "answer": "32",
+    "solution": "$2 + 6 + 24 = 32$.",
+    "rating": 550,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $5!$?",
+    "answer": "0",
+    "solution": "$5! = 120$, so the units digit is $0$.",
+    "rating": 550,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Simplify $\\dfrac{8! \\times 3}{7!}$.",
+    "answer": "24",
+    "solution": "$\\dfrac{8!}{7!} = 8$, so the expression is $8\\times3 = 24$.",
+    "rating": 550,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For what positive integer $n$ is $n! = 720$?",
+    "answer": "6",
+    "solution": "$6! = 720$, so $n = 6$.",
+    "rating": 550,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $3! \\times 3!$?",
+    "answer": "36",
+    "solution": "$3! \\times 3! = 6\\times6 = 36$.",
+    "rating": 550,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $7!$?",
+    "answer": "5040",
+    "solution": "$7! = 7\\times6\\times5\\times4\\times3\\times2\\times1 = 5040$.",
+    "rating": 600,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Simplify $\\dfrac{10!}{8!}$.",
+    "answer": "90",
+    "solution": "$\\dfrac{10!}{8!} = 10\\times9 = 90$ (the $8!$ cancels).",
+    "rating": 600,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $1! + 2! + 3! + 4!$?",
+    "answer": "33",
+    "solution": "$1 + 2 + 6 + 24 = 33$.",
+    "rating": 600,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is $7! - 6!$?",
+    "answer": "4320",
+    "solution": "$7! - 6! = 5040 - 720 = 4320$.",
+    "rating": 600,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Simplify $\\dfrac{9! \\times 2}{8!}$.",
+    "answer": "18",
+    "solution": "$\\dfrac{9!}{8!} = 9$, so the expression is $9\\times2 = 18$.",
+    "rating": 600,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For what positive integer $n$ is $n! = 5040$?",
+    "answer": "7",
+    "solution": "$7! = 5040$, so $n = 7$.",
+    "rating": 600,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many trailing zeros does $30!$ have?",
+    "answer": "7",
+    "solution": "Count factors of $5$: $\\lfloor30/5\\rfloor + \\lfloor30/25\\rfloor = 6 + 1 = 7$.",
+    "rating": 650,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many more trailing zeros does $50!$ have than $30!$?",
+    "answer": "5",
+    "solution": "$50!$ has $\\lfloor50/5\\rfloor+\\lfloor50/25\\rfloor = 12$ zeros and $30!$ has $7$; the difference is $12 - 7 = 5$.",
+    "rating": 650,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many trailing zeros does the product $6! \\times 9!$ have?",
+    "answer": "2",
+    "solution": "Trailing zeros count factors of $5$: $6!$ has one and $9!$ has one, so the product has $1 + 1 = 2$.",
+    "rating": 650,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the tens digit of $4!$?",
+    "answer": "2",
+    "solution": "$4! = 24$, so the tens digit is $2$.",
+    "rating": 650,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of $1!, 2!, 3!, 4!, 5!, 6!$ are even?",
+    "answer": "5",
+    "solution": "Every factorial from $2!$ on is even; only $1! = 1$ is odd. That leaves $5$ even values.",
+    "rating": 650,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $6!$ divisible by $7$? Answer Yes or No.",
+    "answer": "No",
+    "solution": "$6! = 1\\cdot2\\cdots6$ contains no factor of $7$ (and $7$ is prime), so no.",
+    "rating": 650,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many trailing zeros does $40!$ have?",
+    "answer": "9",
+    "solution": "Count factors of $5$: $\\lfloor40/5\\rfloor + \\lfloor40/25\\rfloor = 8 + 1 = 9$.",
+    "rating": 700,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $1! + 2! + 3! + \\cdots + 9!$?",
+    "answer": "3",
+    "solution": "Every term from $5!$ on ends in $0$, so only $1!+2!+3!+4! = 33$ affects the units digit: $3$.",
+    "rating": 700,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many trailing zeros does the product $10! \\times 15!$ have?",
+    "answer": "5",
+    "solution": "$10!$ has $2$ factors of $5$ and $15!$ has $3$, so the product has $2 + 3 = 5$ trailing zeros.",
+    "rating": 700,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the tens digit of $7!$?",
+    "answer": "4",
+    "solution": "$7! = 5040$, so the tens digit is $4$.",
+    "rating": 700,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $2! + 3!$?",
+    "answer": "8",
+    "solution": "$2! + 3! = 2 + 6 = 8$, so the units digit is $8$.",
+    "rating": 700,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $8!$ divisible by $7$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "$8! = 1\\cdot2\\cdots8$ includes the factor $7$, so yes.",
+    "rating": 700,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $4! + 5! + 6! + \\cdots + 10!$?",
+    "answer": "4",
+    "solution": "Every term from $5!$ on ends in $0$, so only $4! = 24$ affects the units digit: $4$.",
+    "rating": 740,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many more trailing zeros does $35!$ have than $20!$?",
+    "answer": "4",
+    "solution": "$35!$ has $\\lfloor35/5\\rfloor+\\lfloor35/25\\rfloor = 8$ zeros and $20!$ has $4$; the difference is $8 - 4 = 4$.",
+    "rating": 740,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many trailing zeros does the product $12! \\times 8!$ have?",
+    "answer": "3",
+    "solution": "$12!$ has $2$ factors of $5$ and $8!$ has $1$, so the product has $2 + 1 = 3$ trailing zeros.",
+    "rating": 740,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $3! + 4!$?",
+    "answer": "0",
+    "solution": "$3! + 4! = 6 + 24 = 30$, so the units digit is $0$.",
+    "rating": 740,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of $1!, 2!, 3!, \\ldots, 8!$ are even?",
+    "answer": "7",
+    "solution": "Every factorial from $2!$ on is even; only $1!$ is odd. That leaves $7$ even values.",
+    "rating": 740,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Is $12!$ divisible by $13$? Answer Yes or No.",
+    "answer": "No",
+    "solution": "$13$ is prime and larger than every factor in $12!$, so $12!$ is not divisible by $13$.",
+    "rating": 740,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many trailing zeros does $50!$ have?",
+    "answer": "12",
+    "solution": "Count factors of $5$: $\\lfloor50/5\\rfloor + \\lfloor50/25\\rfloor = 10 + 2 = 12$.",
+    "rating": 780,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $2! + 3! + 4!$?",
+    "answer": "2",
+    "solution": "$2 + 6 + 24 = 32$, so the units digit is $2$.",
+    "rating": 780,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many more trailing zeros does $100!$ have than $90!$?",
+    "answer": "3",
+    "solution": "$100!$ has $\\lfloor100/5\\rfloor+\\lfloor100/25\\rfloor = 24$ zeros and $90!$ has $\\lfloor90/5\\rfloor+\\lfloor90/25\\rfloor = 21$; the difference is $3$.",
+    "rating": 780,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the tens digit of $9!$?",
+    "answer": "8",
+    "solution": "$9! = 362880$, so the tens digit is $8$.",
+    "rating": 780,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the units digit of $4! + 5!$?",
+    "answer": "4",
+    "solution": "$4! + 5! = 24 + 120 = 144$, so the units digit is $4$.",
+    "rating": 780,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of $1!, 2!, 3!, 4!, 5!$ are even?",
+    "answer": "4",
+    "solution": "Every factorial from $2!$ on is even; only $1!$ is odd. That leaves $4$ even values.",
+    "rating": 780,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For what value of $n$ does $\\dfrac{n!}{(n-2)!} = 56$?",
+    "answer": "8",
+    "solution": "$\\dfrac{n!}{(n-2)!} = n(n-1) = 56$; since $8\\times7 = 56$, $n = 8$.",
+    "rating": 820,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For what value of $n$ does $\\dfrac{n!}{(n-3)!} = 120$?",
+    "answer": "6",
+    "solution": "$\\dfrac{n!}{(n-3)!} = n(n-1)(n-2) = 120$; since $6\\times5\\times4 = 120$, $n = 6$.",
+    "rating": 820,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest integer $k$ such that $3^k$ divides $9!$?",
+    "answer": "4",
+    "solution": "Count factors of $3$ in $9!$: $\\lfloor9/3\\rfloor + \\lfloor9/9\\rfloor = 3 + 1 = 4$.",
+    "rating": 820,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer $n$ such that $n!$ has at least $4$ factors of $2$?",
+    "answer": "6",
+    "solution": "The count of $2$s in $n!$ reaches $4$ first at $n = 6$: $\\lfloor6/2\\rfloor+\\lfloor6/4\\rfloor = 3 + 1 = 4$.",
+    "rating": 820,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many more factors of $2$ than factors of $3$ does $10!$ contain?",
+    "answer": "4",
+    "solution": "Factors of $2$: $\\lfloor10/2\\rfloor+\\lfloor10/4\\rfloor+\\lfloor10/8\\rfloor = 8$. Factors of $3$: $\\lfloor10/3\\rfloor+\\lfloor10/9\\rfloor = 4$. Difference $8 - 4 = 4$.",
+    "rating": 820,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The product of two consecutive integers is $42$. What is the smaller integer?",
+    "answer": "6",
+    "solution": "$n(n-1) = 42$ gives $7\\times6$, so the smaller integer is $6$.",
+    "rating": 820,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For what value of $n$ does $\\dfrac{n!}{(n-2)!} = 132$?",
+    "answer": "12",
+    "solution": "$n(n-1) = 132$; since $12\\times11 = 132$, $n = 12$.",
+    "rating": 860,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For what value of $n$ does $\\dfrac{n!}{(n-3)!} = 210$?",
+    "answer": "7",
+    "solution": "$n(n-1)(n-2) = 210$; since $7\\times6\\times5 = 210$, $n = 7$.",
+    "rating": 860,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest integer $k$ such that $2^k$ divides $8!$?",
+    "answer": "7",
+    "solution": "Count factors of $2$ in $8!$: $\\lfloor8/2\\rfloor+\\lfloor8/4\\rfloor+\\lfloor8/8\\rfloor = 4 + 2 + 1 = 7$.",
+    "rating": 860,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer $n$ such that $n!$ has at least $3$ factors of $3$?",
+    "answer": "9",
+    "solution": "The count of $3$s reaches $3$ first at $n = 9$: $\\lfloor9/3\\rfloor+\\lfloor9/9\\rfloor = 4 \\ge 3$ (and $n \\le 8$ gives only $2$).",
+    "rating": 860,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many more factors of $2$ than factors of $5$ does $12!$ contain?",
+    "answer": "8",
+    "solution": "Factors of $2$: $\\lfloor12/2\\rfloor+\\lfloor12/4\\rfloor+\\lfloor12/8\\rfloor = 10$. Factors of $5$: $\\lfloor12/5\\rfloor = 2$. Difference $10 - 2 = 8$.",
+    "rating": 860,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The product of two consecutive integers is $110$. What is the smaller integer?",
+    "answer": "10",
+    "solution": "$n(n-1) = 110$ gives $11\\times10$, so the smaller integer is $10$.",
+    "rating": 860,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For what value of $n$ does $\\dfrac{n!}{(n-2)!} = 72$?",
+    "answer": "9",
+    "solution": "$n(n-1) = 72$; since $9\\times8 = 72$, $n = 9$.",
+    "rating": 900,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "For what value of $n$ does $\\dfrac{n!}{(n-3)!} = 336$?",
+    "answer": "8",
+    "solution": "$n(n-1)(n-2) = 336$; since $8\\times7\\times6 = 336$, $n = 8$.",
+    "rating": 900,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest integer $k$ such that $7^k$ divides $20!$?",
+    "answer": "2",
+    "solution": "Count factors of $7$ in $20!$: $\\lfloor20/7\\rfloor + \\lfloor20/49\\rfloor = 2 + 0 = 2$.",
+    "rating": 900,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer $n$ such that $n!$ has at least $6$ factors of $2$?",
+    "answer": "8",
+    "solution": "The count of $2$s reaches $6$ first at $n = 8$: $\\lfloor8/2\\rfloor+\\lfloor8/4\\rfloor+\\lfloor8/8\\rfloor = 7 \\ge 6$ (and $n=7$ gives only $4$).",
+    "rating": 900,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many more factors of $3$ than factors of $5$ does $15!$ contain?",
+    "answer": "3",
+    "solution": "Factors of $3$: $\\lfloor15/3\\rfloor+\\lfloor15/9\\rfloor = 6$. Factors of $5$: $\\lfloor15/5\\rfloor = 3$. Difference $6 - 3 = 3$.",
+    "rating": 900,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many positive divisors does $6!$ have?",
+    "answer": "30",
+    "solution": "$6! = 720 = 2^4\\cdot3^2\\cdot5$, so the divisor count is $(4+1)(2+1)(1+1) = 30$.",
+    "rating": 940,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest integer $k$ such that $12^k$ divides $10!$?",
+    "answer": "4",
+    "solution": "$12 = 2^2\\cdot3$. In $10!$ there are $8$ factors of $2$ (so $\\lfloor8/2\\rfloor = 4$ copies of $2^2$) and $4$ factors of $3$. Thus $k = \\min(4,4) = 4$.",
+    "rating": 940,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write the prime factorization of $6!$ in exponent form.",
+    "answer": "2^4·3^2·5",
+    "solution": "$6! = 720 = 2^4\\cdot3^2\\cdot5$.",
+    "rating": 940,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest integer $k$ such that $4^k$ divides $10!$?",
+    "answer": "4",
+    "solution": "$4 = 2^2$, and $10!$ has $\\lfloor10/2\\rfloor+\\lfloor10/4\\rfloor+\\lfloor10/8\\rfloor = 8$ factors of $2$, so $k = \\lfloor8/2\\rfloor = 4$.",
+    "rating": 940,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Counting with multiplicity, how many prime factors does $8!$ have?",
+    "answer": "11",
+    "solution": "$8! = 2^7\\cdot3^2\\cdot5\\cdot7$, so the number of prime factors with multiplicity is $7 + 2 + 1 + 1 = 11$.",
+    "rating": 940,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many positive divisors does $7!$ have?",
+    "answer": "60",
+    "solution": "$7! = 5040 = 2^4\\cdot3^2\\cdot5\\cdot7$, so the divisor count is $(4+1)(2+1)(1+1)(1+1) = 60$.",
+    "rating": 980,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest integer $k$ such that $6^k$ divides $12!$?",
+    "answer": "5",
+    "solution": "$6 = 2\\cdot3$. In $12!$ there are $10$ factors of $2$ and $5$ factors of $3$, so $k = \\min(10,5) = 5$.",
+    "rating": 980,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of the positive divisors of $8!$ are odd?",
+    "answer": "12",
+    "solution": "$8! = 2^7\\cdot3^2\\cdot5\\cdot7$; odd divisors come from $3^2\\cdot5\\cdot7$, giving $(2+1)(1+1)(1+1) = 12$.",
+    "rating": 980,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest integer $k$ such that $8^k$ divides $12!$?",
+    "answer": "3",
+    "solution": "$8 = 2^3$, and $12!$ has $10$ factors of $2$, so $k = \\lfloor10/3\\rfloor = 3$.",
+    "rating": 980,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of the positive divisors of $8!$ are even?",
+    "answer": "84",
+    "solution": "$8!$ has $96$ divisors in all and $12$ odd ones, so $96 - 12 = 84$ are even.",
+    "rating": 980,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many positive divisors does $9!$ have?",
+    "answer": "160",
+    "solution": "$9! = 2^7\\cdot3^4\\cdot5\\cdot7$, so the divisor count is $(7+1)(4+1)(1+1)(1+1) = 160$.",
+    "rating": 1020,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write the prime factorization of $7!$ in exponent form.",
+    "answer": "2^4·3^2·5·7",
+    "solution": "$7! = 5040 = 2^4\\cdot3^2\\cdot5\\cdot7$.",
+    "rating": 1020,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of the positive divisors of $10!$ are odd?",
+    "answer": "30",
+    "solution": "$10! = 2^8\\cdot3^4\\cdot5^2\\cdot7$; odd divisors come from $3^4\\cdot5^2\\cdot7$, giving $(4+1)(2+1)(1+1) = 30$.",
+    "rating": 1020,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest integer $k$ such that $9^k$ divides $11!$?",
+    "answer": "2",
+    "solution": "$9 = 3^2$, and $11!$ has $\\lfloor11/3\\rfloor+\\lfloor11/9\\rfloor = 4$ factors of $3$, so $k = \\lfloor4/2\\rfloor = 2$.",
+    "rating": 1020,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of the positive divisors of $6!$ are even?",
+    "answer": "24",
+    "solution": "$6! = 720$ has $30$ divisors in all; its odd divisors come from $3^2\\cdot5$, giving $6$. So $30 - 6 = 24$ are even.",
+    "rating": 1020,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest integer $k$ such that $15^k$ divides $13!$?",
+    "answer": "2",
+    "solution": "$15 = 3\\cdot5$. In $13!$ there are $5$ factors of $3$ and $2$ factors of $5$, so $k = \\min(5,2) = 2$.",
+    "rating": 1060,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Write the prime factorization of $9!$ in exponent form.",
+    "answer": "2^7·3^4·5·7",
+    "solution": "$9! = 362880 = 2^7\\cdot3^4\\cdot5\\cdot7$.",
+    "rating": 1060,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of the positive divisors of $9!$ are odd?",
+    "answer": "20",
+    "solution": "$9! = 2^7\\cdot3^4\\cdot5\\cdot7$; odd divisors come from $3^4\\cdot5\\cdot7$, giving $(4+1)(1+1)(1+1) = 20$.",
+    "rating": 1060,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of the positive divisors of $7!$ are even?",
+    "answer": "48",
+    "solution": "$7! = 5040$ has $60$ divisors in all; its odd divisors come from $3^2\\cdot5\\cdot7$, giving $12$. So $60 - 12 = 48$ are even.",
+    "rating": 1060,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Counting with multiplicity, how many prime factors does $10!$ have?",
+    "answer": "15",
+    "solution": "$10! = 2^8\\cdot3^4\\cdot5^2\\cdot7$, so the number of prime factors with multiplicity is $8 + 4 + 2 + 1 = 15$.",
+    "rating": 1060,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer $n$ such that $n!$ has at least $10$ trailing zeros?",
+    "answer": "45",
+    "solution": "We need $\\lfloor n/5\\rfloor+\\lfloor n/25\\rfloor \\ge 10$. At $n = 44$: $8 + 1 = 9$ (not enough); at $n = 45$: $9 + 1 = 10$. So $n = 45$.",
+    "rating": 1100,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the exponent of the largest power of $3$ that divides $\\dfrac{15!}{10!}$?",
+    "answer": "2",
+    "solution": "Factors of $3$ in $15!$: $\\lfloor15/3\\rfloor+\\lfloor15/9\\rfloor = 6$; in $10!$: $4$. Dividing subtracts exponents: $6 - 4 = 2$.",
+    "rating": 1100,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest integer $k$ such that $6^k$ divides $\\dfrac{12!}{8!}$?",
+    "answer": "3",
+    "solution": "$6 = 2\\cdot3$. In $\\tfrac{12!}{8!}$ the exponent of $2$ is $10 - 7 = 3$ and of $3$ is $5 - 2 = 3$, so $k = \\min(3,3) = 3$.",
+    "rating": 1100,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many trailing zeros does $\\dfrac{20!}{10!}$ have?",
+    "answer": "2",
+    "solution": "Count factors of $5$: $20!$ has $4$ and $10!$ has $2$, so the ratio has $4 - 2 = 2$.",
+    "rating": 1100,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest positive integer $n$ such that $n!$ has fewer than $12$ trailing zeros?",
+    "answer": "49",
+    "solution": "$49!$ has $\\lfloor49/5\\rfloor+\\lfloor49/25\\rfloor = 9 + 1 = 10$ zeros; $50!$ jumps to $12$. So the largest $n$ with fewer than $12$ is $49$.",
+    "rating": 1100,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer $n$ such that $n!$ has at least $7$ trailing zeros?",
+    "answer": "30",
+    "solution": "We need $\\lfloor n/5\\rfloor+\\lfloor n/25\\rfloor \\ge 7$. At $n = 29$: $5 + 1 = 6$; at $n = 30$: $6 + 1 = 7$. So $n = 30$.",
+    "rating": 1145,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the exponent of the largest power of $2$ that divides $\\dfrac{14!}{7!}$?",
+    "answer": "7",
+    "solution": "Factors of $2$ in $14!$: $\\lfloor14/2\\rfloor+\\lfloor14/4\\rfloor+\\lfloor14/8\\rfloor = 11$; in $7!$: $4$. Difference $11 - 4 = 7$.",
+    "rating": 1145,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest integer $k$ such that $4^k$ divides $\\dfrac{15!}{9!}$?",
+    "answer": "2",
+    "solution": "$4 = 2^2$. The exponent of $2$ in $\\tfrac{15!}{9!}$ is $11 - 7 = 4$, so $k = \\lfloor4/2\\rfloor = 2$.",
+    "rating": 1145,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many trailing zeros does $\\dfrac{25!}{15!}$ have?",
+    "answer": "3",
+    "solution": "Count factors of $5$: $25!$ has $6$ and $15!$ has $3$, so the ratio has $6 - 3 = 3$.",
+    "rating": 1145,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest positive integer $n$ such that $n!$ has fewer than $6$ trailing zeros?",
+    "answer": "24",
+    "solution": "$24!$ has $\\lfloor24/5\\rfloor = 4$ zeros; $25!$ jumps to $6$ (it gains two factors of $5$). So the largest $n$ with fewer than $6$ is $24$.",
+    "rating": 1145,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer $n$ such that $n!$ has at least $13$ trailing zeros?",
+    "answer": "55",
+    "solution": "We need $\\lfloor n/5\\rfloor+\\lfloor n/25\\rfloor \\ge 13$. At $n = 54$: $10 + 2 = 12$; at $n = 55$: $11 + 2 = 13$. So $n = 55$.",
+    "rating": 1190,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the exponent of the largest power of $5$ that divides $\\dfrac{20!}{15!}$?",
+    "answer": "1",
+    "solution": "Factors of $5$ in $20!$: $4$; in $15!$: $3$. Difference $4 - 3 = 1$.",
+    "rating": 1190,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest integer $k$ such that $6^k$ divides $\\dfrac{14!}{10!}$?",
+    "answer": "1",
+    "solution": "$6 = 2\\cdot3$. In $\\tfrac{14!}{10!}$ the exponent of $2$ is $11 - 8 = 3$ and of $3$ is $5 - 4 = 1$, so $k = \\min(3,1) = 1$.",
+    "rating": 1190,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many trailing zeros does $\\dfrac{30!}{20!}$ have?",
+    "answer": "3",
+    "solution": "Count factors of $5$: $30!$ has $7$ and $20!$ has $4$, so the ratio has $7 - 4 = 3$.",
+    "rating": 1190,
+    "source": "AMC 8 · Factorials"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the largest positive integer $n$ such that $n!$ has fewer than $8$ trailing zeros?",
+    "answer": "34",
+    "solution": "$34!$ has $\\lfloor34/5\\rfloor+\\lfloor34/25\\rfloor = 6 + 1 = 7$ zeros; $35!$ jumps to $8$. So the largest $n$ with fewer than $8$ is $34$.",
+    "rating": 1190,
+    "source": "AMC 8 · Factorials"
+  }
+]

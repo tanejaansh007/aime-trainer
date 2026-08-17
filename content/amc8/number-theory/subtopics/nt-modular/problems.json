@@ -1,1 +1,802 @@
-[]
+[
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $58$ is divided by $7$?",
+    "answer": "2",
+    "solution": "$58 = 8\\times7 + 2$, so the remainder is $2$.",
+    "rating": 450,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Which of $34$, $48$, $55$ is a multiple of $8$?",
+    "answer": "48",
+    "solution": "$34 = 4\\times8 + 2$ and $55 = 6\\times8 + 7$ are not multiples of $8$, but $48 = 6\\times8$ is.",
+    "rating": 450,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of $17$, $24$, $33$, $45$ leave a remainder of $3$ when divided by $7$?",
+    "answer": "3",
+    "solution": "$17\\equiv3$, $24\\equiv3$, $45\\equiv3$, but $33\\equiv5\\pmod7$. That is $3$ of them.",
+    "rating": 450,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the least positive integer that must be added to $47$ to make it a multiple of $6$?",
+    "answer": "1",
+    "solution": "$47 = 7\\times6 + 5$, so it is $1$ short of $48 = 8\\times6$. Add $1$.",
+    "rating": 450,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Do $23$ and $38$ leave the same remainder when divided by $5$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "$23 = 4\\times5 + 3$ and $38 = 7\\times5 + 3$; both leave remainder $3$, so yes.",
+    "rating": 450,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What number between $20$ and $30$ leaves a remainder of $3$ when divided by $7$?",
+    "answer": "24",
+    "solution": "$24 = 3\\times7 + 3$ leaves remainder $3$, and it is the only such number between $20$ and $30$.",
+    "rating": 450,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $83$ is divided by $9$?",
+    "answer": "2",
+    "solution": "$83 = 9\\times9 + 2$, so the remainder is $2$.",
+    "rating": 500,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Which of $25$, $38$, $50$ leaves a remainder of $3$ when divided by $7$?",
+    "answer": "38",
+    "solution": "$25\\equiv4$, $38\\equiv3$, $50\\equiv1\\pmod7$. The answer is $38$.",
+    "rating": 500,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of $20$, $31$, $42$, $55$ leave a remainder of $2$ when divided by $5$?",
+    "answer": "1",
+    "solution": "$20\\equiv0$, $31\\equiv1$, $42\\equiv2$, $55\\equiv0\\pmod5$. Only $42$ works — that is $1$.",
+    "rating": 500,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the least positive integer that must be added to $58$ to make it a multiple of $9$?",
+    "answer": "5",
+    "solution": "$58 = 6\\times9 + 4$, so it is $5$ short of $63 = 7\\times9$. Add $5$.",
+    "rating": 500,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Which of $43$, $50$, $58$ leaves the largest remainder when divided by $7$?",
+    "answer": "58",
+    "solution": "$43\\equiv1$, $50\\equiv1$, $58\\equiv2\\pmod7$; the largest remainder belongs to $58$.",
+    "rating": 500,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What number between $40$ and $50$ leaves a remainder of $2$ when divided by $9$?",
+    "answer": "47",
+    "solution": "$47 = 5\\times9 + 2$ leaves remainder $2$, and it is the only such number between $40$ and $50$.",
+    "rating": 500,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Which of $29$, $32$, $46$ leaves a remainder of $4$ when divided by $5$?",
+    "answer": "29",
+    "solution": "$29\\equiv4$, $32\\equiv2$, $46\\equiv1\\pmod5$. The answer is $29$.",
+    "rating": 550,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Which of $42$, $51$, $63$ is a multiple of $9$?",
+    "answer": "63",
+    "solution": "$42\\equiv6$ and $51\\equiv6\\pmod9$, but $63 = 7\\times9$ is a multiple of $9$.",
+    "rating": 550,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many of $13$, $26$, $38$, $51$ leave a remainder of $2$ when divided by $6$?",
+    "answer": "2",
+    "solution": "$13\\equiv1$, $26\\equiv2$, $38\\equiv2$, $51\\equiv3\\pmod6$. Two of them ($26$ and $38$) work.",
+    "rating": 550,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Which of $37$, $44$, $53$ leaves the largest remainder when divided by $6$?",
+    "answer": "53",
+    "solution": "$37\\equiv1$, $44\\equiv2$, $53\\equiv5\\pmod6$; the largest remainder belongs to $53$.",
+    "rating": 550,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Do $41$ and $56$ leave the same remainder when divided by $7$? Answer Yes or No.",
+    "answer": "No",
+    "solution": "$41 = 5\\times7 + 6$ leaves remainder $6$, while $56 = 8\\times7$ leaves remainder $0$. So no.",
+    "rating": 550,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What number between $30$ and $40$ leaves a remainder of $4$ when divided by $8$?",
+    "answer": "36",
+    "solution": "$36 = 4\\times8 + 4$ leaves remainder $4$, and it is the only such number between $30$ and $40$.",
+    "rating": 550,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $71$ is divided by $8$?",
+    "answer": "7",
+    "solution": "$71 = 8\\times8 + 7$, so the remainder is $7$.",
+    "rating": 600,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Which of $23$, $40$, $58$ leaves a remainder of $5$ when divided by $9$?",
+    "answer": "23",
+    "solution": "$23\\equiv5$, $40\\equiv4$, $58\\equiv4\\pmod9$. The answer is $23$.",
+    "rating": 600,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Which of $26$, $39$, $44$ is a multiple of $4$?",
+    "answer": "44",
+    "solution": "$26\\equiv2$ and $39\\equiv3\\pmod4$, but $44 = 11\\times4$ is a multiple of $4$.",
+    "rating": 600,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the least positive integer that must be added to $70$ to make it a multiple of $8$?",
+    "answer": "2",
+    "solution": "$70 = 8\\times8 + 6$, so it is $2$ short of $72 = 9\\times8$. Add $2$.",
+    "rating": 600,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Which of $52$, $61$, $73$ leaves the largest remainder when divided by $8$?",
+    "answer": "61",
+    "solution": "$52\\equiv4$, $61\\equiv5$, $73\\equiv1\\pmod8$; the largest remainder belongs to $61$.",
+    "rating": 600,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Do $34$ and $58$ leave the same remainder when divided by $8$? Answer Yes or No.",
+    "answer": "Yes",
+    "solution": "$34 = 4\\times8 + 2$ and $58 = 7\\times8 + 2$; both leave remainder $2$, so yes.",
+    "rating": 600,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "If $a\\equiv3\\pmod8$ and $b\\equiv6\\pmod8$, what is the remainder when $a+b$ is divided by $8$?",
+    "answer": "1",
+    "solution": "$a+b\\equiv3+6 = 9\\equiv1\\pmod8$.",
+    "rating": 650,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "If $a\\equiv2\\pmod7$ and $b\\equiv5\\pmod7$, what is the remainder when $a-b$ is divided by $7$?",
+    "answer": "4",
+    "solution": "$a-b\\equiv2-5 = -3\\equiv4\\pmod7$.",
+    "rating": 650,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Today is Monday. What day of the week will it be in $45$ days?",
+    "answer": "Thursday",
+    "solution": "$45 = 6\\times7 + 3$, so it is the same as $3$ days ahead: Monday $+3 =$ Thursday.",
+    "rating": 650,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Today is Friday. What day of the week was it $40$ days ago?",
+    "answer": "Sunday",
+    "solution": "$40 = 5\\times7 + 5$, so $40$ days ago is the same as $5$ days back: Friday $-5 =$ Sunday.",
+    "rating": 650,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The pattern $A, B, C$ repeats over and over. What is the $47$th letter?",
+    "answer": "B",
+    "solution": "With period $3$, position $47$ matches $47\\equiv2\\pmod3$ — the $2$nd letter, $B$.",
+    "rating": 650,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A number satisfies $a\\equiv3\\pmod7$. What is the remainder when $2a+1$ is divided by $7$?",
+    "answer": "0",
+    "solution": "$2a+1\\equiv2\\times3+1 = 7\\equiv0\\pmod7$.",
+    "rating": 650,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "If $a\\equiv5\\pmod6$ and $b\\equiv4\\pmod6$, what is the remainder when $a+b$ is divided by $6$?",
+    "answer": "3",
+    "solution": "$a+b\\equiv5+4 = 9\\equiv3\\pmod6$.",
+    "rating": 700,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "If $a\\equiv3\\pmod5$ and $b\\equiv4\\pmod5$, what is the remainder when $ab$ is divided by $5$?",
+    "answer": "2",
+    "solution": "$ab\\equiv3\\times4 = 12\\equiv2\\pmod5$.",
+    "rating": 700,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Today is Saturday. What day of the week will it be in $200$ days?",
+    "answer": "Wednesday",
+    "solution": "$200 = 28\\times7 + 4$, so it is the same as $4$ days ahead: Saturday $+4 =$ Wednesday.",
+    "rating": 700,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Today is Thursday. What day of the week was it $30$ days ago?",
+    "answer": "Tuesday",
+    "solution": "$30 = 4\\times7 + 2$, so $30$ days ago is the same as $2$ days back: Thursday $-2 =$ Tuesday.",
+    "rating": 700,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "It is $7$ o'clock now. What time will the clock show in $50$ hours?",
+    "answer": "9",
+    "solution": "On a $12$-hour clock, $50\\equiv2\\pmod{12}$, so it advances $2$ hours: $7 + 2 = 9$ o'clock.",
+    "rating": 700,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A number satisfies $a\\equiv4\\pmod5$. What is the remainder when $3a+2$ is divided by $5$?",
+    "answer": "4",
+    "solution": "$3a+2\\equiv3\\times4+2 = 14\\equiv4\\pmod5$.",
+    "rating": 700,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "If $a\\equiv4\\pmod7$ and $b\\equiv5\\pmod7$, what is the remainder when $ab$ is divided by $7$?",
+    "answer": "6",
+    "solution": "$ab\\equiv4\\times5 = 20\\equiv6\\pmod7$.",
+    "rating": 740,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "If $a\\equiv3\\pmod9$ and $b\\equiv7\\pmod9$, what is the remainder when $a-b$ is divided by $9$?",
+    "answer": "5",
+    "solution": "$a-b\\equiv3-7 = -4\\equiv5\\pmod9$.",
+    "rating": 740,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Today is Tuesday. What day of the week will it be in $90$ days?",
+    "answer": "Monday",
+    "solution": "$90 = 12\\times7 + 6$, so it is the same as $6$ days ahead: Tuesday $+6 =$ Monday.",
+    "rating": 740,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "It is $10$ o'clock now. What time will the clock show in $75$ hours?",
+    "answer": "1",
+    "solution": "On a $12$-hour clock, $75\\equiv3\\pmod{12}$, so it advances $3$ hours: $10 + 3 = 13$, i.e. $1$ o'clock.",
+    "rating": 740,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The colors red, blue, green, yellow repeat in that order. What is the $30$th color?",
+    "answer": "blue",
+    "solution": "With period $4$, position $30$ matches $30\\equiv2\\pmod4$ — the $2$nd color, blue.",
+    "rating": 740,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A number satisfies $a\\equiv2\\pmod8$. What is the remainder when $3a+5$ is divided by $8$?",
+    "answer": "3",
+    "solution": "$3a+5\\equiv3\\times2+5 = 11\\equiv3\\pmod8$.",
+    "rating": 740,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "If $a\\equiv6\\pmod9$ and $b\\equiv5\\pmod9$, what is the remainder when $a+b$ is divided by $9$?",
+    "answer": "2",
+    "solution": "$a+b\\equiv6+5 = 11\\equiv2\\pmod9$.",
+    "rating": 780,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "If $a\\equiv5\\pmod8$ and $b\\equiv6\\pmod8$, what is the remainder when $ab$ is divided by $8$?",
+    "answer": "6",
+    "solution": "$ab\\equiv5\\times6 = 30\\equiv6\\pmod8$.",
+    "rating": 780,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "If $a\\equiv1\\pmod6$ and $b\\equiv4\\pmod6$, what is the remainder when $a-b$ is divided by $6$?",
+    "answer": "3",
+    "solution": "$a-b\\equiv1-4 = -3\\equiv3\\pmod6$.",
+    "rating": 780,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "Today is Sunday. What day of the week was it $50$ days ago?",
+    "answer": "Saturday",
+    "solution": "$50 = 7\\times7 + 1$, so $50$ days ago is the same as $1$ day back: Sunday $-1 =$ Saturday.",
+    "rating": 780,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "It is $4$ o'clock now. What time will the clock show in $200$ hours?",
+    "answer": "12",
+    "solution": "On a $12$-hour clock, $200\\equiv8\\pmod{12}$, so it advances $8$ hours: $4 + 8 = 12$ o'clock.",
+    "rating": 780,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The numbers $1, 2, 3, 4, 5$ repeat in that order. What is the $100$th number in the pattern?",
+    "answer": "5",
+    "solution": "With period $5$, position $100$ matches $100\\equiv0\\pmod5$ — the last number, $5$.",
+    "rating": 780,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^{20}$ is divided by $7$?",
+    "answer": "4",
+    "solution": "Powers of $2$ mod $7$ cycle $2, 4, 1$ (period $3$). Since $20\\equiv2\\pmod3$, it matches the $2$nd term: $4$.",
+    "rating": 820,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $47 + 58 + 69$ is divided by $7$?",
+    "answer": "6",
+    "solution": "Reduce each term first: $47\\equiv5$, $58\\equiv2$, $69\\equiv6\\pmod7$. Sum: $5+2+6 = 13\\equiv6\\pmod7$.",
+    "rating": 820,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $13\\times14$ is divided by $5$?",
+    "answer": "2",
+    "solution": "Reduce first: $13\\equiv3$, $14\\equiv4\\pmod5$, so $13\\times14\\equiv3\\times4 = 12\\equiv2\\pmod5$.",
+    "rating": 820,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The remainders of $3^1, 3^2, 3^3, \\ldots$ upon division by $5$ repeat in a cycle. How long is that cycle?",
+    "answer": "4",
+    "solution": "The remainders go $3, 4, 2, 1, 3, 4, 2, 1, \\ldots$ — a cycle of length $4$.",
+    "rating": 820,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer $e$ for which $2^e$ leaves a remainder of $1$ when divided by $7$?",
+    "answer": "3",
+    "solution": "Powers of $2$ mod $7$ are $2, 4, 1, \\ldots$; the remainder $1$ first appears at $e = 3$ ($2^3 = 8$).",
+    "rating": 820,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $1000$ is divided by $7$?",
+    "answer": "6",
+    "solution": "$1000 = 142\\times7 + 6$, so the remainder is $6$.",
+    "rating": 820,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $3^{11}$ is divided by $5$?",
+    "answer": "2",
+    "solution": "Powers of $3$ mod $5$ cycle $3, 4, 2, 1$ (period $4$). Since $11\\equiv3\\pmod4$, it matches the $3$rd term: $2$.",
+    "rating": 860,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $100 + 200 + 300$ is divided by $7$?",
+    "answer": "5",
+    "solution": "Reduce each term: $100\\equiv2$, $200\\equiv4$, $300\\equiv6\\pmod7$. Sum: $2+4+6 = 12\\equiv5\\pmod7$.",
+    "rating": 860,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $23\\times34$ is divided by $7$?",
+    "answer": "5",
+    "solution": "Reduce first: $23\\equiv2$, $34\\equiv6\\pmod7$, so $23\\times34\\equiv2\\times6 = 12\\equiv5\\pmod7$.",
+    "rating": 860,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The remainders of $2^1, 2^2, 2^3, \\ldots$ upon division by $7$ repeat in a cycle. How long is that cycle?",
+    "answer": "3",
+    "solution": "The remainders go $2, 4, 1, 2, 4, 1, \\ldots$ — a cycle of length $3$.",
+    "rating": 860,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer $e$ for which $3^e$ leaves a remainder of $4$ when divided by $5$?",
+    "answer": "2",
+    "solution": "Powers of $3$ mod $5$ are $3, 4, 2, 1, \\ldots$; the remainder $4$ first appears at $e = 2$ ($3^2 = 9$).",
+    "rating": 860,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $500$ is divided by $9$?",
+    "answer": "5",
+    "solution": "The remainder mod $9$ equals the digit sum mod $9$: $5 + 0 + 0 = 5$.",
+    "rating": 860,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $5^{8}$ is divided by $3$?",
+    "answer": "1",
+    "solution": "Since $5\\equiv2\\pmod3$, powers cycle $2, 1$ (period $2$). As $8$ is even, $5^8\\equiv1\\pmod3$.",
+    "rating": 900,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $85 + 96 + 74$ is divided by $9$?",
+    "answer": "3",
+    "solution": "Reduce each term: $85\\equiv4$, $96\\equiv6$, $74\\equiv2\\pmod9$. Sum: $4+6+2 = 12\\equiv3\\pmod9$.",
+    "rating": 900,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $19\\times26$ is divided by $9$?",
+    "answer": "8",
+    "solution": "Reduce first: $19\\equiv1$, $26\\equiv8\\pmod9$, so $19\\times26\\equiv1\\times8 = 8\\pmod9$.",
+    "rating": 900,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "The remainders of $2^1, 2^2, 2^3, \\ldots$ upon division by $9$ repeat in a cycle. How long is that cycle?",
+    "answer": "6",
+    "solution": "The remainders go $2, 4, 8, 7, 5, 1$, then repeat — a cycle of length $6$.",
+    "rating": 900,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer $e$ for which $3^e$ leaves a remainder of $6$ when divided by $7$?",
+    "answer": "3",
+    "solution": "Powers of $3$ mod $7$ are $3, 2, 6, 4, 5, 1, \\ldots$; the remainder $6$ first appears at $e = 3$ ($3^3 = 27$).",
+    "rating": 900,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $13^2\\times19^3$ is divided by $5$?",
+    "answer": "1",
+    "solution": "Reduce bases: $13\\equiv3$, $19\\equiv4\\pmod5$. So the value $\\equiv3^2\\times4^3 = 9\\times64\\equiv4\\times4 = 16\\equiv1\\pmod5$.",
+    "rating": 940,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A number leaves a remainder of $10$ when divided by $12$. What remainder does it leave when divided by $4$?",
+    "answer": "2",
+    "solution": "Write the number as $12k + 10$. Since $12k$ is a multiple of $4$, the remainder is $10\\equiv2\\pmod4$.",
+    "rating": 940,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^{10} + 3^5$ is divided by $7$?",
+    "answer": "0",
+    "solution": "$2^{10}\\equiv2\\pmod7$ (cycle $2,4,1$, $10\\equiv1\\pmod3$) and $3^5\\equiv5\\pmod7$. Sum $2+5 = 7\\equiv0\\pmod7$.",
+    "rating": 940,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $17\\times19\\times23$ is divided by $5$?",
+    "answer": "4",
+    "solution": "Reduce each base: $17\\equiv2$, $19\\equiv4$, $23\\equiv3\\pmod5$. Product $2\\times4\\times3 = 24\\equiv4\\pmod5$.",
+    "rating": 940,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $523 - 289$ is divided by $9$?",
+    "answer": "0",
+    "solution": "Reduce each: $523\\equiv1$ and $289\\equiv1\\pmod9$ (by digit sums). Difference $1-1 = 0$.",
+    "rating": 940,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $14^3\\times22^2$ is divided by $9$?",
+    "answer": "2",
+    "solution": "Reduce bases: $14\\equiv5$, $22\\equiv4\\pmod9$. So $\\equiv5^3\\times4^2 = 125\\times16\\equiv8\\times7 = 56\\equiv2\\pmod9$.",
+    "rating": 980,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A number leaves a remainder of $8$ when divided by $15$. What remainder does it leave when divided by $5$?",
+    "answer": "3",
+    "solution": "Write the number as $15k + 8$. Since $15k$ is a multiple of $5$, the remainder is $8\\equiv3\\pmod5$.",
+    "rating": 980,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $12^5$ is divided by $7$?",
+    "answer": "3",
+    "solution": "Reduce the base: $12\\equiv5\\pmod7$. Powers of $5$ mod $7$ cycle $5,4,6,2,3,1$; $5^5$ matches the $5$th term: $3$.",
+    "rating": 980,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $14\\times16\\times18$ is divided by $9$?",
+    "answer": "0",
+    "solution": "Reduce each base: $14\\equiv5$, $16\\equiv7$, $18\\equiv0\\pmod9$. The factor $18\\equiv0$ makes the product $\\equiv0\\pmod9$.",
+    "rating": 980,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A number satisfies $n\\equiv5\\pmod7$. What is the remainder when $n^2$ is divided by $7$?",
+    "answer": "4",
+    "solution": "$n^2\\equiv5^2 = 25\\equiv4\\pmod7$.",
+    "rating": 980,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $16^2\\times27^3$ is divided by $7$?",
+    "answer": "3",
+    "solution": "Reduce bases: $16\\equiv2$, $27\\equiv6\\pmod7$. So $\\equiv2^2\\times6^3 = 4\\times216\\equiv4\\times6 = 24\\equiv3\\pmod7$.",
+    "rating": 1020,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^8 + 5^3$ is divided by $9$?",
+    "answer": "3",
+    "solution": "$2^8\\equiv4\\pmod9$ (cycle of $2$, period $6$, $8\\equiv2$) and $5^3 = 125\\equiv8\\pmod9$. Sum $4+8 = 12\\equiv3\\pmod9$.",
+    "rating": 1020,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $15^4$ is divided by $8$?",
+    "answer": "1",
+    "solution": "Reduce the base: $15\\equiv7\\equiv-1\\pmod8$, so $15^4\\equiv(-1)^4 = 1\\pmod8$.",
+    "rating": 1020,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $13\\times17\\times21$ is divided by $8$?",
+    "answer": "1",
+    "solution": "Reduce each base: $13\\equiv5$, $17\\equiv1$, $21\\equiv5\\pmod8$. Product $5\\times1\\times5 = 25\\equiv1\\pmod8$.",
+    "rating": 1020,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A number satisfies $n\\equiv4\\pmod9$. What is the remainder when $2n+1$ is divided by $9$?",
+    "answer": "0",
+    "solution": "$2n+1\\equiv2\\times4+1 = 9\\equiv0\\pmod9$.",
+    "rating": 1020,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A number leaves a remainder of $7$ when divided by $9$. What remainder does it leave when divided by $3$?",
+    "answer": "1",
+    "solution": "Write the number as $9k + 7$. Since $9k$ is a multiple of $3$, the remainder is $7\\equiv1\\pmod3$.",
+    "rating": 1060,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $4^5 + 6^2$ is divided by $7$?",
+    "answer": "3",
+    "solution": "$4^5\\equiv2\\pmod7$ (cycle $4,2,1$, $5\\equiv2\\pmod3$) and $6^2 = 36\\equiv1\\pmod7$. Sum $2+1 = 3\\pmod7$.",
+    "rating": 1060,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $23^3$ is divided by $9$?",
+    "answer": "8",
+    "solution": "Reduce the base: $23\\equiv5\\pmod9$, so $23^3\\equiv5^3 = 125\\equiv8\\pmod9$.",
+    "rating": 1060,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "A number satisfies $n\\equiv3\\pmod8$. What is the remainder when $n^2$ is divided by $8$?",
+    "answer": "1",
+    "solution": "$n^2\\equiv3^2 = 9\\equiv1\\pmod8$.",
+    "rating": 1060,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $700 - 458$ is divided by $7$?",
+    "answer": "4",
+    "solution": "Reduce each: $700\\equiv0$ and $458\\equiv3\\pmod7$. Difference $0 - 3\\equiv4\\pmod7$.",
+    "rating": 1060,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest integer greater than $20$ that leaves a remainder of $1$ when divided by $4$ and a remainder of $2$ when divided by $5$?",
+    "answer": "37",
+    "solution": "List numbers $\\equiv1\\pmod4$ above $20$: $21,25,29,33,37,\\ldots$ and check $\\equiv2\\pmod5$: the first match is $37$ ($37 = 9\\times4+1 = 7\\times5+2$).",
+    "rating": 1100,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer that leaves a remainder of $3$ when divided by $4$ and a remainder of $2$ when divided by $3$?",
+    "answer": "11",
+    "solution": "List numbers $\\equiv3\\pmod4$: $3,7,11,\\ldots$ and check $\\equiv2\\pmod3$: $3\\equiv0$, $7\\equiv1$, $11\\equiv2$ — so $11$.",
+    "rating": 1100,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $60$ leave a remainder of $2$ when divided by $3$ and a remainder of $3$ when divided by $5$?",
+    "answer": "4",
+    "solution": "Such numbers repeat every $\\mathrm{lcm}(3,5) = 15$, starting at $8$: $8, 23, 38, 53$ — that is $4$.",
+    "rating": 1100,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $2^{40}$ is divided by $9$?",
+    "answer": "7",
+    "solution": "Powers of $2$ mod $9$ cycle $2,4,8,7,5,1$ (period $6$). Since $40\\equiv4\\pmod6$, it matches the $4$th term: $7$.",
+    "rating": 1100,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer $e$ for which $2^e$ leaves a remainder of $5$ when divided by $9$?",
+    "answer": "5",
+    "solution": "Powers of $2$ mod $9$ are $2,4,8,7,5,1,\\ldots$; the remainder $5$ first appears at $e = 5$.",
+    "rating": 1100,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest integer greater than $15$ that leaves a remainder of $3$ when divided by $5$ and a remainder of $1$ when divided by $6$?",
+    "answer": "43",
+    "solution": "List numbers $\\equiv3\\pmod5$ above $15$: $18,23,28,33,38,43,\\ldots$ and check $\\equiv1\\pmod6$: the first match is $43$.",
+    "rating": 1145,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer that leaves a remainder of $1$ when divided by $6$ and a remainder of $4$ when divided by $5$?",
+    "answer": "19",
+    "solution": "List numbers $\\equiv1\\pmod6$: $1,7,13,19,\\ldots$ and check $\\equiv4\\pmod5$: $1\\equiv1$, $7\\equiv2$, $13\\equiv3$, $19\\equiv4$ — so $19$.",
+    "rating": 1145,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $80$ leave a remainder of $0$ when divided by $3$ and a remainder of $1$ when divided by $4$?",
+    "answer": "6",
+    "solution": "Such numbers repeat every $\\mathrm{lcm}(3,4) = 12$, starting at $9$: $9, 21, 33, 45, 57, 69$ — that is $6$.",
+    "rating": 1145,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $5^{23}$ is divided by $9$?",
+    "answer": "2",
+    "solution": "Powers of $5$ mod $9$ cycle $5,7,8,4,2,1$ (period $6$). Since $23\\equiv5\\pmod6$, it matches the $5$th term: $2$.",
+    "rating": 1145,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer $e$ for which $2^e$ leaves a remainder of $8$ when divided by $9$?",
+    "answer": "3",
+    "solution": "Powers of $2$ mod $9$ are $2,4,8,7,5,1,\\ldots$; the remainder $8$ first appears at $e = 3$ ($2^3 = 8$).",
+    "rating": 1145,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest integer greater than $30$ that leaves a remainder of $2$ when divided by $7$ and a remainder of $4$ when divided by $9$?",
+    "answer": "58",
+    "solution": "List numbers $\\equiv2\\pmod7$ above $30$: $37,44,51,58,\\ldots$ and check $\\equiv4\\pmod9$: $37\\equiv1$, $44\\equiv8$, $51\\equiv6$, $58\\equiv4$ — so $58$.",
+    "rating": 1190,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer that leaves a remainder of $2$ when divided by $5$ and a remainder of $1$ when divided by $4$?",
+    "answer": "17",
+    "solution": "List numbers $\\equiv2\\pmod5$: $2,7,12,17,\\ldots$ and check $\\equiv1\\pmod4$: $2\\equiv2$, $7\\equiv3$, $12\\equiv0$, $17\\equiv1$ — so $17$.",
+    "rating": 1190,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "How many integers from $1$ to $100$ leave a remainder of $3$ when divided by $4$ and a remainder of $1$ when divided by $5$?",
+    "answer": "5",
+    "solution": "Such numbers repeat every $\\mathrm{lcm}(4,5) = 20$, starting at $11$: $11, 31, 51, 71, 91$ — that is $5$.",
+    "rating": 1190,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the remainder when $3^{25}$ is divided by $7$?",
+    "answer": "3",
+    "solution": "Powers of $3$ mod $7$ cycle $3,2,6,4,5,1$ (period $6$). Since $25\\equiv1\\pmod6$, it matches the $1$st term: $3$.",
+    "rating": 1190,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  },
+  {
+    "type": "SHORT_ANSWER",
+    "statement": "What is the smallest positive integer $e$ for which $5^e$ leaves a remainder of $4$ when divided by $9$?",
+    "answer": "4",
+    "solution": "Powers of $5$ mod $9$ are $5,7,8,4,2,1,\\ldots$; the remainder $4$ first appears at $e = 4$.",
+    "rating": 1190,
+    "source": "AMC 8 · Modular Arithmetic & Remainders"
+  }
+]
